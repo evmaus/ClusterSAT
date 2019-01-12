@@ -13,11 +13,12 @@ class UnaryOp : public Function {
   public:
   static UnaryOp Not(Function& inner);
   static UnaryOp Nop(Function& inner);
+  UnaryOp(UnaryType type, const Function& inner);
+
   bool Evaluate(VariableEnvironment env) const override;
   std::vector<std::string> GetUnboundVariables() const override;
   
   private:
-  UnaryOp(UnaryType type, const Function& inner);
   UnaryType op_type_;
   const Function& inner_;
 };

@@ -4,6 +4,11 @@
 
 namespace tribblesat {
 
+BinaryOp::BinaryOp(BinaryType type, const Function& lhs, const Function& rhs) 
+    : Function(NodeType::OP),
+    op_type_(type), lhs_(lhs), rhs_(rhs) 
+  {}
+
 BinaryOp BinaryOp::And(Function& lhs, Function& rhs)
 {
   return BinaryOp(BinaryType::AND, lhs, rhs);
@@ -43,7 +48,6 @@ bool BinaryOp::Evaluate(VariableEnvironment env) const
       }
   }
 }
-
 
 std::vector<std::string> BinaryOp::GetUnboundVariables() const {
   auto lhs = lhs_.GetUnboundVariables();

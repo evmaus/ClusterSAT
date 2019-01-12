@@ -16,14 +16,12 @@ class BinaryOp : public Function {
   static BinaryOp Or(Function& lhs, Function& rhs);
   static BinaryOp Xor(Function& lhs, Function& rhs);
 
+  BinaryOp(BinaryType type, const Function& lhs, const Function& rhs);
+  
   bool Evaluate(VariableEnvironment env) const override;
   std::vector<std::string> GetUnboundVariables() const override;
 
   private:
-  BinaryOp(BinaryType type, const Function& lhs, const Function& rhs) 
-    : Function(NodeType::OP),
-    op_type_(type), lhs_(lhs), rhs_(rhs) 
-  {}
   BinaryType op_type_;
   const Function& lhs_;
   const Function& rhs_;

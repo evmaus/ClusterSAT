@@ -5,7 +5,8 @@ cc_library(
     hdrs = ["function.h"],
     deps = [
         "variable_environment",
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 cc_library(
     name = "variable",
@@ -13,7 +14,8 @@ cc_library(
     hdrs = [ "variable.h" ],
     deps = [
         "function"
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 
 cc_test(
@@ -30,7 +32,8 @@ cc_library(
     srcs = [ "variable_environment.cc" ],
     hdrs = [ "variable_environment.h" ],
     deps = [
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 
 cc_test(
@@ -48,7 +51,8 @@ cc_library(
     hdrs = [ "atom.h" ],
     deps = [
         "function"
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 
 cc_test(
@@ -67,7 +71,8 @@ cc_library(
     hdrs = [ "unary_op.h" ],
     deps = [
         "function"
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 
 cc_test(
@@ -88,7 +93,8 @@ cc_library(
     hdrs = [ "binary_op.h" ],
     deps = [
         "function"
-    ]
+    ],
+    visibility = [ "//visibility:public" ],
 )
 
 cc_test(
