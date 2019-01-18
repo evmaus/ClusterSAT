@@ -12,39 +12,28 @@ BruteForceSatStrategy::BruteForceSatStrategy(uint64_t timeout_ms)
 {
 }
 
-VariableEnvironment GetAllFalseEnvironment(std::vector<std::string> variable_list)
-{
-  VariableEnvironment env = VariableEnvironment::Empty();
-  for (const std::string var_name : variable_list){
-    env.Assign(var_name, false);
-  }
-  return env;
-}
-
-bool NextEnvironment(VariableEnvironment& env) {
+bool NextEnvironment(cnf::VariableEnvironment& env) {
   bool carry = true;
-  for (auto it = env.begin(); it != env.end() && carry; it++) {
-    if (!it->second) {
-      it->second = true;
+  for (uint32_t i = 0; i < env.count() && carry; i++) {
+    if (env.lookup(i) == cnf::VariableState::SFALSE) {
+      env.assign(i, cnf::VariableState::STRUE);
       carry = false;
     }
-    else if (it->second) {
-      it->second = false;
+    else if (env.lookup(i) == cnf::VariableState::STRUE) {
+      env.assign(i, cnf::VariableState::SFALSE);
       carry = true;
     }
   }
   return !carry;
 }
 
-SatResultType BruteForceSatStrategy::DetermineSatInternal(const Function& function, std::atomic_bool& run) const 
+SatResultType BruteForceSatStrategy::DetermineCnfSatInternal(const cnf::And& term, std::atomic_bool& run) const 
 {
-  std::vector<std::string> variable_list = function.GetUnboundVariables();
-
-  // Try "All true" first.
-  VariableEnvironment env = GetAllFalseEnvironment(variable_list);
+  // Try "All false" first.
+  cnf::VectorVariableEnvironment env(term.variable_count(), cnf::VariableState::SFALSE);
   bool has_next = true;
   while (has_next && run) {
-    if (function.Evaluate(env)) {
+    if (term.satisfied(env)) {
       return SatResultType::SAT;
     }
     has_next = NextEnvironment(env);
@@ -54,19 +43,20 @@ SatResultType BruteForceSatStrategy::DetermineSatInternal(const Function& functi
   {
     // Return SAT if no SAT solution is found.
     return SatResultType::UNSAT;
-  } else 
+  } 
+  else 
   {
     return SatResultType::UNKNOWN;
   }
 }
 
-SatResultType BruteForceSatStrategy::DetermineSat(const Function& function) const 
+SatResultType BruteForceSatStrategy::DetermineCnfSat(const cnf::And& term) const 
 {
   std::atomic_bool run;
   run = true;
   auto future = std::async(
-    std::launch::async, [this, &function, &run]() {
-      return DetermineSatInternal(function, run);
+    std::launch::async, [this, &term, &run]() {
+      return DetermineCnfSatInternal(term, run);
     }
   );
   if (timeout_ms_ != 0)

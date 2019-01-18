@@ -1,63 +1,69 @@
 #include "src/sat/brute_force_sat.h"
 
-#include "src/model/variable_environment.h"
-#include "src/model/atom.h"
-#include "src/model/binary_op.h"
-#include "src/model/unary_op.h"
-#include "src/model/variable.h"
-
 #include <string>
-#include <gtest/gtest.h>
+
+#include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
 namespace test {
 namespace {
 
-TEST(BruteForceSatTest, FindsSatAnswerForSimpleSat) {
-  Variable v("variable_name");
-  auto not_v = UnaryOp::Not(v);
-  auto t = Atom::True();
-  auto expr = BinaryOp::And(t, not_v);
+TEST(BruteForceSatTest, SatInstance){
+  cnf::Variable v1(1);
+  cnf::Variable v2(2);
+  cnf::Variable v3(3);
+  cnf::Variable nv3(3, true);
+  cnf::Variable nv1(1, true);
+  std::vector<cnf::Variable> t1;
+  t1.push_back(v1);
+  t1.push_back(nv3);
+  cnf::Or term1(t1);
+  std::vector<cnf::Variable> t2;
+  t2.push_back(v2);
+  t2.push_back(v3);
+  t2.push_back(nv1);
+  cnf::Or term2(t2);
+  std::vector<cnf::Or> conj;
+  conj.push_back(term1);
+  conj.push_back(term2);
+
+
+  cnf::And expr(conj);
   BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
 }
 
-TEST(BruteForceSatTest, FindsSatAnswerForSimpleSatSecond) {
-  Variable v("variable_name");
-  auto t = Atom::True();
-  auto expr = BinaryOp::And(t, v);
+TEST(BruteForceSatTest, UnSatInstance){
+cnf::Variable v1(1);
+  cnf::Variable nv1(1, true);
+  std::vector<cnf::Variable> t1;
+  t1.push_back(v1);
+  cnf::Or term1(t1);
+  std::vector<cnf::Variable> t2;
+  t2.push_back(nv1);
+  cnf::Or term2(t2);
+  std::vector<cnf::Or> conj;
+  conj.push_back(term1);
+  conj.push_back(term2);
+
+  cnf::And expr(conj);
   BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNSAT);
 }
 
-TEST(BruteForceSatTest, FindsUnsatAnswerForSimpleUnsat) {
-  Variable v("variable_name");
-  auto not_v = UnaryOp::Not(v);
-  auto expr = BinaryOp::And(v, not_v);
-  BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineSat(expr), SatResultType::UNSAT);
-}
-
-TEST(BruteForceSatTest, FindsSatAnswerForMultivariateSat) {
-  Variable v1("variable_name1");
-  Variable v2("variable_name2");
-  auto expr = BinaryOp::And(v1, v2);
-  BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineSat(expr), SatResultType::SAT);
-}
-
-TEST(BruteForceSatTest, TimeoutTest) {
-  Variable v1("variable_name1");
-  Variable v2("variable_name2");
-  auto expr = new BinaryOp(BinaryType::AND, v1, v2);
-
+TEST(BruteForceSatTest, Timeout) {
+  std::vector<cnf::Or> terms;
   for (int i = 0; i < 1000; i++)
   {
-    Variable* v3 = new Variable("variable_name"+std::to_string(i));
-    expr = new BinaryOp(BinaryType::AND, *expr, *v3);
+    cnf::Variable v(i);
+    std::vector<cnf::Variable> vars;
+    vars.push_back(v);
+    cnf::Or term(vars);
+    terms.push_back(term);
   }
+  cnf::And expr(terms);
   BruteForceSatStrategy strategy(1);
-  EXPECT_EQ(strategy.DetermineSat(*expr), SatResultType::UNKNOWN);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNKNOWN);
 }
 
 } // namespace
