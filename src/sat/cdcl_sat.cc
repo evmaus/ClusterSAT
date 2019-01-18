@@ -68,7 +68,7 @@ void PickBranchVariableAndAssign(uint32_t& current_decision_level, const cnf::An
 }
 
 
-SatResultType CDCLSatStrategy::DetermineCnfSatInternal(
+SatResult CDCLSatStrategy::DetermineCnfSatInternal(
     const cnf::And& term, std::atomic_bool& run) const 
 {
   LOG(LogLevel::VERBOSE, "Starting CDCL on " + term.to_string());
@@ -85,7 +85,7 @@ SatResultType CDCLSatStrategy::DetermineCnfSatInternal(
   while (run){
     if (term.satisfied(env_stack)) {
       LOG(LogLevel::VERBOSE, "Finished, returning SAT");
-      return SatResultType::SAT;
+      return SatResult(SatResultType::SAT, &env_stack);
     } 
     else 
     {
@@ -104,7 +104,7 @@ SatResultType CDCLSatStrategy::DetermineCnfSatInternal(
         
         if (conflict_level < 0) {
           LOG(LogLevel::VERBOSE, "Finished, returning UNSAT");
-          return SatResultType::UNSAT;
+          return SatResult(SatResultType::UNSAT, nullptr);
         }
         while (current_decision_level > conflict_level) {
           env_stack.pop();
@@ -117,10 +117,10 @@ SatResultType CDCLSatStrategy::DetermineCnfSatInternal(
     }
   }
 
-  return SatResultType::UNKNOWN;
+  return SatResult(SatResultType::UNKNOWN, nullptr);
 }
 
-SatResultType CDCLSatStrategy::DetermineCnfSat(const cnf::And& term) const 
+SatResult CDCLSatStrategy::DetermineCnfSat(const cnf::And& term) const 
 {
   std::atomic_bool run;
   run = true;

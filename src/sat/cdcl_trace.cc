@@ -63,6 +63,8 @@ int CDCLTrace::litsAtLevel(cnf::Or conflict_term, int decision_level) {
   return lit_at_level;
 }
 
+// Potential TODO:  Use the map instead of iterating from the back.
+// Unclear which will be
 CDCLTraceTerm CDCLTrace::getLastAssignedInTerm(const cnf::Or& conflict_term) {
   for (auto terms_it = trace_.cend(); terms_it-- != trace_.cbegin(); ) {
     for (auto var_it = conflict_term.cbegin(); var_it != conflict_term.cend(); var_it++) {     

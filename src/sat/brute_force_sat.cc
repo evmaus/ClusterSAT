@@ -27,14 +27,14 @@ bool NextEnvironment(cnf::VariableEnvironment& env) {
   return !carry;
 }
 
-SatResultType BruteForceSatStrategy::DetermineCnfSatInternal(const cnf::And& term, std::atomic_bool& run) const 
+SatResult BruteForceSatStrategy::DetermineCnfSatInternal(const cnf::And& term, std::atomic_bool& run) const 
 {
   // Try "All false" first.
   cnf::VectorVariableEnvironment env(term.variable_count(), cnf::VariableState::SFALSE);
   bool has_next = true;
   while (has_next && run) {
     if (term.satisfied(env)) {
-      return SatResultType::SAT;
+      return SatResult(SatResultType::SAT, &env);
     }
     has_next = NextEnvironment(env);
   }
@@ -42,15 +42,15 @@ SatResultType BruteForceSatStrategy::DetermineCnfSatInternal(const cnf::And& ter
   if (run == true)
   {
     // Return SAT if no SAT solution is found.
-    return SatResultType::UNSAT;
+    return SatResult(SatResultType::UNSAT, nullptr);
   } 
   else 
   {
-    return SatResultType::UNKNOWN;
+    return SatResult(SatResultType::UNKNOWN, nullptr);
   }
 }
 
-SatResultType BruteForceSatStrategy::DetermineCnfSat(const cnf::And& term) const 
+SatResult BruteForceSatStrategy::DetermineCnfSat(const cnf::And& term) const 
 {
   std::atomic_bool run;
   run = true;

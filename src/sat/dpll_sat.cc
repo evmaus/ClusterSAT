@@ -28,28 +28,29 @@ cnf::VectorVariableEnvironment UnitPropagate(const cnf::And& term, cnf::VectorVa
   return env;
 }
 
-SatResultType DPLLRecursive(const cnf::And& term, std::atomic_bool& run, cnf::VectorVariableEnvironment env)
+SatResult DPLLRecursive(const cnf::And& term, std::atomic_bool& run, cnf::VectorVariableEnvironment env)
 {
   if (run == false) 
   {
-    return SatResultType::UNKNOWN;
+    return SatResult(SatResultType::UNKNOWN, nullptr);
   }
 
   cnf::VectorVariableEnvironment next_env = UnitPropagate(term, env);
   if (term.has_empty(next_env)) {
     LOG(LogLevel::VERBOSE, "Conflict found in term " + term.next_empty(env).to_string() + " with " + env.to_string());
-    return SatResultType::UNSAT;
+    return SatResult(SatResultType::UNSAT, nullptr);
   }
   else if (term.satisfied(env)) {
-    return SatResultType::SAT;
+    return SatResult(SatResultType::SAT, &env);
   } else {
     cnf::variable_id i = next_env.first_unbound();
     cnf::VariableState next_state = cnf::VariableEnvironment::RandomState();
     LOG(LogLevel::VERBOSE, "Choosing variable: " + std::to_string(i) 
       + " assigning state " + std::to_string(next_state));
     next_env.assign(i, next_state);
-    if (DPLLRecursive(term, run, next_env) == SatResultType::SAT) {
-      return SatResultType::SAT;
+    auto result = DPLLRecursive(term, run, next_env);
+    if (result.first == SatResultType::SAT) {
+      return result;
     } else {
       next_env.assign(i, cnf::VariableEnvironment::Not(next_state));
       return DPLLRecursive(term, run, next_env);
@@ -57,7 +58,7 @@ SatResultType DPLLRecursive(const cnf::And& term, std::atomic_bool& run, cnf::Ve
   }
 }
 
-SatResultType DPLLSatStrategy::DetermineCnfSatInternal(
+SatResult DPLLSatStrategy::DetermineCnfSatInternal(
     const cnf::And& term, std::atomic_bool& run) const 
 {
   LOG(LogLevel::VERBOSE, "DPLL Invoked On: " + term.to_string());
@@ -65,7 +66,7 @@ SatResultType DPLLSatStrategy::DetermineCnfSatInternal(
   return DPLLRecursive(term, run, env);
 }
 
-SatResultType DPLLSatStrategy::DetermineCnfSat(const cnf::And& term) const 
+SatResult DPLLSatStrategy::DetermineCnfSat(const cnf::And& term) const 
 {
   std::atomic_bool run;
   run = true;

@@ -12,9 +12,11 @@ enum SatResultType {
   UNKNOWN
 };
 
+using SatResult = std::pair<SatResultType, cnf::VariableEnvironment*>;
+
 class SatStrategy {
   public:
-  virtual SatResultType DetermineCnfSat(const cnf::And& term) const = 0;
+  virtual SatResult DetermineCnfSat(const cnf::And& term) const = 0;
   virtual ~SatStrategy() {};
 };
 

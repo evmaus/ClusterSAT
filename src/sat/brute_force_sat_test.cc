@@ -30,7 +30,7 @@ TEST(BruteForceSatTest, SatInstance){
 
   cnf::And expr(conj);
   BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
 TEST(BruteForceSatTest, UnSatInstance){
@@ -48,7 +48,7 @@ cnf::Variable v1(1);
 
   cnf::And expr(conj);
   BruteForceSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNSAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNSAT);
 }
 
 TEST(BruteForceSatTest, Timeout) {
@@ -63,7 +63,7 @@ TEST(BruteForceSatTest, Timeout) {
   }
   cnf::And expr(terms);
   BruteForceSatStrategy strategy(1);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNKNOWN);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNKNOWN);
 }
 
 } // namespace

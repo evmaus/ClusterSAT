@@ -39,7 +39,7 @@ TEST(CDCLSatTest, SatInstance){
 
   cnf::And expr(conj);
   CDCLSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
 TEST(CDCLSatTest, UnSatInstance){
@@ -57,7 +57,7 @@ TEST(CDCLSatTest, UnSatInstance){
 
   cnf::And expr(conj);
   CDCLSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNSAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNSAT);
 }
 
 TEST(CDCLSatTest, Stress) {
@@ -72,7 +72,7 @@ TEST(CDCLSatTest, Stress) {
   }
   cnf::And expr(terms);
   CDCLSatStrategy strategy(1000000000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
 TEST(CDCLSatTest, Timeout) {
@@ -87,7 +87,7 @@ TEST(CDCLSatTest, Timeout) {
   }
   cnf::And expr(terms);
   CDCLSatStrategy strategy(1);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNKNOWN);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNKNOWN);
 }
 
 TEST(CDCLSatTest, Files) {
@@ -98,7 +98,7 @@ TEST(CDCLSatTest, Files) {
   {  
     std::ifstream file(sat_testdata[i]);
     auto expr = parser.ParseCnf(file);  
-    EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+    EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
   }
 }
 

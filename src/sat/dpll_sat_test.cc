@@ -38,7 +38,7 @@ TEST(DPLLSatTest, SatInstance){
 
   cnf::And expr(conj);
   DPLLSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
 TEST(DPLLSatTest, UnSatInstance){
@@ -56,7 +56,7 @@ cnf::Variable v1(1);
 
   cnf::And expr(conj);
   DPLLSatStrategy strategy(100000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNSAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNSAT);
 }
 
 TEST(DPLLSatTest, Stress) {
@@ -71,7 +71,7 @@ TEST(DPLLSatTest, Stress) {
   }
   cnf::And expr(terms);
   DPLLSatStrategy strategy(1000000000);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
 TEST(DPLLSatTest, Timeout) {
@@ -86,7 +86,7 @@ TEST(DPLLSatTest, Timeout) {
   }
   cnf::And expr(terms);
   DPLLSatStrategy strategy(1);
-  EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::UNKNOWN);
+  EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNKNOWN);
 }
 
 
@@ -97,7 +97,7 @@ TEST(DPLLSatTest, Files) {
   {  
     std::ifstream file(sat_testdata[i]);
     auto expr = parser.ParseCnf(file);  
-    EXPECT_EQ(strategy.DetermineCnfSat(expr), SatResultType::SAT);
+    EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
   }
 }
 
