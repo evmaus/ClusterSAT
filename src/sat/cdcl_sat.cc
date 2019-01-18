@@ -10,16 +10,25 @@
 #include "src/cnf/cnf_environment_stack.h"
 #include "src/cnf/cnf_variable_environment.h"
 #include "src/sat/cdcl_trace.h"
+#include "src/sat/cdcl_stats.h"
+
 namespace tribblesat {
 
 CDCLSatStrategy::CDCLSatStrategy(uint64_t timeout) 
 : timeout_ms_(timeout)
 { }
 
-void UnitPropagate(const cnf::And& term, cnf::VariableEnvironment& env, int decision_level, CDCLTrace& trace) {
+void UnitPropagate(const cnf::And& term, 
+  cnf::VariableEnvironment& env, 
+  int decision_level, 
+  CDCLTrace& trace,
+  CDCLStats& stats) 
+{
+  stats.StartBCP();
   while(term.has_unit(env))
   {
     auto unit_terms = term.unit_terms(env);
+    stats.BCPClauses(unit_terms.size());
     std::vector<std::pair<cnf::Variable, cnf::VariableState>> assignments;
     LOG(LogLevel::VERBOSE, "Identified terms count " + std::to_string(unit_terms.size()));
     for (auto unit : unit_terms) {
@@ -35,22 +44,29 @@ void UnitPropagate(const cnf::And& term, cnf::VariableEnvironment& env, int deci
       LOG(LogLevel::VERBOSE, std::to_string(decision_level) + "Assigned " + assign.first.to_string() + " -> " + cnf::VariableEnvironment::StateToString(assign.second));
     }
   }
+  stats.EndBCP();
 }
 
 int AnalyzeConflict(int decision_level, const cnf::And& term, cnf::VariableEnvironment& env, 
   cnf::And& learned_clauses,
-  CDCLTrace& trace) 
+  CDCLTrace& trace,
+  CDCLStats& stats) 
 {
+  stats.StartConflictLearning();
   std::pair<int, cnf::Or> result = trace.LearnClauses(decision_level, term, env);
+  stats.LearnConflictSize(result.second.count());
   learned_clauses.add_term(result.second);
+  stats.EndConflictLearning();
   return result.first;
 }
 
 void PickBranchVariableAndAssign(uint32_t& current_decision_level, const cnf::And& term,
   cnf::VariableEnvironmentStack& env_stack, 
-  CDCLTrace& trace
+  CDCLTrace& trace,
+  CDCLStats& stats
 )
 {
+  stats.StartVariablePick();
   if (!term.has_empty(env_stack)) {
     // Pick branch variable.
     cnf::variable_id next_var = env_stack.first_unbound();
@@ -65,12 +81,15 @@ void PickBranchVariableAndAssign(uint32_t& current_decision_level, const cnf::An
     trace.AddAssignmentChoice(current_decision_level, next_var, state);
     env_stack.assign(next_var, state);
   }
+  stats.EndVariablePick();
 }
 
 
 SatResult CDCLSatStrategy::DetermineCnfSatInternal(
     const cnf::And& term, std::atomic_bool& run) const 
 {
+  CDCLStats stats;
+  stats.StartCDCL();
   LOG(LogLevel::VERBOSE, "Starting CDCL on " + term.to_string());
 
   std::vector<cnf::Or> terms;
@@ -78,32 +97,38 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
   CDCLTrace trace;
   // Create variable environment.
   cnf::VectorVariableEnvironment env(term.variable_count());
-  UnitPropagate(term, env, 0, trace);
+  UnitPropagate(term, env, 0, trace, stats);
   cnf::VariableEnvironmentStack env_stack(env);
   uint32_t current_decision_level = 0;
   
   while (run){
     if (term.satisfied(env_stack)) {
       LOG(LogLevel::VERBOSE, "Finished, returning SAT");
+      stats.EndCDCL();
+      LOG(LogLevel::INFORMATIONAL, stats.to_string());
       return SatResult(SatResultType::SAT, &env_stack);
     } 
     else 
     {
       // Try unit propagation
-      UnitPropagate(term, env_stack, current_decision_level, trace);
-      UnitPropagate(learned_clauses, env_stack, current_decision_level, trace);
-      PickBranchVariableAndAssign(current_decision_level, term, env_stack, trace);
-      UnitPropagate(term, env_stack, current_decision_level, trace);
-      UnitPropagate(learned_clauses, env_stack, current_decision_level, trace);
+      UnitPropagate(term, env_stack, current_decision_level, trace, stats);
+      UnitPropagate(learned_clauses, env_stack, current_decision_level, trace, stats);
+      PickBranchVariableAndAssign(current_decision_level, term, env_stack, trace, stats);
+      UnitPropagate(term, env_stack, current_decision_level, trace, stats);
+      UnitPropagate(learned_clauses, env_stack, current_decision_level, trace, stats);
 
       if (term.has_empty(env_stack)) {
+        stats.Conflict();
         LOG(LogLevel::VERBOSE, "Empty term: " + term.next_empty(env_stack).to_string());
-        int conflict_level = AnalyzeConflict(current_decision_level, term, env_stack, learned_clauses, trace);
+        int conflict_level = AnalyzeConflict(current_decision_level, term, env_stack, learned_clauses, trace, stats);
         LOG(LogLevel::VERBOSE, "Backtracking: " + std::to_string(conflict_level));
         LOG(LogLevel::VERBOSE, "Learned Clauses: " + learned_clauses.to_string());
         
         if (conflict_level < 0) {
           LOG(LogLevel::VERBOSE, "Finished, returning UNSAT");
+
+          stats.EndCDCL();
+          LOG(LogLevel::INFORMATIONAL, stats.to_string());
           return SatResult(SatResultType::UNSAT, nullptr);
         }
         while (current_decision_level > conflict_level) {
@@ -112,7 +137,6 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
         }
         trace.Backtrack(current_decision_level);
         LOG(LogLevel::VERBOSE, "New environment after backtracking: " + env_stack.to_string());
-
       }
     }
   }
@@ -147,6 +171,5 @@ SatResult CDCLSatStrategy::DetermineCnfSat(const cnf::And& term) const
     return future.get();
   }
 }
-  
 
 } // namespace tribblesat

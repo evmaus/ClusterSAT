@@ -24,6 +24,13 @@ class CDCLStats {
   void BCPClauses(int clauses);
   void EndBCP();
 
+  void StartVariablePick();
+  void EndVariablePick();
+
+  void StartConflictLearning();
+  void LearnConflictSize(int clause_size);
+  void EndConflictLearning();
+
   void Conflict();
   std::string to_string();
 
@@ -32,6 +39,8 @@ class CDCLStats {
   Timestamp cdcl_start_;
   Timestamp cdcl_end_;
   Timestamp cdcl_current_bcp_;
+  Timestamp cdcl_current_conflict_;
+  Timestamp cdcl_current_variable_pick_;
   long cdcl_current_bcp_clauses_;
 };
 

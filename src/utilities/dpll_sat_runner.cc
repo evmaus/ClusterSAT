@@ -24,7 +24,7 @@ int main(int argc, char** argv) {
 
   auto sat = strategy.DetermineCnfSat(function);
 
-  switch(sat) {
+  switch(sat.first) {
     case tribblesat::SatResultType::SAT:
       std::cout << "SAT" << std::endl;
       break;

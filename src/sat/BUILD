@@ -19,6 +19,13 @@ cc_test(
 )
 
 cc_library(
+    name = "cdcl_stats",
+    srcs = [ "cdcl_stats.cc" ],
+    hdrs = [ "cdcl_stats.h" ],
+    visibility = [ "//visibility:public" ],
+)
+
+cc_library(
     name = "sat_strategy",
     srcs = [ "sat_strategy.cc" ],
     hdrs = [ "sat_strategy.h" ],
@@ -82,6 +89,7 @@ cc_library(
     deps = [
         "sat_strategy",
         "cdcl_trace",
+        "cdcl_stats",
         "//src/cnf:cnf_vector_environment",
         "//src/cnf:cnf_environment_stack",
     ],
