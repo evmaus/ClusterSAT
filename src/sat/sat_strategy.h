@@ -4,7 +4,7 @@
 #include "src/cnf/cnf_and_op.h"
 #include "src/cnf/cnf_or_op.h"
 #include "src/cnf/cnf_variable.h"
-#include "src/cnf/cnf_variable_environment.h"
+#include "src/variable_environment/variable_environment.h"
 namespace tribblesat {
 enum SatResultType {
   SAT,

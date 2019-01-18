@@ -7,8 +7,8 @@
 #include <iostream>
 
 #include "src/common/log.h"
-#include "src/cnf/cnf_environment_stack.h"
-#include "src/cnf/cnf_variable_environment.h"
+#include "src/variable_environment/environment_stack.h"
+#include "src/variable_environment/variable_environment.h"
 #include "src/sat/cdcl_trace.h"
 #include "src/sat/cdcl_stats.h"
 
@@ -130,11 +130,11 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
           LOG(LogLevel::INFORMATIONAL, stats.to_string());
           return SatResult(SatResultType::UNSAT, nullptr);
         }
-        while (current_decision_level > conflict_level) {
-          env_stack.pop();
-          current_decision_level--;
-        }
+        // Backtrack
+        current_decision_level = conflict_level;
+        env_stack.Backtrack(current_decision_level);
         trace.Backtrack(current_decision_level);
+        // End backtrack
         LOG(LogLevel::VERBOSE, "New environment after backtracking: " + env_stack.to_string());
       }
     }

@@ -1,10 +1,9 @@
-#include "src/cnf/cnf_environment_stack.h"
+#include "src/variable_environment/environment_stack.h"
 
 #include <stack>
 #include <string>
 #include <sstream>
 
-#include "src/cnf/cnf_vector_environment.h"
 #include "src/common/log.h"
 
 namespace tribblesat {

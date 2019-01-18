@@ -5,8 +5,8 @@
 #include <string>
 #include <map>
 
-#include "src/cnf/cnf_variable_environment.h"
-#include "src/cnf/cnf_vector_environment.h"
+#include "src/variable_environment/variable_environment.h"
+#include "src/variable_environment/vector_environment.h"
 
 namespace tribblesat {
 namespace cnf {

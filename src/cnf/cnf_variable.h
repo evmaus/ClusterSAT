@@ -1,7 +1,7 @@
 #ifndef SRC_CNF_CNF_VARIABLE_H
 #define SRC_CNF_CNF_VARIABLE_H
 
-#include "src/cnf/cnf_variable_environment.h"
+#include "src/variable_environment/variable_environment.h"
 
 namespace tribblesat {
 namespace cnf {

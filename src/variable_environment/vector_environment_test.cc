@@ -1,4 +1,4 @@
-#include "src/cnf/cnf_vector_environment.h"
+#include "src/variable_environment/vector_environment.h"
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {

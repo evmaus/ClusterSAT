@@ -13,7 +13,7 @@ cc_library(
         "//src/common:log",
         "//src/cnf:cnf_and",
         "//src/cnf:cnf_or",
-        "//src/cnf:cnf_variable_environment",
+        "//src/variable_environment:variable_environment",
         "//src/cnf:cnf_variable",
     ],
     visibility = [ "//visibility:public" ],
@@ -24,7 +24,7 @@ cc_library(
     srcs = [ "cdcl_trace.cc" ],
     hdrs = [ "cdcl_trace.h" ],
     deps = [ 
-        "//src/cnf:cnf_variable_environment",
+        "//src/variable_environment:variable_environment",
         "//src/cnf:cnf_or",
         "//src/cnf:cnf_and",
     ],
@@ -47,8 +47,7 @@ cc_library(
         "sat_strategy",
         "cdcl_trace",
         "cdcl_stats",
-        "//src/cnf:cnf_vector_environment",
-        "//src/cnf:cnf_environment_stack",
+        "//src/variable_environment:environment_stack",
     ],
     visibility = [ "//visibility:public" ],
 )

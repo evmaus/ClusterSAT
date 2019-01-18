@@ -1,5 +1,5 @@
 #include "src/cnf/cnf_or_op.h"
-#include "src/cnf/cnf_vector_environment.h"
+#include "src/variable_environment/vector_environment.h"
 
 #include <vector>
 #include "googletest/include/gtest/gtest.h"

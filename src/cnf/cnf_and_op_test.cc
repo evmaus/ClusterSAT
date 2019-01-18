@@ -1,7 +1,7 @@
 #include "src/cnf/cnf_and_op.h"
 
 #include "googletest/include/gtest/gtest.h"
-#include "src/cnf/cnf_vector_environment.h"
+#include "src/variable_environment/vector_environment.h"
 
 namespace tribblesat {
 namespace cnf {

@@ -7,7 +7,6 @@
 #include <fstream>
 #include <glob.h>
 
-#include "src/sat/brute_force_sat.h"
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {

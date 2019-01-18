@@ -1,5 +1,5 @@
 
-#include "src/cnf/cnf_vector_environment.h"
+#include "src/variable_environment/vector_environment.h"
 #include <sstream>
 
 namespace tribblesat {

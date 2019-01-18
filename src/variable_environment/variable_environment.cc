@@ -1,5 +1,5 @@
 
-#include "src/cnf/cnf_variable_environment.h"
+#include "src/variable_environment/variable_environment.h"
 
 #include <cstdlib>
 #include <string>

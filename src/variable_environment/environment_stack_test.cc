@@ -1,5 +1,5 @@
-#include "src/cnf/cnf_variable_environment.h"
-#include "src/cnf/cnf_environment_stack.h"
+#include "src/variable_environment/variable_environment.h"
+#include "src/variable_environment/environment_stack.h"
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
