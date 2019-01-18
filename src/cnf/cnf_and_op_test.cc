@@ -97,7 +97,7 @@ TEST(AndOpTest, NextUnit) {
   std::vector<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
-  EXPECT_EQ(and_term.next_unit(env), 1);
+  EXPECT_EQ(and_term.next_unit(env).first_unassigned(env).id(), 1);
 }
 
 } // namespace

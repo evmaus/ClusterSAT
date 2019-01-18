@@ -26,7 +26,7 @@ VariableState VectorVariableEnvironment::lookup(variable_id variable) const {
 }
 
 variable_id VectorVariableEnvironment::first_unbound() const {
-  for (uint32_t i = 1; i <= count_; i++) {
+  for (variable_id i = 1; i <= count_; i++) {
     if (lookup(i) == VariableState::SUNBOUND) {
       return i;
     }
@@ -37,7 +37,7 @@ variable_id VectorVariableEnvironment::first_unbound() const {
 std::string VectorVariableEnvironment::to_string() const {
   std::ostringstream stream;
   stream << "COUNT: " << count_ << " ";
-  for (uint32_t i = 1; i <= count_; i++) {
+  for (variable_id i = 1; i <= count_; i++) {
     stream << "{ " << i << " ->" << 
       cnf::VariableEnvironment::StateToString(lookup(i)) << " },";
   }

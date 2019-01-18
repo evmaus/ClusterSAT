@@ -124,7 +124,8 @@ std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const cnf::A
 void CDCLTrace::Backtrack(int backtrack_level) {
   if (backtrack_level == 0)
   {
-    trace_.empty();
+    trace_.clear();
+    LOG(LogLevel::VERBOSE, "Backtrack to zero left " + std::to_string(trace_.size()) + " elements");
     return;
   }
 

@@ -96,9 +96,8 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
   cnf::And learned_clauses(terms);
   CDCLTrace trace;
   // Create variable environment.
-  cnf::VectorVariableEnvironment env(term.variable_count());
-  UnitPropagate(term, env, 0, trace, stats);
-  cnf::VariableEnvironmentStack env_stack(env);
+  cnf::VariableEnvironmentStack env_stack(term.variable_count());
+  UnitPropagate(term, env_stack, 0, trace, stats);
   uint32_t current_decision_level = 0;
   
   while (run){

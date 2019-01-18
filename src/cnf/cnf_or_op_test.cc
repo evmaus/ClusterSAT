@@ -71,7 +71,7 @@ TEST(CnfOrOp, FirstUnassigned_AllAssigned){
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  EXPECT_EQ(or_term.first_unassigned(env), 0);
+  EXPECT_EQ(or_term.first_unassigned(env).id(), 0);
 }
 
 TEST(CnfOrOp, FirstUnassigned){
@@ -84,7 +84,7 @@ TEST(CnfOrOp, FirstUnassigned){
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  EXPECT_EQ(or_term.first_unassigned(env), 5);
+  EXPECT_EQ(or_term.first_unassigned(env).id(), 5);
 }
 
 } // namespace
