@@ -5,7 +5,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <filesystem>
+#include <glob.h>
+
 #include "src/sat/brute_force_sat.h"
 #include "googletest/include/gtest/gtest.h"
 
@@ -14,19 +15,18 @@ namespace test {
 namespace 
 {
 
-constexpr char sat_testdata_directory[] = "src/parsers/testdata/";
+constexpr char sat_testdata_directory[] = "src/parsers/testdata/sat/*.cnf";
 
 // Tests to make sure we can parse test files without crashing.
 TEST(DiMacsParserTest, ParsesSimpleExampleCorrectly) {
-  
-
-  for(int i = 0; i < kTest_file_count; i++) {
-    std::ifstream file(sat_testdata[i]);
+  glob_t glob_result;
+  glob(sat_testdata_directory,GLOB_TILDE,NULL,&glob_result);
+  for(unsigned int i=0; i<glob_result.gl_pathc; ++i){
+    std::ifstream file(glob_result.gl_pathv[i]);
     DiMacsParser parser;
     auto parsed = parser.ParseCnf(file);
   }
 }
-
 
 } // namespace
 } // namespace test

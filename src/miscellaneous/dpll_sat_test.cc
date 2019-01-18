@@ -12,8 +12,8 @@ namespace {
 
 constexpr int kTest_file_count = 2;
 std::string sat_testdata[] = {
-  "src/sat/testdata/dimacs_parser_test_file.cnf", 
-  "src/sat/testdata/sample.cnf"
+  "src/sat/testdata/sat/dimacs_parser_test_file.cnf", 
+  "src/sat/testdata/sat/sample.cnf"
 };
 
 TEST(DPLLSatTest, SatInstance){

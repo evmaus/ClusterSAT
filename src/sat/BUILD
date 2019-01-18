@@ -1,24 +1,4 @@
 cc_library(
-    name = "brute_sat",
-    srcs = [ "brute_force_sat.cc" ],
-    hdrs = [ "brute_force_sat.h" ],
-    deps = [
-        "sat_strategy",
-        "//src/cnf:cnf_vector_environment",
-    ],
-    visibility = [ "//visibility:public" ],
-)
-
-cc_test(
-    name = "brute_sat_test",
-    srcs = [ "brute_force_sat_test.cc" ],
-    deps = [
-        "brute_sat",
-        "@googletest//:gtest_main",
-    ],
-)
-
-cc_library(
     name = "cdcl_stats",
     srcs = [ "cdcl_stats.cc" ],
     hdrs = [ "cdcl_stats.h" ],
@@ -37,29 +17,6 @@ cc_library(
         "//src/cnf:cnf_variable",
     ],
     visibility = [ "//visibility:public" ],
-)
-
-
-cc_library(
-    name = "dpll_sat",
-    srcs = [ "dpll_sat.cc" ],
-    hdrs = [ "dpll_sat.h" ],
-    deps = [
-        "sat_strategy",
-        "//src/cnf:cnf_vector_environment",
-    ],
-    visibility = [ "//visibility:public" ],
-)
-
-cc_test(
-    name = "dpll_sat_test",
-    srcs = [ "dpll_sat_test.cc" ],
-    deps = [
-        "dpll_sat",
-        "//src/parsers:dimacs_parser",
-        "@googletest//:gtest_main",
-    ],
-    data = glob(["testdata/*.cnf"]),
 )
 
 cc_library(

@@ -2,6 +2,7 @@
 
 #include <string>
 #include <fstream>
+#include <glob.h>
 
 #include "googletest/include/gtest/gtest.h"
 #include "src/parsers/dimacs_parser.h"
@@ -12,10 +13,8 @@ namespace test {
 namespace {
 
 constexpr int kTest_file_count = 2;
-std::string sat_testdata[] = {
-  "src/sat/testdata/dimacs_parser_test_file.cnf", 
-  "src/sat/testdata/sample.cnf"
-};
+constexpr char sat_testdata_directory[] = "src/sat/testdata/sat/*.cnf";
+
 
 TEST(CDCLSatTest, SatInstance){
   cnf::Variable v1(1);
@@ -94,11 +93,13 @@ TEST(CDCLSatTest, Files) {
   SET_LOG_LEVEL(LogLevel::VERBOSE);
   CDCLSatStrategy strategy(1000000000);
   DiMacsParser parser;
-  for (int i = 0; i < kTest_file_count; i++)
-  {  
-    std::ifstream file(sat_testdata[i]);
-    auto expr = parser.ParseCnf(file);  
-    EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
+  glob_t glob_result;
+  glob(sat_testdata_directory,GLOB_TILDE,NULL,&glob_result);
+  for(unsigned int i=0; i<glob_result.gl_pathc; ++i){
+    std::ifstream file(glob_result.gl_pathv[i]);
+    DiMacsParser parser;
+    auto parsed = parser.ParseCnf(file);
+    EXPECT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::SAT);
   }
 }
 
