@@ -3,6 +3,7 @@
 
 namespace tribblesat
 {
+namespace binary {
 
 UnaryOp::UnaryOp(UnaryType type, const Function& inner) : 
   Function(NodeType::OP),
@@ -46,4 +47,5 @@ std::string UnaryOp::to_string() const {
     }
 }
 
+} // namespace binary
 } //  tribblesat

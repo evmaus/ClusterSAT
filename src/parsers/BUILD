@@ -21,7 +21,8 @@ cc_test(
         "//src/cnf:cnf_or",
         "//src/variable_environment:variable_environment",
         "//src/cnf:cnf_variable",
+        "//src/common:utilities",
         "@googletest//:gtest_main",
     ],
-    data = glob(["testdata/*.cnf"]),
+    data = glob(["testdata/**/*.cnf"]),
 )

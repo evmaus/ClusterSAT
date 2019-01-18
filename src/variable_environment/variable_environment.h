@@ -4,14 +4,15 @@
 #include <vector>
 
 namespace tribblesat {
-namespace cnf {
-typedef uint32_t variable_id;
+typedef int64_t variable_id;
 
 enum VariableState {
   STRUE,
   SFALSE,
   SUNBOUND
 };
+
+using VariableRecommendation = std::pair<variable_id, VariableState>;
 
 class VariableEnvironment {
   public:
@@ -20,7 +21,7 @@ class VariableEnvironment {
   virtual void assign(variable_id variable, VariableState value) = 0;
   virtual VariableState lookup(variable_id variable) const = 0;
   virtual variable_id count() const = 0;
-  virtual variable_id first_unbound() const = 0;
+  virtual VariableRecommendation next_unbound() const = 0;
   virtual std::string to_string() const = 0;
 
   static VariableState Not(VariableState state);
@@ -28,6 +29,5 @@ class VariableEnvironment {
   static std::string StateToString(VariableState state);
 };
 
-} // namespace cnf
 } // namespace tribblesat
 #endif // SRC_CNF_CNF_VARIABLE_ENVIRONMENT_H

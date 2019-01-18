@@ -6,8 +6,8 @@
 #include <string>
 #include <set>
 
-namespace tribblesat 
-{
+namespace tribblesat {
+namespace binary {
 enum NodeType {
   OP,
   ATOM,
@@ -26,5 +26,6 @@ class Function {
   Function(NodeType type) : node_type_(type) {}
   NodeType node_type_;
 };
+} // namespace binary
 } // namespace tribblesat
 #endif // SRC_FUNCTION_H

@@ -11,14 +11,12 @@ namespace tribblesat {
 using Timestamp =
   std::chrono::high_resolution_clock::time_point;
 
-class CDCLStats {
+class Stats {
   public:
-  CDCLStats() {};
+  Stats() {};
 
-  // Record the start time for CDCL
-  void StartCDCL();
-  // Record the end time for CDCL
-  void EndCDCL();
+  void StartSAT();
+  void EndSAT();
 
   void StartBCP();
   void BCPClauses(int clauses);

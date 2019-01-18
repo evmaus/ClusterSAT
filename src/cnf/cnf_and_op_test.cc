@@ -1,5 +1,6 @@
 #include "src/cnf/cnf_and_op.h"
 
+#include "src/variable_environment/linear_variable_selector.h"
 #include "googletest/include/gtest/gtest.h"
 #include "src/variable_environment/vector_environment.h"
 
@@ -10,7 +11,7 @@ namespace {
 TEST(AndOpTest, SatisfiedTrue) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::STRUE);
   std::vector<Variable> vars;
@@ -26,7 +27,7 @@ TEST(AndOpTest, SatisfiedTrue) {
 TEST(AndOpTest, SatisfiedFalse) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::SFALSE);
   std::vector<Variable> vars;
@@ -55,7 +56,7 @@ TEST(AndOpTest, VariableCount_ReturnsExpected) {
 TEST(AndOpTest, HasUnit_True) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;
@@ -71,7 +72,7 @@ TEST(AndOpTest, HasUnit_True) {
 TEST(AndOpTest, HasUnit_False) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SUNBOUND);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;
@@ -87,7 +88,7 @@ TEST(AndOpTest, HasUnit_False) {
 TEST(AndOpTest, NextUnit) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;

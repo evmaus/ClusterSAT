@@ -5,6 +5,7 @@
 
 namespace tribblesat 
 {
+namespace binary {
 enum BinaryType {
     AND,
     OR,
@@ -32,5 +33,6 @@ class BinaryOp : public Function {
   const Function& lhs_;
   const Function& rhs_;
 };
+} // namespace binary
 } // namespace tribblesat
 #endif // SRC_BINARY_OP_H

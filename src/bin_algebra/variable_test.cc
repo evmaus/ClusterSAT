@@ -7,6 +7,7 @@
 
 
 namespace tribblesat {
+namespace binary {
 namespace test {
 namespace {
 
@@ -38,4 +39,5 @@ TEST(VariableTest, VariablesReturnsSelf) {
 
 }
 } // namespace test
+} // namespace binary
 } // namespace tribblesat

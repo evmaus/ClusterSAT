@@ -1,12 +1,14 @@
 #include "src/variable_environment/vector_environment.h"
+#include "src/variable_environment/linear_variable_selector.h"
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
-namespace cnf {
+namespace test {
 namespace {
 
 TEST(CnfVariableEnvironment, CnfVariableEnvironmentRoundTripTest) {
-  VectorVariableEnvironment env(3);
+  variable_id count = 3;
+  VectorVariableEnvironment env(count, LinearVariableSelector(count));
 
   env.assign(0, VariableState::STRUE);
   env.assign(1, VariableState::SFALSE);
@@ -15,6 +17,7 @@ TEST(CnfVariableEnvironment, CnfVariableEnvironmentRoundTripTest) {
   EXPECT_EQ(env.lookup(0), VariableState::STRUE);
   EXPECT_EQ(env.lookup(1), VariableState::SFALSE);
   EXPECT_EQ(env.lookup(2), VariableState::SUNBOUND);
+  EXPECT_EQ(env.lookup(3), VariableState::SUNBOUND);
 }
 
 

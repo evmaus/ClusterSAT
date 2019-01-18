@@ -1,11 +1,4 @@
 cc_library(
-    name = "cdcl_stats",
-    srcs = [ "cdcl_stats.cc" ],
-    hdrs = [ "cdcl_stats.h" ],
-    visibility = [ "//visibility:public" ],
-)
-
-cc_library(
     name = "sat_strategy",
     srcs = [ "sat_strategy.cc" ],
     hdrs = [ "sat_strategy.h" ],
@@ -23,7 +16,8 @@ cc_library(
     name = "cdcl_trace",
     srcs = [ "cdcl_trace.cc" ],
     hdrs = [ "cdcl_trace.h" ],
-    deps = [ 
+    deps = [
+        "clause_database",
         "//src/variable_environment:variable_environment",
         "//src/cnf:cnf_or",
         "//src/cnf:cnf_and",
@@ -46,7 +40,10 @@ cc_library(
     deps = [
         "sat_strategy",
         "cdcl_trace",
-        "cdcl_stats",
+        "cdcl_configuration",
+        "clause_database",
+        "//src/common:stats",
+        "//src/variable_environment:linear_variable_selector",
         "//src/variable_environment:environment_stack",
     ],
     visibility = [ "//visibility:public" ],
@@ -58,7 +55,31 @@ cc_test(
     deps = [
         "cdcl_sat",
         "//src/parsers:dimacs_parser",
+        "//src/common:utilities",
         "@googletest//:gtest_main",
     ],
-    data = glob(["testdata/*.cnf"]),
+    data = glob(["testdata/**/*.cnf"]),
+)
+
+cc_library(
+    name = "cdcl_configuration",
+    srcs = [ "cdcl_configuration.cc" ],
+    hdrs = [ "cdcl_configuration.h" ],
+    deps = [
+        "//src/cnf:cnf_and",
+        "//src/variable_environment:variable_selector",
+        "//src/variable_environment:linear_variable_selector",
+        "//src/variable_environment:vsids_variable_selector",
+        "@com_google_absl//absl/memory",
+    ],
+    visibility = [ "//visibility:public" ],
+)
+
+cc_library(
+    name = "clause_database",
+    srcs = [ "clause_database.cc" ],
+    hdrs = [ "clause_database.h" ],
+    deps = [
+        "//src/cnf:cnf_and",
+    ]
 )

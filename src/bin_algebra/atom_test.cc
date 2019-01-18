@@ -3,6 +3,7 @@
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
+namespace binary {
 namespace test {
 namespace {
 
@@ -24,4 +25,5 @@ TEST(AtomTest, HasNoUnboundVariables) {
 
 } // namespace
 } // namespace test
+} // namespace binary
 } // namespace tribblesat

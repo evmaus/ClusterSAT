@@ -25,8 +25,9 @@ int main(int argc, char** argv) {
   tribblesat::DiMacsParser parser;
   auto function = parser.ParseCnf(file);
 
+  tribblesat::CDCLConfiguration config(30000000, tribblesat::VariableSelectorType::VSIDS);
   // timeout of 6 minutes.
-  tribblesat::CDCLSatStrategy strategy(300000000);
+  tribblesat::CDCLSatStrategy strategy(config);
 
   auto sat = strategy.DetermineCnfSat(function);
 

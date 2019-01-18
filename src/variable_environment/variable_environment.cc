@@ -5,7 +5,6 @@
 #include <string>
 
 namespace tribblesat {
-namespace cnf {
 
 VariableState VariableEnvironment::Not(VariableState state) {
   switch(state)
@@ -21,12 +20,11 @@ VariableState VariableEnvironment::Not(VariableState state) {
 
 VariableState VariableEnvironment::RandomState() {
   int random = rand();
-  /*if (random % 2 == 0) {
+  if (random % 2 == 0) {
     return VariableState::STRUE;
   } else {
     return VariableState::SFALSE;
-  }*/
-  return VariableState::STRUE;
+  }
 }
 
 std::string VariableEnvironment::StateToString(VariableState state) {
@@ -41,5 +39,4 @@ std::string VariableEnvironment::StateToString(VariableState state) {
   }
 }
 
-} // namespace cnf
 } // namespace tribblesat

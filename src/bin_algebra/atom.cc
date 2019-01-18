@@ -1,6 +1,7 @@
 #include "src/bin_algebra/atom.h"
 
 namespace tribblesat {
+namespace binary {
 
 Atom Atom::True()
 {
@@ -29,4 +30,5 @@ std::string Atom::to_string() const {
   }
 }
 
+} // namespace binary
 } // namespace tribblesat

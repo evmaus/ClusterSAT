@@ -1,15 +1,15 @@
-#include "src/sat/cdcl_stats.h"
+#include "src/common/stats.h"
 
 #include <sstream>
 
 namespace tribblesat {
 
-void CDCLStats::StartCDCL() 
+void Stats::StartSAT() 
 {
   cdcl_start_ = std::chrono::high_resolution_clock::now(); 
 }
 
-void CDCLStats::EndCDCL() 
+void Stats::EndSAT() 
 { 
   cdcl_end_ = std::chrono::high_resolution_clock::now();
   counters_["total_time"] = std::chrono::duration_cast<
@@ -17,29 +17,29 @@ void CDCLStats::EndCDCL()
 }
 
 
-void CDCLStats::StartVariablePick() 
+void Stats::StartVariablePick() 
 {
   cdcl_current_variable_pick_ = std::chrono::high_resolution_clock::now(); 
 }
 
-void CDCLStats::EndVariablePick() 
+void Stats::EndVariablePick() 
 {
   Timestamp end =  std::chrono::high_resolution_clock::now();
   counters_["total_variable_pick"] = std::chrono::duration_cast<
         std::chrono::duration<double>>(end - cdcl_current_variable_pick_).count();
 }
 
-void CDCLStats::StartBCP() 
+void Stats::StartBCP() 
 { 
   cdcl_current_bcp_ = std::chrono::high_resolution_clock::now(); 
   cdcl_current_bcp_clauses_ = 0;
 }
 
-void CDCLStats::BCPClauses(int clauses) {
+void Stats::BCPClauses(int clauses) {
   cdcl_current_bcp_clauses_ += clauses;
 }
 
-void CDCLStats::EndBCP() 
+void Stats::EndBCP() 
 { 
   Timestamp end =  std::chrono::high_resolution_clock::now();
   auto timespan = std::chrono::duration_cast<
@@ -48,13 +48,13 @@ void CDCLStats::EndBCP()
 }
 
 
-void CDCLStats::StartConflictLearning() {
+void Stats::StartConflictLearning() {
   cdcl_current_conflict_ = std::chrono::high_resolution_clock::now();
 }
-void CDCLStats::LearnConflictSize(int clause_size) {
+void Stats::LearnConflictSize(int clause_size) {
   counters_["bcp_conflict_total_size"] += clause_size;
 }
-void CDCLStats::EndConflictLearning() {
+void Stats::EndConflictLearning() {
 
   Timestamp end =  std::chrono::high_resolution_clock::now();
   auto timespan = std::chrono::duration_cast<
@@ -62,12 +62,12 @@ void CDCLStats::EndConflictLearning() {
   counters_["conflict_time"] += timespan.count(); 
 }
 
-void CDCLStats::Conflict()
+void Stats::Conflict()
 { 
   counters_["conflicts"]++; 
 }
 
-std::string CDCLStats::to_string() {
+std::string Stats::to_string() {
   std::ostringstream stream;
   stream << "Stats: ";
   for (auto stat : counters_ ) {

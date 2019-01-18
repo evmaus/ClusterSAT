@@ -3,6 +3,7 @@
 #include <string>
 
 namespace tribblesat {
+namespace binary {
 
 VariableEnvironment VariableEnvironment::Empty() 
 { 
@@ -20,4 +21,5 @@ bool VariableEnvironment::Lookup(std::string variable_name) {
 void VariableEnvironment::Assign(std::string variable_name, bool value) {
     variables_[variable_name] = value;
 }
+} // namespace binary
 } // namespace tribblesat

@@ -10,7 +10,11 @@ cc_library(
   name = "vector_environment",
   srcs = [ "vector_environment.cc" ],
   hdrs = [ "vector_environment.h" ],
-  deps = [ "variable_environment" ],
+  deps = [ 
+    "variable_environment",
+    "variable_selector",
+    "linear_variable_selector",
+  ],
   visibility = [ "//visibility:public" ],
 )
 
@@ -19,6 +23,7 @@ cc_test(
   srcs = [ "vector_environment_test.cc" ],
   deps = [
     "vector_environment",
+    "linear_variable_selector",
     "@googletest//:gtest_main",
   ]
 )
@@ -28,8 +33,8 @@ cc_library(
   srcs = [ "environment_stack.cc" ],
   hdrs = [ "environment_stack.h" ],
   deps = [ 
-    "vector_environment",
     "variable_environment",
+    "variable_selector",
   ],
   visibility = [ "//visibility:public" ],
 )
@@ -39,7 +44,60 @@ cc_test(
   srcs = [ "environment_stack_test.cc" ],
   deps = [
     "environment_stack",
-    "vector_environment",
+    "linear_variable_selector",
+    "@com_google_absl//absl/memory",
+    "@googletest//:gtest_main",
+  ]
+)
+
+
+cc_library(
+  name = "variable_selector",
+  srcs = [ "variable_selector.cc" ],
+  hdrs = [ "variable_selector.h" ],
+  deps = [ 
+    "variable_environment",
+    "//src/cnf:cnf_and",
+    "//src/common:log",
+    "//src/common:stats",
+  ],
+  visibility = [ "//visibility:public" ],
+)
+
+cc_library(
+  name = "linear_variable_selector",
+  srcs = [ "linear_variable_selector.cc" ],
+  hdrs = [ "linear_variable_selector.h" ],
+  deps = [ 
+    "variable_selector",
+    ],
+  visibility = [ "//visibility:public" ],
+)
+
+cc_test(
+  name = "linear_variable_selector_test",
+  srcs = [ "linear_variable_selector_test.cc" ],
+  deps = [
+    "linear_variable_selector",
+    "@googletest//:gtest_main",
+  ]
+)
+
+cc_library(
+  name = "vsids_variable_selector",
+  srcs = [ "vsids_variable_selector.cc" ],
+  hdrs = [ "vsids_variable_selector.h" ],
+  deps = [ 
+    "variable_selector",
+    ],
+  visibility = [ "//visibility:public" ],
+)
+
+cc_test(
+  name = "vsids_variable_selector_test",
+  srcs = [ "vsids_variable_selector_test.cc" ],
+  deps = [
+    "vsids_variable_selector",
     "@googletest//:gtest_main",
   ]
 )

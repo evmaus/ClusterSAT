@@ -7,9 +7,8 @@
 #include "src/common/log.h"
 
 namespace tribblesat {
-namespace cnf {
 
-VariableEnvironmentStack::VariableEnvironmentStack(variable_id count) : count_(count) {
+VariableEnvironmentStack::VariableEnvironmentStack(variable_id count, const std::unique_ptr<VariableSelector>& selector) : count_(count), selector_(selector) {
   for (variable_id id = 0; id <= count_; id++) {
     variable_map_[id] = VariableStackEntry(0, VariableState::SUNBOUND);
   }
@@ -58,13 +57,13 @@ VariableState VariableEnvironmentStack::lookup(variable_id variable) const {
   }
 }
 
-variable_id VariableEnvironmentStack::first_unbound() const {
-  for (variable_id id = 1; id <= count_; id++) {
-    if (lookup(id) == VariableState::SUNBOUND) {
-      return id;
+VariableRecommendation VariableEnvironmentStack::next_unbound() const {
+  for (auto it = selector_->cbegin(); it != selector_->cend(); it++) {
+    if (lookup(*it) == VariableState::SUNBOUND) {
+      return VariableRecommendation(*it, selector_->recommend_assignment(*it));
     }
   }
-  return 0;
+  return VariableRecommendation(0, VariableState::SUNBOUND);
 }
 
 std::string VariableEnvironmentStack::to_string() const {
@@ -72,10 +71,9 @@ std::string VariableEnvironmentStack::to_string() const {
   stream << "COUNT: " << count_ << " ";
   for (variable_id i = 1; i <= count_; i++) {
     stream << "{ " << i << " ->" << 
-      cnf::VariableEnvironment::StateToString(lookup(i)) << " },";
+      VariableEnvironment::StateToString(lookup(i)) << " },";
   }
   return stream.str();
 }
 
-} // namespace cnf
 } // namespace tribblesat

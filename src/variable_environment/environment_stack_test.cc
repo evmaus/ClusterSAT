@@ -1,13 +1,16 @@
 #include "src/variable_environment/variable_environment.h"
 #include "src/variable_environment/environment_stack.h"
+#include "src/variable_environment/linear_variable_selector.h"
 #include "googletest/include/gtest/gtest.h"
+#include "absl/memory/memory.h"
 
 namespace tribblesat {
-namespace cnf {
+namespace test {
 namespace {
 
 TEST(CnfVariableEnvironmentStack, CnfVariableEnvironmentRoundTripTest) {
-  VariableEnvironmentStack stack(3);
+  std::unique_ptr<VariableSelector> selector = absl::make_unique<LinearVariableSelector>(3);
+  VariableEnvironmentStack stack(3, selector);
   stack.push();
   stack.assign(0, VariableState::STRUE);
   stack.assign(1, VariableState::SFALSE);

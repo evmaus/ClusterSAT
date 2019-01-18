@@ -3,6 +3,7 @@
 #include <iostream>
 
 namespace tribblesat {
+namespace binary {
 
 BinaryOp::BinaryOp(BinaryType type, const Function& lhs, const Function& rhs) 
     : Function(NodeType::OP),
@@ -81,4 +82,5 @@ std::string BinaryOp::to_string() const {
   }
 }
 
+} // namespace binary
 } // namespace tribblesat

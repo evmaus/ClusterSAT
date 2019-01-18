@@ -9,6 +9,7 @@
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
+namespace binary {
 namespace test {
 namespace {
 
@@ -69,4 +70,5 @@ TEST(ModelIntegrationTest, BigExprGetVariablesTest) {
 
 } // namespace
 } // namespace test
+} // namespace binary
 } // namespace tribblesat

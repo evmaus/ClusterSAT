@@ -1,20 +1,21 @@
 #include "src/sat/cdcl_sat.h"
 
 #include <string>
+#include <iostream>
 #include <fstream>
 #include <glob.h>
 
 #include "googletest/include/gtest/gtest.h"
 #include "src/parsers/dimacs_parser.h"
 #include "src/common/log.h"
+#include "src/common/utilities.h"
 
 namespace tribblesat {
 namespace test {
 namespace {
 
-constexpr int kTest_file_count = 2;
 constexpr char sat_testdata_directory[] = "src/sat/testdata/sat/*.cnf";
-
+constexpr char unsat_testdata_directory[] = "src/sat/testdata/unsat/*.cnf";
 
 TEST(CDCLSatTest, SatInstance){
   cnf::Variable v1(1);
@@ -37,7 +38,7 @@ TEST(CDCLSatTest, SatInstance){
 
 
   cnf::And expr(conj);
-  CDCLSatStrategy strategy(100000);
+  CDCLSatStrategy strategy(CDCLConfiguration(100000));
   EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
@@ -55,7 +56,7 @@ TEST(CDCLSatTest, UnSatInstance){
   conj.push_back(term2);
 
   cnf::And expr(conj);
-  CDCLSatStrategy strategy(100000);
+  CDCLSatStrategy strategy(CDCLConfiguration(100000));
   EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNSAT);
 }
 
@@ -70,7 +71,7 @@ TEST(CDCLSatTest, Stress) {
     terms.push_back(term);
   }
   cnf::And expr(terms);
-  CDCLSatStrategy strategy(1000000000);
+  CDCLSatStrategy strategy(CDCLConfiguration(100000));
   EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::SAT);
 }
 
@@ -85,23 +86,64 @@ TEST(CDCLSatTest, Timeout) {
     terms.push_back(term);
   }
   cnf::And expr(terms);
-  CDCLSatStrategy strategy(1);
+  CDCLSatStrategy strategy(CDCLConfiguration(1));
   EXPECT_EQ(strategy.DetermineCnfSat(expr).first, SatResultType::UNKNOWN);
 }
 
-TEST(CDCLSatTest, Files) {
-  SET_LOG_LEVEL(LogLevel::VERBOSE);
-  CDCLSatStrategy strategy(1000000000);
-  DiMacsParser parser;
-  glob_t glob_result;
-  glob(sat_testdata_directory,GLOB_TILDE,NULL,&glob_result);
-  for(unsigned int i=0; i<glob_result.gl_pathc; ++i){
-    std::ifstream file(glob_result.gl_pathv[i]);
+TEST(CDCLSatTest, SATFilesLinearAssignment) {
+  CDCLSatStrategy strategy(CDCLConfiguration(100000));
+  std::vector<std::string> files = file_glob(sat_testdata_directory);
+  EXPECT_GT(files.size(), 0);
+  for(auto file_name : files){
+    std::cout << file_name << std::endl;
+    std::ifstream file(file_name);
     DiMacsParser parser;
     auto parsed = parser.ParseCnf(file);
-    EXPECT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::SAT);
+    ASSERT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::SAT);
   }
 }
+
+TEST(CDCLSatTest, UNSATFilesLinearAssignment) {
+  CDCLSatStrategy strategy(CDCLConfiguration(100000));
+  std::vector<std::string> files = file_glob(unsat_testdata_directory);
+  EXPECT_GT(files.size(), 0);\
+  for (int i = 0; i < 10; i++) {
+    auto file_name = files[i];
+    std::cout << file_name << std::endl;
+    std::ifstream file(file_name);
+    DiMacsParser parser;
+    auto parsed = parser.ParseCnf(file);
+    ASSERT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::UNSAT);
+  }
+}
+
+TEST(CDCLSatTest, SATFilesVSIDS) {
+  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS));
+  std::vector<std::string> files = file_glob(sat_testdata_directory);
+  EXPECT_GT(files.size(), 0);
+  for(auto file_name : files){
+    std::cout << file_name << std::endl;
+    std::ifstream file(file_name);
+    DiMacsParser parser;
+    auto parsed = parser.ParseCnf(file);
+    ASSERT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::SAT);
+  }
+}
+
+TEST(CDCLSatTest, UNSATFilesVSIDS) {
+  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS));
+  std::vector<std::string> files = file_glob(unsat_testdata_directory);
+  EXPECT_GT(files.size(), 0);\
+  for (int i = 0; i < 10; i++) {
+    auto file_name = files[i];
+    std::cout << file_name << std::endl;
+    std::ifstream file(file_name);
+    DiMacsParser parser;
+    auto parsed = parser.ParseCnf(file);
+    ASSERT_EQ(strategy.DetermineCnfSat(parsed).first, SatResultType::UNSAT);
+  }
+}
+
 
 } // namespace
 } // namespace test

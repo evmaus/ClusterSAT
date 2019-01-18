@@ -5,6 +5,7 @@
 
 namespace tribblesat 
 {
+namespace binary {
 enum UnaryType {
     NOT,
     NOP
@@ -23,6 +24,7 @@ class UnaryOp : public Function {
   UnaryType op_type_;
   const Function& inner_;
 };
+} // namespace binary
 } // namespace tribblesat
 #endif // SRC_UNARY_OP_H
 

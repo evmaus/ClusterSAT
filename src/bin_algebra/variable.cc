@@ -2,6 +2,7 @@
 
 namespace tribblesat {
 
+namespace binary {
 Variable::Variable(std::string name) 
   : Function(NodeType::VARIABLE), 
   name_(name) 
@@ -21,5 +22,5 @@ std::set<std::string> Variable::GetVariables() const {
 std::string Variable::to_string() const {
   return "v:" + name_;
 }
-
+} // namespace binary
 } // namespace tribblesat

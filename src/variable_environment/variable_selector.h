@@ -3,16 +3,27 @@
 
 #include <vector>
 #include "src/variable_environment/variable_environment.h"
+#include "src/cnf/cnf_and_op.h"
+#include "src/common/stats.h"
 
 namespace tribblesat { 
 
+using VariableIterator = std::vector<variable_id>::const_iterator;
+
+enum VariableSelectorType {
+  LINEAR,
+  VSIDS,
+};
+
 // A variable selector is a ranking of variables to assign to.
 // It's used by various variable environments to change how they choose the next unassigned variable.
-
 class VariableSelector {
+  public:
   virtual ~VariableSelector() { };
-  virtual std::vector<variable_id>::const_iterator cbegin() = 0;
-  virtual std::vector<variable_id>::const_iterator cend() = 0;
+  virtual VariableIterator cbegin() const = 0;
+  virtual VariableIterator cend() const = 0;
+  virtual VariableState recommend_assignment(variable_id id) const = 0;
+  virtual void recalculate(const cnf::Or& learned_term) = 0;
 };
 
 } // namespace tribblesat

@@ -1,15 +1,16 @@
 #include "src/sat/cdcl_trace.h"
 #include "src/common/log.h"
+#include "src/sat/clause_database.h"
 #include <string>
 #include <sstream>
 
 namespace tribblesat {
 
-CDCLTraceTerm::CDCLTraceTerm(int dl, cnf::Variable v, cnf::VariableState s)
+CDCLTraceTerm::CDCLTraceTerm(int dl, cnf::Variable v, VariableState s)
   : decision_level(dl), variable(v), state(s), unit(false)
 {
   std::vector<cnf::Variable> vars;
-  if (s == cnf::VariableState::SFALSE) {
+  if (s == VariableState::SFALSE) {
     vars.push_back(v.negate());
   } else {
     vars.push_back(v);
@@ -17,7 +18,7 @@ CDCLTraceTerm::CDCLTraceTerm(int dl, cnf::Variable v, cnf::VariableState s)
   term = cnf::Or(vars);
 }
 
-CDCLTraceTerm::CDCLTraceTerm(int decision_level, cnf::Variable variable, cnf::VariableState state, cnf::Or term)
+CDCLTraceTerm::CDCLTraceTerm(int decision_level, cnf::Variable variable, VariableState state, cnf::Or term)
   : decision_level(decision_level), variable(variable), state(state), unit(true), term(term)
 {
 
@@ -26,7 +27,7 @@ CDCLTraceTerm::CDCLTraceTerm(int decision_level, cnf::Variable variable, cnf::Va
 std::string printable_node(CDCLTraceTerm term) {
   std::string s = term.variable.to_string() + "@" +
     std::to_string(term.decision_level) + " -> " 
-    + cnf::VariableEnvironment::StateToString(term.state)
+    + VariableEnvironment::StateToString(term.state)
     + " ( " + term.term.to_string() + " )";
   return s;
 }
@@ -40,13 +41,13 @@ std::string CDCLTrace::to_string() {
   return stream.str();
 }
 
-void CDCLTrace::AddAssignmentChoice(int decision_level, cnf::Variable variable, cnf::VariableState state) {
+void CDCLTrace::AddAssignmentChoice(int decision_level, cnf::Variable variable, VariableState state) {
   CDCLTraceTerm trace_term(decision_level, variable, state);
   last_decision_level_[variable.id()] = decision_level;
   trace_.push_back(trace_term);
 }
 
-void CDCLTrace::AddUnitPropagation(int decision_level, cnf::Variable variable, cnf::VariableState state, cnf::Or term) {
+void CDCLTrace::AddUnitPropagation(int decision_level, cnf::Variable variable, VariableState state, cnf::Or term) {
   CDCLTraceTerm trace_term(decision_level, variable, state, term);
   last_decision_level_[variable.id()] = decision_level;
   trace_.push_back(trace_term);
@@ -73,7 +74,7 @@ CDCLTraceTerm CDCLTrace::getLastAssignedInTerm(const cnf::Or& conflict_term) {
       }
     }
   }
-  return CDCLTraceTerm(-1, cnf::Variable(1), cnf::VariableState::SUNBOUND);
+  return CDCLTraceTerm(-1, cnf::Variable(1), VariableState::SUNBOUND);
 }
 
 cnf::Or Resolve(CDCLTraceTerm term, cnf::Or conflict_term) {
@@ -98,7 +99,7 @@ int CDCLTrace::getSecondToLastLevelOfTerm(int decision_level, cnf::Or term) {
   return second_max;
 }
 
-std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const cnf::And& term, const cnf::VariableEnvironment& env) {
+std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const ClauseDatabase& term, const VariableEnvironment& env) {
   // Conflict at DL 0, no work to do.
   if (decision_level == 0) {
     return std::pair<int, cnf::Or>(-1, cnf::Or());  

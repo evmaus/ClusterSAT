@@ -1,7 +1,9 @@
 #include "src/cnf/cnf_or_op.h"
-#include "src/variable_environment/vector_environment.h"
 
 #include <vector>
+
+#include "src/variable_environment/vector_environment.h"
+#include "src/variable_environment/linear_variable_selector.h"
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
@@ -11,7 +13,7 @@ namespace {
 TEST(CnfOrOp, GetTermState_TermIsSat) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::STRUE);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;
@@ -25,7 +27,7 @@ TEST(CnfOrOp, GetTermState_TermIsUnsat) {
 
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::SFALSE);
   std::vector<Variable> vars;
@@ -38,7 +40,7 @@ TEST(CnfOrOp, GetTermState_TermIsUnsat) {
 TEST(CnfOrOp, GetTermState_TermIsUnit) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SFALSE);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;
@@ -51,7 +53,7 @@ TEST(CnfOrOp, GetTermState_TermIsUnit) {
 TEST(CnfOrOp, GetTermState_TermIsUnresolved) {
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::SUNBOUND);
   env.assign(1, VariableState::SUNBOUND);
   std::vector<Variable> vars;
@@ -64,7 +66,7 @@ TEST(CnfOrOp, GetTermState_TermIsUnresolved) {
 TEST(CnfOrOp, FirstUnassigned_AllAssigned){
   Variable v0(0);
   Variable v1(1);
-  VectorVariableEnvironment env(2);
+  VectorVariableEnvironment env(2, LinearVariableSelector(2));
   env.assign(0, VariableState::STRUE);
   env.assign(1, VariableState::SFALSE);
   std::vector<Variable> vars;
@@ -77,7 +79,7 @@ TEST(CnfOrOp, FirstUnassigned_AllAssigned){
 TEST(CnfOrOp, FirstUnassigned){
   Variable v0(0);
   Variable v1(5);
-  VectorVariableEnvironment env(5);
+  VectorVariableEnvironment env(5, LinearVariableSelector(2));
   env.assign(0, VariableState::STRUE);
   env.assign(5, VariableState::SUNBOUND);
   std::vector<Variable> vars;

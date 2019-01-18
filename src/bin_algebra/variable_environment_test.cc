@@ -3,6 +3,7 @@
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
+namespace binary {
 namespace test {
 namespace {
 
@@ -19,4 +20,5 @@ TEST(VariableEnvironmentTest, AssignRoundtripWorksAsExpected)
 
 }
 } // namespace test
+} // namespace binary
 } // namespace tribblesat

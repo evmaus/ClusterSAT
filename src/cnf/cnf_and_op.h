@@ -8,6 +8,7 @@ namespace tribblesat {
 namespace cnf {
 class And {
   public:
+  And() {}
   And(std::vector<Or> terms);
   std::string to_string() const;
 

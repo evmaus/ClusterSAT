@@ -5,6 +5,7 @@
 
 namespace tribblesat 
 {
+namespace binary {
 class Atom : public Function {
   public:
   Atom(bool t) : Function(NodeType::ATOM), true_(t) { }
@@ -17,5 +18,6 @@ class Atom : public Function {
   private:
   bool true_;
 };
+} // namespace binary
 } // namespace tribblesat
 #endif // SRC_ATOM_H

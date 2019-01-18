@@ -6743,6 +6743,3 @@ conflict_time : 0.010954
 conflicts : 18.000000
 total_time : 0.076446
 total_variable_pick : 0.000110
-
-SAT
-./src/parsers/testdata/medium-sat/uf100-0774.cnf

@@ -5,6 +5,7 @@
 #include "googletest/include/gtest/gtest.h"
 
 namespace tribblesat {
+namespace binary {
 namespace test {
 namespace {
 
@@ -66,4 +67,5 @@ TEST(UnaryTest, GetVariableReturnsInternal) {
 
 } // namespace
 } // namespace test
+} // namespace binary
 } // namespace tribblesat

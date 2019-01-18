@@ -1,17 +1,16 @@
-
 #include "src/variable_environment/vector_environment.h"
+#include "src/variable_environment/linear_variable_selector.h"
 #include <sstream>
 
 namespace tribblesat {
-namespace cnf {
 
-VectorVariableEnvironment::VectorVariableEnvironment(variable_id count) : count_(count), assignments_(count+1) {
+VectorVariableEnvironment::VectorVariableEnvironment(variable_id count, const VariableSelector& selector) : count_(count), assignments_(count+1), selector_(selector){
   for (variable_id i = 1; i <= count_; i++) {
     assign(i, VariableState::SUNBOUND);
   }
 }
 
-VectorVariableEnvironment::VectorVariableEnvironment(variable_id count, VariableState state) : count_(count),  assignments_(count+1) { 
+VectorVariableEnvironment::VectorVariableEnvironment(variable_id count, VariableState state, const VariableSelector& selector) : count_(count),  assignments_(count+1), selector_(selector) { 
   for (variable_id i = 1; i <= count; i++) {
     assign(i, state);
   }
@@ -25,13 +24,13 @@ VariableState VectorVariableEnvironment::lookup(variable_id variable) const {
   return assignments_.at(variable);
 }
 
-variable_id VectorVariableEnvironment::first_unbound() const {
-  for (variable_id i = 1; i <= count_; i++) {
-    if (lookup(i) == VariableState::SUNBOUND) {
-      return i;
+VariableRecommendation VectorVariableEnvironment::next_unbound() const {
+  for (auto it = selector_.cbegin(); it != selector_.cend(); it++) {
+    if (lookup(*it) == VariableState::SUNBOUND) {
+      return VariableRecommendation(*it, selector_.recommend_assignment(*it));
     }
   }
-  return 0;
+  return VariableRecommendation(0, VariableState::SUNBOUND);
 }
 
 std::string VectorVariableEnvironment::to_string() const {
@@ -39,10 +38,9 @@ std::string VectorVariableEnvironment::to_string() const {
   stream << "COUNT: " << count_ << " ";
   for (variable_id i = 1; i <= count_; i++) {
     stream << "{ " << i << " ->" << 
-      cnf::VariableEnvironment::StateToString(lookup(i)) << " },";
+      VariableEnvironment::StateToString(lookup(i)) << " },";
   }
   return stream.str();
 }
 
-} // namespace cnf
 } // namespace tribblesat
