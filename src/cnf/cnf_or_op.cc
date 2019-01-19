@@ -8,21 +8,52 @@
 
 namespace tribblesat {
 namespace cnf {
-Or::Or(std::vector<Variable> variables) : variables_(variables) { }
+Or::Or(std::vector<Variable> variables) : variables_(variables) 
+{
+  first_watched_literal_ = 0;
+  second_watched_literal_ = variables_.size()-1;
+}
 
-TermState Or::term_state(const VariableEnvironment& env) const
+bool Assigned(const VariableState state){
+  switch(state) {
+    case VariableState::STRUE:
+      case VariableState::SFALSE:
+        return true;
+      case VariableState::SUNBOUND:
+        return false;
+  }
+}
+
+bool True(const VariableState state) {
+  switch(state) {
+    case VariableState::STRUE:
+        return true;
+    case VariableState::SFALSE:
+    case VariableState::SUNBOUND:
+      return false;
+  }
+}
+
+bool False(const VariableState state) {
+  switch(state) {
+    case VariableState::STRUE:
+        return true;
+    case VariableState::SFALSE:
+    case VariableState::SUNBOUND:
+      return false;
+  }
+}
+
+TermState Or::term_state(const VariableEnvironment& env)
 {
   int count_unbound = 0;
   
   for (auto var : variables_) {
-    switch(var.GetValueInEnvironment(env)) {
-      case VariableState::STRUE:
-        // SAT if any is true
-        return TermState::SAT;
-      case VariableState::SFALSE:
-        break;
-      case VariableState::SUNBOUND:
-        count_unbound++;
+    if(True(var.GetValueInEnvironment(env))) {
+      return TermState::SAT;
+    }
+    else if (!Assigned(var.GetValueInEnvironment(env))) {
+      count_unbound++;
     }
   }
 
@@ -56,18 +87,32 @@ std::string Or::to_string() const {
   return stream.str();
 }
 
-Variable Or::first_unassigned(const VariableEnvironment& env) const {
-  for (auto var : variables_) {
-    switch(var.GetValueInEnvironment(env)) {
-      case VariableState::STRUE:
-      case VariableState::SFALSE:
-        break;
-      case VariableState::SUNBOUND:
-        return var;
+Variable Or::first_unassigned(const VariableEnvironment& env) {
+  if (!Assigned(variables_[first_watched_literal_].GetValueInEnvironment(env))) {
+    return variables_[first_watched_literal_];
+  }
+  for (int i = 0; i < variables_.size(); i++) {
+    if(!Assigned(variables_[i].GetValueInEnvironment(env))) {
+      first_watched_literal_ = i;
+      return variables_[i];
     }
   }
+  first_watched_literal_ = 0;
+  return Variable(0);
+}
 
-  return 0;
+Variable Or::last_unassigned(const VariableEnvironment& env) {
+  if (!Assigned(variables_[second_watched_literal_].GetValueInEnvironment(env))) {
+    return variables_[second_watched_literal_];
+  }
+  for (int i = variables_.size()-1; i >= 0; i--) {
+    if(!Assigned(variables_[i].GetValueInEnvironment(env))) {
+      second_watched_literal_ = i;
+      return variables_[i];
+    }
+  }
+  second_watched_literal_ = 0;
+  return Variable(0);
 }
 
 Or Or::combine_with(Or other_term){

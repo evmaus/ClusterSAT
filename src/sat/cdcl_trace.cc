@@ -99,14 +99,14 @@ int CDCLTrace::getSecondToLastLevelOfTerm(int decision_level, cnf::Or term) {
   return second_max;
 }
 
-std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const ClauseDatabase& term, const VariableEnvironment& env) {
+std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const ClauseDatabase& clause_db, const VariableEnvironment& env) {
   // Conflict at DL 0, no work to do.
   if (decision_level == 0) {
     return std::pair<int, cnf::Or>(-1, cnf::Or());  
   }
   
   LOG(LogLevel::VERBOSE, "Trace: " + to_string());
-  cnf::Or conflict_term = term.next_empty(env);
+  cnf::Or conflict_term = clause_db.next_empty();
   int curr_lit_count = litsAtLevel(conflict_term, decision_level);
   while (curr_lit_count != 1) {
     LOG(LogLevel::VERBOSE, "Current lit count " + std::to_string(curr_lit_count));

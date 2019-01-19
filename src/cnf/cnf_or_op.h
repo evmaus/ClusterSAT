@@ -18,9 +18,10 @@ class Or {
   public:
   Or() {}
   Or(std::vector<Variable> variables);
-  TermState term_state(const VariableEnvironment& env) const;
+  TermState term_state(const VariableEnvironment& env);
   variable_id max_variable() const;
-  Variable first_unassigned(const VariableEnvironment& env) const;
+  Variable first_unassigned(const VariableEnvironment& env);
+  Variable last_unassigned(const VariableEnvironment& env);
   std::string to_string() const;
 
   // Combine terms and remove units.
@@ -33,6 +34,8 @@ class Or {
 
   private:
   std::vector<Variable> variables_;
+  int first_watched_literal_;
+  int second_watched_literal_;
 };
 } // namespace cnf
 } // namespace tribblesat

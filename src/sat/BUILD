@@ -81,5 +81,6 @@ cc_library(
     hdrs = [ "clause_database.h" ],
     deps = [
         "//src/cnf:cnf_and",
+        "//src/variable_environment:environment_stack",
     ]
 )
