@@ -118,7 +118,7 @@ TEST(CDCLSatTest, UNSATFilesLinearAssignment) {
 }
 
 TEST(CDCLSatTest, SATFilesVSIDS) {
-  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS));
+  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS, CompactingPolicyType::TERM_SIZE));
   std::vector<std::string> files = file_glob(sat_testdata_directory);
   EXPECT_GT(files.size(), 0);
   for(auto file_name : files){
@@ -131,7 +131,7 @@ TEST(CDCLSatTest, SATFilesVSIDS) {
 }
 
 TEST(CDCLSatTest, UNSATFilesVSIDS) {
-  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS));
+  CDCLSatStrategy strategy(CDCLConfiguration(100000, VariableSelectorType::VSIDS, CompactingPolicyType::TERM_SIZE));
   std::vector<std::string> files = file_glob(unsat_testdata_directory);
   EXPECT_GT(files.size(), 0);\
   for (int i = 0; i < 10; i++) {

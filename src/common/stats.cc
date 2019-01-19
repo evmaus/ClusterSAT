@@ -44,6 +44,7 @@ void Stats::EndBCP()
   Timestamp end =  std::chrono::high_resolution_clock::now();
   auto timespan = std::chrono::duration_cast<
       std::chrono::duration<double>>(end - cdcl_current_bcp_);
+  counters_["bcp_terms"] += cdcl_current_bcp_clauses_;
   counters_["bcp_time"] += timespan.count(); 
 }
 
@@ -52,7 +53,7 @@ void Stats::StartConflictLearning() {
   cdcl_current_conflict_ = std::chrono::high_resolution_clock::now();
 }
 void Stats::LearnConflictSize(int clause_size) {
-  counters_["bcp_conflict_total_size"] += clause_size;
+  counters_["conflict_total_size"] += clause_size;
 }
 void Stats::EndConflictLearning() {
 

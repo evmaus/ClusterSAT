@@ -2,16 +2,33 @@
 #include "src/sat/clause_database.h"
 
 namespace tribblesat {
-ClauseDatabase::ClauseDatabase(const cnf::And& term, VariableEnvironmentStack& env)
-  : term_(term), env_stack_(env)
+ClauseDatabase::ClauseDatabase(const cnf::And& term, 
+                                VariableEnvironmentStack& env, 
+                                std::unique_ptr<CompactingPolicy>& compacting_policy)
+  : term_(term), env_stack_(env), compacting_policy_(compacting_policy)
 { }
 
 void ClauseDatabase::add_term(cnf::Or term) {
   learned_clauses_.add_term(term);
 }
 
-void ClauseDatabase::compact() {
-  // TODO
+void ClauseDatabase::compact(int decision_level) {
+  if (compacting_policy_->should_compact(decision_level)) {
+    // If we are below the limit, we keep all terms.
+    int keep_terms = compacting_policy_->keep_last();
+    if (learned_clauses_.count() < keep_terms) {
+      return;
+    }
+    auto it = learned_clauses_.cend() - keep_terms;
+    int i = keep_terms;
+    for( ; it != learned_clauses_.cbegin(); it--) {
+      if (compacting_policy_->remove_term(i, *it)) {
+        it = learned_clauses_.erase(it);
+      }
+      i++;
+    }
+
+  }
 }
 
 std::vector<cnf::Or> ClauseDatabase::unit_terms() const {

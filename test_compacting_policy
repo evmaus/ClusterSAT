@@ -1,0 +1,1267 @@
+./src/parsers/testdata/medium-sat/uf100-01.cnf
+INFO: Stats: bcp_conflict_total_size : 1254.000000
+bcp_time : 0.679999
+conflict_time : 0.118743
+conflicts : 110.000000
+total_time : 0.929403
+total_variable_pick : 0.000261
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-010.cnf
+INFO: Stats: bcp_conflict_total_size : 15.000000
+bcp_time : 0.029144
+conflict_time : 0.001850
+conflicts : 2.000000
+total_time : 0.050032
+total_variable_pick : 0.000186
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0100.cnf
+INFO: Stats: bcp_conflict_total_size : 1348.000000
+bcp_time : 0.647578
+conflict_time : 0.099881
+conflicts : 100.000000
+total_time : 0.894137
+total_variable_pick : 0.000258
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-01000.cnf
+INFO: Stats: bcp_conflict_total_size : 127.000000
+bcp_time : 0.083246
+conflict_time : 0.013789
+conflicts : 11.000000
+total_time : 0.130383
+total_variable_pick : 0.000191
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0101.cnf
+INFO: Stats: bcp_conflict_total_size : 1463.000000
+bcp_time : 0.700658
+conflict_time : 0.127733
+conflicts : 112.000000
+total_time : 0.979459
+total_variable_pick : 0.000270
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0102.cnf
+INFO: Stats: bcp_conflict_total_size : 539.000000
+bcp_time : 0.286628
+conflict_time : 0.054519
+conflicts : 48.000000
+total_time : 0.404129
+total_variable_pick : 0.000233
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0103.cnf
+INFO: Stats: bcp_conflict_total_size : 7315.000000
+bcp_time : 5.881236
+conflict_time : 0.593915
+conflicts : 595.000000
+total_time : 8.228392
+total_variable_pick : 0.000521
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0104.cnf
+INFO: Stats: bcp_conflict_total_size : 119.000000
+bcp_time : 0.075525
+conflict_time : 0.013256
+conflicts : 11.000000
+total_time : 0.110953
+total_variable_pick : 0.000187
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0105.cnf
+INFO: Stats: bcp_conflict_total_size : 4.000000
+bcp_time : 0.026180
+conflict_time : 0.001362
+conflicts : 1.000000
+total_time : 0.048604
+total_variable_pick : 0.000192
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0106.cnf
+INFO: Stats: bcp_conflict_total_size : 194.000000
+bcp_time : 0.086347
+conflict_time : 0.014947
+conflicts : 15.000000
+total_time : 0.132579
+total_variable_pick : 0.000204
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0107.cnf
+INFO: Stats: bcp_conflict_total_size : 905.000000
+bcp_time : 0.409391
+conflict_time : 0.078727
+conflicts : 64.000000
+total_time : 0.577148
+total_variable_pick : 0.000248
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0108.cnf
+INFO: Stats: bcp_conflict_total_size : 1299.000000
+bcp_time : 0.802921
+conflict_time : 0.132969
+conflicts : 119.000000
+total_time : 1.099554
+total_variable_pick : 0.000267
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0109.cnf
+INFO: Stats: bcp_conflict_total_size : 4625.000000
+bcp_time : 3.338447
+conflict_time : 0.418518
+conflicts : 415.000000
+total_time : 4.621896
+total_variable_pick : 0.000409
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-011.cnf
+INFO: Stats: bcp_conflict_total_size : 1060.000000
+bcp_time : 0.542727
+conflict_time : 0.092851
+conflicts : 88.000000
+total_time : 0.754499
+total_variable_pick : 0.000262
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0110.cnf
+INFO: Stats: bcp_conflict_total_size : 4898.000000
+bcp_time : 3.580822
+conflict_time : 0.472540
+conflicts : 424.000000
+total_time : 5.043226
+total_variable_pick : 0.000440
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0111.cnf
+INFO: Stats: bcp_conflict_total_size : 603.000000
+bcp_time : 0.297001
+conflict_time : 0.054938
+conflicts : 51.000000
+total_time : 0.423862
+total_variable_pick : 0.000237
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0112.cnf
+INFO: Stats: bcp_conflict_total_size : 1322.000000
+bcp_time : 0.742441
+conflict_time : 0.121021
+conflicts : 114.000000
+total_time : 1.024114
+total_variable_pick : 0.000269
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0113.cnf
+INFO: Stats: bcp_conflict_total_size : 14927.000000
+bcp_time : 16.806112
+conflict_time : 1.171724
+conflicts : 1228.000000
+total_time : 24.198626
+total_variable_pick : 0.000893
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0114.cnf
+INFO: Stats: bcp_conflict_total_size : 4411.000000
+bcp_time : 2.766605
+conflict_time : 0.329139
+conflicts : 324.000000
+total_time : 3.822555
+total_variable_pick : 0.000411
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0115.cnf
+INFO: Stats: bcp_conflict_total_size : 523.000000
+bcp_time : 0.271311
+conflict_time : 0.050321
+conflicts : 46.000000
+total_time : 0.388332
+total_variable_pick : 0.000219
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0116.cnf
+INFO: Stats: bcp_time : 0.021345
+total_time : 0.038256
+total_variable_pick : 0.000186
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0117.cnf
+INFO: Stats: bcp_conflict_total_size : 3083.000000
+bcp_time : 1.878723
+conflict_time : 0.298494
+conflicts : 244.000000
+total_time : 2.585312
+total_variable_pick : 0.000371
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0118.cnf
+INFO: Stats: bcp_conflict_total_size : 70.000000
+bcp_time : 0.056536
+conflict_time : 0.009058
+conflicts : 6.000000
+total_time : 0.085211
+total_variable_pick : 0.000187
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0119.cnf
+INFO: Stats: bcp_conflict_total_size : 49.000000
+bcp_time : 0.048601
+conflict_time : 0.005029
+conflicts : 6.000000
+total_time : 0.080623
+total_variable_pick : 0.000211
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-012.cnf
+INFO: Stats: bcp_conflict_total_size : 150.000000
+bcp_time : 0.086039
+conflict_time : 0.013030
+conflicts : 12.000000
+total_time : 0.135611
+total_variable_pick : 0.000209
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0120.cnf
+INFO: Stats: bcp_conflict_total_size : 2982.000000
+bcp_time : 1.809908
+conflict_time : 0.231266
+conflicts : 230.000000
+total_time : 2.543090
+total_variable_pick : 0.000356
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0121.cnf
+INFO: Stats: bcp_conflict_total_size : 970.000000
+bcp_time : 0.428903
+conflict_time : 0.087751
+conflicts : 67.000000
+total_time : 0.603844
+total_variable_pick : 0.000263
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0122.cnf
+INFO: Stats: bcp_conflict_total_size : 1482.000000
+bcp_time : 0.908386
+conflict_time : 0.146527
+conflicts : 141.000000
+total_time : 1.247080
+total_variable_pick : 0.000276
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0123.cnf
+INFO: Stats: bcp_conflict_total_size : 3042.000000
+bcp_time : 2.194352
+conflict_time : 0.319094
+conflicts : 292.000000
+total_time : 2.995138
+total_variable_pick : 0.000371
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0124.cnf
+INFO: Stats: bcp_conflict_total_size : 177.000000
+bcp_time : 0.095265
+conflict_time : 0.015796
+conflicts : 15.000000
+total_time : 0.147359
+total_variable_pick : 0.000231
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0125.cnf
+INFO: Stats: bcp_conflict_total_size : 476.000000
+bcp_time : 0.241367
+conflict_time : 0.047725
+conflicts : 41.000000
+total_time : 0.343163
+total_variable_pick : 0.000219
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0126.cnf
+INFO: Stats: bcp_conflict_total_size : 245.000000
+bcp_time : 0.110272
+conflict_time : 0.023013
+conflicts : 19.000000
+total_time : 0.164574
+total_variable_pick : 0.000199
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0127.cnf
+INFO: Stats: bcp_conflict_total_size : 6187.000000
+bcp_time : 5.300687
+conflict_time : 0.567669
+conflicts : 546.000000
+total_time : 7.329699
+total_variable_pick : 0.000550
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0128.cnf
+INFO: Stats: bcp_conflict_total_size : 1944.000000
+bcp_time : 1.109662
+conflict_time : 0.173364
+conflicts : 165.000000
+total_time : 1.524268
+total_variable_pick : 0.000289
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0129.cnf
+INFO: Stats: bcp_conflict_total_size : 8393.000000
+bcp_time : 7.817305
+conflict_time : 0.720031
+conflicts : 771.000000
+total_time : 11.082424
+total_variable_pick : 0.000601
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-013.cnf
+INFO: Stats: bcp_conflict_total_size : 6601.000000
+bcp_time : 4.814594
+conflict_time : 0.503082
+conflicts : 494.000000
+total_time : 6.687556
+total_variable_pick : 0.000625
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0130.cnf
+INFO: Stats: bcp_conflict_total_size : 6362.000000
+bcp_time : 4.515651
+conflict_time : 0.482742
+conflicts : 488.000000
+total_time : 6.327324
+total_variable_pick : 0.000496
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0131.cnf
+INFO: Stats: bcp_conflict_total_size : 2681.000000
+bcp_time : 1.641959
+conflict_time : 0.220782
+conflicts : 217.000000
+total_time : 2.247281
+total_variable_pick : 0.000323
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0132.cnf
+INFO: Stats: bcp_conflict_total_size : 32.000000
+bcp_time : 0.043718
+conflict_time : 0.005365
+conflicts : 5.000000
+total_time : 0.070240
+total_variable_pick : 0.000190
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0133.cnf
+INFO: Stats: bcp_conflict_total_size : 254.000000
+bcp_time : 0.127670
+conflict_time : 0.024497
+conflicts : 21.000000
+total_time : 0.185536
+total_variable_pick : 0.000208
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0134.cnf
+INFO: Stats: bcp_conflict_total_size : 2996.000000
+bcp_time : 1.728774
+conflict_time : 0.240630
+conflicts : 223.000000
+total_time : 2.356509
+total_variable_pick : 0.000361
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0135.cnf
+INFO: Stats: bcp_conflict_total_size : 952.000000
+bcp_time : 0.521006
+conflict_time : 0.095279
+conflicts : 82.000000
+total_time : 0.723893
+total_variable_pick : 0.000260
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0136.cnf
+INFO: Stats: bcp_conflict_total_size : 2119.000000
+bcp_time : 1.123155
+conflict_time : 0.166031
+conflicts : 161.000000
+total_time : 1.540921
+total_variable_pick : 0.000295
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0137.cnf
+INFO: Stats: bcp_conflict_total_size : 96.000000
+bcp_time : 0.073244
+conflict_time : 0.011044
+conflicts : 10.000000
+total_time : 0.112565
+total_variable_pick : 0.000184
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0138.cnf
+INFO: Stats: bcp_conflict_total_size : 9026.000000
+bcp_time : 7.367926
+conflict_time : 0.805140
+conflicts : 671.000000
+total_time : 10.501950
+total_variable_pick : 0.000620
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0139.cnf
+INFO: Stats: bcp_conflict_total_size : 862.000000
+bcp_time : 0.527043
+conflict_time : 0.088935
+conflicts : 82.000000
+total_time : 0.715905
+total_variable_pick : 0.000268
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-014.cnf
+INFO: Stats: bcp_conflict_total_size : 233.000000
+bcp_time : 0.144993
+conflict_time : 0.026629
+conflicts : 23.000000
+total_time : 0.208076
+total_variable_pick : 0.000215
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0140.cnf
+INFO: Stats: bcp_conflict_total_size : 4139.000000
+bcp_time : 2.716113
+conflict_time : 0.346804
+conflicts : 332.000000
+total_time : 3.758675
+total_variable_pick : 0.000402
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0141.cnf
+INFO: Stats: bcp_conflict_total_size : 9676.000000
+bcp_time : 8.334842
+conflict_time : 0.762982
+conflicts : 742.000000
+total_time : 11.800410
+total_variable_pick : 0.000684
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0142.cnf
+INFO: Stats: bcp_conflict_total_size : 3184.000000
+bcp_time : 2.160678
+conflict_time : 0.320077
+conflicts : 266.000000
+total_time : 3.007897
+total_variable_pick : 0.000379
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0143.cnf
+INFO: Stats: bcp_conflict_total_size : 6165.000000
+bcp_time : 5.155928
+conflict_time : 0.644359
+conflicts : 564.000000
+total_time : 7.296184
+total_variable_pick : 0.000510
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0144.cnf
+INFO: Stats: bcp_conflict_total_size : 4795.000000
+bcp_time : 3.865294
+conflict_time : 0.443288
+conflicts : 426.000000
+total_time : 5.293853
+total_variable_pick : 0.000440
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0145.cnf
+INFO: Stats: bcp_conflict_total_size : 1509.000000
+bcp_time : 0.819601
+conflict_time : 0.134102
+conflicts : 125.000000
+total_time : 1.123041
+total_variable_pick : 0.000276
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0146.cnf
+INFO: Stats: bcp_conflict_total_size : 3917.000000
+bcp_time : 2.515449
+conflict_time : 0.330979
+conflicts : 318.000000
+total_time : 3.487756
+total_variable_pick : 0.000399
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0147.cnf
+INFO: Stats: bcp_conflict_total_size : 102.000000
+bcp_time : 0.069122
+conflict_time : 0.009500
+conflicts : 10.000000
+total_time : 0.108224
+total_variable_pick : 0.000193
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0148.cnf
+INFO: Stats: bcp_conflict_total_size : 4439.000000
+bcp_time : 3.069936
+conflict_time : 0.385318
+conflicts : 371.000000
+total_time : 4.226456
+total_variable_pick : 0.000461
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0149.cnf
+INFO: Stats: bcp_conflict_total_size : 454.000000
+bcp_time : 0.231213
+conflict_time : 0.039488
+conflicts : 36.000000
+total_time : 0.328538
+total_variable_pick : 0.000225
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-015.cnf
+INFO: Stats: bcp_conflict_total_size : 2435.000000
+bcp_time : 1.409439
+conflict_time : 0.206688
+conflicts : 192.000000
+total_time : 1.938778
+total_variable_pick : 0.000379
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0150.cnf
+INFO: Stats: bcp_conflict_total_size : 842.000000
+bcp_time : 0.400221
+conflict_time : 0.065131
+conflicts : 70.000000
+total_time : 0.560701
+total_variable_pick : 0.000246
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0151.cnf
+INFO: Stats: bcp_conflict_total_size : 814.000000
+bcp_time : 0.406698
+conflict_time : 0.071712
+conflicts : 67.000000
+total_time : 0.577938
+total_variable_pick : 0.000255
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0152.cnf
+INFO: Stats: bcp_conflict_total_size : 3425.000000
+bcp_time : 1.811791
+conflict_time : 0.247991
+conflicts : 245.000000
+total_time : 2.539880
+total_variable_pick : 0.000380
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0153.cnf
+INFO: Stats: bcp_conflict_total_size : 10.000000
+bcp_time : 0.028524
+conflict_time : 0.000764
+conflicts : 1.000000
+total_time : 0.051525
+total_variable_pick : 0.000186
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0154.cnf
+INFO: Stats: bcp_conflict_total_size : 2234.000000
+bcp_time : 1.369939
+conflict_time : 0.201086
+conflicts : 191.000000
+total_time : 1.868599
+total_variable_pick : 0.000320
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0155.cnf
+INFO: Stats: bcp_conflict_total_size : 225.000000
+bcp_time : 0.138093
+conflict_time : 0.020321
+conflicts : 19.000000
+total_time : 0.200063
+total_variable_pick : 0.000212
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0156.cnf
+INFO: Stats: bcp_conflict_total_size : 1358.000000
+bcp_time : 0.786263
+conflict_time : 0.122669
+conflicts : 122.000000
+total_time : 1.054208
+total_variable_pick : 0.000406
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0157.cnf
+INFO: Stats: bcp_conflict_total_size : 153.000000
+bcp_time : 0.105510
+conflict_time : 0.017463
+conflicts : 14.000000
+total_time : 0.152193
+total_variable_pick : 0.000204
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0158.cnf
+INFO: Stats: bcp_conflict_total_size : 49.000000
+bcp_time : 0.046387
+conflict_time : 0.005165
+conflicts : 4.000000
+total_time : 0.075281
+total_variable_pick : 0.000177
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0159.cnf
+INFO: Stats: bcp_conflict_total_size : 2569.000000
+bcp_time : 1.561779
+conflict_time : 0.224741
+conflicts : 218.000000
+total_time : 2.144875
+total_variable_pick : 0.000323
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-016.cnf
+INFO: Stats: bcp_conflict_total_size : 1352.000000
+bcp_time : 0.833024
+conflict_time : 0.136256
+conflicts : 130.000000
+total_time : 1.138698
+total_variable_pick : 0.000318
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0160.cnf
+INFO: Stats: bcp_conflict_total_size : 3553.000000
+bcp_time : 2.468153
+conflict_time : 0.302680
+conflicts : 317.000000
+total_time : 3.397517
+total_variable_pick : 0.000380
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0161.cnf
+INFO: Stats: bcp_conflict_total_size : 45.000000
+bcp_time : 0.046957
+conflict_time : 0.006015
+conflicts : 5.000000
+total_time : 0.078035
+total_variable_pick : 0.000180
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0162.cnf
+INFO: Stats: bcp_conflict_total_size : 870.000000
+bcp_time : 0.431246
+conflict_time : 0.072353
+conflicts : 73.000000
+total_time : 0.595841
+total_variable_pick : 0.000242
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0163.cnf
+INFO: Stats: bcp_conflict_total_size : 9169.000000
+bcp_time : 8.514129
+conflict_time : 0.904358
+conflicts : 726.000000
+total_time : 12.049533
+total_variable_pick : 0.000614
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0164.cnf
+INFO: Stats: bcp_conflict_total_size : 384.000000
+bcp_time : 0.236255
+conflict_time : 0.042205
+conflicts : 35.000000
+total_time : 0.339571
+total_variable_pick : 0.000214
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0165.cnf
+INFO: Stats: bcp_conflict_total_size : 3458.000000
+bcp_time : 2.359631
+conflict_time : 0.351251
+conflicts : 296.000000
+total_time : 3.312699
+total_variable_pick : 0.000350
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0166.cnf
+INFO: Stats: bcp_conflict_total_size : 25.000000
+bcp_time : 0.037040
+conflict_time : 0.002976
+conflicts : 2.000000
+total_time : 0.064952
+total_variable_pick : 0.000230
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0167.cnf
+INFO: Stats: bcp_conflict_total_size : 50.000000
+bcp_time : 0.043804
+conflict_time : 0.006079
+conflicts : 6.000000
+total_time : 0.072277
+total_variable_pick : 0.000231
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0168.cnf
+INFO: Stats: bcp_conflict_total_size : 2756.000000
+bcp_time : 1.877047
+conflict_time : 0.258100
+conflicts : 247.000000
+total_time : 2.593344
+total_variable_pick : 0.000410
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0169.cnf
+INFO: Stats: bcp_conflict_total_size : 5906.000000
+bcp_time : 5.878591
+conflict_time : 0.616917
+conflicts : 559.000000
+total_time : 8.092605
+total_variable_pick : 0.000600
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-017.cnf
+INFO: Stats: bcp_conflict_total_size : 451.000000
+bcp_time : 0.229582
+conflict_time : 0.043887
+conflicts : 34.000000
+total_time : 0.329804
+total_variable_pick : 0.000238
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0170.cnf
+INFO: Stats: bcp_conflict_total_size : 8555.000000
+bcp_time : 7.627681
+conflict_time : 0.846257
+conflicts : 681.000000
+total_time : 10.826027
+total_variable_pick : 0.000718
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0171.cnf
+INFO: Stats: bcp_conflict_total_size : 14915.000000
+bcp_time : 17.290530
+conflict_time : 1.223462
+conflicts : 1195.000000
+total_time : 24.976019
+total_variable_pick : 0.000937
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0172.cnf
+INFO: Stats: bcp_conflict_total_size : 4.000000
+bcp_time : 0.029623
+conflict_time : 0.000972
+conflicts : 1.000000
+total_time : 0.052976
+total_variable_pick : 0.000189
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0173.cnf
+INFO: Stats: bcp_conflict_total_size : 2549.000000
+bcp_time : 1.479485
+conflict_time : 0.213902
+conflicts : 195.000000
+total_time : 2.030725
+total_variable_pick : 0.000373
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0174.cnf
+INFO: Stats: bcp_conflict_total_size : 3708.000000
+bcp_time : 2.984375
+conflict_time : 0.401582
+conflicts : 343.000000
+total_time : 4.125909
+total_variable_pick : 0.000503
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0175.cnf
+INFO: Stats: bcp_conflict_total_size : 17946.000000
+bcp_time : 21.119611
+conflict_time : 1.390285
+conflicts : 1374.000000
+total_time : 30.889917
+total_variable_pick : 0.000929
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0176.cnf
+INFO: Stats: bcp_conflict_total_size : 115.000000
+bcp_time : 0.079539
+conflict_time : 0.012303
+conflicts : 12.000000
+total_time : 0.118388
+total_variable_pick : 0.000193
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0177.cnf
+INFO: Stats: bcp_conflict_total_size : 2058.000000
+bcp_time : 1.253842
+conflict_time : 0.193876
+conflicts : 170.000000
+total_time : 1.734983
+total_variable_pick : 0.000341
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0178.cnf
+INFO: Stats: bcp_conflict_total_size : 6812.000000
+bcp_time : 4.961263
+conflict_time : 0.554315
+conflicts : 506.000000
+total_time : 7.021678
+total_variable_pick : 0.000668
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0179.cnf
+INFO: Stats: bcp_conflict_total_size : 437.000000
+bcp_time : 0.257183
+conflict_time : 0.050114
+conflicts : 38.000000
+total_time : 0.367797
+total_variable_pick : 0.000219
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-018.cnf
+INFO: Stats: bcp_time : 0.019621
+total_time : 0.035428
+total_variable_pick : 0.000179
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0180.cnf
+INFO: Stats: bcp_conflict_total_size : 82.000000
+bcp_time : 0.069912
+conflict_time : 0.009852
+conflicts : 9.000000
+total_time : 0.104099
+total_variable_pick : 0.000235
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0181.cnf
+INFO: Stats: bcp_conflict_total_size : 1258.000000
+bcp_time : 0.664910
+conflict_time : 0.114608
+conflicts : 101.000000
+total_time : 0.928351
+total_variable_pick : 0.000327
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0182.cnf
+INFO: Stats: bcp_conflict_total_size : 266.000000
+bcp_time : 0.192015
+conflict_time : 0.032057
+conflicts : 26.000000
+total_time : 0.276867
+total_variable_pick : 0.000271
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0183.cnf
+INFO: Stats: bcp_conflict_total_size : 80.000000
+bcp_time : 0.053287
+conflict_time : 0.008114
+conflicts : 6.000000
+total_time : 0.085238
+total_variable_pick : 0.000193
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0184.cnf
+INFO: Stats: bcp_conflict_total_size : 3086.000000
+bcp_time : 1.899258
+conflict_time : 0.262560
+conflicts : 250.000000
+total_time : 2.632301
+total_variable_pick : 0.000383
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0185.cnf
+INFO: Stats: bcp_conflict_total_size : 221.000000
+bcp_time : 0.152189
+conflict_time : 0.025028
+conflicts : 21.000000
+total_time : 0.224087
+total_variable_pick : 0.000196
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0186.cnf
+INFO: Stats: bcp_conflict_total_size : 3712.000000
+bcp_time : 2.363102
+conflict_time : 0.309340
+conflicts : 286.000000
+total_time : 3.281568
+total_variable_pick : 0.000407
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0187.cnf
+INFO: Stats: bcp_conflict_total_size : 1887.000000
+bcp_time : 1.178152
+conflict_time : 0.194818
+conflicts : 168.000000
+total_time : 1.616156
+total_variable_pick : 0.000325
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0188.cnf
+INFO: Stats: bcp_conflict_total_size : 16.000000
+bcp_time : 0.031617
+conflict_time : 0.001405
+conflicts : 1.000000
+total_time : 0.059094
+total_variable_pick : 0.000207
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0189.cnf
+INFO: Stats: bcp_conflict_total_size : 26.000000
+bcp_time : 0.047841
+conflict_time : 0.003356
+conflicts : 3.000000
+total_time : 0.080684
+total_variable_pick : 0.000216
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-019.cnf
+INFO: Stats: bcp_conflict_total_size : 36.000000
+bcp_time : 0.046853
+conflict_time : 0.004760
+conflicts : 4.000000
+total_time : 0.074433
+total_variable_pick : 0.000245
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0190.cnf
+INFO: Stats: bcp_conflict_total_size : 148.000000
+bcp_time : 0.112833
+conflict_time : 0.015716
+conflicts : 15.000000
+total_time : 0.162518
+total_variable_pick : 0.000208
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0191.cnf
+INFO: Stats: bcp_conflict_total_size : 108.000000
+bcp_time : 0.068715
+conflict_time : 0.011502
+conflicts : 9.000000
+total_time : 0.103639
+total_variable_pick : 0.000202
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0192.cnf
+INFO: Stats: bcp_conflict_total_size : 2784.000000
+bcp_time : 1.779041
+conflict_time : 0.265592
+conflicts : 240.000000
+total_time : 2.458342
+total_variable_pick : 0.000355
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0193.cnf
+INFO: Stats: bcp_conflict_total_size : 1395.000000
+bcp_time : 1.017894
+conflict_time : 0.155404
+conflicts : 141.000000
+total_time : 1.390353
+total_variable_pick : 0.000303
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0194.cnf
+INFO: Stats: bcp_conflict_total_size : 107.000000
+bcp_time : 0.066799
+conflict_time : 0.012220
+conflicts : 9.000000
+total_time : 0.103155
+total_variable_pick : 0.000197
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0195.cnf
+INFO: Stats: bcp_conflict_total_size : 10944.000000
+bcp_time : 11.411172
+conflict_time : 0.965115
+conflicts : 889.000000
+total_time : 16.195235
+total_variable_pick : 0.000658
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0196.cnf
+INFO: Stats: bcp_terms : 21680.000000
+bcp_time : 2.060676
+conflict_time : 0.282595
+conflict_total_size : 3349.000000
+conflicts : 281.000000
+total_time : 2.852767
+total_variable_pick : 0.000362
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0197.cnf
+INFO: Stats: bcp_terms : 1791.000000
+bcp_time : 0.181025
+conflict_time : 0.033676
+conflict_total_size : 367.000000
+conflicts : 32.000000
+total_time : 0.267541
+total_variable_pick : 0.000223
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0198.cnf
+INFO: Stats: bcp_terms : 2319.000000
+bcp_time : 0.187668
+conflict_time : 0.039115
+conflict_total_size : 292.000000
+conflicts : 30.000000
+total_time : 0.264880
+total_variable_pick : 0.000207
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0199.cnf
+INFO: Stats: bcp_terms : 1140.000000
+bcp_time : 0.107074
+conflict_time : 0.018453
+conflict_total_size : 158.000000
+conflicts : 17.000000
+total_time : 0.162907
+total_variable_pick : 0.000201
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-02.cnf
+INFO: Stats: bcp_terms : 30026.000000
+bcp_time : 3.613280
+conflict_time : 0.430652
+conflict_total_size : 4994.000000
+conflicts : 399.000000
+total_time : 4.993819
+total_variable_pick : 0.000493
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-020.cnf
+INFO: Stats: bcp_terms : 9120.000000
+bcp_time : 0.846588
+conflict_time : 0.148540
+conflict_total_size : 1514.000000
+conflicts : 117.000000
+total_time : 1.160028
+total_variable_pick : 0.000312
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0200.cnf
+INFO: Stats: bcp_terms : 515.000000
+bcp_time : 0.056037
+conflict_time : 0.008937
+conflict_total_size : 81.000000
+conflicts : 7.000000
+total_time : 0.090522
+total_variable_pick : 0.000199
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0201.cnf
+INFO: Stats: bcp_terms : 1375.000000
+bcp_time : 0.129879
+conflict_time : 0.022719
+conflict_total_size : 242.000000
+conflicts : 18.000000
+total_time : 0.188390
+total_variable_pick : 0.000202
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0202.cnf
+INFO: Stats: bcp_terms : 8508.000000
+bcp_time : 0.757598
+conflict_time : 0.126494
+conflict_total_size : 1599.000000
+conflicts : 118.000000
+total_time : 1.070939
+total_variable_pick : 0.000323
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0203.cnf
+INFO: Stats: bcp_terms : 13096.000000
+bcp_time : 1.311684
+conflict_time : 0.198104
+conflict_total_size : 2161.000000
+conflicts : 176.000000
+total_time : 1.832910
+total_variable_pick : 0.000330
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0204.cnf
+INFO: Stats: bcp_terms : 1402.000000
+bcp_time : 0.144294
+conflict_time : 0.024634
+conflict_total_size : 204.000000
+conflicts : 20.000000
+total_time : 0.213853
+total_variable_pick : 0.000223
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0205.cnf
+INFO: Stats: bcp_terms : 1884.000000
+bcp_time : 0.163740
+conflict_time : 0.035545
+conflict_total_size : 316.000000
+conflicts : 28.000000
+total_time : 0.243055
+total_variable_pick : 0.000201
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0206.cnf
+INFO: Stats: bcp_terms : 130138.000000
+bcp_time : 29.273023
+conflict_time : 1.710667
+conflict_total_size : 22000.000000
+conflicts : 1634.000000
+total_time : 43.084406
+total_variable_pick : 0.001067
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0207.cnf
+INFO: Stats: bcp_terms : 6108.000000
+bcp_time : 0.620799
+conflict_time : 0.112675
+conflict_total_size : 1044.000000
+conflicts : 86.000000
+total_time : 0.881983
+total_variable_pick : 0.000271
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0208.cnf
+INFO: Stats: bcp_terms : 18700.000000
+bcp_time : 2.151298
+conflict_time : 0.295931
+conflict_total_size : 3076.000000
+conflicts : 251.000000
+total_time : 2.940983
+total_variable_pick : 0.000483
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0209.cnf
+INFO: Stats: bcp_terms : 19314.000000
+bcp_time : 2.135950
+conflict_time : 0.279070
+conflict_total_size : 3282.000000
+conflicts : 268.000000
+total_time : 2.931987
+total_variable_pick : 0.000444
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-021.cnf
+INFO: Stats: bcp_terms : 26796.000000
+bcp_time : 2.891743
+conflict_time : 0.383801
+conflict_total_size : 3838.000000
+conflicts : 328.000000
+total_time : 3.952540
+total_variable_pick : 0.000444
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0210.cnf
+INFO: Stats: bcp_terms : 37620.000000
+bcp_time : 4.155230
+conflict_time : 0.512621
+conflict_total_size : 5148.000000
+conflicts : 451.000000
+total_time : 5.760879
+total_variable_pick : 0.000448
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0211.cnf
+INFO: Stats: bcp_terms : 4576.000000
+bcp_time : 0.463856
+conflict_time : 0.085169
+conflict_total_size : 793.000000
+conflicts : 62.000000
+total_time : 0.657378
+total_variable_pick : 0.000234
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0212.cnf
+INFO: Stats: bcp_terms : 10524.000000
+bcp_time : 0.890691
+conflict_time : 0.150222
+conflict_total_size : 1652.000000
+conflicts : 135.000000
+total_time : 1.252388
+total_variable_pick : 0.000289
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0213.cnf
+INFO: Stats: bcp_terms : 56325.000000
+bcp_time : 7.763268
+conflict_time : 0.757982
+conflict_total_size : 8581.000000
+conflicts : 687.000000
+total_time : 10.897301
+total_variable_pick : 0.000819
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0214.cnf
+INFO: Stats: bcp_terms : 6395.000000
+bcp_time : 0.669049
+conflict_time : 0.122531
+conflict_total_size : 1262.000000
+conflicts : 98.000000
+total_time : 0.942398
+total_variable_pick : 0.000316
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0215.cnf
+INFO: Stats: bcp_terms : 322.000000
+bcp_time : 0.049123
+conflict_time : 0.006881
+conflict_total_size : 59.000000
+conflicts : 4.000000
+total_time : 0.081446
+total_variable_pick : 0.000218
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0216.cnf
+INFO: Stats: bcp_terms : 6198.000000
+bcp_time : 0.599399
+conflict_time : 0.094624
+conflict_total_size : 1021.000000
+conflicts : 85.000000
+total_time : 0.840220
+total_variable_pick : 0.000306
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0217.cnf
+INFO: Stats: bcp_terms : 95929.000000
+bcp_time : 15.636455
+conflict_time : 1.189986
+conflict_total_size : 13449.000000
+conflicts : 1115.000000
+total_time : 22.414745
+total_variable_pick : 0.001038
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0218.cnf
+INFO: Stats: bcp_terms : 3094.000000
+bcp_time : 0.258341
+conflict_time : 0.045640
+conflict_total_size : 474.000000
+conflicts : 42.000000
+total_time : 0.370118
+total_variable_pick : 0.000255
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0219.cnf
+INFO: Stats: bcp_terms : 110.000000
+bcp_time : 0.029254
+conflict_time : 0.001471
+conflict_total_size : 7.000000
+conflicts : 1.000000
+total_time : 0.052576
+total_variable_pick : 0.000234
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-022.cnf
+INFO: Stats: bcp_terms : 13070.000000
+bcp_time : 1.295315
+conflict_time : 0.185343
+conflict_total_size : 1981.000000
+conflicts : 168.000000
+total_time : 1.770660
+total_variable_pick : 0.000360
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0220.cnf
+INFO: Stats: bcp_terms : 6182.000000
+bcp_time : 0.504266
+conflict_time : 0.090170
+conflict_total_size : 779.000000
+conflicts : 75.000000
+total_time : 0.693823
+total_variable_pick : 0.000312
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0221.cnf
+INFO: Stats: bcp_terms : 6633.000000
+bcp_time : 0.598949
+conflict_time : 0.107616
+conflict_total_size : 1197.000000
+conflicts : 99.000000
+total_time : 0.852967
+total_variable_pick : 0.000342
+
+SAT
+./src/parsers/testdata/medium-sat/uf100-0222.cnf

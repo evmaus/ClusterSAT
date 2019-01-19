@@ -66,6 +66,7 @@ cc_library(
     srcs = [ "cdcl_configuration.cc" ],
     hdrs = [ "cdcl_configuration.h" ],
     deps = [
+        "compacting_policy",
         "//src/cnf:cnf_and",
         "//src/variable_environment:variable_selector",
         "//src/variable_environment:linear_variable_selector",
@@ -80,7 +81,36 @@ cc_library(
     srcs = [ "clause_database.cc" ],
     hdrs = [ "clause_database.h" ],
     deps = [
+        "compacting_policy",
         "//src/cnf:cnf_and",
         "//src/variable_environment:environment_stack",
+    ]
+)
+
+cc_test(
+    name = "clause_database_test",
+    srcs = [ "clause_database_test.cc" ],
+    deps = [
+        "clause_database",
+        "@googletest//:gtest_main",
+    ]
+)
+
+
+cc_library(
+    name = "compacting_policy",
+    srcs = [ "compacting_policy.cc" ],
+    hdrs = [ "compacting_policy.h" ],
+    deps = [
+        "//src/cnf:cnf_or",
+    ]
+)
+
+cc_test(
+    name = "compacting_policy_test",
+    srcs = [ "compacting_policy_test.cc" ],
+    deps = [
+        "compacting_policy",
+        "@googletest//:gtest_main",
     ]
 )

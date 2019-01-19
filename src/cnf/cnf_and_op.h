@@ -24,6 +24,8 @@ class And {
 
   std::vector<Or>::const_iterator cbegin() const { return terms_.cbegin(); }
   std::vector<Or>::const_iterator cend() const { return terms_.cend(); }
+  std::vector<Or>::const_iterator erase(std::vector<Or>::const_iterator it) { return terms_.erase(it); }
+  int count() const { return terms_.size(); }
 
   private:
   std::vector<Or> terms_;
