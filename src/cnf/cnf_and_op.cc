@@ -40,35 +40,24 @@ bool And::has_empty(const VariableEnvironment& env) const {
 }
 
 
-std::list<Or> And::unit_terms(const VariableEnvironment& env) const {
-  std::list<Or> unit_terms;
-  for (auto term : terms_) {
-    if (term.term_state(env) == TermState::UNIT) {
-      unit_terms.push_back(term);
+std::list<Or*> And::unit_terms(const VariableEnvironment& env) {
+  std::list<Or*> unit_terms;
+  for (auto it = terms_.begin(); it != terms_.end(); it++) {
+    if (it->term_state(env) == TermState::UNIT) {
+      unit_terms.push_back(&*it);
     }
   }
   return unit_terms;
 }
 
-std::list<Or> And::empty_terms(const VariableEnvironment& env) const {
-  std::list<Or> empty_terms;
-  for (auto term : terms_) {
-    if (term.term_state(env) == TermState::UNSAT) {
-      empty_terms.push_back(term);
+std::list<Or*> And::empty_terms(const VariableEnvironment& env) {
+  std::list<Or*> empty_terms;
+  for (auto it = terms_.begin(); it != terms_.end(); it++) {
+    if (it->term_state(env) == TermState::UNSAT) {
+      empty_terms.push_back(&*it);
     }
   }
   return empty_terms;
-}
-
-Or And::next_unit(const VariableEnvironment& env) const {
-  for (auto term : terms_) {
-    if (term.term_state(env) == TermState::UNIT) {
-      return term;
-    }
-  }
-  LOG(LogLevel::ERROR, "Called next_unit and none was found.");
-  std::vector<Variable> vec;
-  return Or(vec);
 }
 
 Or And::next_empty(const VariableEnvironment& env) const {

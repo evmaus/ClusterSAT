@@ -30,6 +30,8 @@ class Or {
 
   std::vector<Variable>::const_iterator cbegin() const { return variables_.cbegin(); }
   std::vector<Variable>::const_iterator cend() const { return variables_.cend(); }
+  std::vector<Variable>::iterator begin() { return variables_.begin(); }
+  std::vector<Variable>::iterator end() { return variables_.end(); }
   int count() const { return variables_.size(); }
 
   private:

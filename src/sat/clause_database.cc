@@ -4,7 +4,7 @@
 #include "src/common/log.h"
 
 namespace tribblesat {
-ClauseDatabase::ClauseDatabase(const cnf::And& term, 
+ClauseDatabase::ClauseDatabase(cnf::And& term, 
                                 VariableEnvironmentStack& env, 
                                 std::unique_ptr<CompactingPolicy>& compacting_policy)
   : term_(term), env_stack_(env), compacting_policy_(compacting_policy)
@@ -37,9 +37,9 @@ void ClauseDatabase::compact(int decision_level) {
   }
 }
 
-std::list<cnf::Or> ClauseDatabase::unit_terms() const {
-  std::list<cnf::Or> units = term_.unit_terms(env_stack_);
-  std::list<cnf::Or> learned_units = learned_clauses_.unit_terms(env_stack_);
+std::list<cnf::Or*> ClauseDatabase::unit_terms() {
+  std::list<cnf::Or*> units = term_.unit_terms(env_stack_);
+  std::list<cnf::Or*> learned_units = learned_clauses_.unit_terms(env_stack_);
   for (auto unit : learned_units) {
     units.push_back(unit);
   }

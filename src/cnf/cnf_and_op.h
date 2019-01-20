@@ -19,8 +19,8 @@ class And {
   Or next_unit(const VariableEnvironment& env) const;
   bool has_empty(const VariableEnvironment& env) const;
   Or next_empty(const VariableEnvironment& env) const;
-  std::list<Or> unit_terms(const VariableEnvironment& env) const;
-  std::list<Or> empty_terms(const VariableEnvironment& env) const;
+  std::list<Or*> unit_terms(const VariableEnvironment& env);
+  std::list<Or*> empty_terms(const VariableEnvironment& env);
 
   std::list<Or>::const_iterator cbegin() const { return terms_.cbegin(); }
   std::list<Or>::const_iterator cend() const { return terms_.cend(); }

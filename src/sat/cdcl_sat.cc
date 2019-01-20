@@ -32,11 +32,11 @@ void UnitPropagate(ClauseDatabase& clause_db,
     std::vector<std::pair<cnf::Variable, VariableState>> assignments;
     LOG(LogLevel::VERBOSE, "Identified terms count " + std::to_string(unit_terms.size()));
     for (auto unit : unit_terms) {
-      LOG(LogLevel::VERBOSE, std::to_string(decision_level) + " Identified unit: " + unit.to_string());
-      cnf::Variable variable = unit.first_unassigned(clause_db.environment());
+      LOG(LogLevel::VERBOSE, std::to_string(decision_level) + " Identified unit: " + unit->to_string());
+      cnf::Variable variable = unit->first_unassigned(clause_db.environment());
       auto state = variable.negated() ? VariableState::SFALSE : VariableState::STRUE;
       assignments.push_back(std::pair<cnf::Variable, VariableState>(variable, state));
-      trace.AddUnitPropagation(decision_level, variable.id(), state, unit);
+      trace.AddUnitPropagation(decision_level, variable.id(), state, *unit);
     }
 
     for (auto assign : assignments) {
@@ -90,7 +90,7 @@ void PickBranchVariableAndAssign(uint32_t& current_decision_level, ClauseDatabas
 
 
 SatResult CDCLSatStrategy::DetermineCnfSatInternal(
-    const cnf::And& term, std::atomic_bool& run) const 
+    cnf::And& term, std::atomic_bool& run) const 
 {
   Stats stats;
   stats.StartSAT();
@@ -157,7 +157,7 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
   return SatResult(SatResultType::UNKNOWN, nullptr);
 }
 
-SatResult CDCLSatStrategy::DetermineCnfSat(const cnf::And& term) const 
+SatResult CDCLSatStrategy::DetermineCnfSat(cnf::And& term) const 
 {
   std::atomic_bool run;
   run = true;

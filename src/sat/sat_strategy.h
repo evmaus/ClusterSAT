@@ -16,7 +16,7 @@ using SatResult = std::pair<SatResultType, VariableEnvironment*>;
 
 class SatStrategy {
   public:
-  virtual SatResult DetermineCnfSat(const cnf::And& term) const = 0;
+  virtual SatResult DetermineCnfSat(cnf::And& term) const = 0;
   virtual ~SatStrategy() {};
 };
 

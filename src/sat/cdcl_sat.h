@@ -12,11 +12,11 @@ namespace tribblesat {
 class CDCLSatStrategy : public SatStrategy {
   public:
   CDCLSatStrategy(CDCLConfiguration configuration);  // Handle timeout parameter...
-  SatResult DetermineCnfSat(const cnf::And& term) const override;
+  SatResult DetermineCnfSat(cnf::And& term) const override;
 
   private:
   SatResult DetermineCnfSatInternal(
-    const cnf::And& term, std::atomic_bool& run) const;
+    cnf::And& term, std::atomic_bool& run) const;
   CDCLConfiguration config_;
 };
 
