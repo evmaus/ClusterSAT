@@ -10,7 +10,7 @@ namespace tribblesat {
 
 using VariableIterator = std::vector<variable_id>::const_iterator;
 
-enum VariableSelectorType {
+enum class VariableSelectorType {
   LINEAR,
   VSIDS,
 };

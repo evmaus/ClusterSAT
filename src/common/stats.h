@@ -30,6 +30,8 @@ class Stats {
   void EndConflictLearning();
 
   void Conflict();
+  double conflict_count();
+
   std::string to_string();
 
   private:

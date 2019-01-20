@@ -67,6 +67,7 @@ cc_library(
     hdrs = [ "cdcl_configuration.h" ],
     deps = [
         "compacting_policy",
+        "restart_policy",
         "//src/cnf:cnf_and",
         "//src/variable_environment:variable_selector",
         "//src/variable_environment:linear_variable_selector",
@@ -96,7 +97,6 @@ cc_test(
     ]
 )
 
-
 cc_library(
     name = "compacting_policy",
     srcs = [ "compacting_policy.cc" ],
@@ -113,4 +113,23 @@ cc_test(
         "compacting_policy",
         "@googletest//:gtest_main",
     ]
+)
+
+cc_library(
+    name = "restart_policy",
+    srcs = [ "restart_policy.cc" ],
+    hdrs = [ "restart_policy.h" ],
+    deps = [
+        "//src/common:stats",
+        "//src/common:log"
+    ],
+)
+
+cc_test(
+    name = "restart_policy_test",
+    srcs = [ "restart_policy_test.cc" ],
+    deps = [
+        "restart_policy",
+        "@googletest//:gtest_main",
+    ],
 )

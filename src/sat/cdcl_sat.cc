@@ -102,6 +102,7 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
   // Create variable environment.
   std::unique_ptr<VariableSelector> selector = config_.AllocateNewVariableSelector(term);
   std::unique_ptr<CompactingPolicy> compact_policy = config_.AllocateNewCompactingPolicy(term);
+  std::unique_ptr<RestartPolicy> restart_policy = config_.AllocateNewRestartPolicy(term);
   VariableEnvironmentStack env_stack(term_count, selector);
 
   ClauseDatabase clause_db(term, env_stack, compact_policy);
@@ -136,9 +137,15 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
           return SatResult(SatResultType::UNSAT, nullptr);
         }
 
+        if (restart_policy->should_restart(stats)) {
+          LOG(LogLevel::VERBOSE, "Restarting");
+          restart_policy->step_restart();
+          conflict_level = 0;
+        }
+
         // Backtrack
-        clause_db.compact(current_decision_level);
         current_decision_level = conflict_level;
+        clause_db.compact(current_decision_level);
         env_stack.Backtrack(current_decision_level);
         trace.Backtrack(current_decision_level);
         // End backtrack

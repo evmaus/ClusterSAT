@@ -68,6 +68,10 @@ void Stats::Conflict()
   counters_["conflicts"]++; 
 }
 
+double Stats::conflict_count() {
+  return counters_["conflicts"];
+}
+
 std::string Stats::to_string() {
   std::ostringstream stream;
   stream << "Stats: ";

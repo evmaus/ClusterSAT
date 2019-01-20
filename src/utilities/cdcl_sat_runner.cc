@@ -27,7 +27,8 @@ int main(int argc, char** argv) {
 
   tribblesat::CDCLConfiguration config(30000000, 
     tribblesat::VariableSelectorType::VSIDS, 
-    tribblesat::CompactingPolicyType::TERM_SIZE);
+    tribblesat::CompactingPolicyType::TERM_SIZE,
+    tribblesat::RestartPolicyType::GEOMETRIC);
   // timeout of 6 minutes.
   tribblesat::CDCLSatStrategy strategy(config);
 

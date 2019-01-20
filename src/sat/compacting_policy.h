@@ -5,7 +5,7 @@
 
 namespace tribblesat {
 
-enum CompactingPolicyType {
+enum class CompactingPolicyType {
   NONE,
   TERM_SIZE,
 };
