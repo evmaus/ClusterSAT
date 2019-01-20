@@ -146,7 +146,7 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
         // Backtrack
         current_decision_level = conflict_level;
         clause_db.compact(current_decision_level);
-        env_stack.Backtrack(current_decision_level);
+        clause_db.backtrack(current_decision_level);
         trace.Backtrack(current_decision_level);
         // End backtrack
         LOG(LogLevel::VERBOSE, "New environment after backtracking: " + env_stack.to_string());

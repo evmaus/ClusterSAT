@@ -16,7 +16,7 @@ class ClauseDatabase {
   void add_term(cnf::Or term);
   void compact(int decision_level);
 
-  std::vector<cnf::Or> unit_terms() const;
+  std::list<cnf::Or> unit_terms() const;
   const cnf::And& learned_clauses() const { return learned_clauses_; }
   VariableEnvironment& environment() { return env_stack_; }
 

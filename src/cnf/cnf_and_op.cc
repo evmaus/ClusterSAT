@@ -6,7 +6,7 @@
 
 namespace tribblesat {
 namespace cnf {
-And::And(std::vector<Or> terms) : terms_(terms) { };
+And::And(std::list<Or> terms) : terms_(terms) { };
 
 bool And::satisfied(const VariableEnvironment& env) const {
   for (auto term : terms_) {
@@ -40,8 +40,8 @@ bool And::has_empty(const VariableEnvironment& env) const {
 }
 
 
-std::vector<Or> And::unit_terms(const VariableEnvironment& env) const {
-  std::vector<Or> unit_terms;
+std::list<Or> And::unit_terms(const VariableEnvironment& env) const {
+  std::list<Or> unit_terms;
   for (auto term : terms_) {
     if (term.term_state(env) == TermState::UNIT) {
       unit_terms.push_back(term);
@@ -50,8 +50,8 @@ std::vector<Or> And::unit_terms(const VariableEnvironment& env) const {
   return unit_terms;
 }
 
-std::vector<Or> And::empty_terms(const VariableEnvironment& env) const {
-  std::vector<Or> empty_terms;
+std::list<Or> And::empty_terms(const VariableEnvironment& env) const {
+  std::list<Or> empty_terms;
   for (auto term : terms_) {
     if (term.term_state(env) == TermState::UNSAT) {
       empty_terms.push_back(term);

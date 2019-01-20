@@ -18,7 +18,7 @@ TEST(AndOpTest, SatisfiedTrue) {
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_TRUE(and_term.satisfied(env));
@@ -34,7 +34,7 @@ TEST(AndOpTest, SatisfiedFalse) {
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_FALSE(and_term.satisfied(env));
@@ -47,7 +47,7 @@ TEST(AndOpTest, VariableCount_ReturnsExpected) {
   vars.push_back(v1);
   vars.push_back(v2);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_EQ(and_term.variable_count(), 2);
@@ -63,7 +63,7 @@ TEST(AndOpTest, HasUnit_True) {
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_TRUE(and_term.has_unit(env));
@@ -79,7 +79,7 @@ TEST(AndOpTest, HasUnit_False) {
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_FALSE(and_term.has_unit(env));
@@ -95,7 +95,7 @@ TEST(AndOpTest, NextUnit) {
   vars.push_back(v0);
   vars.push_back(v1);
   Or or_term(vars);
-  std::vector<Or> terms;
+  std::list<Or> terms;
   terms.push_back(or_term);
   And and_term(terms);
   EXPECT_EQ(and_term.next_unit(env).first_unassigned(env).id(), 1);

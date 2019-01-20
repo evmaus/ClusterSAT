@@ -1,6 +1,8 @@
 
 #include "src/sat/clause_database.h"
 
+#include "src/common/log.h"
+
 namespace tribblesat {
 ClauseDatabase::ClauseDatabase(const cnf::And& term, 
                                 VariableEnvironmentStack& env, 
@@ -16,24 +18,28 @@ void ClauseDatabase::compact(int decision_level) {
   if (compacting_policy_->should_compact(decision_level)) {
     // If we are below the limit, we keep all terms.
     int keep_terms = compacting_policy_->keep_last();
-    if (learned_clauses_.count() < keep_terms) {
+    if (learned_clauses_.count() <= keep_terms) {
       return;
     }
-    auto it = learned_clauses_.cend() - keep_terms;
-    int i = keep_terms;
-    for( ; it != learned_clauses_.cbegin(); it--) {
+    
+    LOG(LogLevel::VERBOSE, "test1");
+    int i = 0;
+    for (auto it = learned_clauses_.cbegin(); 
+            it != learned_clauses_.cend() && 
+            (i < learned_clauses_.count() - keep_terms); 
+            it++) {
       if (compacting_policy_->remove_term(i, *it)) {
+        LOG(LogLevel::VERBOSE, "test " + std::to_string(i) +" " +(*it).to_string());
         it = learned_clauses_.erase(it);
       }
       i++;
     }
-
   }
 }
 
-std::vector<cnf::Or> ClauseDatabase::unit_terms() const {
-  std::vector<cnf::Or> units = term_.unit_terms(env_stack_);
-  std::vector<cnf::Or> learned_units = learned_clauses_.unit_terms(env_stack_);
+std::list<cnf::Or> ClauseDatabase::unit_terms() const {
+  std::list<cnf::Or> units = term_.unit_terms(env_stack_);
+  std::list<cnf::Or> learned_units = learned_clauses_.unit_terms(env_stack_);
   for (auto unit : learned_units) {
     units.push_back(unit);
   }

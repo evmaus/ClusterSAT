@@ -32,7 +32,7 @@ TEST(CDCLSatTest, SatInstance){
   t2.push_back(v3);
   t2.push_back(nv1);
   cnf::Or term2(t2);
-  std::vector<cnf::Or> conj;
+  std::list<cnf::Or> conj;
   conj.push_back(term1);
   conj.push_back(term2);
 
@@ -51,7 +51,7 @@ TEST(CDCLSatTest, UnSatInstance){
   std::vector<cnf::Variable> t2;
   t2.push_back(nv1);
   cnf::Or term2(t2);
-  std::vector<cnf::Or> conj;
+  std::list<cnf::Or> conj;
   conj.push_back(term1);
   conj.push_back(term2);
 
@@ -61,7 +61,7 @@ TEST(CDCLSatTest, UnSatInstance){
 }
 
 TEST(CDCLSatTest, Stress) {
-  std::vector<cnf::Or> terms;
+  std::list<cnf::Or> terms;
   for (int i = 0; i < 50; i++)
   {
     cnf::Variable v(i);
@@ -76,7 +76,7 @@ TEST(CDCLSatTest, Stress) {
 }
 
 TEST(CDCLSatTest, Timeout) {
-  std::vector<cnf::Or> terms;
+  std::list<cnf::Or> terms;
   for (int i = 0; i < 1000; i++)
   {
     cnf::Variable v(i);

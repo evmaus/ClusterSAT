@@ -47,7 +47,7 @@ cnf::And DiMacsParser::ParseCnf(std::istream& input) {
   uint32_t num_terms = std::stoi(line_contents[2]);
   LOG(LogLevel::VERBOSE, "nclause " + line_contents[3]);
   uint32_t num_clauses = std::stoi(line_contents[3]);
-  std::vector<cnf::Or> terms;
+  std::list<cnf::Or> terms;
   for(int i = 0; i < num_clauses; i++) {
     if(!getline(input, line)){
       // TODO error
