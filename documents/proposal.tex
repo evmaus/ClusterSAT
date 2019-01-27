@@ -1,0 +1,61 @@
+\documentclass[10pt]{article}
+
+\title{CSE 507 Proposal}
+\author{Everett Maus}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  We propose developing a SAT solver which allows clustering for faster solving, in the 
+  vein of ManySAT, but communicating over network protocols to allow for scaling beyond
+  a single computer.
+\end{abstract}
+
+\section{Background}
+SAT Solvers are a key part of the program analysis toolbox.  However, they current research on
+  them has focused largely on single machine SAT solving--even the parallel track in the SAT 
+  Competition 2017 was on a single machine with multiple cores. \footnote{https://baldur.iti.kit.edu/sat-competition-2017/index.php?cat=tracks}
+
+  Historically, a common model for speeding up SAT solving is the approach proposed in ManySAT,
+  where many instances of a SAT Solver are run with slightly different parameters.  However,
+  a cursory research examination makes it appear that these are really only run on single machines.
+
+  In the meantime, the rise of commodity computing in the cloud has made lower performance, networked
+  computation readily available.
+
+\section{Precise Description}
+
+  We propose two deliverables.  The first is "TribbleSAT", a CDCL-based SAT Solver, 
+  written in C++, designed with pluggability of solving strategies in mind.  We don't anticipate
+  this will be higher performance than a Glucose-based solver--instead, it will simply serve to
+  prove out the value of the second deliverable.  Because of the focus on pluggability of different
+  strategies, it should be possible to use "TribbleSAT" to quickly prototype new variable
+  selection strategies, learned-clause compacting strategies, and similar tweaks on the classical
+  algorithm, and test the behavior of those using the second deliverable, "ClusterSAT".
+
+  The second deliverable is a pluggable SAT Solving layer named "ClusterSAT" that distributes
+  TribbleSAT instances across one or more computers, communicating over a network protocol.  It will
+  be designed to be largely SAT-solver independent, so that higher performance solvers could be 
+  plugged into it in the future, but initially will only support "TribbleSAT" as the first solver.
+  We propose using a standard leader/follower model for distributing this computation, 
+  where SAT problems are submitted to a 'coordinator' (leader) node, which then passes them to one or more 
+  'solver' (follower) nodes, each of which consists of a single solver instance.  When a single solver node finds
+  a solution to the SAT problem (or all of them time out), the 'coordinator' will inform all of the shared clients.
+  Time permitting, learned clause sharing will be enabled between 
+
+   In terms of implementation, "ClusterSAT" will use the gRPC framework, and 
+  communicate using protocol buffers--this allows each solver node (follower node) to be written in whatever
+  language seems most appropriate for that solver.
+
+\section{Related Literature}
+  GridSAT:
+  PSATO:
+  ManySAT:
+
+\section{Implementation Plan}
+
+
+
+\end{document}

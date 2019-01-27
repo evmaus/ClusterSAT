@@ -25,7 +25,7 @@ class VariableEnvironmentStack : public VariableEnvironment {
   virtual VariableRecommendation next_unbound() const override;
   virtual std::string to_string() const override;
   virtual void Backtrack(int new_level);
-
+  virtual std::vector<int> assignments_by_id() const override;
   private:
   uint32_t current_depth_ = 0;
   variable_id count_;

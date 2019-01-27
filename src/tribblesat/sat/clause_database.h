@@ -10,7 +10,7 @@ namespace tribblesat {
 class ClauseDatabase {
   public:
   ClauseDatabase(cnf::And& term, 
-                  VariableEnvironmentStack& env, 
+                  std::unique_ptr<VariableEnvironmentStack>& env, 
                   std::unique_ptr<CompactingPolicy>& compacting_policy);
   
   void add_term(cnf::Or term);
@@ -18,7 +18,7 @@ class ClauseDatabase {
 
   std::list<cnf::Or*> unit_terms();
   const cnf::And& learned_clauses() const { return learned_clauses_; }
-  VariableEnvironment& environment() { return env_stack_; }
+  std::unique_ptr<VariableEnvironmentStack>& environment() { return env_stack_; }
 
   bool has_empty() const;
   cnf::Or next_empty() const;
@@ -33,7 +33,7 @@ class ClauseDatabase {
   private:
   cnf::And& term_;
   cnf::And learned_clauses_;
-  VariableEnvironmentStack& env_stack_;
+  std::unique_ptr<VariableEnvironmentStack>& env_stack_;
   const std::unique_ptr<CompactingPolicy>& compacting_policy_;
 };
 } // namespace tribblesat

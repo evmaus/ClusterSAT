@@ -12,7 +12,7 @@ enum SatResultType {
   UNKNOWN
 };
 
-using SatResult = std::pair<SatResultType, VariableEnvironment*>;
+using SatResult = std::pair<SatResultType, std::vector<int>>;
 
 class SatStrategy {
   public:

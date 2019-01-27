@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+import "src/clustersat/protocol/cnf.proto";
+
+package clustersat;
+
+// A SAT Service takes a SATRequest, assigns it an ID, and then asynchronously
+// 
+service SATService {
+  rpc CheckSatisfiability (SatRequest) returns (SatResponse);
+  rpc GetSatisfiabilityResult (SatIdRequest) returns (SatResponse);
+  rpc GetCurrentSatResults (CurrentSatResultsRequest) returns (CurrentSatResultsResponse);
+}
+
+message SatRequestIdentifier {
+  int64 id = 1;
+}
+
+message SatIdRequest {
+  SatRequestIdentifier id = 1;
+}
+
+message CurrentSatResultsRequest {
+  repeated SatIdRequest requests = 1;
+}
+
+message CurrentSatResultsResponse {
+  repeated SatResult results = 1;
+}
+
+message SatQuery {
+  AndTerm term = 1;
+}
+
+message SatRequest {
+  SatQuery query = 1;
+}
+
+message SatResult {
+  enum Result {
+    SAT = 0;
+    UNSAT = 1;
+    UNKNOWN = 2;
+    IN_PROGRESS = 3;
+  }
+  SatRequestIdentifier id = 1;
+  Result result = 2;
+  repeated Variable assignments = 3;
+}
+
+message SatResponse {
+  SatResult result = 1;
+}

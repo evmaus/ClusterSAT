@@ -20,6 +20,8 @@ class VectorVariableEnvironment : public VariableEnvironment {
   VariableRecommendation next_unbound() const override;
   std::string to_string() const override;
   
+  std::vector<int> assignments_by_id() const override;
+
   static VariableState Not(VariableState state);
   private:
   variable_id count_;

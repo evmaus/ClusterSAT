@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package clustersat;
+
+// A variable is identified by its id.  Negative variables represent
+// the negated version of that id.
+message Variable {
+  int64 id = 1;
+}
+
+// An OR term is a series of variables.
+message OrTerm {
+  repeated Variable variables = 1;
+}
+
+message AndTerm {
+  repeated OrTerm terms = 1;
+}

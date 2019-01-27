@@ -5,7 +5,7 @@
 #include <chrono>
 #include <future>
 #include <iostream>
-
+#include "absl/memory/memory.h"
 #include "src/tribblesat/common/log.h"
 #include "src/tribblesat/variable_environment/environment_stack.h"
 #include "src/tribblesat/variable_environment/variable_environment.h"
@@ -33,7 +33,7 @@ void UnitPropagate(ClauseDatabase& clause_db,
     LOG(LogLevel::VERBOSE, "Identified terms count " + std::to_string(unit_terms.size()));
     for (auto unit : unit_terms) {
       LOG(LogLevel::VERBOSE, std::to_string(decision_level) + " Identified unit: " + unit->to_string());
-      cnf::Variable variable = unit->first_unassigned(clause_db.environment());
+      cnf::Variable variable = unit->first_unassigned(*clause_db.environment());
       auto state = variable.negated() ? VariableState::SFALSE : VariableState::STRUE;
       assignments.push_back(std::pair<cnf::Variable, VariableState>(variable, state));
       trace.AddUnitPropagation(decision_level, variable.id(), state, *unit);
@@ -51,13 +51,13 @@ void UnitPropagate(ClauseDatabase& clause_db,
 
 int AnalyzeConflict(int decision_level, 
   ClauseDatabase& db, 
-  VariableEnvironment& env, 
+  std::unique_ptr<VariableEnvironmentStack>& env, 
   CDCLTrace& trace,
   std::unique_ptr<VariableSelector>& selector,
   Stats& stats) 
 {
   stats.StartConflictLearning();
-  std::pair<int, cnf::Or> result = trace.LearnClauses(decision_level, db, env);
+  std::pair<int, cnf::Or> result = trace.LearnClauses(decision_level, db, *env);
   stats.LearnConflictSize(result.second.count());
   selector->recalculate(result.second);
   db.add_term(result.second);
@@ -103,18 +103,19 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
   std::unique_ptr<VariableSelector> selector = config_.AllocateNewVariableSelector(term);
   std::unique_ptr<CompactingPolicy> compact_policy = config_.AllocateNewCompactingPolicy(term);
   std::unique_ptr<RestartPolicy> restart_policy = config_.AllocateNewRestartPolicy(term);
-  VariableEnvironmentStack env_stack(term_count, selector);
+  std::unique_ptr<VariableEnvironmentStack> env_stack
+    = absl::make_unique<VariableEnvironmentStack>(term_count, selector);
 
   ClauseDatabase clause_db(term, env_stack, compact_policy);
   UnitPropagate(clause_db, 0, trace, stats);
   uint32_t current_decision_level = 0;
   
   while (run){
-    if (term.satisfied(env_stack)) {
+    if (term.satisfied(*env_stack)) {
       LOG(LogLevel::VERBOSE, "Finished, returning SAT");
       stats.EndSAT();
       LOG(LogLevel::INFORMATIONAL, stats.to_string());
-      return SatResult(SatResultType::SAT, &env_stack);
+      return SatResult(SatResultType::SAT, env_stack->assignments_by_id());
     } 
     else 
     {
@@ -126,7 +127,8 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
       if (clause_db.has_empty()) {
         stats.Conflict();
         LOG(LogLevel::VERBOSE, "Empty term: " + clause_db.next_empty().to_string());
-        int conflict_level = AnalyzeConflict(current_decision_level, clause_db, env_stack, trace, selector, stats);
+        int conflict_level = AnalyzeConflict(current_decision_level, 
+                                            clause_db, env_stack, trace, selector, stats);
         LOG(LogLevel::VERBOSE, "Backtracking: " + std::to_string(conflict_level));
         LOG(LogLevel::VERBOSE, "Learned Clauses: " + clause_db.learned_clauses().to_string());
         
@@ -134,7 +136,7 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
           LOG(LogLevel::VERBOSE, "Finished, returning UNSAT");
           stats.EndSAT();
           LOG(LogLevel::INFORMATIONAL, stats.to_string());
-          return SatResult(SatResultType::UNSAT, nullptr);
+          return SatResult(SatResultType::UNSAT, std::vector<int>());
         }
 
         if (restart_policy->should_restart(stats)) {
@@ -149,12 +151,12 @@ SatResult CDCLSatStrategy::DetermineCnfSatInternal(
         clause_db.backtrack(current_decision_level);
         trace.Backtrack(current_decision_level);
         // End backtrack
-        LOG(LogLevel::VERBOSE, "New environment after backtracking: " + env_stack.to_string());
+        LOG(LogLevel::VERBOSE, "New environment after backtracking: " + env_stack->to_string());
       }
     }
   }
 
-  return SatResult(SatResultType::UNKNOWN, nullptr);
+  return SatResult(SatResultType::UNKNOWN, std::vector<int>());
 }
 
 SatResult CDCLSatStrategy::DetermineCnfSat(cnf::And& term) const 

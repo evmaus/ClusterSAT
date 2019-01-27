@@ -27,6 +27,9 @@ class VariableEnvironment {
   static VariableState Not(VariableState state);
   static VariableState RandomState();
   static std::string StateToString(VariableState state);
+
+  virtual std::vector<int> assignments_by_id() const = 0;
+  
 };
 
 } // namespace tribblesat

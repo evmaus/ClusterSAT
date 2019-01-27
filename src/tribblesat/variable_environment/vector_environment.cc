@@ -43,4 +43,21 @@ std::string VectorVariableEnvironment::to_string() const {
   return stream.str();
 }
 
+std::vector<int> VectorVariableEnvironment::assignments_by_id() const {
+  std::vector<int> result;
+  for (variable_id i = 1; i <= count_; i++) {
+      switch(lookup(i)) {
+        case VariableState::STRUE:
+          result.push_back(i);
+          break;
+        case VariableState::SFALSE:
+          result.push_back(-i);
+          break;
+        case VariableState::SUNBOUND:
+          break;
+      }
+  }
+  return result;
+}
+
 } // namespace tribblesat

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-for filename in ./src/parsers/testdata/medium-sat/*.cnf; do
+for filename in ./src/tribblesat/parsers/testdata/medium-sat/*.cnf; do
   [ -e "$filename" ] || continue
   echo $filename
-  ./bazel-bin/src/utilities/cdcl_runner --file=$filename --info
+  ./bazel-bin/src/tribblesat/utilities/cdcl_runner --file=$filename --info
 done

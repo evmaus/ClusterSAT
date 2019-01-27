@@ -3,3 +3,12 @@ bazel-genfiles
 bazel-out
 bazel-testlogs
 bazel-tribblesat
+
+documents/*.aux
+documents/*.fdb_latexmk
+documents/*.pdf
+documents/*.fls
+documents/*.log
+documents/*.synctex.gz
+
+.DS_Store
