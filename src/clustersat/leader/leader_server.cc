@@ -2,33 +2,17 @@
 #include <grpcpp/grpcpp.h>
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
-
-class LeaderSATServiceImpl final : public clustersat::SATService::Service {
-  ::grpc::Status CheckSatisfiability(::grpc::ServerContext* context, 
-  const ::clustersat::SatRequest* request, 
-  ::clustersat::SatResponse* response) override {
-      // TODO
-      return ::grpc::Status::OK;
-  }
-  ::grpc::Status GetSatisfiabilityResult(::grpc::ServerContext* context, 
-  const ::clustersat::SatIdRequest* request, 
-  ::clustersat::SatResponse* response) override {
-      // TODO
-      return ::grpc::Status::OK;
-  }
-  ::grpc::Status GetCurrentSatResults(::grpc::ServerContext* context, 
-    const ::clustersat::CurrentSatResultsRequest* request, 
-    ::clustersat::CurrentSatResultsResponse* response) override {
-      // TODO
-      return ::grpc::Status::OK;
-  }
-  
-};
+#include "src/clustersat/leader/leader.h"
 
 void RunServer() {
   std::string server_address("0.0.0.0:50051");
 
-  LeaderSATServiceImpl service;
+  clustersat::SatClientImpl client(grpc::CreateChannel(
+      "localhost:50052", grpc::InsecureChannelCredentials()));
+  std::vector<clustersat::SolverNode> nodes;
+  nodes.push_back(clustersat::SolverNode(client));
+  clustersat::LeaderNode leader(nodes);
+  clustersat::LeaderSATServiceImpl service(leader);
 
   grpc::ServerBuilder builder;
   // Listen on the given address without any authentication mechanism.
@@ -47,5 +31,6 @@ void RunServer() {
 }
 
 int main() {
+  RunServer();
   return 0;
 }

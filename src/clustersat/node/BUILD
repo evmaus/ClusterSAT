@@ -1,9 +1,17 @@
 
+load("@io_bazel_rules_docker//cc:image.bzl", "cc_image")
+
+cc_image(
+  name = "tribblesat_docker",
+  binary = ":tribblesat_server",
+)
+
 cc_binary(
   name = "tribblesat_server",
   srcs = ["tribblesat_server.cc"],
   deps = [
     ":tribblesat_wrapper",
+    ":tribblesat_server_impl",
     "//src/tribblesat/sat:cdcl_sat",
     "//src/clustersat/protocol:clustersat_proto",
     "@com_github_grpc_grpc//:grpc++",
@@ -26,5 +34,17 @@ cc_library(
   deps = [
     ":tribblesat_wrapper",
     "@googletest//:gtest_main",
+  ]
+)
+
+cc_library(
+  name = "tribblesat_server_impl",
+  srcs = [ "tribblesat_server_impl.cc" ],
+  hdrs = [ "tribblesat_server_impl.h" ],
+  deps = [
+    ":tribblesat_wrapper",
+    "//src/tribblesat/sat:cdcl_sat",
+    "//src/clustersat/protocol:clustersat_proto",
+    "@com_github_grpc_grpc//:grpc++",
   ]
 )

@@ -5,11 +5,12 @@ import "src/clustersat/protocol/cnf.proto";
 package clustersat;
 
 // A SAT Service takes a SATRequest, assigns it an ID, and then asynchronously
-// 
+// calculates satisfiability.
 service SATService {
   rpc CheckSatisfiability (SatRequest) returns (SatResponse);
   rpc GetSatisfiabilityResult (SatIdRequest) returns (SatResponse);
   rpc GetCurrentSatResults (CurrentSatResultsRequest) returns (CurrentSatResultsResponse);
+//  rpc CancelSatRequest(SatIdRequest) returns (SatResponse);
 }
 
 message SatRequestIdentifier {
@@ -21,7 +22,7 @@ message SatIdRequest {
 }
 
 message CurrentSatResultsRequest {
-  repeated SatIdRequest requests = 1;
+  repeated SatRequestIdentifier request = 1;
 }
 
 message CurrentSatResultsResponse {
@@ -33,7 +34,8 @@ message SatQuery {
 }
 
 message SatRequest {
-  SatQuery query = 1;
+  SatRequestIdentifier id = 1;
+  SatQuery query = 2;
 }
 
 message SatResult {
@@ -42,6 +44,7 @@ message SatResult {
     UNSAT = 1;
     UNKNOWN = 2;
     IN_PROGRESS = 3;
+    CANCELLED = 4;
   }
   SatRequestIdentifier id = 1;
   Result result = 2;
