@@ -46,9 +46,14 @@ SatResult LeaderNode::GetSatResultFromNodes(SatRequestIdentifier id)
 {
   for (auto node : nodes_)
   {
-    SatResult intermediate = node.GetNodeResult(id).ValueOrDie();
-    if (intermediate.result() != clustersat::SatResult::IN_PROGRESS) {
-      return intermediate;
+    auto result = node.GetNodeResult(id);
+    if(result.ok()) {
+      SatResult intermediate = result.ValueOrDie();
+      if (intermediate.result() != clustersat::SatResult::IN_PROGRESS) {
+        return intermediate;
+      }
+    } else {
+      LOG(ERROR) << "Error retrieving result id" << id.id() << " from node " << std::endl;
     }
   }
   SatResult result;
