@@ -14,9 +14,9 @@ git_repository(
 )
 
 git_repository(
-    name = "com_google_gflags",
+    name = "com_github_gflags_gflags",
     remote = "https://github.com/gflags/gflags.git",
-    branch = "master",
+    tag = "v2.2.2",
 )
 
 # proto_library, cc_proto_library, and java_proto_library rules implicitly
@@ -38,14 +38,18 @@ load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
 
 grpc_deps()
 
+git_repository(
+    name = "com_google_glog",
+    branch = "master",
+    remote = "https://github.com/google/glog.git",
+)
 
 git_repository(
     name = "bazel_skylib",
     remote = "https://github.com/bazelbuild/bazel-skylib.git",
-    tag = "0.6.0",  # change this to use a different release
+    tag = "0.6.0",
 )
 
-# Download the rules_docker repository at release v0.7.0
 git_repository(
     name = "io_bazel_rules_docker",
     remote = "https://github.com/bazelbuild/rules_docker.git",

@@ -6,8 +6,9 @@ cc_binary(
     ":sat_client",
     "//src/clustersat/protocol:clustersat_proto",
     "//src/clustersat/utilities:dimacs_parser",
-    "@com_google_gflags//:gflags",
+    "@com_github_gflags_gflags//:gflags",
     "@com_github_grpc_grpc//:grpc++",
+    "@com_google_glog//:glog",
   ],
 )
 
@@ -17,8 +18,10 @@ cc_library(
   hdrs = ["sat_client.h"],
   deps = [
     "//src/clustersat/protocol:clustersat_proto",
-    "@com_google_gflags//:gflags",
+    "//src/third_party/status:status",
+    "@com_github_gflags_gflags//:gflags",
     "@com_github_grpc_grpc//:grpc++",
+    "@com_google_glog//:glog",
   ],
   visibility = ["//visibility:public" ],
 )

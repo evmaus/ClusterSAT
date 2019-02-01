@@ -4,8 +4,11 @@
 #include <fstream>
 #include <sstream>
 
+
 #include <grpcpp/grpcpp.h>
+#include <glog/logging.h>
 #include "gflags/gflags.h"
+
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
 #include "src/clustersat/utilities/dimacs_cnf_parser.h"
@@ -28,6 +31,7 @@ std::string PrintableSatResult(clustersat::SatResult result) {
 }
 
 int main(int argc, char** argv) {
+  google::InitGoogleLogging(argv[0]);
   gflags::ParseCommandLineFlags(&argc, &argv, true);
   
   // Instantiate the client. It requires a channel, out of which the actual RPCs
@@ -41,16 +45,31 @@ int main(int argc, char** argv) {
   if (FLAGS_action == "submit") {
     std::ifstream file(FLAGS_file);
     clustersat::DiMacsParser parser;
-    clustersat::SatResult reply = client.RequestSAT(parser.ParseCnf(file), clustersat::SatRequestIdentifier());
-    std::cout << "Client received: " << PrintableSatResult(reply) << std::endl;
+    auto result = client.RequestSAT(parser.ParseCnf(file), clustersat::SatRequestIdentifier());
+    if (result.ok()) {
+      clustersat::SatResult reply = result.ValueOrDie();
+      std::cout << "Client received: " << PrintableSatResult(reply) << std::endl;
+    } else {
+      std::cout << "Encountered an error" << std::endl;
+    }
   } else if (FLAGS_action == "lookup") {
-    clustersat::SatResult reply = client.LookupSAT(FLAGS_lookup_id);
-    std::cout << "Client received: " << PrintableSatResult(reply) << std::endl;
+    auto result = client.LookupSAT(FLAGS_lookup_id);
+    if (result.ok()) {
+      clustersat::SatResult reply = result.ValueOrDie();
+      std::cout << "Client received: " << PrintableSatResult(reply) << std::endl;
+    } else {
+      std::cout << "Encountered an error" << std::endl;
+    }
   } else if (FLAGS_action == "list") {
-    std::vector<clustersat::SatResult> results = client.ListSATResults();
-    std::cout << "Client received: " << std::endl;
-    for(auto result : results) {
-      std::cout << PrintableSatResult(result) << std::endl;
+    auto result = client.ListSATResults();
+    if (result.ok()) {
+      std::vector<clustersat::SatResult> results = result.ValueOrDie();
+      std::cout << "Client received: " << std::endl;
+      for(auto result : results) {
+        std::cout << PrintableSatResult(result) << std::endl;
+      }
+    } else {
+      std::cout << "Encountered an error" << std::endl;
     }
   } else {
     std::cout << "Unknown action; not submit/lookup/list. Recieved: " << FLAGS_action << std::endl;

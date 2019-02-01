@@ -1,15 +1,16 @@
-
 #include "src/clustersat/leader/leader.h"
+
+#include <glog/logging.h>
 
 namespace clustersat {
 
 // SolverNode:
-void SolverNode::SubmitResult(SatRequestIdentifier id, SatQuery query) 
+::util::StatusOr<SatResult> SolverNode::SubmitResult(SatRequestIdentifier id, SatQuery query) 
 {
-  client_.RequestSAT(query.term(), id);
+  return client_.RequestSAT(query.term(), id);
 }
 
-SatResult SolverNode::GetNodeResult(SatRequestIdentifier id)
+::util::StatusOr<SatResult> SolverNode::GetNodeResult(SatRequestIdentifier id)
 {
   return client_.LookupSAT(id.id());
 }
@@ -30,6 +31,7 @@ SatRequestIdentifier LeaderNode::StartSatisfiability(SatQuery query)
     std::lock_guard<std::mutex> guard(solver_queries_mutex_);
     solver_queries_.push_back(query);
     identifier.set_id(solver_queries_.size()-1);
+    LOG(INFO) << "Assigned id " << identifier.id() << " to the request";
   }
 
   // Submit to each node.
@@ -44,7 +46,7 @@ SatResult LeaderNode::GetSatResultFromNodes(SatRequestIdentifier id)
 {
   for (auto node : nodes_)
   {
-    SatResult intermediate = node.GetNodeResult(id);
+    SatResult intermediate = node.GetNodeResult(id).ValueOrDie();
     if (intermediate.result() != clustersat::SatResult::IN_PROGRESS) {
       return intermediate;
     }
@@ -86,14 +88,18 @@ LeaderSATServiceImpl::LeaderSATServiceImpl (LeaderNode& node)
     const ::clustersat::SatRequest* request, 
     ::clustersat::SatResponse* response)
 {
+  LOG(INFO) << "Recieved SAT request." << std::endl;
   *response->mutable_result()->mutable_id() = node_.StartSatisfiability(request->query());
   response->mutable_result()->set_result(clustersat::SatResult::IN_PROGRESS);
+  LOG(INFO) << "Processed SAT request." << std::endl;
   return ::grpc::Status::OK;
 }
 ::grpc::Status LeaderSATServiceImpl::GetSatisfiabilityResult(::grpc::ServerContext* context, 
     const ::clustersat::SatIdRequest* request, 
     ::clustersat::SatResponse* response)
 {
+
+  LOG(INFO) << "Recieved request for id " << request->id().id() << std::endl;
   *response->mutable_result() = node_.GetSatisfiabilityResult(request->id());
   return ::grpc::Status::OK;
 }

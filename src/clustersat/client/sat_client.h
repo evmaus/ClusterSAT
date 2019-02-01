@@ -11,15 +11,16 @@
 #include "gflags/gflags.h"
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
+#include "src/third_party/status/statusor.h"
 
 namespace clustersat {
 
 class SatClient {
   public:
   virtual ~SatClient() {}
-  virtual SatResult RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) = 0;
-  virtual SatResult LookupSAT(const int id) = 0;
-  virtual std::vector<SatResult> ListSATResults() = 0;
+  virtual ::util::StatusOr<SatResult> RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) = 0;
+  virtual ::util::StatusOr<SatResult> LookupSAT(const int id) = 0;
+  virtual ::util::StatusOr<std::vector<SatResult>> ListSATResults() = 0;
 };
 
 class SatClientImpl : public SatClient {
@@ -28,11 +29,11 @@ class SatClientImpl : public SatClient {
 
   // Assembles the client's payload, sends it and presents the response back
   // from the server.
-  SatResult RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) override;
+  ::util::StatusOr<SatResult> RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) override;
 
-  SatResult LookupSAT(const int id) override;
+  ::util::StatusOr<SatResult> LookupSAT(const int id) override;
 
-  std::vector<SatResult> ListSATResults() override;
+  ::util::StatusOr<std::vector<SatResult>> ListSATResults() override;
 
  private:
   std::unique_ptr<SATService::Stub> stub_;

@@ -2,6 +2,7 @@
 #include <vector>
 #include <future>
 #include <grpcpp/grpcpp.h>
+#include <glog/logging.h>
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
 #include "src/clustersat/node/tribblesat_wrapper.h"
@@ -9,12 +10,16 @@
 #include "src/tribblesat/sat/cdcl_configuration.h"
 #include "src/clustersat/node/tribblesat_server_impl.h"
 
-void RunServer() {
+#include "gflags/gflags.h"
+
+
+DEFINE_string(listening_address, "0.0.0.0:50051", "IP and Port to listen on");
+
+void RunServer(std::string server_address) {
   tribblesat::CDCLConfiguration config(100000000);
   tribblesat::CDCLSatStrategy strategy(config);
   clustersat::TribbleSatWrapper wrapper(strategy);
 
-  std::string server_address("0.0.0.0:50052");
   clustersat::TribbleSatServiceImpl service(wrapper);
 
   grpc::ServerBuilder builder;
@@ -33,7 +38,10 @@ void RunServer() {
 }
 
 int main(int argc, char** argv) {
-  RunServer();
+  google::InitGoogleLogging(argv[0]);
+  gflags::ParseCommandLineFlags(&argc, &argv, true);
+
+  RunServer(FLAGS_listening_address);
 
   return 0;
 }

@@ -1,5 +1,6 @@
-
 #include "src/clustersat/client/sat_client.h"
+
+#include <glog/logging.h>
 
 namespace clustersat {
 
@@ -8,9 +9,10 @@ SatClientImpl::SatClientImpl(std::shared_ptr<grpc::Channel> channel)
 
 // Assembles the client's payload, sends it and presents the response back
 // from the server.
-SatResult SatClientImpl::RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) {
+::util::StatusOr<SatResult> SatClientImpl::RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) {
   // Data we are sening to the server.
   SatQuery query;
+  LOG(INFO) << "Preparing query" << std::endl;
   *query.mutable_term() = term;
   SatRequest request;
   *request.mutable_query() = query;
@@ -24,19 +26,21 @@ SatResult SatClientImpl::RequestSAT(const clustersat::AndTerm& term, SatRequestI
   grpc::ClientContext context;
 
   // The actual RPC.
+  LOG(INFO) << "Sending RPC" << std::endl;
   grpc::Status status = stub_->CheckSatisfiability(&context, request, &reply);
+  LOG(INFO) << "RPC Finished" << std::endl;
 
   // Act upon its status.
   if (status.ok()) {
     return reply.result();
   } else {
-    std::cout << status.error_code() << ": " << status.error_message()
+    LOG(ERROR) << status.error_code() << ": " << status.error_message()
               << std::endl;
-    return SatResult();
+    return ::util::Status(::util::error::Code::UNKNOWN, status.error_message());
   }
 }
 
-SatResult SatClientImpl::LookupSAT(const int id) {
+::util::StatusOr<SatResult> SatClientImpl::LookupSAT(const int id) {
   // Data we are sening to the server.
   SatIdRequest request;
   request.mutable_id()->set_id(id);
@@ -55,13 +59,13 @@ SatResult SatClientImpl::LookupSAT(const int id) {
   if (status.ok()) {
     return reply.result();
   } else {
-    std::cout << status.error_code() << ": " << status.error_message()
+    LOG(ERROR) << status.error_code() << ": " << status.error_message()
               << std::endl;
-    return SatResult();
+    return ::util::Status(::util::error::Code::UNKNOWN, status.error_message());
   }
 }
 
-std::vector<SatResult> SatClientImpl::ListSATResults() {
+::util::StatusOr<std::vector<SatResult>> SatClientImpl::ListSATResults() {
   CurrentSatResultsRequest request;
 
   // Container for the data we expect from the server.
@@ -84,9 +88,9 @@ std::vector<SatResult> SatClientImpl::ListSATResults() {
     }
     return results;
   } else {
-    std::cout << status.error_code() << ": " << status.error_message()
-              << std::endl; 
-    return std::vector<SatResult>();
+    LOG(ERROR) << status.error_code() << ": " << status.error_message()
+              << std::endl;
+    return ::util::Status(::util::error::Code::UNKNOWN, status.error_message());
   }
 }
 } // namespace clustersat

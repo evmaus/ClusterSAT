@@ -13,9 +13,9 @@ class SolverNode {
   public:
   SolverNode(SatClient& client) : client_(client) {}
 
-  void SubmitResult(SatRequestIdentifier id, SatQuery query);
+  ::util::StatusOr<SatResult> SubmitResult(SatRequestIdentifier id, SatQuery query);
 
-  SatResult GetNodeResult(SatRequestIdentifier id);
+  ::util::StatusOr<SatResult> GetNodeResult(SatRequestIdentifier id);
 
   private:
   SatClient& client_;

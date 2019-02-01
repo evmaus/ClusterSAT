@@ -4,7 +4,7 @@ cc_binary(
   deps = [
     "//src/tribblesat/bin_algebra:function",
     "//src/tribblesat/parsers:dimacs_parser",
-    "@com_google_gflags//:gflags"
+    "@com_github_gflags_gflags//:gflags"
   ]
 )
 
@@ -16,6 +16,6 @@ cc_binary(
     "//src/tribblesat/sat:cdcl_sat",
     "//src/tribblesat/bin_algebra:function",
     "//src/tribblesat/parsers:dimacs_parser",
-    "@com_google_gflags//:gflags"
+    "@com_github_gflags_gflags//:gflags"
   ]
 )

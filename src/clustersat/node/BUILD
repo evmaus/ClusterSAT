@@ -14,6 +14,8 @@ cc_binary(
     ":tribblesat_server_impl",
     "//src/tribblesat/sat:cdcl_sat",
     "//src/clustersat/protocol:clustersat_proto",
+    "@com_google_glog//:glog",
+    "@com_github_gflags_gflags//:gflags",
     "@com_github_grpc_grpc//:grpc++",
   ],
 )
