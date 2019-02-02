@@ -30,11 +30,14 @@ class TribbleSatServiceImpl final : public clustersat::SATService::Service {
     const ::clustersat::CurrentSatResultsRequest* request, 
     ::clustersat::CurrentSatResultsResponse* response) override;
   
+  ::grpc::Status CancelSatRequest(::grpc::ServerContext* context, 
+    const ::clustersat::SatIdRequest* request, 
+    ::clustersat::SatResponse* response) override;
+
   private:
   clustersat::TribbleSatWrapper& wrapper_;
   std::vector<std::shared_future<SatResult>> result_map_;
   std::mutex result_map_mutex_;
-
 };
 
 } // namespace clustersat

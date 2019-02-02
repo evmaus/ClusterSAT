@@ -2,6 +2,7 @@
 #define SRC_CLUSTERSAT_LEADER_LEADER_H
 
 #include <string>
+#include <thread>
 #include <grpcpp/grpcpp.h>
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
@@ -16,6 +17,8 @@ class SolverNode {
   ::util::StatusOr<SatResult> SubmitResult(SatRequestIdentifier id, SatQuery query);
 
   ::util::StatusOr<SatResult> GetNodeResult(SatRequestIdentifier id);
+
+  ::util::StatusOr<SatResult> CancelRequest(SatRequestIdentifier id);
 
   private:
   SatClient& client_;
@@ -42,6 +45,10 @@ class LeaderNode {
   // Returns the current status of all satisfiability requests
   std::vector<SatResult> GetCurrentSatRequestStatuses(std::vector<SatRequestIdentifier> ids);
 
+  SatResult CancelSatisfiability(SatRequestIdentifier id);
+
+  void StepServer();
+
   private:
   SatResult GetSatResultFromNodes(SatRequestIdentifier id);
 
@@ -58,6 +65,8 @@ class LeaderSATServiceImpl final : public clustersat::SATService::Service {
   public:
   LeaderSATServiceImpl(LeaderNode& node);
 
+  void MainEventThread();
+
   ::grpc::Status CheckSatisfiability(::grpc::ServerContext* context, 
     const ::clustersat::SatRequest* request, 
     ::clustersat::SatResponse* response) override;
@@ -70,8 +79,12 @@ class LeaderSATServiceImpl final : public clustersat::SATService::Service {
     const ::clustersat::CurrentSatResultsRequest* request, 
     ::clustersat::CurrentSatResultsResponse* response) override;
 
+  ::grpc::Status CancelSatRequest(::grpc::ServerContext* context, 
+    const ::clustersat::SatIdRequest* request, 
+    ::clustersat::SatResponse* response) override;
   private:
   LeaderNode& node_;
+  std::thread main_loop_thread_;
 };
 
 

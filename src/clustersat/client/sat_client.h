@@ -21,6 +21,7 @@ class SatClient {
   virtual ::util::StatusOr<SatResult> RequestSAT(const clustersat::AndTerm& term, SatRequestIdentifier id) = 0;
   virtual ::util::StatusOr<SatResult> LookupSAT(const int id) = 0;
   virtual ::util::StatusOr<std::vector<SatResult>> ListSATResults() = 0;
+  virtual ::util::StatusOr<SatResult> CancelSAT(const int id) = 0;
 };
 
 class SatClientImpl : public SatClient {
@@ -34,6 +35,8 @@ class SatClientImpl : public SatClient {
   ::util::StatusOr<SatResult> LookupSAT(const int id) override;
 
   ::util::StatusOr<std::vector<SatResult>> ListSATResults() override;
+
+  ::util::StatusOr<SatResult> CancelSAT(const int id) override;
 
  private:
   std::unique_ptr<SATService::Stub> stub_;

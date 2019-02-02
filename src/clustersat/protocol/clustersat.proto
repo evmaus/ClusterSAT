@@ -10,7 +10,7 @@ service SATService {
   rpc CheckSatisfiability (SatRequest) returns (SatResponse);
   rpc GetSatisfiabilityResult (SatIdRequest) returns (SatResponse);
   rpc GetCurrentSatResults (CurrentSatResultsRequest) returns (CurrentSatResultsResponse);
-//  rpc CancelSatRequest(SatIdRequest) returns (SatResponse);
+  rpc CancelSatRequest(SatIdRequest) returns (SatResponse);
 }
 
 message SatRequestIdentifier {
@@ -45,6 +45,8 @@ message SatResult {
     UNKNOWN = 2;
     IN_PROGRESS = 3;
     CANCELLED = 4;
+    CANCELLING = 5;
+    NOT_STARTED = 6;
   }
   SatRequestIdentifier id = 1;
   Result result = 2;

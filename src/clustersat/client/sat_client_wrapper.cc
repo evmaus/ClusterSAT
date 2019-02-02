@@ -71,6 +71,14 @@ int main(int argc, char** argv) {
     } else {
       std::cout << "Encountered an error" << std::endl;
     }
+  } else if (FLAGS_action == "cancel") {
+    auto result = client.CancelSAT(FLAGS_lookup_id);
+    if (result.ok()) {
+      clustersat::SatResult reply = result.ValueOrDie();
+      std::cout << "Client received: " << PrintableSatResult(reply) << std::endl;
+    } else {
+      std::cout << "Encountered an error" << std::endl;
+    }
   } else {
     std::cout << "Unknown action; not submit/lookup/list. Recieved: " << FLAGS_action << std::endl;
   }

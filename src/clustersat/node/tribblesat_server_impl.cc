@@ -60,4 +60,13 @@ const ::clustersat::SatIdRequest* request,
     }
     return ::grpc::Status::OK;
 }
+
+::grpc::Status TribbleSatServiceImpl::CancelSatRequest(::grpc::ServerContext* context, 
+    const ::clustersat::SatIdRequest* request, 
+    ::clustersat::SatResponse* response) 
+{
+  // TODO
+  return ::grpc::Status::OK;
+}
+
 } // namespace clustersat
