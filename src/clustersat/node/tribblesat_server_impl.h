@@ -12,6 +12,11 @@
 
 namespace clustersat {
 
+struct CancellableSATRequest {
+  std::atomic_bool should_run;
+  std::shared_future<SatResult> result;
+};
+
 class TribbleSatServiceImpl final : public clustersat::SATService::Service {
   public:
   TribbleSatServiceImpl(clustersat::TribbleSatWrapper& wrapper);
@@ -36,7 +41,7 @@ class TribbleSatServiceImpl final : public clustersat::SATService::Service {
 
   private:
   clustersat::TribbleSatWrapper& wrapper_;
-  std::vector<std::shared_future<SatResult>> result_map_;
+  std::unordered_map<int, CancellableSATRequest> result_map_;
   std::mutex result_map_mutex_;
 };
 

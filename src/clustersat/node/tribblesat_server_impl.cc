@@ -11,27 +11,29 @@ const ::clustersat::SatRequest* request,
 ::clustersat::SatResponse* response) 
 {
   auto term = request->query().term();
-  std::shared_future<SatResult> future = std::async(std::launch::async, 
-    [this, term]() 
-    {
-      return this->wrapper_.GetSatisfiability(term);
-    }
-  );
+  int id = request->id().id();
+  
   {
     std::lock_guard<std::mutex> guard(result_map_mutex_);
-    result_map_.push_back(future);
-    int id = result_map_.size()-1;
+    result_map_[id].should_run = true;
+
+    std::shared_future<SatResult> future = std::async(std::launch::async, 
+      [this, term, id]() 
+      {
+        return this->wrapper_.GetSatisfiability(term, this->result_map_[id].should_run);
+      }
+    );
+    result_map_[id].result = future;  
 
     response->mutable_result()->mutable_id()->set_id(id);
     response->mutable_result()->set_result(clustersat::SatResult::IN_PROGRESS);
-
   }
   return ::grpc::Status::OK;
 }
 
 void TribbleSatServiceImpl::LoadResultFromFuturesMap(int id, ::clustersat::SatResult* result) {
-  if (result_map_.at(id).wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
-    *(result) = result_map_.at(id).get();
+  if (result_map_.at(id).result.wait_for(std::chrono::seconds(0)) == std::future_status::ready) {
+    *(result) = result_map_.at(id).result.get();
     result->mutable_id()->set_id(id);
   } else {
     result->mutable_id()->set_id(id);
@@ -65,7 +67,14 @@ const ::clustersat::SatIdRequest* request,
     const ::clustersat::SatIdRequest* request, 
     ::clustersat::SatResponse* response) 
 {
-  // TODO
+  result_map_.at(request->id().id()).should_run = false;
+
+  result_map_.at(request->id().id()).result.wait();
+
+  SatResult result = result_map_.at(request->id().id()).result.get();
+  result.set_result(SatResult::CANCELLED);
+
+  *response->mutable_result() = result;
   return ::grpc::Status::OK;
 }
 

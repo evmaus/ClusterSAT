@@ -54,9 +54,9 @@ TribbleSatWrapper::TribbleSatWrapper(tribblesat::SatStrategy& strategy) : strate
 
 }
 
-clustersat::SatResult TribbleSatWrapper::GetSatisfiability(clustersat::AndTerm term) {
+clustersat::SatResult TribbleSatWrapper::GetSatisfiability(clustersat::AndTerm term, std::atomic_bool& should_run) {
   auto andTerm = ClustersatAndToTribblesatAnd(term);
-  tribblesat::SatResult result = strategy_.DetermineCnfSat(andTerm);
+  tribblesat::SatResult result = strategy_.DetermineCnfSatWithCancellation(andTerm, should_run);
   return TribblesatResultToClustersatResult(std::move(result));
 }
 

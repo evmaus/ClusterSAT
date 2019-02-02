@@ -13,7 +13,7 @@ class TribbleSatWrapper {
   public:
   TribbleSatWrapper(tribblesat::SatStrategy& strategy);
   
-  clustersat::SatResult GetSatisfiability(clustersat::AndTerm term);
+  clustersat::SatResult GetSatisfiability(clustersat::AndTerm term, std::atomic_bool& should_run);
 
   private:
   tribblesat::SatStrategy& strategy_;

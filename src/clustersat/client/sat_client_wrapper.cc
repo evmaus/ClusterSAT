@@ -17,6 +17,7 @@
 DEFINE_string(file, "", "DIMACS CNF Format file to run SAT on for submission");
 DEFINE_int64(lookup_id, 0, "ID to look up");
 DEFINE_string(action, "", "submit, lookup, or list");
+DEFINE_string(server, "localhost:50051", "Server to look up");
 
 std::string PrintableSatResult(clustersat::SatResult result) {
   std::ostringstream stream;
@@ -40,7 +41,7 @@ int main(int argc, char** argv) {
   // (use of InsecureChannelCredentials()).
 
   clustersat::SatClientImpl client(grpc::CreateChannel(
-      "localhost:50051", grpc::InsecureChannelCredentials()));
+      FLAGS_server, grpc::InsecureChannelCredentials()));
   
   if (FLAGS_action == "submit") {
     std::ifstream file(FLAGS_file);

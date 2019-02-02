@@ -17,6 +17,7 @@ using SatResult = std::pair<SatResultType, std::vector<int>>;
 class SatStrategy {
   public:
   virtual SatResult DetermineCnfSat(cnf::And& term) const = 0;
+  virtual SatResult DetermineCnfSatWithCancellation(cnf::And& term, std::atomic_bool& should_run) const = 0;
   virtual ~SatStrategy() {};
 };
 

@@ -89,7 +89,7 @@ void PickBranchVariableAndAssign(uint32_t& current_decision_level, ClauseDatabas
 }
 
 
-SatResult CDCLSatStrategy::DetermineCnfSatInternal(
+SatResult CDCLSatStrategy::DetermineCnfSatWithCancellation(
     cnf::And& term, std::atomic_bool& run) const 
 {
   Stats stats;
@@ -165,7 +165,7 @@ SatResult CDCLSatStrategy::DetermineCnfSat(cnf::And& term) const
   run = true;
   auto future = std::async(
     std::launch::async, [this, &term, &run]() {
-      return DetermineCnfSatInternal(term, run);
+      return DetermineCnfSatWithCancellation(term, run);
     }
   );
   if (config_.timeout_ms() != 0)
@@ -180,7 +180,7 @@ SatResult CDCLSatStrategy::DetermineCnfSat(cnf::And& term) const
     else 
     {
       return future.get();
-    } 
+    }
   } else {
     future.wait();
     return future.get();

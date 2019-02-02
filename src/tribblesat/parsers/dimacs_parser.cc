@@ -44,7 +44,7 @@ cnf::And DiMacsParser::ParseCnf(std::istream& input) {
   std::vector<std::string> line_contents = absl::StrSplit(line, ' ', absl::SkipEmpty());
   // Expectation:  line is in the form 'p cnf nvar nclause'
   LOG(LogLevel::VERBOSE, "nvar " + line_contents[2]);
-  uint32_t num_terms = std::stoi(line_contents[2]);
+  //uint32_t num_terms = std::stoi(line_contents[2]);
   LOG(LogLevel::VERBOSE, "nclause " + line_contents[3]);
   uint32_t num_clauses = std::stoi(line_contents[3]);
   std::list<cnf::Or> terms;
