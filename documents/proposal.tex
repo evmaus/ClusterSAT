@@ -59,12 +59,12 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
   multiple machines to achieve better scalability.
 
 \section{Implementation Plan}
-  By February 7th, I intend to have a basic prototype working.  This will consist of a CDCL based SAT solver (TribbleSAT) 
-  and a way to send a coordinator a SAT problem, have it farm that problem out to multiple copies of TribbleSAT, and 
-  aggregate the results from those nodes.
+  By February 7th, I intend to have a basic prototype working.  This will consist of a CDCL based SAT solver (TribbleSAT),
+  a prototype ClusterSAT fabric, and a way to send a coordinator a SAT problem, have it farm that problem out to multiple 
+  copies of TribbleSAT over the network, and aggregate the results from the solver nodes.
 
-  By the end of February, I'll implement clause sharing across TribbleSAT nodes and only utilizing smaller parts of the 
-  cluster for smaller problems--determining the amount of compute required based on the problem size.
+  By the end of February, I'll implement two-watched-literals instead of linear scanning for BCP, clause sharing across 
+  TribbleSAT nodes and implement more restart/compacting/variable selection/etc. strategies in TribbleSAT.
 
   In the last few weeks of class, I'll be benchmarking the solver against single threaded TribbleSAT and Glucose on various
   problem set sizes, and, budget permitting (i.e. if I can use free cloud services for it), demonstrating it running on a

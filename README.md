@@ -7,11 +7,13 @@ Experimental SAT solver.  I'll be exploring parallel SAT solving here.
 - Handle errors better than crashing in both dimacs_parser
 - Unimplemented tests
 - Mock out tests for the solver node, client, leader node, etc.
+- More comments in ClusterSAT
+- Switch TribbleSAT over to the google logging framework rather than a custom one.
 
 ## TODO (Project)
 
-- Stop all nodes currently working on a problem when a node finishes it.
-- Script setting up a coordinator and solving nodes, and demonstrate distributing problems to both.
+- Logging for TribbleSAT server node
+- Solve one problem at a time on a node.
 - Implement sharing of learned terms.
 - Implement more variable selection strategies.
 - Implement more restart strategies.

@@ -16,7 +16,11 @@
 DEFINE_string(listening_address, "0.0.0.0:50051", "IP and Port to listen on");
 
 void RunServer(std::string server_address) {
-  tribblesat::CDCLConfiguration config(100000000);
+  tribblesat::CDCLConfiguration config(30000000, 
+    tribblesat::VariableSelectorType::VSIDS, 
+    tribblesat::CompactingPolicyType::TERM_SIZE,
+    tribblesat::RestartPolicyType::GEOMETRIC);
+
   tribblesat::CDCLSatStrategy strategy(config);
   clustersat::TribbleSatWrapper wrapper(strategy);
 

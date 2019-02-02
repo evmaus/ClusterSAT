@@ -1,8 +1,8 @@
 #include "src/tribblesat/sat/cdcl_trace.h"
-#include "src/tribblesat/common/log.h"
 #include "src/tribblesat/sat/clause_database.h"
 #include <string>
 #include <sstream>
+#include <glog/logging.h>
 
 namespace tribblesat {
 
@@ -105,13 +105,13 @@ std::pair<int, cnf::Or> CDCLTrace::LearnClauses(int decision_level, const Clause
     return std::pair<int, cnf::Or>(-1, cnf::Or());  
   }
   
-  LOG(LogLevel::VERBOSE, "Trace: " + to_string());
+  LOG(INFO) << ( "Trace: " + to_string());
   cnf::Or conflict_term = clause_db.next_empty();
   int curr_lit_count = litsAtLevel(conflict_term, decision_level);
   while (curr_lit_count != 1) {
-    LOG(LogLevel::VERBOSE, "Current lit count " + std::to_string(curr_lit_count));
+    LOG(INFO) << ( "Current lit count " + std::to_string(curr_lit_count));
     CDCLTraceTerm next_term = getLastAssignedInTerm(conflict_term);
-    LOG(LogLevel::VERBOSE, "Merging: " + conflict_term.to_string() + " with " + next_term.term.to_string());
+    LOG(INFO) << ( "Merging: " + conflict_term.to_string() + " with " + next_term.term.to_string());
     conflict_term = Resolve(next_term, conflict_term);
     curr_lit_count = litsAtLevel(conflict_term, decision_level);
   }
@@ -126,7 +126,7 @@ void CDCLTrace::Backtrack(int backtrack_level) {
   if (backtrack_level == 0)
   {
     trace_.clear();
-    LOG(LogLevel::VERBOSE, "Backtrack to zero left " + std::to_string(trace_.size()) + " elements");
+    LOG(INFO) << ( "Backtrack to zero left " + std::to_string(trace_.size()) + " elements");
     return;
   }
 

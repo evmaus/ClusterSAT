@@ -1,5 +1,6 @@
 #include "src/clustersat/node/tribblesat_wrapper.h"
 
+#include <glog/logging.h>
 
 namespace clustersat
 {
@@ -56,7 +57,9 @@ TribbleSatWrapper::TribbleSatWrapper(tribblesat::SatStrategy& strategy) : strate
 
 clustersat::SatResult TribbleSatWrapper::GetSatisfiability(clustersat::AndTerm term, std::atomic_bool& should_run) {
   auto andTerm = ClustersatAndToTribblesatAnd(term);
+  LOG(INFO) << "Starting SAT";
   tribblesat::SatResult result = strategy_.DetermineCnfSatWithCancellation(andTerm, should_run);
+  LOG(INFO) << "Finished SAT";
   return TribblesatResultToClustersatResult(std::move(result));
 }
 

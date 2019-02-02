@@ -70,9 +70,12 @@ void LeaderNode::StepServer() {
           SatResult intermediate = result.ValueOrDie();
           if (intermediate.result() == clustersat::SatResult::SAT 
               || intermediate.result() == clustersat::SatResult::UNSAT) {
-            LOG(INFO) << "Got result " << intermediate.result() << " from node." << std::endl;
+            LOG(INFO) << "Got result " << intermediate.result() << " for problem " << intermediate.id().id() << " from node." << std::endl;
             current.result = intermediate;
             all_unknown = false;
+            for (auto node : nodes_) {
+              node.CancelRequest(current.result.id());
+            }
             break;
           }
           if (intermediate.result() != SatResult::UNKNOWN) {
@@ -80,6 +83,7 @@ void LeaderNode::StepServer() {
           }
         } else {
           LOG(ERROR) << "Error retrieving result id" << current.id << " from node " << std::endl;
+          all_unknown = false;
         }
       }
       if (all_unknown) {

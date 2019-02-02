@@ -27,6 +27,7 @@ cc_library(
   deps = [
     "//src/tribblesat/sat:cdcl_sat",
     "//src/clustersat/protocol:clustersat_proto",
+    "@com_google_glog//:glog",
   ]
 )
 

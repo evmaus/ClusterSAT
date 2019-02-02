@@ -1,6 +1,8 @@
 
 #include "src/clustersat/node/tribblesat_server_impl.h"
 
+#include <glog/logging.h>
+
 namespace clustersat {
 TribbleSatServiceImpl::TribbleSatServiceImpl(clustersat::TribbleSatWrapper& wrapper) : wrapper_(wrapper) {
 
