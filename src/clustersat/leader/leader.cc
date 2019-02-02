@@ -26,17 +26,24 @@ LeaderNode::LeaderNode(std::vector<SolverNode> nodes) : nodes_(nodes)
 SatRequestIdentifier LeaderNode::StartSatisfiability(SatQuery query)
 {
   SatRequestIdentifier identifier;
+  SatQueryAndResult result;
   // Register the query by ID
   {
     std::lock_guard<std::mutex> guard(solver_queries_mutex_);
-    solver_queries_.push_back(query);
-    identifier.set_id(solver_queries_.size()-1);
-    LOG(INFO) << "Assigned id " << identifier.id() << " to the request";
-  }
+    identifier.set_id(solver_queries_.size());
 
-  // Submit to each node.
-  for (auto node : nodes_) {
-    node.SubmitResult(identifier, query);
+    result.id = identifier.id();
+    result.query = query;
+    result.result.set_result(SatResult::IN_PROGRESS);
+    *result.result.mutable_id() = identifier;
+    solver_queries_.push_back(result);
+    LOG(INFO) << "Assigned id " << identifier.id() << " to the request";
+
+    // Submit to each node.
+    for (int i = 0; i < nodes_.size(); i++) {
+      nodes_.at(i).SubmitResult(identifier, query);
+      solver_queries_.at(identifier.id()).solving_nodes.push_back(i);
+    }
   }
 
   return identifier;
@@ -44,24 +51,34 @@ SatRequestIdentifier LeaderNode::StartSatisfiability(SatQuery query)
 
 SatResult LeaderNode::GetSatResultFromNodes(SatRequestIdentifier id)
 {
-  for (auto node : nodes_)
-  {
-    auto result = node.GetNodeResult(id);
-    if(result.ok()) {
-      SatResult intermediate = result.ValueOrDie();
-      if (intermediate.result() != clustersat::SatResult::IN_PROGRESS) {
-        return intermediate;
+  // TODO: Bounds check here.
+  if (solver_queries_.at(id.id()).result.result() == SatResult::IN_PROGRESS) {
+    bool all_unknown = true;
+    for (auto node : nodes_)
+    {
+      auto result = node.GetNodeResult(id);
+      if(result.ok()) {
+        SatResult intermediate = result.ValueOrDie();
+        if (intermediate.result() == clustersat::SatResult::SAT 
+            || intermediate.result() == clustersat::SatResult::UNSAT) {
+          solver_queries_.at(id.id()).result = intermediate;
+          all_unknown = false;
+          break;
+        }
+        if (intermediate.result() != SatResult::UNKNOWN) {
+          all_unknown = false;
+        }
+      } else {
+        LOG(ERROR) << "Error retrieving result id" << id.id() << " from node " << std::endl;
       }
-    } else {
-      LOG(ERROR) << "Error retrieving result id" << id.id() << " from node " << std::endl;
+    }
+    if (all_unknown) {
+      solver_queries_.at(id.id()).result.set_result(SatResult::UNKNOWN);
     }
   }
-  SatResult result;
-  *result.mutable_id() = id;
-  result.set_result(clustersat::SatResult::IN_PROGRESS);
-  return result;
+  
+  return solver_queries_.at(id.id()).result;
 }
-
 
 // Get SAT Results for a particular request
 SatResult LeaderNode::GetSatisfiabilityResult(SatRequestIdentifier id) {

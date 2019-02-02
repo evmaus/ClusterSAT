@@ -21,6 +21,13 @@ class SolverNode {
   SatClient& client_;
 };
 
+struct SatQueryAndResult {
+  int id;
+  SatQuery query;
+  SatResult result;
+  std::vector<int> solving_nodes;
+};
+
 class LeaderNode {
   public:
   // Create a leader node with the attached solver nodes.
@@ -39,7 +46,7 @@ class LeaderNode {
   SatResult GetSatResultFromNodes(SatRequestIdentifier id);
 
   std::mutex solver_queries_mutex_;
-  std::vector<SatQuery> solver_queries_;
+  std::vector<SatQueryAndResult> solver_queries_;
 
   std::mutex nodes_mutex_;
   std::vector<SolverNode> nodes_;
