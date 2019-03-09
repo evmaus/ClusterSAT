@@ -8,7 +8,7 @@
 \maketitle
 
 \begin{abstract}
-  I propose developing a SAT solver which allows clustering for faster solving, in the 
+  I propose developing a SAT solver which supports clustering for faster solving, in the 
   vein of ManySAT, but communicating over network protocols to allow for scaling beyond
   a single computer.
 \end{abstract}
@@ -23,7 +23,8 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
   a cursory research examination makes it appear that these are really only run on single machines.
 
   In the meantime, the rise of commodity computing in the cloud has made lower performance, networked
-  computation readily available.
+  computation readily available.  In order to scale SAT solving beyond a single machine, a networked, clustered
+  SAT solving interface is needed.
 
 \section{Precise Description}
 
@@ -63,12 +64,11 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
   a prototype ClusterSAT fabric, and a way to send a coordinator a SAT problem, have it farm that problem out to multiple 
   copies of TribbleSAT over the network, and aggregate the results from the solver nodes.
 
-  By the end of February, I'll implement two-watched-literals instead of linear scanning for BCP, clause sharing across 
-  TribbleSAT nodes and implement more restart/compacting/variable selection/etc. strategies in TribbleSAT.
+  By the end of February, I'll implement clause sharing across TribbleSAT nodes, and implement more 
+  restart/compacting/variable selection/etc. strategies in TribbleSAT.  Time permitting, I'll also look into integrating an alternative 
+  solver (without clause sharing), to demonstrate the flexibility of ClusterSAT.
 
-  In the last few weeks of class, I'll be benchmarking the solver against single threaded TribbleSAT and Glucose on various
-  problem set sizes, and, budget permitting (i.e. if I can use free cloud services for it), demonstrating it running on a
-  cloud provider.
-
+  In the last few weeks of class, I'll be benchmarking ClusterSAT against single threaded TribbleSAT and Glucose on various
+  problem set sizes, and, budget permitting, demonstrating it running on a cloud provider.
 
 \end{document}

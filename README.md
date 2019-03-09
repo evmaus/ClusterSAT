@@ -12,7 +12,6 @@ Experimental SAT solver.  I'll be exploring parallel SAT solving here.
 
 ## TODO (Project)
 
-- Logging for TribbleSAT server node
 - Solve one problem at a time on a node.
 - Implement sharing of learned terms.
 - Implement more variable selection strategies.
