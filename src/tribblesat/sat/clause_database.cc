@@ -1,7 +1,6 @@
 
 #include "src/tribblesat/sat/clause_database.h"
 
-#include "src/tribblesat/common/log.h"
 
 namespace tribblesat {
 ClauseDatabase::ClauseDatabase(cnf::And& term, 
@@ -22,14 +21,12 @@ void ClauseDatabase::compact(int decision_level) {
       return;
     }
     
-    LOG(LogLevel::VERBOSE, "test1");
     int i = 0;
     for (auto it = learned_clauses_.cbegin(); 
             it != learned_clauses_.cend() && 
             (i < learned_clauses_.count() - keep_terms); 
             it++) {
       if (compacting_policy_->remove_term(i, *it)) {
-        LOG(LogLevel::VERBOSE, "test " + std::to_string(i) +" " +(*it).to_string());
         it = learned_clauses_.erase(it);
       }
       i++;

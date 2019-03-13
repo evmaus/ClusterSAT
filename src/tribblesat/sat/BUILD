@@ -3,11 +3,11 @@ cc_library(
     srcs = [ "sat_strategy.cc" ],
     hdrs = [ "sat_strategy.h" ],
     deps = [
-        "//src/tribblesat/common:log",
         "//src/tribblesat/cnf:cnf_and",
         "//src/tribblesat/cnf:cnf_or",
         "//src/tribblesat/variable_environment:variable_environment",
         "//src/tribblesat/cnf:cnf_variable",
+        "@com_google_glog//:glog",
     ],
     visibility = [ "//visibility:public" ],
 )
@@ -121,7 +121,7 @@ cc_library(
     hdrs = [ "restart_policy.h" ],
     deps = [
         "//src/tribblesat/common:stats",
-        "//src/tribblesat/common:log"
+        "@com_google_glog//:glog",
     ],
 )
 

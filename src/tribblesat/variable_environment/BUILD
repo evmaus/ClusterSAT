@@ -2,7 +2,9 @@ cc_library(
   name = "variable_environment",
   srcs = [ "variable_environment.cc" ],
   hdrs = [ "variable_environment.h" ],
-  deps = [ "//src/tribblesat/common:log" ],
+  deps = [ 
+    "@com_google_glog//:glog",
+  ],
   visibility = [ "//visibility:public" ],
 )
 
@@ -58,8 +60,8 @@ cc_library(
   deps = [ 
     "variable_environment",
     "//src/tribblesat/cnf:cnf_and",
-    "//src/tribblesat/common:log",
     "//src/tribblesat/common:stats",
+    "@com_google_glog//:glog",
   ],
   visibility = [ "//visibility:public" ],
 )

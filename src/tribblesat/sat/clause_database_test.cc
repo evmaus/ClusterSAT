@@ -1,7 +1,6 @@
 #include "src/tribblesat/sat/clause_database.h"
 
 #include "googletest/include/gtest/gtest.h"
-#include "src/tribblesat/common/log.h"
 
 namespace tribblesat {
 namespace test {

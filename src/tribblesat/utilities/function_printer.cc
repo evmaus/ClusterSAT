@@ -4,16 +4,15 @@
 #include "gflags/gflags.h"
 #include "src/tribblesat/parsers/dimacs_parser.h"
 #include "src/tribblesat/bin_algebra/function.h"
-#include "src/tribblesat/common/log.h"
+#include <glog/logging.h>
 
 DEFINE_string(file, "",
   "DIMACS Format file to pretty print");
 
 
 int main(int argc, char** argv) {
+  google::InitGoogleLogging(argv[0]);
   gflags::ParseCommandLineFlags(&argc, &argv, true);
-
-  tribblesat::SET_LOG_LEVEL(tribblesat::LogLevel::VERBOSE);
 
   std::ifstream file(FLAGS_file);
   tribblesat::DiMacsParser parser;

@@ -4,7 +4,6 @@
 #include <sstream>
 
 #include "src/tribblesat/cnf/cnf_variable.h"
-#include "src/tribblesat/common/log.h"
 
 namespace tribblesat {
 namespace cnf {

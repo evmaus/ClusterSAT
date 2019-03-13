@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 
-#include "src/tribblesat/common/log.h"
+#include <glog/logging.h>
 
 namespace tribblesat {
 
@@ -46,7 +46,7 @@ void VariableEnvironmentStack::assign(variable_id variable, VariableState value)
 
 VariableState VariableEnvironmentStack::lookup(variable_id variable) const {
   if (variable == 0 || variable > count_) {
-    LOG(LogLevel::ERROR, "Attempted to look up variable id " + std::to_string(variable) + " in env of count "+std::to_string(count_));
+    LOG(ERROR) << "Attempted to look up variable id " << std::to_string(variable) << " in env of count " << std::to_string(count_);
   }
 
   VariableStackEntry lookup = variable_map_.at(variable);

@@ -1,0 +1,6819 @@
+Server listening on 0.0.0.0:50053
+Server listening on 0.0.0.0:50052
+Stats: bcp_terms : 56890.000000
+bcp_time : 4.226518
+conflict_time : 0.783298
+conflict_total_size : 6903.000000
+conflicts : 644.000000
+total_time : 6.222876
+total_variable_pick : 0.394706
+Stats: bcp_terms : 180.000000
+bcp_time : 0.023063
+conflict_time : 0.002086
+conflict_total_size : 15.000000
+conflicts : 2.000000
+total_time : 0.044328
+total_variable_pick : 0.006737
+Stats: bcp_terms : 7009.000000
+bcp_time : 0.541871
+conflict_time : 0.116495
+conflict_total_size : 1348.000000
+conflicts : 100.000000
+total_time : 0.809675
+total_variable_pick : 0.055013
+Stats: bcp_terms : 631.000000
+bcp_time : 0.068723
+conflict_time : 0.016501
+conflict_total_size : 127.000000
+conflicts : 11.000000
+total_time : 0.119929
+total_variable_pick : 0.013509
+Stats: bcp_terms : 3668.000000
+bcp_time : 0.249185
+conflict_time : 0.067262
+conflict_total_size : 539.000000
+conflicts : 48.000000
+total_time : 0.383845
+total_variable_pick : 0.026741
+Stats: bcp_terms : 8759.000000
+bcp_time : 0.682928
+conflict_time : 0.149882
+conflict_total_size : 1461.000000
+conflicts : 123.000000
+total_time : 1.014176
+total_variable_pick : 0.071064
+Stats: bcp_terms : 793.000000
+bcp_time : 0.061664
+conflict_time : 0.014220
+conflict_total_size : 119.000000
+conflicts : 11.000000
+total_time : 0.098122
+total_variable_pick : 0.007700
+Stats: bcp_terms : 84.000000
+bcp_time : 0.022494
+conflict_time : 0.001555
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.047041
+total_variable_pick : 0.008159
+Stats: bcp_terms : 922.000000
+bcp_time : 0.074987
+conflict_time : 0.016564
+conflict_total_size : 194.000000
+conflicts : 15.000000
+total_time : 0.125247
+total_variable_pick : 0.012514
+Stats: bcp_terms : 4640.000000
+bcp_time : 0.350043
+conflict_time : 0.091177
+conflict_total_size : 905.000000
+conflicts : 64.000000
+total_time : 0.534958
+total_variable_pick : 0.035396
+Stats: bcp_terms : 27575.000000
+bcp_time : 1.972384
+conflict_time : 0.400952
+conflict_total_size : 3659.000000
+conflicts : 340.000000
+total_time : 2.906506
+total_variable_pick : 0.189759
+Stats: bcp_terms : 6617.000000
+bcp_time : 0.484917
+conflict_time : 0.110811
+conflict_total_size : 1060.000000
+conflicts : 88.000000
+total_time : 0.723402
+total_variable_pick : 0.048262
+Stats: bcp_terms : 40175.000000
+bcp_time : 3.226572
+conflict_time : 0.605504
+conflict_total_size : 5916.000000
+conflicts : 524.000000
+total_time : 4.765973
+total_variable_pick : 0.305557
+Stats: bcp_terms : 29246.000000
+bcp_time : 2.235842
+conflict_time : 0.474212
+conflict_total_size : 4248.000000
+conflicts : 386.000000
+total_time : 3.330249
+total_variable_pick : 0.224535
+Stats: bcp_terms : 105307.000000
+bcp_time : 8.545931
+conflict_time : 1.358324
+conflict_total_size : 14398.000000
+conflicts : 1265.000000
+total_time : 12.863521
+total_variable_pick : 0.815127
+Stats: bcp_terms : 56644.000000
+bcp_time : 4.291065
+conflict_time : 0.923647
+conflict_total_size : 8874.000000
+conflicts : 689.000000
+total_time : 6.608685
+total_variable_pick : 0.421561
+Stats: bcp_terms : 3161.000000
+bcp_time : 0.225886
+conflict_time : 0.057929
+conflict_total_size : 523.000000
+conflicts : 46.000000
+total_time : 0.351181
+total_variable_pick : 0.027761
+Stats: bcp_terms : 78.000000
+bcp_time : 0.017679
+total_time : 0.033943
+total_variable_pick : 0.005162
+Stats: bcp_terms : 93831.000000
+bcp_time : 8.224650
+conflict_time : 1.386222
+conflict_total_size : 13373.000000
+conflicts : 1106.000000
+total_time : 12.481489
+total_variable_pick : 0.761229
+Stats: bcp_terms : 604.000000
+bcp_time : 0.051981
+conflict_time : 0.012330
+conflict_total_size : 70.000000
+conflicts : 6.000000
+total_time : 0.085982
+total_variable_pick : 0.007743
+Stats: bcp_terms : 319.000000
+bcp_time : 0.044647
+conflict_time : 0.005873
+conflict_total_size : 49.000000
+conflicts : 6.000000
+total_time : 0.079621
+total_variable_pick : 0.011648
+Stats: bcp_terms : 663.000000
+bcp_time : 0.074769
+conflict_time : 0.015990
+conflict_total_size : 150.000000
+conflicts : 12.000000
+total_time : 0.129901
+total_variable_pick : 0.016216
+Stats: bcp_terms : 4810.000000
+bcp_time : 0.401992
+conflict_time : 0.113931
+conflict_total_size : 970.000000
+conflicts : 67.000000
+total_time : 0.625717
+total_variable_pick : 0.036547
+Stats: bcp_terms : 12728.000000
+bcp_time : 0.874710
+conflict_time : 0.191242
+conflict_total_size : 1633.000000
+conflicts : 159.000000
+total_time : 1.296827
+total_variable_pick : 0.090212
+Stats: bcp_terms : 41349.000000
+bcp_time : 2.798446
+conflict_time : 0.572568
+conflict_total_size : 4908.000000
+conflicts : 473.000000
+total_time : 4.101779
+total_variable_pick : 0.245551
+Stats: bcp_terms : 986.000000
+bcp_time : 0.083595
+conflict_time : 0.018687
+conflict_total_size : 177.000000
+conflicts : 15.000000
+total_time : 0.140819
+total_variable_pick : 0.016134
+Stats: bcp_terms : 2829.000000
+bcp_time : 0.218189
+conflict_time : 0.056396
+conflict_total_size : 476.000000
+conflicts : 41.000000
+total_time : 0.334573
+total_variable_pick : 0.023740
+Stats: bcp_terms : 1180.000000
+bcp_time : 0.094177
+conflict_time : 0.026819
+conflict_total_size : 245.000000
+conflicts : 19.000000
+total_time : 0.154768
+total_variable_pick : 0.012460
+Stats: bcp_terms : 52782.000000
+bcp_time : 4.228826
+conflict_time : 0.795468
+conflict_total_size : 7688.000000
+conflicts : 665.000000
+total_time : 6.243852
+total_variable_pick : 0.391346
+Stats: bcp_terms : 21866.000000
+bcp_time : 1.536351
+conflict_time : 0.311636
+conflict_total_size : 3121.000000
+conflicts : 270.000000
+total_time : 2.267395
+total_variable_pick : 0.155548
+Stats: bcp_terms : 67424.000000
+bcp_time : 4.641489
+conflict_time : 1.033488
+conflict_total_size : 8469.000000
+conflicts : 812.000000
+total_time : 6.913771
+total_variable_pick : 0.416621
+Stats: bcp_terms : 57009.000000
+bcp_time : 4.900041
+conflict_time : 0.843882
+conflict_total_size : 10258.000000
+conflicts : 749.000000
+total_time : 7.405860
+total_variable_pick : 0.477664
+Stats: bcp_terms : 366.000000
+bcp_time : 0.037322
+conflict_time : 0.006145
+conflict_total_size : 32.000000
+conflicts : 5.000000
+total_time : 0.066120
+total_variable_pick : 0.007962
+Stats: bcp_terms : 1747.000000
+bcp_time : 0.112493
+conflict_time : 0.028192
+conflict_total_size : 254.000000
+conflicts : 21.000000
+total_time : 0.176607
+total_variable_pick : 0.014962
+Stats: bcp_terms : 6463.000000
+bcp_time : 0.451263
+conflict_time : 0.109239
+conflict_total_size : 952.000000
+conflicts : 82.000000
+total_time : 0.675102
+total_variable_pick : 0.044322
+Stats: bcp_terms : 16774.000000
+bcp_time : 1.176138
+conflict_time : 0.250448
+conflict_total_size : 2653.000000
+conflicts : 217.000000
+total_time : 1.739183
+total_variable_pick : 0.116920
+Stats: bcp_terms : 812.000000
+bcp_time : 0.063797
+conflict_time : 0.012471
+conflict_total_size : 96.000000
+conflicts : 10.000000
+total_time : 0.106304
+total_variable_pick : 0.012315
+Stats: bcp_terms : 8469.000000
+bcp_time : 0.649170
+conflict_time : 0.153281
+conflict_total_size : 1647.000000
+conflicts : 119.000000
+total_time : 0.984945
+total_variable_pick : 0.067883
+Stats: bcp_terms : 6652.000000
+bcp_time : 0.467619
+conflict_time : 0.111293
+conflict_total_size : 904.000000
+conflicts : 85.000000
+total_time : 0.687395
+total_variable_pick : 0.039980
+Stats: bcp_terms : 1636.000000
+bcp_time : 0.121721
+conflict_time : 0.030705
+conflict_total_size : 233.000000
+conflicts : 23.000000
+total_time : 0.190875
+total_variable_pick : 0.015272
+Stats: bcp_terms : 11800.000000
+bcp_time : 0.883958
+conflict_time : 0.215784
+conflict_total_size : 2074.000000
+conflicts : 165.000000
+total_time : 1.345515
+total_variable_pick : 0.090437
+Stats: bcp_terms : 14485.000000
+bcp_time : 1.080682
+conflict_time : 0.233917
+conflict_total_size : 2292.000000
+conflicts : 202.000000
+total_time : 1.617210
+total_variable_pick : 0.108211
+Stats: bcp_terms : 86954.000000
+bcp_time : 6.943130
+conflict_time : 1.173541
+conflict_total_size : 11351.000000
+conflicts : 1029.000000
+total_time : 10.332900
+total_variable_pick : 0.660458
+Stats: bcp_terms : 13911.000000
+bcp_time : 0.965105
+conflict_time : 0.209811
+conflict_total_size : 2081.000000
+conflicts : 178.000000
+total_time : 1.416788
+total_variable_pick : 0.090522
+Stats: bcp_terms : 45932.000000
+bcp_time : 3.279791
+conflict_time : 0.647402
+conflict_total_size : 6208.000000
+conflicts : 562.000000
+total_time : 4.810769
+total_variable_pick : 0.304417
+Stats: bcp_terms : 476.000000
+bcp_time : 0.057009
+conflict_time : 0.010366
+conflict_total_size : 102.000000
+conflicts : 10.000000
+total_time : 0.098050
+total_variable_pick : 0.011926
+Stats: bcp_terms : 14648.000000
+bcp_time : 1.061220
+conflict_time : 0.221883
+conflict_total_size : 2161.000000
+conflicts : 184.000000
+total_time : 1.550064
+total_variable_pick : 0.100658
+Stats: bcp_terms : 2429.000000
+bcp_time : 0.192328
+conflict_time : 0.044829
+conflict_total_size : 454.000000
+conflicts : 36.000000
+total_time : 0.296309
+total_variable_pick : 0.024258
+Stats: bcp_terms : 8058.000000
+bcp_time : 0.572907
+conflict_time : 0.138752
+conflict_total_size : 1368.000000
+conflicts : 105.000000
+total_time : 0.867391
+total_variable_pick : 0.058458
+Stats: bcp_terms : 4964.000000
+bcp_time : 0.338403
+conflict_time : 0.075823
+conflict_total_size : 842.000000
+conflicts : 70.000000
+total_time : 0.509287
+total_variable_pick : 0.038186
+Stats: bcp_terms : 4540.000000
+bcp_time : 0.338749
+conflict_time : 0.081056
+conflict_total_size : 814.000000
+conflicts : 67.000000
+total_time : 0.521266
+total_variable_pick : 0.040436
+Stats: bcp_terms : 54601.000000
+bcp_time : 4.437324
+conflict_time : 0.803739
+conflict_total_size : 8665.000000
+conflicts : 697.000000
+total_time : 6.684035
+total_variable_pick : 0.430603
+Stats: bcp_terms : 102.000000
+bcp_time : 0.023842
+conflict_time : 0.000915
+conflict_total_size : 10.000000
+conflicts : 1.000000
+total_time : 0.048487
+total_variable_pick : 0.009104
+Stats: bcp_terms : 51802.000000
+bcp_time : 4.116069
+conflict_time : 0.758474
+conflict_total_size : 6979.000000
+conflicts : 629.000000
+total_time : 6.069919
+total_variable_pick : 0.384238
+Stats: bcp_terms : 1193.000000
+bcp_time : 0.112991
+conflict_time : 0.024706
+conflict_total_size : 225.000000
+conflicts : 19.000000
+total_time : 0.180441
+total_variable_pick : 0.017311
+Stats: bcp_terms : 13010.000000
+bcp_time : 0.957943
+conflict_time : 0.205909
+conflict_total_size : 1836.000000
+conflicts : 168.000000
+total_time : 1.411480
+total_variable_pick : 0.095783
+Stats: bcp_terms : 1234.000000
+bcp_time : 0.095553
+conflict_time : 0.022450
+conflict_total_size : 153.000000
+conflicts : 14.000000
+total_time : 0.150825
+total_variable_pick : 0.012944
+Stats: bcp_terms : 369.000000
+bcp_time : 0.041286
+conflict_time : 0.006839
+conflict_total_size : 49.000000
+conflicts : 4.000000
+total_time : 0.074288
+total_variable_pick : 0.011040
+Stats: bcp_terms : 35173.000000
+bcp_time : 2.615234
+conflict_time : 0.524771
+conflict_total_size : 4973.000000
+conflicts : 440.000000
+total_time : 3.830558
+total_variable_pick : 0.237085
+Stats: bcp_terms : 69777.000000
+bcp_time : 5.549672
+conflict_time : 0.925366
+conflict_total_size : 9943.000000
+conflicts : 883.000000
+total_time : 8.312029
+total_variable_pick : 0.572197
+Stats: bcp_terms : 325.000000
+bcp_time : 0.038142
+conflict_time : 0.006922
+conflict_total_size : 45.000000
+conflicts : 5.000000
+total_time : 0.071137
+total_variable_pick : 0.009625
+Stats: bcp_terms : 5150.000000
+bcp_time : 0.371165
+conflict_time : 0.083389
+conflict_total_size : 870.000000
+conflicts : 73.000000
+total_time : 0.550232
+total_variable_pick : 0.038143
+Stats: bcp_terms : 39271.000000
+bcp_time : 3.333680
+conflict_time : 0.614092
+conflict_total_size : 6806.000000
+conflicts : 531.000000
+total_time : 4.997816
+total_variable_pick : 0.338176
+Stats: bcp_terms : 2571.000000
+bcp_time : 0.191692
+conflict_time : 0.045645
+conflict_total_size : 384.000000
+conflicts : 35.000000
+total_time : 0.296118
+total_variable_pick : 0.023741
+Stats: bcp_terms : 17649.000000
+bcp_time : 1.220644
+conflict_time : 0.297700
+conflict_total_size : 2565.000000
+conflicts : 221.000000
+total_time : 1.829100
+total_variable_pick : 0.113595
+Stats: bcp_terms : 227.000000
+bcp_time : 0.026569
+conflict_time : 0.002704
+conflict_total_size : 25.000000
+conflicts : 2.000000
+total_time : 0.051533
+total_variable_pick : 0.007748
+Stats: bcp_terms : 291.000000
+bcp_time : 0.034097
+conflict_time : 0.006180
+conflict_total_size : 50.000000
+conflicts : 6.000000
+total_time : 0.065402
+total_variable_pick : 0.008052
+Stats: bcp_terms : 18652.000000
+bcp_time : 1.347336
+conflict_time : 0.275500
+conflict_total_size : 2641.000000
+conflicts : 240.000000
+total_time : 1.980908
+total_variable_pick : 0.135808
+Stats: bcp_terms : 32897.000000
+bcp_time : 2.367935
+conflict_time : 0.494231
+conflict_total_size : 4270.000000
+conflicts : 393.000000
+total_time : 3.501690
+total_variable_pick : 0.224294
+Stats: bcp_terms : 2504.000000
+bcp_time : 0.182052
+conflict_time : 0.049106
+conflict_total_size : 451.000000
+conflicts : 34.000000
+total_time : 0.286819
+total_variable_pick : 0.023437
+Stats: bcp_terms : 14477.000000
+bcp_time : 1.014895
+conflict_time : 0.234552
+conflict_total_size : 2440.000000
+conflicts : 190.000000
+total_time : 1.538760
+total_variable_pick : 0.107281
+Stats: bcp_terms : 70685.000000
+bcp_time : 5.438607
+conflict_time : 0.990147
+conflict_total_size : 10590.000000
+conflicts : 856.000000
+total_time : 8.163851
+total_variable_pick : 0.518193
+Stats: bcp_terms : 78.000000
+bcp_time : 0.021456
+conflict_time : 0.000927
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.045277
+total_variable_pick : 0.008239
+Stats: bcp_terms : 149380.000000
+bcp_time : 13.956423
+conflict_time : 1.981644
+conflict_total_size : 22833.000000
+conflicts : 1823.000000
+total_time : 21.804088
+total_variable_pick : 1.454213
+Stats: bcp_terms : 813.000000
+bcp_time : 0.067621
+conflict_time : 0.013856
+conflict_total_size : 115.000000
+conflicts : 12.000000
+total_time : 0.110112
+total_variable_pick : 0.010753
+Stats: bcp_terms : 22777.000000
+bcp_time : 1.675562
+conflict_time : 0.351902
+conflict_total_size : 3025.000000
+conflicts : 289.000000
+total_time : 2.474994
+total_variable_pick : 0.162635
+Stats: bcp_terms : 31696.000000
+bcp_time : 2.470056
+conflict_time : 0.563715
+conflict_total_size : 5166.000000
+conflicts : 427.000000
+total_time : 3.744238
+total_variable_pick : 0.237858
+Stats: bcp_terms : 2617.000000
+bcp_time : 0.209475
+conflict_time : 0.053532
+conflict_total_size : 437.000000
+conflicts : 38.000000
+total_time : 0.324220
+total_variable_pick : 0.024612
+Stats: bcp_terms : 85.000000
+bcp_time : 0.016270
+total_time : 0.033081
+total_variable_pick : 0.005879
+Stats: bcp_terms : 665.000000
+bcp_time : 0.057221
+conflict_time : 0.011137
+conflict_total_size : 82.000000
+conflicts : 9.000000
+total_time : 0.094351
+total_variable_pick : 0.009345
+Stats: bcp_terms : 15756.000000
+bcp_time : 1.132850
+conflict_time : 0.251463
+conflict_total_size : 2272.000000
+conflicts : 203.000000
+total_time : 1.690460
+total_variable_pick : 0.113839
+Stats: bcp_terms : 1868.000000
+bcp_time : 0.138470
+conflict_time : 0.031127
+conflict_total_size : 266.000000
+conflicts : 26.000000
+total_time : 0.216013
+total_variable_pick : 0.019707
+Stats: bcp_terms : 483.000000
+bcp_time : 0.045187
+conflict_time : 0.008307
+conflict_total_size : 80.000000
+conflicts : 6.000000
+total_time : 0.078104
+total_variable_pick : 0.008662
+Stats: bcp_terms : 24760.000000
+bcp_time : 1.686580
+conflict_time : 0.361097
+conflict_total_size : 3595.000000
+conflicts : 305.000000
+total_time : 2.493252
+total_variable_pick : 0.161790
+Stats: bcp_terms : 1544.000000
+bcp_time : 0.121696
+conflict_time : 0.027824
+conflict_total_size : 221.000000
+conflicts : 21.000000
+total_time : 0.195575
+total_variable_pick : 0.019512
+Stats: bcp_terms : 8949.000000
+bcp_time : 0.653635
+conflict_time : 0.157573
+conflict_total_size : 1544.000000
+conflicts : 127.000000
+total_time : 1.000744
+total_variable_pick : 0.071658
+Stats: bcp_terms : 8797.000000
+bcp_time : 0.591055
+conflict_time : 0.141251
+conflict_total_size : 1240.000000
+conflicts : 112.000000
+total_time : 0.876856
+total_variable_pick : 0.054377
+Stats: bcp_terms : 103.000000
+bcp_time : 0.020708
+conflict_time : 0.001478
+conflict_total_size : 16.000000
+conflicts : 1.000000
+total_time : 0.045057
+total_variable_pick : 0.008797
+Stats: bcp_terms : 241.000000
+bcp_time : 0.035968
+conflict_time : 0.003804
+conflict_total_size : 26.000000
+conflicts : 3.000000
+total_time : 0.068065
+total_variable_pick : 0.010924
+Stats: bcp_terms : 358.000000
+bcp_time : 0.035646
+conflict_time : 0.005698
+conflict_total_size : 36.000000
+conflicts : 4.000000
+total_time : 0.063317
+total_variable_pick : 0.008282
+Stats: bcp_terms : 1063.000000
+bcp_time : 0.090331
+conflict_time : 0.017308
+conflict_total_size : 148.000000
+conflicts : 15.000000
+total_time : 0.142634
+total_variable_pick : 0.014082
+Stats: bcp_terms : 771.000000
+bcp_time : 0.054129
+conflict_time : 0.011991
+conflict_total_size : 108.000000
+conflicts : 9.000000
+total_time : 0.089131
+total_variable_pick : 0.008820
+Stats: bcp_terms : 18093.000000
+bcp_time : 1.223423
+conflict_time : 0.282456
+conflict_total_size : 2591.000000
+conflicts : 222.000000
+total_time : 1.839419
+total_variable_pick : 0.117159
+Stats: bcp_terms : 9444.000000
+bcp_time : 0.657567
+conflict_time : 0.141049
+conflict_total_size : 1175.000000
+conflicts : 117.000000
+total_time : 0.962160
+total_variable_pick : 0.063249
+Stats: bcp_terms : 693.000000
+bcp_time : 0.053100
+conflict_time : 0.012440
+conflict_total_size : 107.000000
+conflicts : 9.000000
+total_time : 0.091483
+total_variable_pick : 0.009630
+Stats: bcp_terms : 13351.000000
+bcp_time : 0.951548
+conflict_time : 0.199563
+conflict_total_size : 2102.000000
+conflicts : 174.000000
+total_time : 1.406881
+total_variable_pick : 0.098591
+Stats: bcp_terms : 46261.000000
+bcp_time : 3.358357
+conflict_time : 0.660085
+conflict_total_size : 6667.000000
+conflicts : 551.000000
+total_time : 4.989210
+total_variable_pick : 0.316643
+Stats: bcp_terms : 1791.000000
+bcp_time : 0.147541
+conflict_time : 0.037025
+conflict_total_size : 367.000000
+conflicts : 32.000000
+total_time : 0.240360
+total_variable_pick : 0.023331
+Stats: bcp_terms : 2319.000000
+bcp_time : 0.163062
+conflict_time : 0.042915
+conflict_total_size : 292.000000
+conflicts : 30.000000
+total_time : 0.246633
+total_variable_pick : 0.016509
+Stats: bcp_terms : 1140.000000
+bcp_time : 0.089118
+conflict_time : 0.019451
+conflict_total_size : 158.000000
+conflicts : 17.000000
+total_time : 0.145126
+total_variable_pick : 0.014589
+Stats: bcp_terms : 44403.000000
+bcp_time : 3.560328
+conflict_time : 0.667601
+conflict_total_size : 7070.000000
+conflicts : 563.000000
+total_time : 5.296011
+total_variable_pick : 0.343880
+Stats: bcp_terms : 99017.000000
+bcp_time : 8.284686
+conflict_time : 1.390405
+conflict_total_size : 14590.000000
+conflicts : 1163.000000
+total_time : 12.565377
+total_variable_pick : 0.776596
+Stats: bcp_terms : 515.000000
+bcp_time : 0.043916
+conflict_time : 0.009499
+conflict_total_size : 81.000000
+conflicts : 7.000000
+total_time : 0.078813
+total_variable_pick : 0.009380
+Stats: bcp_terms : 1375.000000
+bcp_time : 0.111415
+conflict_time : 0.024819
+conflict_total_size : 242.000000
+conflicts : 18.000000
+total_time : 0.175790
+total_variable_pick : 0.016085
+Stats: bcp_terms : 173235.000000
+bcp_time : 15.668075
+conflict_time : 2.276603
+conflict_total_size : 26666.000000
+conflicts : 2106.000000
+total_time : 24.573807
+total_variable_pick : 1.612856
+Stats: bcp_terms : 1402.000000
+bcp_time : 0.111722
+conflict_time : 0.027302
+conflict_total_size : 204.000000
+conflicts : 20.000000
+total_time : 0.182299
+total_variable_pick : 0.017608
+Stats: bcp_terms : 1884.000000
+bcp_time : 0.132820
+conflict_time : 0.035557
+conflict_total_size : 316.000000
+conflicts : 28.000000
+total_time : 0.210952
+total_variable_pick : 0.017463
+Stats: bcp_terms : 68636.000000
+bcp_time : 5.617705
+conflict_time : 1.027765
+conflict_total_size : 10534.000000
+conflicts : 874.000000
+total_time : 8.476497
+total_variable_pick : 0.523429
+Stats: bcp_terms : 6084.000000
+bcp_time : 0.452242
+conflict_time : 0.103092
+conflict_total_size : 1032.000000
+conflicts : 85.000000
+total_time : 0.691725
+total_variable_pick : 0.053113
+Stats: bcp_terms : 51416.000000
+bcp_time : 3.846633
+conflict_time : 0.715317
+conflict_total_size : 7278.000000
+conflicts : 659.000000
+total_time : 5.666923
+total_variable_pick : 0.366895
+Stats: bcp_terms : 21168.000000
+bcp_time : 1.559389
+conflict_time : 0.333606
+conflict_total_size : 3021.000000
+conflicts : 266.000000
+total_time : 2.274433
+total_variable_pick : 0.137105
+Stats: bcp_terms : 70466.000000
+bcp_time : 5.082240
+conflict_time : 0.969502
+conflict_total_size : 8924.000000
+conflicts : 816.000000
+total_time : 7.574558
+total_variable_pick : 0.463799
+Stats: bcp_terms : 4804.000000
+bcp_time : 0.359586
+conflict_time : 0.090862
+conflict_total_size : 840.000000
+conflicts : 65.000000
+total_time : 0.547976
+total_variable_pick : 0.038332
+Stats: bcp_terms : 14689.000000
+bcp_time : 1.039594
+conflict_time : 0.240487
+conflict_total_size : 2145.000000
+conflicts : 183.000000
+total_time : 1.549920
+total_variable_pick : 0.101084
+Stats: bcp_terms : 34791.000000
+bcp_time : 2.378869
+conflict_time : 0.504181
+conflict_total_size : 4917.000000
+conflicts : 410.000000
+total_time : 3.566096
+total_variable_pick : 0.228323
+Stats: bcp_terms : 6395.000000
+bcp_time : 0.500968
+conflict_time : 0.119836
+conflict_total_size : 1262.000000
+conflicts : 98.000000
+total_time : 0.760336
+total_variable_pick : 0.052051
+Stats: bcp_terms : 322.000000
+bcp_time : 0.033043
+conflict_time : 0.006738
+conflict_total_size : 59.000000
+conflicts : 4.000000
+total_time : 0.061417
+total_variable_pick : 0.007929
+Stats: bcp_terms : 6198.000000
+bcp_time : 0.441681
+conflict_time : 0.092491
+conflict_total_size : 1021.000000
+conflicts : 85.000000
+total_time : 0.662296
+total_variable_pick : 0.051050
+Stats: bcp_terms : 126796.000000
+bcp_time : 9.767630
+conflict_time : 1.611591
+conflict_total_size : 17172.000000
+conflicts : 1451.000000
+total_time : 14.789488
+total_variable_pick : 0.929110
+Stats: bcp_terms : 3094.000000
+bcp_time : 0.211777
+conflict_time : 0.050416
+conflict_total_size : 474.000000
+conflicts : 42.000000
+total_time : 0.327502
+total_variable_pick : 0.027078
+Stats: bcp_terms : 110.000000
+bcp_time : 0.019430
+conflict_time : 0.001285
+conflict_total_size : 7.000000
+conflicts : 1.000000
+total_time : 0.039662
+total_variable_pick : 0.006582
+Stats: bcp_terms : 81914.000000
+bcp_time : 6.491801
+conflict_time : 1.099366
+conflict_total_size : 11856.000000
+conflicts : 1025.000000
+total_time : 9.694162
+total_variable_pick : 0.618184
+Stats: bcp_terms : 6182.000000
+bcp_time : 0.409502
+conflict_time : 0.093741
+conflict_total_size : 779.000000
+conflicts : 75.000000
+total_time : 0.599525
+total_variable_pick : 0.037674
+Stats: bcp_terms : 6633.000000
+bcp_time : 0.458595
+conflict_time : 0.116343
+conflict_total_size : 1197.000000
+conflicts : 99.000000
+total_time : 0.710693
+total_variable_pick : 0.052020
+Stats: bcp_terms : 91366.000000
+bcp_time : 6.752541
+conflict_time : 1.225943
+conflict_total_size : 11897.000000
+conflicts : 1067.000000
+total_time : 10.014916
+total_variable_pick : 0.641578
+Stats: bcp_terms : 2135.000000
+bcp_time : 0.138900
+conflict_time : 0.035013
+conflict_total_size : 311.000000
+conflicts : 28.000000
+total_time : 0.210010
+total_variable_pick : 0.014121
+Stats: bcp_terms : 667.000000
+bcp_time : 0.056966
+conflict_time : 0.013458
+conflict_total_size : 87.000000
+conflicts : 8.000000
+total_time : 0.097644
+total_variable_pick : 0.011127
+Stats: bcp_terms : 29552.000000
+bcp_time : 2.061403
+conflict_time : 0.416395
+conflict_total_size : 3872.000000
+conflicts : 349.000000
+total_time : 3.035042
+total_variable_pick : 0.203054
+Stats: bcp_terms : 25073.000000
+bcp_time : 1.824772
+conflict_time : 0.359885
+conflict_total_size : 3742.000000
+conflicts : 324.000000
+total_time : 2.686425
+total_variable_pick : 0.172842
+Stats: bcp_terms : 400.000000
+bcp_time : 0.035559
+conflict_time : 0.004446
+conflict_total_size : 43.000000
+conflicts : 5.000000
+total_time : 0.065630
+total_variable_pick : 0.009807
+Stats: bcp_terms : 24731.000000
+bcp_time : 1.774092
+conflict_time : 0.370863
+conflict_total_size : 3949.000000
+conflicts : 324.000000
+total_time : 2.657901
+total_variable_pick : 0.181864
+Stats: bcp_terms : 73829.000000
+bcp_time : 5.420612
+conflict_time : 0.988029
+conflict_total_size : 10063.000000
+conflicts : 873.000000
+total_time : 8.084970
+total_variable_pick : 0.501652
+Stats: bcp_terms : 36226.000000
+bcp_time : 2.510114
+conflict_time : 0.488910
+conflict_total_size : 5220.000000
+conflicts : 432.000000
+total_time : 3.745286
+total_variable_pick : 0.256261
+Stats: bcp_terms : 25155.000000
+bcp_time : 1.771244
+conflict_time : 0.368588
+conflict_total_size : 4107.000000
+conflicts : 314.000000
+total_time : 2.652760
+total_variable_pick : 0.183303
+Stats: bcp_terms : 264.000000
+bcp_time : 0.031851
+conflict_time : 0.004089
+conflict_total_size : 26.000000
+conflicts : 4.000000
+total_time : 0.058348
+total_variable_pick : 0.008267
+Stats: bcp_terms : 1244.000000
+bcp_time : 0.086683
+conflict_time : 0.022271
+conflict_total_size : 175.000000
+conflicts : 16.000000
+total_time : 0.137383
+total_variable_pick : 0.011109
+Stats: bcp_terms : 66277.000000
+bcp_time : 5.046836
+conflict_time : 0.927908
+conflict_total_size : 9255.000000
+conflicts : 811.000000
+total_time : 7.521808
+total_variable_pick : 0.453902
+Stats: bcp_terms : 30121.000000
+bcp_time : 2.060254
+conflict_time : 0.429410
+conflict_total_size : 3932.000000
+conflicts : 362.000000
+total_time : 3.017509
+total_variable_pick : 0.187446
+Stats: bcp_terms : 3359.000000
+bcp_time : 0.244164
+conflict_time : 0.059718
+conflict_total_size : 669.000000
+conflicts : 45.000000
+total_time : 0.377236
+total_variable_pick : 0.029033
+Stats: bcp_terms : 53611.000000
+bcp_time : 3.579564
+conflict_time : 0.728677
+conflict_total_size : 6456.000000
+conflicts : 597.000000
+total_time : 5.350023
+total_variable_pick : 0.338129
+Stats: bcp_terms : 35402.000000
+bcp_time : 2.360542
+conflict_time : 0.500609
+conflict_total_size : 4406.000000
+conflicts : 398.000000
+total_time : 3.455929
+total_variable_pick : 0.206011
+Stats: bcp_terms : 48776.000000
+bcp_time : 3.460620
+conflict_time : 0.643701
+conflict_total_size : 6941.000000
+conflicts : 609.000000
+total_time : 5.164279
+total_variable_pick : 0.353719
+Stats: bcp_terms : 1526.000000
+bcp_time : 0.105829
+conflict_time : 0.024002
+conflict_total_size : 249.000000
+conflicts : 23.000000
+total_time : 0.174920
+total_variable_pick : 0.017870
+Stats: bcp_terms : 37287.000000
+bcp_time : 2.564518
+conflict_time : 0.509480
+conflict_total_size : 4976.000000
+conflicts : 444.000000
+total_time : 3.768022
+total_variable_pick : 0.236478
+Stats: bcp_terms : 54141.000000
+bcp_time : 3.859161
+conflict_time : 0.778482
+conflict_total_size : 6874.000000
+conflicts : 628.000000
+total_time : 5.657247
+total_variable_pick : 0.323935
+Stats: bcp_terms : 938.000000
+bcp_time : 0.089151
+conflict_time : 0.020415
+conflict_total_size : 173.000000
+conflicts : 13.000000
+total_time : 0.144002
+total_variable_pick : 0.013730
+Stats: bcp_terms : 1808.000000
+bcp_time : 0.150564
+conflict_time : 0.042586
+conflict_total_size : 310.000000
+conflicts : 27.000000
+total_time : 0.238671
+total_variable_pick : 0.018916
+Stats: bcp_terms : 72051.000000
+bcp_time : 5.464056
+conflict_time : 1.038180
+conflict_total_size : 9849.000000
+conflicts : 856.000000
+total_time : 8.130981
+total_variable_pick : 0.521392
+Stats: bcp_terms : 35005.000000
+bcp_time : 2.609508
+conflict_time : 0.557067
+conflict_total_size : 5200.000000
+conflicts : 458.000000
+total_time : 3.928358
+total_variable_pick : 0.269478
+Stats: bcp_terms : 4325.000000
+bcp_time : 0.338274
+conflict_time : 0.078511
+conflict_total_size : 695.000000
+conflicts : 61.000000
+total_time : 0.502391
+total_variable_pick : 0.032162
+Stats: bcp_terms : 6494.000000
+bcp_time : 0.475971
+conflict_time : 0.108734
+conflict_total_size : 1128.000000
+conflicts : 89.000000
+total_time : 0.707319
+total_variable_pick : 0.047193
+Stats: bcp_terms : 18188.000000
+bcp_time : 1.245953
+conflict_time : 0.278182
+conflict_total_size : 2801.000000
+conflicts : 222.000000
+total_time : 1.848503
+total_variable_pick : 0.115845
+Stats: bcp_terms : 4323.000000
+bcp_time : 0.307577
+conflict_time : 0.074187
+conflict_total_size : 707.000000
+conflicts : 60.000000
+total_time : 0.457689
+total_variable_pick : 0.029973
+Stats: bcp_terms : 53200.000000
+bcp_time : 4.270228
+conflict_time : 0.756824
+conflict_total_size : 7886.000000
+conflicts : 695.000000
+total_time : 6.298434
+total_variable_pick : 0.422877
+Stats: bcp_terms : 40869.000000
+bcp_time : 2.818569
+conflict_time : 0.547160
+conflict_total_size : 5249.000000
+conflicts : 488.000000
+total_time : 4.161765
+total_variable_pick : 0.273016
+Stats: bcp_terms : 47368.000000
+bcp_time : 3.622077
+conflict_time : 0.676926
+conflict_total_size : 7318.000000
+conflicts : 617.000000
+totaStats: bcp_terms : 5340.000000
+bcp_time : 0.409545
+conflict_time : 0.065721
+conflict_total_size : 892.000000
+conflicts : 70.000000
+total_time : 0.594280
+total_variable_pick : 0.051252
+Stats: bcp_terms : 22086.000000
+bcp_time : 1.668866
+conflict_time : 0.296679
+conflict_total_size : 3502.000000
+conflicts : 286.000000
+total_time : 2.427330
+total_variable_pick : 0.169805
+Stats: bcp_terms : 2510.000000
+bcp_time : 0.177492
+conflict_time : 0.027870
+conflict_total_size : 344.000000
+conflicts : 30.000000
+total_time : 0.254450
+total_variable_pick : 0.023225
+Stats: bcp_terms : 14812.000000
+bcp_time : 1.066356
+conflict_time : 0.195337
+conflict_total_size : 1988.000000
+conflicts : 176.000000
+total_time : 1.510314
+total_variable_pick : 0.098273
+Stats: bcp_terms : 112401.000000
+bcp_time : 10.122664
+conflict_time : 1.412021
+conflict_total_size : 18018.000000
+conflicts : 1401.000000
+total_time : 15.555290
+total_variable_pick : 1.053607
+Stats: bcp_terms : 21081.000000
+bcp_time : 1.537867
+conflict_time : 0.274132
+conflict_total_size : 3207.000000
+conflicts : 271.000000
+total_time : 2.216279
+total_variable_pick : 0.150370
+Stats: bcp_terms : 34256.000000
+bcp_time : 2.635962
+conflict_time : 0.447269
+conflict_total_size : 5268.000000
+conflicts : 423.000000
+total_time : 3.802295
+total_variable_pick : 0.250751
+Stats: bcp_terms : 84614.000000
+bcp_time : 7.032087
+conflict_time : 1.057436
+conflict_total_size : 13288.000000
+conflicts : 1004.000000
+total_time : 10.513138
+total_variable_pick : 0.669697
+Stats: bcp_terms : 23855.000000
+bcp_time : 1.765620
+conflict_time : 0.296140
+conflict_total_size : 4232.000000
+conflicts : 301.000000
+total_time : 2.634585
+total_variable_pick : 0.217403
+Stats: bcp_terms : 27311.000000
+bcp_time : 1.991463
+conflict_time : 0.325312
+conflict_total_size : 3848.000000
+conflicts : 336.000000
+total_time : 2.914409
+total_variable_pick : 0.226863
+Stats: bcp_terms : 1963.000000
+bcp_time : 0.148842
+conflict_time : 0.021895
+conflict_total_size : 311.000000
+conflicts : 29.000000
+total_time : 0.218279
+total_variable_pick : 0.021877
+Stats: bcp_terms : 22427.000000
+bcp_time : 1.628363
+conflict_time : 0.268549
+conflict_total_size : 3660.000000
+conflicts : 282.000000
+total_time : 2.365616
+total_variable_pick : 0.175825
+Stats: bcp_terms : 2981.000000
+bcp_time : 0.226331
+conflict_time : 0.035453
+conflict_total_size : 545.000000
+conflicts : 44.000000
+total_time : 0.324708
+total_variable_pick : 0.028420
+Stats: bcp_terms : 20923.000000
+bcp_time : 1.541665
+conflict_time : 0.246525
+conflict_total_size : 3372.000000
+conflicts : 272.000000
+total_time : 2.240175
+total_variable_pick : 0.170505
+Stats: bcp_terms : 10182.000000
+bcp_time : 0.689765
+conflict_time : 0.123262
+conflict_total_size : 1685.000000
+conflicts : 133.000000
+total_time : 1.015145
+total_variable_pick : 0.081630
+Stats: bcp_terms : 780.000000
+bcp_time : 0.052908
+conflict_time : 0.008280
+conflict_total_size : 155.000000
+conflicts : 11.000000
+total_time : 0.081267
+total_variable_pick : 0.009158
+Stats: bcp_terms : 5326.000000
+bcp_time : 0.345874
+conflict_time : 0.064155
+conflict_total_size : 816.000000
+conflicts : 68.000000
+total_time : 0.494438
+total_variable_pick : 0.035305
+Stats: bcp_terms : 50987.000000
+bcp_time : 4.251260
+conflict_time : 0.677120
+conflict_total_size : 9083.000000
+conflicts : 660.000000
+total_time : 6.290567
+total_variable_pick : 0.424108
+Stats: bcp_terms : 12407.000000
+bcp_time : 0.871130
+conflict_time : 0.159896
+conflict_total_size : 1993.000000
+conflicts : 157.000000
+total_time : 1.273288
+total_variable_pick : 0.093042
+Stats: bcp_terms : 22409.000000
+bcp_time : 1.584903
+conflict_time : 0.277394
+conflict_total_size : 3187.000000
+conflicts : 269.000000
+total_time : 2.260825
+total_variable_pick : 0.143704
+Stats: bcp_terms : 43446.000000
+bcp_time : 3.240173
+conflict_time : 0.516375
+conflict_total_size : 6351.000000
+conflicts : 536.000000
+total_time : 4.661908
+total_variable_pick : 0.300668
+Stats: bcp_terms : 88975.000000
+bcp_time : 7.200828
+conflict_time : 1.094900
+conflict_total_size : 14169.000000
+conflicts : 1045.000000
+total_time : 10.813603
+total_variable_pick :l_time : 5.376965
+total_variable_pick : 0.352047
+Stats: bcp_terms : 1438.000000
+bcp_time : 0.109290
+conflict_time : 0.023463
+conflict_total_size : 226.000000
+conflicts : 20.000000
+total_time : 0.172543
+total_variable_pick : 0.016678
+Stats: bcp_terms : 29621.000000
+bcp_time : 2.014026
+conflict_time : 0.414518
+conflict_total_size : 3642.000000
+conflicts : 351.000000
+total_time : 2.986057
+total_variable_pick : 0.205359
+Stats: bcp_terms : 7133.000000
+bcp_time : 0.511370
+conflict_time : 0.127317
+conflict_total_size : 1384.000000
+conflicts : 97.000000
+total_time : 0.759960
+total_variable_pick : 0.043474
+Stats: bcp_terms : 1008.000000
+bcp_time : 0.075498
+conflict_time : 0.018458
+conflict_total_size : 159.000000
+conflicts : 13.000000
+total_time : 0.123241
+total_variable_pick : 0.011653
+Stats: bcp_terms : 299.000000
+bcp_time : 0.039603
+conflict_time : 0.003847
+conflict_total_size : 21.000000
+conflicts : 4.000000
+total_time : 0.073953
+total_variable_pick : 0.012590
+Stats: bcp_terms : 679.000000
+bcp_time : 0.055761
+conflict_time : 0.010629
+conflict_total_size : 104.000000
+conflicts : 10.000000
+total_time : 0.096298
+total_variable_pick : 0.011319
+Stats: bcp_terms : 2898.000000
+bcp_time : 0.226096
+conflict_time : 0.051138
+conflict_total_size : 458.000000
+conflicts : 39.000000
+total_time : 0.332779
+total_variable_pick : 0.022607
+Stats: bcp_terms : 25595.000000
+bcp_time : 1.715050
+conflict_time : 0.363563
+conflict_total_size : 3141.000000
+conflicts : 295.000000
+total_time : 2.498951
+total_variable_pick : 0.150878
+Stats: bcp_terms : 35882.000000
+bcp_time : 2.477832
+conflict_time : 0.492043
+conflict_total_size : 5285.000000
+conflicts : 441.000000
+total_time : 3.704437
+total_variable_pick : 0.252716
+Stats: bcp_terms : 15237.000000
+bcp_time : 1.124859
+conflict_time : 0.251288
+conflict_total_size : 2422.000000
+conflicts : 201.000000
+total_time : 1.659428
+total_variable_pick : 0.102760
+Stats: bcp_terms : 7152.000000
+bcp_time : 0.537669
+conflict_time : 0.125520
+conflict_total_size : 1161.000000
+conflicts : 95.000000
+total_time : 0.796353
+total_variable_pick : 0.050561
+Stats: bcp_terms : 45029.000000
+bcp_time : 3.451884
+conflict_time : 0.681963
+conflict_total_size : 6106.000000
+conflicts : 556.000000
+total_time : 5.106825
+total_variable_pick : 0.318531
+Stats: bcp_terms : 33563.000000
+bcp_time : 2.299376
+conflict_time : 0.514683
+conflict_total_size : 4185.000000
+conflicts : 393.000000
+total_time : 3.434000
+total_variable_pick : 0.221466
+Stats: bcp_terms : 6523.000000
+bcp_time : 0.513518
+conflict_time : 0.113866
+conflict_total_size : 1254.000000
+conflicts : 100.000000
+total_time : 0.779148
+total_variable_pick : 0.058842
+Stats: bcp_terms : 23520.000000
+bcp_time : 1.665491
+conflict_time : 0.413651
+conflict_total_size : 3090.000000
+conflicts : 284.000000
+total_time : 2.483210
+total_variable_pick : 0.149361
+Stats: bcp_terms : 89801.000000
+bcp_time : 7.228622
+conflict_time : 1.212751
+conflict_total_size : 12832.000000
+conflicts : 1082.000000
+total_time : 10.831027
+total_variable_pick : 0.689071
+Stats: bcp_terms : 65778.000000
+bcp_time : 4.311274
+conflict_time : 0.859924
+conflict_total_size : 7944.000000
+conflicts : 738.000000
+total_time : 6.384856
+total_variable_pick : 0.379877
+Stats: bcp_terms : 62445.000000
+bcp_time : 4.372239
+conflict_time : 0.807501
+conflict_total_size : 8709.000000
+conflicts : 751.000000
+total_time : 6.564785
+total_variable_pick : 0.415771
+Stats: bcp_terms : 69668.000000
+bcp_time : 5.207213
+conflict_time : 0.947670
+conflict_total_size : 9088.000000
+conflicts : 819.000000
+total_time : 7.753175
+total_variable_pick : 0.476702
+Stats: bcp_terms : 99981.000000
+bcp_time : 8.241233
+conflict_time : 1.416095
+conflict_total_size : 14084.000000
+conflicts : 1207.000000
+total_time : 12.442030
+total_variable_pick : 0.757290
+Stats: bcp_terms : 15816.000000
+bcp_time : 1.154010
+conflict_time : 0.239946
+conflict_total_size : 2206.000000
+conflicts : 204.000000
+total_time : 1.690133
+total_variable_pick : 0.107854
+Stats: bcp_terms : 5472.000000
+bcp_time : 0.336904
+conflict_time : 0.081264
+conflict_total_size : 699.000000
+conflicts : 67.000000
+total_time : 0.508377
+total_variable_pick : 0.036622
+Stats: bcp_terms : 117.000000
+bcp_time : 0.021987
+conflict_time : 0.001046
+conflict_total_size : 7.000000
+conflicts : 1.000000
+total_time : 0.042048
+total_variable_pick : 0.006674
+Stats: bcp_terms : 3320.000000
+bcp_time : 0.251056
+conflict_time : 0.053491
+conflict_total_size : 623.000000
+conflicts : 49.000000
+total_time : 0.378232
+total_variable_pick : 0.029742
+Stats: bcp_terms : 3998.000000
+bcp_time : 0.268811
+conflict_time : 0.063890
+conflict_total_size : 592.000000
+conflicts : 51.000000
+total_time : 0.403175
+total_variable_pick : 0.028866
+Stats: bcp_terms : 49375.000000
+bcp_time : 3.332740
+conflict_time : 0.758969
+conflict_total_size : 6223.000000
+conflicts : 582.000000
+total_time : 5.002375
+total_variable_pick : 0.301691
+Stats: bcp_terms : 2285.000000
+bcp_time : 0.157768
+conflict_time : 0.033064
+conflict_total_size : 310.000000
+conflicts : 31.000000
+total_time : 0.241998
+total_variable_pick : 0.020982
+Stats: bcp_terms : 112362.000000
+bcp_time : 9.378767
+conflict_time : 1.535962
+conflict_total_size : 17218.000000
+conflicts : 1365.000000
+total_time : 14.269346
+total_variable_pick : 0.912958
+Stats: bcp_terms : 1131.000000
+bcp_time : 0.097147
+conflict_time : 0.023135
+conflict_total_size : 234.000000
+conflicts : 19.000000
+total_time : 0.159834
+total_variable_pick : 0.015629
+Stats: bcp_terms : 41597.000000
+bcp_time : 2.822615
+conflict_time : 0.549482
+conflict_total_size : 5315.000000
+conflicts : 506.000000
+total_time : 4.129038
+total_variable_pick : 0.254189
+Stats: bcp_terms : 149.000000
+bcp_time : 0.025402
+conflict_time : 0.001667
+conflict_total_size : 11.000000
+conflicts : 2.000000
+total_time : 0.051113
+total_variable_pick : 0.008667
+Stats: bcp_terms : 54343.000000
+bcp_time : 4.013638
+conflict_time : 0.772381
+conflict_total_size : 7420.000000
+conflicts : 653.000000
+total_time : 5.918450
+total_variable_pick : 0.359627
+Stats: bcp_terms : 23071.000000
+bcp_time : 1.694195
+conflict_time : 0.356754
+conflict_total_size : 3795.000000
+conflicts : 298.000000
+total_time : 2.520364
+total_variable_pick : 0.160888
+Stats: bcp_terms : 1834.000000
+bcp_time : 0.133194
+conflict_time : 0.033974
+conflict_total_size : 287.000000
+conflicts : 24.000000
+total_time : 0.207788
+total_variable_pick : 0.016485
+Stats: bcp_terms : 5770.000000
+bcp_time : 0.424002
+conflict_time : 0.097905
+conflict_total_size : 812.000000
+conflicts : 70.000000
+total_time : 0.623016
+total_variable_pick : 0.039895
+Stats: bcp_terms : 33904.000000
+bcp_time : 2.234977
+conflict_time : 0.467300
+conflict_total_size : 4334.000000
+conflicts : 396.000000
+total_time : 3.294550
+total_variable_pick : 0.207019
+Stats: bcp_terms : 14557.000000
+bcp_time : 1.108401
+conflict_time : 0.237834
+conflict_total_size : 2349.000000
+conflicts : 202.000000
+total_time : 1.656238
+total_variable_pick : 0.114619
+Stats: bcp_terms : 5399.000000
+bcp_time : 0.326012
+conflict_time : 0.082531
+conflict_total_size : 782.000000
+conflicts : 65.000000
+total_time : 0.498545
+total_variable_pick : 0.036471
+Stats: bcp_terms : 30035.000000
+bcp_time : 2.312153
+conflict_time : 0.473323
+conflict_total_size : 4969.000000
+conflicts : 398.000000
+total_time : 3.464843
+total_variable_pick : 0.229565
+Stats: bcp_terms : 70349.000000
+bcp_time : 5.094545
+conflict_time : 0.970719
+conflict_total_size : 9053.000000
+conflicts : 825.000000
+total_time : 7.499501
+total_variable_pick : 0.466109
+Stats: bcp_terms : 44590.000000
+bcp_time : 3.667021
+conflict_time : 0.652554
+conflict_total_size : 6827.000000
+conflicts : 582.000000
+total_time : 5.505421
+total_variable_pick : 0.392338
+Stats: bcp_terms : 8890.000000
+bcp_time : 0.694660
+conflict_time : 0.157383
+conflict_total_size : 1591.000000
+conflicts : 121.000000
+total_time : 1.030959
+total_variable_pick : 0.065894
+Stats: bcp_terms : 59472.000000
+bcp_time : 4.496691
+conflict_time : 0.846130
+conflict_total_size : 8285.000000
+conflicts : 715.000000
+total_time : 6.637875
+total_variable_pick : 0.396809
+Stats: bcp_terms : 1403.000000
+bcp_time : 0.113197
+conflict_time : 0.023361
+conflict_total_size : 167.000000
+conflicts : 18.000000
+total_time : 0.173794
+total_variable_pick : 0.015162
+Stats: bcp_terms : 18955.000000
+bcp_time : 1.208219
+conflict_time : 0.262149
+conflict_total_size : 2762.000000
+conflicts : 235.000000
+total_time : 1.812463
+total_variable_pick : 0.126403
+Stats: bcp_terms : 3810.000000
+bcp_time : 0.281344
+conflict_time : 0.072179
+conflict_total_size : 680.000000
+conflicts : 57.000000
+total_time : 0.431096
+total_variable_pick : 0.030159
+Stats: bcp_terms : 326.000000
+bcp_time : 0.040520
+conflict_time : 0.004174
+conflict_total_size : 40.000000
+conflicts : 6.000000
+total_time : 0.071025
+total_variable_pick : 0.010207
+Stats: bcp_terms : 4389.000000
+bcp_time : 0.320582
+conflict_time : 0.068908
+conflict_total_size : 701.000000
+conflicts : 62.000000
+total_time : 0.471863
+total_variable_pick : 0.032749
+Stats: bcp_terms : 158.000000
+bcp_time : 0.017978
+conflict_time : 0.001052
+conflict_total_size : 11.000000
+conflicts : 1.000000
+total_time : 0.036516
+total_variable_pick : 0.005856
+Stats: bcp_terms : 163.000000
+bcp_time : 0.020596
+conflict_time : 0.002301
+conflict_total_size : 16.000000
+conflicts : 2.000000
+total_time : 0.042001
+total_variable_pick : 0.006747
+Stats: bcp_terms : 119.000000
+bcp_time : 0.020770
+conflict_time : 0.001595
+conflict_total_size : 11.000000
+conflicts : 1.000000
+total_time : 0.045079
+total_variable_pick : 0.008041
+Stats: bcp_terms : 2778.000000
+bcp_time : 0.203269
+conflict_time : 0.048089
+conflict_total_size : 513.000000
+conflicts : 37.000000
+total_time : 0.305679
+total_variable_pick : 0.021555
+Stats: bcp_terms : 4449.000000
+bcp_time : 0.319064
+conflict_time : 0.070176
+conflict_total_size : 598.000000
+conflicts : 56.000000
+total_time : 0.467285
+total_variable_pick : 0.030668
+Stats: bcp_terms : 7320.000000
+bcp_time : 0.524665
+conflict_time : 0.121161
+conflict_total_size : 1178.000000
+conflicts : 98.000000
+total_time : 0.785690
+total_variable_pick : 0.053845
+Stats: bcp_terms : 99920.000000
+bcp_time : 8.322316
+conflict_time : 1.388948
+conflict_total_size : 14217.000000
+conflicts : 1176.000000
+total_time : 12.568703
+total_variable_pick : 0.802153
+Stats: bcp_terms : 63004.000000
+bcp_time : 4.785404
+conflict_time : 0.877250
+conflict_total_size : 8519.000000
+conflicts : 755.000000
+total_time : 7.144319
+total_variable_pick : 0.452825
+Stats: bcp_terms : 4081.000000
+bcp_time : 0.302267
+conflict_time : 0.080869
+conflict_total_size : 750.000000
+conflicts : 56.000000
+total_time : 0.463263
+total_variable_pick : 0.032096
+Stats: bcp_terms : 69034.000000
+bcp_time : 4.931829
+conflict_time : 0.926373
+conflict_total_size : 9119.000000
+conflicts : 790.000000
+total_time : 7.297113
+total_variable_pick : 0.454244
+Stats: bcp_terms : 6384.000000
+bcp_time : 0.428374
+conflict_time : 0.102863
+conflict_total_size : 851.000000
+conflicts : 77.000000
+total_time : 0.625268
+total_variable_pick : 0.037018
+Stats: bcp_terms : 50222.000000
+bcp_time : 3.492855
+conflict_time : 0.686367
+conflict_total_size : 6145.000000
+conflicts : 587.000000
+total_time : 5.104826
+total_variable_pick : 0.306998
+Stats: bcp_terms : 67303.000000
+bcp_time : 5.049299
+conflict_time : 0.913385
+conflict_total_size : 8969.000000
+conflicts : 821.000000
+total_time : 7.409203
+total_variable_pick : 0.450877
+Stats: bcp_terms : 14323.000000
+bcp_time : 1.018444
+conflict_time : 0.224057
+conflict_total_size : 2146.000000
+conflicts : 180.000000
+total_time : 1.514236
+total_variable_pick : 0.105228
+Stats: bcp_terms : 37401.000000
+bcp_time : 2.765844
+conflict_time : 0.546815
+conflict_total_size : 5929.000000
+conflicts : 478.000000
+total_time : 4.115705
+total_variable_pick : 0.263964
+Stats: bcp_terms : 136.000000
+bcp_time : 0.024870
+conflict_time : 0.001425
+conflict_total_size : 12.000000
+conflicts : 1.000000
+total_time : 0.050518
+total_variable_pick : 0.009069
+Stats: bcp_terms : 91703.000000
+bcp_time : 7.149814
+conflict_time : 1.174051
+conflict_total_size : 12732.000000
+conflicts : 1044.000000
+total_time : 10.839528
+total_variable_pick : 0.691219
+Stats: bcp_terms : 588.000000
+bcp_time : 0.050728
+conflict_time : 0.011213
+conflict_total_size : 92.000000
+conflicts : 9.000000
+total_time : 0.089655
+total_variable_pick : 0.010377
+Stats: bcp_terms : 73.000000
+bcp_time : 0.021804
+conflict_time : 0.000880
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.046302
+total_variable_pick : 0.008715
+Stats: bcp_terms : 6122.000000
+bcp_time : 0.397135
+conflict_time : 0.095141
+conflict_total_size : 740.000000
+conflicts : 74.000000
+total_time : 0.589187
+total_variable_pick : 0.038797
+Stats: bcp_terms : 90.000000
+bcp_time : 0.016767
+conflict_time : 0.000995
+conflict_total_size : 5.000000
+conflicts : 1.000000
+total_time : 0.035673
+total_variable_pick : 0.005965
+Stats: bcp_terms : 6880.000000
+bcp_time : 0.462682
+conflict_time : 0.112946
+conflict_total_size : 1022.000000
+conflicts : 89.000000
+total_time : 0.697633
+total_variable_pick : 0.045213
+Stats: bcp_terms : 20746.000000
+bcp_time : 1.380616
+conflict_time : 0.290487
+conflict_total_size : 2641.000000
+conflicts : 247.000000
+total_time : 2.038131
+total_variable_pick : 0.136607
+Stats: bcp_terms : 28230.000000
+bcp_time : 1.852423
+conflict_time : 0.390069
+conflict_total_size : 3669.000000
+conflicts : 344.000000
+total_time : 2.710557
+total_variable_pick : 0.165838
+Stats: bcp_terms : 1607.000000
+bcp_time : 0.125055
+conflict_time : 0.028364
+conflict_total_size : 342.000000
+conflicts : 26.000000
+total_time : 0.190842
+total_variable_pick : 0.014462
+Stats: bcp_terms : 524.000000
+bcp_time : 0.049775
+conflict_time : 0.009176
+conflict_total_size : 91.000000
+conflicts : 7.000000
+total_time : 0.087362
+total_variable_pick : 0.011403
+Stats: bcp_terms : 10332.000000
+bcp_time : 0.696276
+conflict_time : 0.159142
+conflict_total_size : 1421.000000
+conflicts : 130.000000
+total_time : 1.039903
+total_variable_pick : 0.073684
+Stats: bcp_terms : 42969.000000
+bcp_time : 3.043113
+conflict_time : 0.617088
+conflict_total_size : 5542.000000
+conflicts : 528.000000
+total_time : 4.488492
+total_variable_pick : 0.295485
+Stats: bcp_terms : 1261.000000
+bcp_time : 0.115921
+conflict_time : 0.025559
+conflict_total_size : 156.000000
+conflicts : 18.000000
+total_time : 0.180085
+total_variable_pick : 0.015947
+Stats: bcp_terms : 52417.000000
+bcp_time : 4.153495
+conflict_time : 0.756464
+conflict_total_size : 7125.000000
+conflicts : 646.000000
+total_time : 6.155599
+total_variable_pick : 0.408017
+Stats: bcp_terms : 1035.000000
+bcp_time : 0.091172
+conflict_time : 0.023379
+conflict_total_size : 221.000000
+conflicts : 19.000000
+total_time : 0.156231
+total_variable_pick : 0.016702
+Stats: bcp_terms : 1540.000000
+bcp_time : 0.109509
+conflict_time : 0.027786
+conflict_total_size : 294.000000
+conflicts : 20.000000
+total_time : 0.175053
+total_variable_pick : 0.015250
+Stats: bcp_terms : 894.000000
+bcp_time : 0.073483
+conflict_time : 0.014634
+conflict_total_size : 108.000000
+conflicts : 13.000000
+total_time : 0.120724
+total_variable_pick : 0.013499
+Stats: bcp_terms : 25594.000000
+bcp_time : 1.706167
+conflict_time : 0.395627
+conflict_total_size : 3045.000000
+conflicts : 288.000000
+total_time : 2.536692
+total_variable_pick : 0.158172
+Stats: bcp_terms : 5974.000000
+bcp_time : 0.399752
+conflict_time : 0.096491
+conflict_total_size : 830.000000
+conflicts : 81.000000
+total_time : 0.587226
+total_variable_pick : 0.035925
+Stats: bcp_terms : 57125.000000
+bcp_time : 4.148665
+conflict_time : 0.778932
+conflict_total_size : 6874.000000
+conflicts : 671.000000
+total_time : 6.142635
+total_variable_pick : 0.419054
+Stats: bcp_terms : 144.000000
+bcp_time : 0.024027
+conflict_time : 0.001736
+conflict_total_size : 11.000000
+conflicts : 2.000000
+total_time : 0.046180
+total_variable_pick : 0.007598
+Stats: bcp_terms : 1740.000000
+bcp_time : 0.132066
+conflict_time : 0.029348
+conflict_total_size : 248.000000
+conflicts : 25.000000
+total_time : 0.204794
+total_variable_pick : 0.017432
+Stats: bcp_terms : 209.000000
+bcp_time : 0.025372
+conflict_time : 0.002972
+conflict_total_size : 25.000000
+conflicts : 2.000000
+total_time : 0.046691
+total_variable_pick : 0.006423
+Stats: bcp_terms : 1564.000000
+bcp_time : 0.109527
+conflict_time : 0.030268
+conflict_total_size : 281.000000
+conflicts : 21.000000
+total_time : 0.177336
+total_variable_pick : 0.015134
+Stats: bcp_terms : 564.000000
+bcp_time : 0.050634
+conflict_time : 0.009242
+conflict_total_size : 83.000000
+conflicts : 8.000000
+total_time : 0.089432
+total_variable_pick : 0.011828
+Stats: bcp_terms : 163.000000
+bcp_time : 0.028865
+conflict_time : 0.003383
+conflict_total_size : 35.000000
+conflicts : 3.000000
+total_time : 0.060400
+total_variable_pick : 0.010693
+Stats: bcp_terms : 9457.000000
+bcp_time : 0.737721
+conflict_time : 0.170219
+conflict_total_size : 1771.000000
+conflicts : 134.000000
+total_time : 1.105170
+total_variable_pick : 0.073865
+Stats: bcp_terms : 3145.000000
+bcp_time : 0.223959
+conflict_time : 0.057101
+conflict_total_size : 513.000000
+conflicts : 43.000000
+total_time : 0.354479
+total_variable_pick : 0.031596
+Stats: bcp_terms : 803.000000
+bcp_time : 0.066679
+conflict_time : 0.015831
+conflict_total_size : 140.000000
+conflicts : 11.000000
+total_time : 0.107259
+total_variable_pick : 0.009618
+Stats: bcp_terms : 90784.000000
+bcp_time : 7.322451
+conflict_time : 1.500129
+conflict_total_size : 12473.000000
+conflicts : 1120.000000
+total_time : 11.076551
+total_variable_pick : 0.675321
+Stats: bcp_terms : 44885.000000
+bcp_time : 3.076019
+conflict_time : 0.608997
+conflict_total_size : 5758.000000
+conflicts : 533.000000
+total_time : 4.547273
+total_variable_pick : 0.276820
+Stats: bcp_terms : 31606.000000
+bcp_time : 2.108544
+conflict_time : 0.447278
+conflict_total_size : 3969.000000
+conflicts : 374.000000
+total_time : 3.067044
+total_variable_pick : 0.181618
+Stats: bcp_terms : 3006.000000
+bcp_time : 0.185109
+conflict_time : 0.040649
+conflict_total_size : 394.000000
+conflicts : 35.000000
+total_time : 0.275683
+total_variable_pick : 0.020234
+Stats: bcp_terms : 29340.000000
+bcp_time : 2.055068
+conflict_time : 0.432376
+conflict_total_size : 4055.000000
+conflicts : 357.000000
+total_time : 3.042750
+total_variable_pick : 0.196872
+Stats: bcp_terms : 486.000000
+bcp_time : 0.048622
+conflict_time : 0.009812
+conflict_total_size : 77.000000
+conflicts : 7.000000
+total_time : 0.083380
+total_variable_pick : 0.009168
+Stats: bcp_terms : 62038.000000
+bcp_time : 4.512246
+conflict_time : 0.865282
+conflict_total_size : 8520.000000
+conflicts : 750.000000
+total_time : 6.692601
+total_variable_pick : 0.406643
+Stats: bcp_terms : 27578.000000
+bcp_time : 1.932547
+conflict_time : 0.471770
+conflict_total_size : 3510.000000
+conflicts : 336.000000
+total_time : 2.887328
+total_variable_pick : 0.167748
+Stats: bcp_terms : 131.000000
+bcp_time : 0.027378
+conflict_time : 0.001017
+conflict_total_size : 9.000000
+conflicts : 2.000000
+total_time : 0.052577
+total_variable_pick : 0.009306
+Stats: bcp_terms : 42474.000000
+bcp_time : 3.067803
+conflict_time : 0.593564
+conflict_total_size : 5938.000000
+conflicts : 507.000000
+total_time : 4.543715
+total_variable_pick : 0.285791
+Stats: bcp_terms : 344.000000
+bcp_time : 0.039991
+conflict_time : 0.004816
+conflict_total_size : 48.000000
+conflicts : 4.000000
+total_time : 0.073671
+total_variable_pick : 0.011538
+Stats: bcp_terms : 72720.000000
+bcp_time : 5.214256
+conflict_time : 0.951749
+conflict_total_size : 10146.000000
+conflicts : 860.000000
+total_time : 7.828959
+total_variable_pick : 0.523123
+Stats: bcp_terms : 15352.000000
+bcp_time : 1.066750
+conflict_time : 0.228889
+conflict_total_size : 2123.000000
+conflicts : 194.000000
+total_time : 1.578171
+total_variable_pick : 0.110713
+Stats: bcp_terms : 71383.000000
+bcp_time : 5.453766
+conflict_time : 1.085974
+conflict_total_size : 10458.000000
+conflicts : 862.000000
+total_time : 8.359807
+total_variable_pick : 0.518472
+Stats: bcp_terms : 53496.000000
+bcp_time : 3.991841
+conflict_time : 0.730128
+conflict_total_size : 8051.000000
+conflicts : 666.000000
+total_time : 5.966883
+total_variable_pick : 0.380712
+Stats: bcp_terms : 131584.000000
+bcp_time : 11.726018
+conflict_time : 1.737815
+conflict_total_size : 19838.000000
+conflicts : 1586.000000
+total_time : 18.087883
+total_variable_pick : 1.156078
+Stats: bcp_terms : 19011.000000
+bcp_time : 1.254107
+conflict_time : 0.243580
+conflict_total_size : 2206.000000
+conflicts : 224.000000
+total_time : 1.805038
+total_variable_pick : 0.118612
+Stats: bcp_terms : 80536.000000
+bcp_time : 6.383514
+conflict_time : 1.119069
+conflict_total_size : 11449.000000
+conflicts : 977.000000
+total_time : 9.599570
+total_variable_pick : 0.610327
+Stats: bcp_terms : 319.000000
+bcp_time : 0.039041
+conflict_time : 0.005645
+conflict_total_size : 41.000000
+conflicts : 5.000000
+total_time : 0.072288
+total_variable_pick : 0.010430
+Stats: bcp_terms : 2762.000000
+bcp_time : 0.187238
+conflict_time : 0.046867
+conflict_total_size : 332.000000
+conflicts : 33.000000
+total_time : 0.279955
+total_variable_pick : 0.018075
+Stats: bcp_terms : 8944.000000
+bcp_time : 0.535396
+conflict_time : 0.121965
+conflict_total_size : 973.000000
+conflicts : 104.000000
+total_time : 0.787939
+total_variable_pick : 0.049763
+Stats: bcp_terms : 160.000000
+bcp_time : 0.019415
+conflict_time : 0.000873
+conflict_total_size : 7.000000
+conflicts : 1.000000
+total_time : 0.037937
+total_variable_pick : 0.005902
+Stats: bcp_terms : 4506.000000
+bcp_time : 0.340685
+conflict_time : 0.078113
+conflict_total_size : 916.000000
+conflicts : 71.000000
+total_time : 0.507319
+total_variable_pick : 0.033572
+Stats: bcp_terms : 29934.000000
+bcp_time : 1.961808
+conflict_time : 0.421288
+conflict_total_size : 3921.000000
+conflicts : 350.000000
+total_time : 2.886984
+total_variable_pick : 0.185359
+Stats: bcp_terms : 37547.000000
+bcp_time : 2.745705
+conflict_time : 0.542638
+conflict_total_size : 5464.000000
+conflicts : 469.000000
+total_time : 4.046431
+total_variable_pick : 0.246885
+Stats: bcp_terms : 59902.000000
+bcp_time : 4.564319
+conflict_time : 0.809514
+conflict_total_size : 7926.000000
+conflicts : 723.000000
+total_time : 6.721810
+total_variable_pick : 0.435331
+Stats: bcp_terms : 1019.000000
+bcp_time : 0.072609
+conflict_time : 0.016961
+conflict_total_size : 145.000000
+conflicts : 12.000000
+total_time : 0.115179
+total_variable_pick : 0.008758
+Stats: bcp_terms : 2743.000000
+bcp_time : 0.182544
+conflict_time : 0.051210
+conflict_total_size : 502.000000
+conflicts : 39.000000
+total_time : 0.291108
+total_variable_pick : 0.022204
+Stats: bcp_terms : 662.000000
+bcp_time : 0.059318
+conflict_time : 0.015357
+conflict_total_size : 119.000000
+conflicts : 10.000000
+total_time : 0.101003
+total_variable_pick : 0.008958
+Stats: bcp_terms : 1168.000000
+bcp_time : 0.098506
+conflict_time : 0.026286
+conflict_total_size : 213.000000
+conflicts : 18.000000
+total_time : 0.161235
+total_variable_pick : 0.013986
+Stats: bcp_terms : 21046.000000
+bcp_time : 1.561178
+conflict_time : 0.315411
+conflict_total_size : 3341.000000
+conflicts : 280.000000
+total_time : 2.327888
+total_variable_pick : 0.164859
+Stats: bcp_terms : 490.000000
+bcp_time : 0.040595
+conflict_time : 0.007175
+conflict_total_size : 68.000000
+conflicts : 7.000000
+total_time : 0.071440
+total_variable_pick : 0.009087
+Stats: bcp_terms : 11856.000000
+bcp_time : 0.747414
+conflict_time : 0.185308
+conflict_total_size : 1607.000000
+conflicts : 142.000000
+total_time : 1.119249
+total_variable_pick : 0.069221
+Stats: bcp_terms : 108479.000000
+bcp_time : 8.324638
+conflict_time : 1.395366
+conflict_total_size : 14948.000000
+conflicts : 1290.000000
+total_time : 12.630007
+total_variable_pick : 0.773566
+Stats: bcp_terms : 70625.000000
+bcp_time : 4.973980
+conflict_time : 0.901809
+conflict_total_size : 8331.000000
+conflicts : 817.000000
+total_time : 7.286982
+total_variable_pick : 0.445762
+Stats: bcp_terms : 37560.000000
+bcp_time : 2.682565
+conflict_time : 0.521366
+conflict_total_size : 5160.000000
+conflicts : 456.000000
+total_time : 3.943853
+total_variable_pick : 0.252844
+Stats: bcp_terms : 94428.000000
+bcp_time : 7.919070
+conflict_time : 1.236437
+conflict_total_size : 13926.000000
+conflicts : 1133.000000
+total_time : 12.180355
+total_variable_pick : 0.809117
+Stats: bcp_terms : 18493.000000
+bcp_time : 1.269142
+conflict_time : 0.267519
+conflict_total_size : 2675.000000
+conflicts : 228.000000
+total_time : 1.884205
+total_variable_pick : 0.129035
+Stats: bcp_terms : 6314.000000
+bcp_time : 0.482990
+conflict_time : 0.110461
+conflict_total_size : 1116.000000
+conflicts : 89.000000
+total_time : 0.728898
+total_variable_pick : 0.052193
+Stats: bcp_terms : 60478.000000
+bcp_time : 4.519666
+conflict_time : 0.961486
+conflict_total_size : 8420.000000
+conflicts : 726.000000
+total_time : 6.929549
+total_variable_pick : 0.425610
+Stats: bcp_terms : 16726.000000
+bcp_time : 1.104420
+conflict_time : 0.253421
+conflict_total_size : 2475.000000
+conflicts : 213.000000
+total_time : 1.660330
+total_variable_pick : 0.113455
+Stats: bcp_terms : 1068.000000
+bcp_time : 0.091045
+conflict_time : 0.019169
+conflict_total_size : 154.000000
+conflicts : 15.000000
+total_time : 0.145550
+total_variable_pick : 0.014537
+Stats: bcp_terms : 356.000000
+bcp_time : 0.041786
+conflict_time : 0.005259
+conflict_total_size : 40.000000
+conflicts : 5.000000
+total_time : 0.077565
+total_variable_pick : 0.012442
+Stats: bcp_terms : 34539.000000
+bcp_time : 2.537724
+conflict_time : 0.512650
+conflict_total_size : 5181.000000
+conflicts : 429.000000
+total_time : 3.789567
+total_variable_pick : 0.258268
+Stats: bcp_terms : 52485.000000
+bcp_time : 3.482842
+conflict_time : 0.663432
+conflict_total_size : 6566.000000
+conflicts : 602.000000
+total_time : 5.115301
+total_variable_pick : 0.324920
+Stats: bcp_terms : 6208.000000
+bcp_time : 0.418930
+conflict_time : 0.094940
+conflict_total_size : 1107.000000
+conflicts : 82.000000
+total_time : 0.626488
+total_variable_pick : 0.044316
+Stats: bcp_terms : 4594.000000
+bcp_time : 0.325507
+conflict_time : 0.072887
+conflict_total_size : 653.000000
+conflicts : 60.000000
+total_time : 0.482168
+total_variable_pick : 0.034585
+Stats: bcp_terms : 36778.000000
+bcp_time : 2.664712
+conflict_time : 0.526530
+conflict_total_size : 5126.000000
+conflicts : 475.000000
+total_time : 3.884970
+total_variable_pick : 0.243226
+Stats: bcp_terms : 4311.000000
+bcp_time : 0.315093
+conflict_time : 0.087508
+conflict_total_size : 895.000000
+conflicts : 66.000000
+total_time : 0.496232
+total_variable_pick : 0.034661
+Stats: bcp_terms : 6583.000000
+bcp_time : 0.468477
+conflict_time : 0.104896
+conflict_total_size : 1150.000000
+conflicts : 89.000000
+total_time : 0.700199
+total_variable_pick : 0.047246
+Stats: bcp_terms : 395.000000
+bcp_time : 0.039672
+conflict_time : 0.005904
+conflict_total_size : 56.000000
+conflicts : 6.000000
+total_time : 0.071294
+total_variable_pick : 0.009536
+Stats: bcp_terms : 86996.000000
+bcp_time : 6.433030
+conflict_time : 1.133921
+conflict_total_size : 10984.000000
+conflicts : 1023.000000
+total_time : 9.537717
+total_variable_pick : 0.582198
+Stats: bcp_terms : 9631.000000
+bcp_time : 0.729824
+conflict_time : 0.163880
+conflict_total_size : 1644.000000
+conflicts : 141.000000
+total_time : 1.099403
+total_variable_pick : 0.079087
+Stats: bcp_terms : 52577.000000
+bcp_time : 3.790420
+conflict_time : 0.659619
+conflict_total_size : 7136.000000
+conflicts : 622.000000
+total_time : 5.624948
+total_variable_pick : 0.383090
+Stats: bcp_terms : 3560.000000
+bcp_time : 0.308374
+conflict_time : 0.070587
+conflict_total_size : 723.000000
+conflicts : 58.000000
+total_time : 0.474909
+total_variable_pick : 0.038540
+Stats: bcp_terms : 59578.000000
+bcp_time : 4.254936
+conflict_time : 0.779495
+conflict_total_size : 7922.000000
+conflicts : 718.000000
+total_time : 6.271073
+total_variable_pick : 0.398335
+Stats: bcp_terms : 3161.000000
+bcp_time : 0.224885
+conflict_time : 0.058882
+conflict_total_size : 508.000000
+conflicts : 47.000000
+total_time : 0.344241
+total_variable_pick : 0.023707
+Stats: bcp_terms : 57695.000000
+bcp_time : 4.143429
+conflict_time : 0.793096
+conflict_total_size : 8228.000000
+conflicts : 703.000000
+total_time : 6.146887
+total_variable_pick : 0.375827
+Stats: bcp_terms : 100586.000000
+bcp_time : 8.043455
+conflict_time : 1.315599
+conflict_total_size : 13568.000000
+conflicts : 1192.000000
+total_time : 12.034288
+total_variable_pick : 0.717574
+Stats: bcp_terms : 74707.000000
+bcp_time : 5.318604
+conflict_time : 0.977703
+conflict_total_size : 8945.000000
+conflicts : 871.000000
+total_time : 7.857246
+total_variable_pick : 0.462684
+Stats: bcp_terms : 2167.000000
+bcp_time : 0.166880
+conflict_time : 0.044103
+conflict_total_size : 428.000000
+conflicts : 31.000000
+total_time : 0.265443
+total_variable_pick : 0.021840
+Stats: bcp_terms : 202.000000
+bcp_time : 0.028946
+conflict_time : 0.003171
+conflict_total_size : 31.000000
+conflicts : 3.000000
+total_time : 0.056055
+total_variable_pick : 0.008942
+Stats: bcp_terms : 3579.000000
+bcp_time : 0.272964
+conflict_time : 0.067520
+conflict_total_size : 704.000000
+conflicts : 54.000000
+total_time : 0.413353
+total_variable_pick : 0.027239
+Stats: bcp_terms : 1424.000000
+bcp_time : 0.115692
+conflict_time : 0.026123
+conflict_total_size : 272.000000
+conflicts : 22.000000
+total_time : 0.182374
+total_variable_pick : 0.016852
+Stats: bcp_terms : 32153.000000
+bcp_time : 2.152181
+conflict_time : 0.490605
+conflict_total_size : 4215.000000
+conflicts : 381.000000
+total_time : 3.197771
+total_variable_pick : 0.194612
+Stats: bcp_terms : 11038.000000
+bcp_time : 0.735700
+conflict_time : 0.170459
+conflict_total_size : 1592.000000
+conflicts : 137.000000
+total_time : 1.092204
+total_variable_pick : 0.071262
+Stats: bcp_terms : 363.000000
+bcp_time : 0.045638
+conflict_time : 0.006106
+conflict_total_size : 54.000000
+conflicts : 6.000000
+total_time : 0.081915
+total_variable_pick : 0.011917
+Stats: bcp_terms : 3185.000000
+bcp_time : 0.212533
+conflict_time : 0.056941
+conflict_total_size : 579.000000
+conflicts : 44.000000
+total_time : 0.335023
+total_variable_pick : 0.026523
+Stats: bcp_terms : 81324.000000
+bcp_time : 6.740206
+conflict_time : 1.156879
+conflict_total_size : 13415.000000
+conflicts : 1038.000000
+total_time : 10.181063
+total_variable_pick : 0.649299
+Stats: bcp_terms : 32148.000000
+bcp_time : 2.278947
+conflict_time : 0.460606
+conflict_total_size : 4489.000000
+conflicts : 400.000000
+total_time : 3.371744
+total_variable_pick : 0.222225
+Stats: bcp_terms : 2713.000000
+bcp_time : 0.159466
+conflict_time : 0.044369
+conflict_total_size : 435.000000
+conflicts : 34.000000
+total_time : 0.245515
+total_variable_pick : 0.017614
+Stats: bcp_terms : 15227.000000
+bcp_time : 1.077845
+conflict_time : 0.218144
+conflict_total_size : 2003.000000
+conflicts : 186.000000
+total_time : 1.580222
+total_variable_pick : 0.105491
+Stats: bcp_terms : 6503.000000
+bcp_time : 0.455670
+conflict_time : 0.103294
+conflict_total_size : 961.000000
+conflicts : 86.000000
+total_time : 0.682864
+total_variable_pick : 0.049351
+Stats: bcp_terms : 71091.000000
+bcp_time : 5.314281
+conflict_time : 0.925907
+conflict_total_size : 9999.000000
+conflicts : 866.000000
+total_time : 7.885653
+total_variable_pick : 0.514111
+Stats: bcp_terms : 15055.000000
+bcp_time : 0.962868
+conflict_time : 0.224050
+conflict_total_size : 1740.000000
+conflicts : 177.000000
+total_time : 1.412694
+total_variable_pick : 0.083675
+Stats: bcp_terms : 92741.000000
+bcp_time : 8.230046
+conflict_time : 1.235806
+conflict_total_size : 14569.000000
+conflicts : 1152.000000
+total_time : 12.516699
+total_variable_pick : 0.797972
+Stats: bcp_terms : 24206.000000
+bcp_time : 1.667329
+conflict_time : 0.351134
+conflict_total_size : 3218.000000
+conflicts : 303.000000
+total_time : 2.436064
+total_variable_pick : 0.151212
+Stats: bcp_terms : 69.000000
+bcp_time : 0.018873
+total_time : 0.039308
+total_variable_pick : 0.007276
+Stats: bcp_terms : 2030.000000
+bcp_time : 0.138903
+conflict_time : 0.034759
+conflict_total_size : 335.000000
+conflicts : 27.000000
+total_time : 0.215656
+total_variable_pick : 0.017182
+Stats: bcp_terms : 135.000000
+bcp_time : 0.024898
+conflict_time : 0.000336
+conflict_total_size : 3.000000
+conflicts : 1.000000
+total_time : 0.048334
+total_variable_pick : 0.008681
+Stats: bcp_terms : 46861.000000
+bcp_time : 3.451313
+conflict_time : 0.650966
+conflict_total_size : 7309.000000
+conflicts : 585.000000
+total_time : 5.207392
+total_variable_pick : 0.354915
+Stats: bcp_terms : 770.000000
+bcp_time : 0.060992
+conflict_time : 0.014196
+conflict_total_size : 124.000000
+conflicts : 11.000000
+total_time : 0.098437
+total_variable_pick : 0.008661
+Stats: bcp_terms : 1541.000000
+bcp_time : 0.101976
+conflict_time : 0.023363
+conflict_total_size : 205.000000
+conflicts : 20.000000
+total_time : 0.158900
+total_variable_pick : 0.012895
+Stats: bcp_terms : 89422.000000
+bcp_time : 6.306925
+conflict_time : 1.176549
+conflict_total_size : 11496.000000
+conflicts : 1018.000000
+total_time : 9.392202
+total_variable_pick : 0.591354
+Stats: bcp_terms : 242.000000
+bcp_time : 0.027103
+conflict_time : 0.002248
+conflict_total_size : 33.000000
+conflicts : 3.000000
+total_time : 0.051992
+total_variable_pick : 0.008453
+Stats: bcp_terms : 68423.000000
+bcp_time : 5.071542
+conflict_time : 0.897678
+conflict_total_size : 8804.000000
+conflicts : 808.000000
+total_time : 7.546309
+total_variable_pick : 0.477986
+Stats: bcp_terms : 164.000000
+bcp_time : 0.026813
+conflict_time : 0.002587
+conflict_total_size : 34.000000
+conflicts : 2.000000
+total_time : 0.051164
+total_variable_pick : 0.008259
+Stats: bcp_terms : 5602.000000
+bcp_time : 0.414882
+conflict_time : 0.103870
+conflict_total_size : 906.000000
+conflicts : 79.000000
+total_time : 0.636398
+total_variable_pick : 0.046692
+Stats: bcp_terms : 950.000000
+bcp_time : 0.065764
+conflict_time : 0.015322
+conflict_total_size : 113.000000
+conflicts : 11.000000
+total_time : 0.103209
+total_variable_pick : 0.008419
+Stats: bcp_terms : 8564.000000
+bcp_time : 0.595037
+conflict_time : 0.134571
+conflict_total_size : 1351.000000
+conflicts : 114.000000
+total_time : 0.896289
+total_variable_pick : 0.065147
+Stats: bcp_terms : 573.000000
+bcp_time : 0.051658
+conflict_time : 0.010775
+conflict_total_size : 108.000000
+conflicts : 8.000000
+total_time : 0.089584
+total_variable_pick : 0.010450
+Stats: bcp_terms : 662.000000
+bcp_time : 0.058315
+conflict_time : 0.012501
+conflict_total_size : 95.000000
+conflicts : 8.000000
+total_time : 0.098798
+total_variable_pick : 0.010822
+Stats: bcp_terms : 1663.000000
+bcp_time : 0.125414
+conflict_time : 0.030663
+conflict_total_size : 239.000000
+conflicts : 22.000000
+total_time : 0.195373
+total_variable_pick : 0.015795
+Stats: bcp_terms : 111194.000000
+bcp_time : 9.328795
+conflict_time : 1.467931
+conflict_total_size : 14961.000000
+conflicts : 1316.000000
+total_time : 14.172753
+total_variable_pick : 0.944126
+Stats: bcp_terms : 89290.000000
+bcp_time : 8.298667
+conflict_time : 1.258159
+conflict_total_size : 13009.000000
+conflicts : 1102.000000
+total_time : 11.934494
+total_variable_pick : 0.655318
+Stats: bcp_terms : 292.000000
+bcp_time : 0.028454
+conflict_time : 0.005039
+conflict_total_size : 48.000000
+conflicts : 4.000000
+total_time : 0.055090
+total_variable_pick : 0.007643
+Stats: bcp_terms : 71620.000000
+bcp_time : 5.367557
+conflict_time : 1.009694
+conflict_total_size : 9707.000000
+conflicts : 854.000000
+total_time : 8.103097
+total_variable_pick : 0.527698
+Stats: bcp_terms : 6110.000000
+bcp_time : 0.429261
+conflict_time : 0.104870
+conflict_total_size : 844.000000
+conflicts : 73.000000
+total_time : 0.631830
+total_variable_pick : 0.038205
+Stats: bcp_terms : 95626.000000
+bcp_time : 7.749091
+conflict_time : 1.293827
+conflict_total_size : 12783.000000
+conflicts : 1177.000000
+total_time : 11.552990
+total_variable_pick : 0.732576
+Stats: bcp_terms : 96769.000000
+bcp_time : 8.518533
+conflict_time : 1.322411
+conflict_total_size : 14244.000000
+conflicts : 1176.000000
+total_time : 13.023697
+total_variable_pick : 0.849181
+Stats: bcp_terms : 143.000000
+bcp_time : 0.035268
+conflict_time : 0.001909
+conflict_total_size : 11.000000
+conflicts : 3.000000
+total_time : 0.071105
+total_variable_pick : 0.014154
+Stats: bcp_terms : 724.000000
+bcp_time : 0.061351
+conflict_time : 0.013834
+conflict_total_size : 144.000000
+conflicts : 10.000000
+total_time : 0.101821
+total_variable_pick : 0.010052
+Stats: bcp_terms : 75.000000
+bcp_time : 0.015348
+total_time : 0.032304
+total_variable_pick : 0.005496
+Stats: bcp_terms : 92370.000000
+bcp_time : 6.965667
+conflict_time : 1.429914
+conflict_total_size : 11702.000000
+conflicts : 1065.000000
+total_time : 10.673654
+total_variable_pick : 0.660738
+Stats: bcp_terms : 21795.000000
+bcp_time : 1.458429
+conflict_time : 0.328468
+conflict_total_size : 2817.000000
+conflicts : 264.000000
+total_time : 2.142510
+total_variable_pick : 0.133270
+Stats: bcp_terms : 79.000000
+bcp_time : 0.019350
+conflict_time : 0.000708
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.040705
+total_variable_pick : 0.007137
+Stats: bcp_terms : 4037.000000
+bcp_time : 0.290184
+conflict_time : 0.082781
+conflict_total_size : 788.000000
+conflicts : 60.000000
+total_time : 0.444442
+total_variable_pick : 0.026966
+Stats: bcp_terms : 33479.000000
+bcp_time : 2.396556
+conflict_time : 0.485074
+conflict_total_size : 4284.000000
+conflicts : 404.000000
+total_time : 3.563231
+total_variable_pick : 0.246043
+Stats: bcp_terms : 42521.000000
+bcp_time : 3.126641
+conflict_time : 0.603801
+conflict_total_size : 5459.000000
+conflicts : 516.000000
+total_time : 4.663057
+total_variable_pick : 0.327507
+Stats: bcp_terms : 5065.000000
+bcp_time : 0.326780
+conflict_time : 0.074282
+conflict_total_size : 808.000000
+conflicts : 67.000000
+total_time : 0.497117
+total_variable_pick : 0.038018
+Stats: bcp_terms : 115957.000000
+bcp_time : 9.044138
+conflict_time : 1.604166
+conflict_total_size : 15707.000000
+conflicts : 1344.000000
+total_time : 13.670942
+total_variable_pick : 0.807428
+Stats: bcp_terms : 3168.000000
+bcp_time : 0.248559
+conflict_time : 0.060003
+conflict_total_size : 447.000000
+conflicts : 43.000000
+total_time : 0.376668
+total_variable_pick : 0.027508
+Stats: bcp_terms : 233.000000
+bcp_time : 0.033982
+conflict_time : 0.003214
+conflict_total_size : 27.000000
+conflicts : 3.000000
+total_time : 0.063806
+total_variable_pick : 0.010585
+Stats: bcp_terms : 6264.000000
+bcp_time : 0.434062
+conflict_time : 0.108171
+conflict_total_size : 1040.000000
+conflicts : 78.000000
+total_time : 0.643319
+total_variable_pick : 0.037313
+Stats: bcp_terms : 1794.000000
+bcp_time : 0.128819
+conflict_time : 0.032007
+conflict_total_size : 295.000000
+conflicts : 24.000000
+total_time : 0.201029
+total_variable_pick : 0.016757
+Stats: bcp_terms : 75779.000000
+bcp_time : 5.726085
+conflict_time : 1.036194
+conflict_total_size : 9620.000000
+conflicts : 883.000000
+total_time : 8.441530
+total_variable_pick : 0.541078
+Stats: bcp_terms : 8247.000000
+bcp_time : 0.537676
+conflict_time : 0.114639
+conflict_total_size : 1257.000000
+conflicts : 101.000000
+total_time : 0.784867
+total_variable_pick : 0.051931
+Stats: bcp_terms : 9479.000000
+bcp_time : 0.657942
+conflict_time : 0.142370
+conflict_total_size : 1579.000000
+conflicts : 120.000000
+total_time : 0.968760
+total_variable_pick : 0.063401
+Stats: bcp_terms : 93279.000000
+bcp_time : 6.899591
+conflict_time : 1.237100
+conflict_total_size : 11269.000000
+conflicts : 1082.000000
+total_time : 10.265047
+total_variable_pick : 0.622317
+Stats: bcp_terms : 2458.000000
+bcp_time : 0.197829
+conflict_time : 0.049081
+conflict_total_size : 510.000000
+conflicts : 40.000000
+total_time : 0.309737
+total_variable_pick : 0.026087
+Stats: bcp_terms : 164.000000
+bcp_time : 0.022399
+conflict_time : 0.001011
+conflict_total_size : 3.000000
+conflicts : 1.000000
+total_time : 0.040912
+total_variable_pick : 0.006062
+Stats: bcp_terms : 5000.000000
+bcp_time : 0.377979
+conflict_time : 0.084991
+conflict_total_size : 854.000000
+conflicts : 73.000000
+total_time : 0.564675
+total_variable_pick : 0.039786
+Stats: bcp_terms : 102796.000000
+bcp_time : 8.079557
+conflict_time : 1.389498
+conflict_total_size : 12985.000000
+conflicts : 1196.000000
+total_time : 12.118424
+total_variable_pick : 0.727925
+Stats: bcp_terms : 13035.000000
+bcp_time : 0.876226
+conflict_time : 0.181847
+conflict_total_size : 1531.000000
+conflicts : 158.000000
+total_time : 1.280898
+total_variable_pick : 0.087331
+Stats: bcp_terms : 81.000000
+bcp_time : 0.013206
+total_time : 0.026895
+total_variable_pick : 0.003728
+Stats: bcp_terms : 11744.000000
+bcp_time : 0.858475
+conflict_time : 0.216427
+conflict_total_size : 1791.000000
+conflicts : 150.000000
+total_time : 1.286988
+total_variable_pick : 0.079273
+Stats: bcp_terms : 33166.000000
+bcp_time : 2.346761
+conflict_time : 0.475879
+conflict_total_size : 4444.000000
+conflicts : 400.000000
+total_time : 3.435924
+total_variable_pick : 0.208113
+Stats: bcp_terms : 4624.000000
+bcp_time : 0.339210
+conflict_time : 0.083592
+conflict_total_size : 813.000000
+conflicts : 64.000000
+total_time : 0.522875
+total_variable_pick : 0.039305
+Stats: bcp_terms : 62957.000000
+bcp_time : 5.086812
+conflict_time : 0.935103
+conflict_total_size : 9477.000000
+conflicts : 783.000000
+total_time : 7.619849
+total_variable_pick : 0.478783
+Stats: bcp_terms : 2685.000000
+bcp_time : 0.209636
+conflict_time : 0.044656
+conflict_total_size : 462.000000
+conflicts : 39.000000
+total_time : 0.312024
+total_variable_pick : 0.022674
+Stats: bcp_terms : 95550.000000
+bcp_time : 7.601631
+conflict_time : 1.350376
+conflict_total_size : 13781.000000
+conflicts : 1186.000000
+total_time : 11.438459
+total_variable_pick : 0.703987
+Stats: bcp_terms : 3092.000000
+bcp_time : 0.212783
+conflict_time : 0.055219
+conflict_total_size : 622.000000
+conflicts : 43.000000
+total_time : 0.326077
+total_variable_pick : 0.022653
+Stats: bcp_terms : 2878.000000
+bcp_time : 0.193485
+conflict_time : 0.046036
+conflict_total_size : 429.000000
+conflicts : 37.000000
+total_time : 0.288378
+total_variable_pick : 0.019198
+Stats: bcp_terms : 718.000000
+bcp_time : 0.053332
+conflict_time : 0.013200
+conflict_total_size : 119.000000
+conflicts : 10.000000
+total_time : 0.086681
+total_variable_pick : 0.007063
+Stats: bcp_terms : 3065.000000
+bcp_time : 0.208508
+conflict_time : 0.055172
+conflict_total_size : 604.000000
+conflicts : 46.000000
+total_time : 0.322760
+total_variable_pick : 0.022627
+Stats: bcp_terms : 1326.000000
+bcp_time : 0.104836
+conflict_time : 0.028257
+conflict_total_size : 239.000000
+conflicts : 19.000000
+total_time : 0.168362
+total_variable_pick : 0.013850
+Stats: bcp_terms : 2597.000000
+bcp_time : 0.218640
+conflict_time : 0.048912
+conflict_total_size : 392.000000
+conflicts : 36.000000
+total_time : 0.322871
+total_variable_pick : 0.022303
+Stats: bcp_terms : 3013.000000
+bcp_time : 0.199145
+conflict_time : 0.044341
+conflict_total_size : 344.000000
+conflicts : 38.000000
+total_time : 0.301619
+total_variable_pick : 0.024667
+Stats: bcp_terms : 1036.000000
+bcp_time : 0.091298
+conflict_time : 0.022575
+conflict_total_size : 206.000000
+conflicts : 16.000000
+total_time : 0.149474
+total_variable_pick : 0.014644
+Stats: bcp_terms : 522.000000
+bcp_time : 0.044342
+conflict_time : 0.009143
+conflict_total_size : 88.000000
+conflicts : 6.000000
+total_time : 0.078545
+total_variable_pick : 0.008823
+Stats: bcp_terms : 75.000000
+bcp_time : 0.017065
+total_time : 0.036238
+total_variable_pick : 0.006691
+Stats: bcp_terms : 1483.000000
+bcp_time : 0.137260
+conflict_time : 0.030331
+conflict_total_size : 261.000000
+conflicts : 26.000000
+total_time : 0.215922
+total_variable_pick : 0.019342
+Stats: bcp_terms : 3238.000000
+bcp_time : 0.203733
+conflict_time : 0.059366
+conflict_total_size : 496.000000
+conflicts : 42.000000
+total_time : 0.311680
+total_variable_pick : 0.018794
+Stats: bcp_terms : 28007.000000
+bcp_time : 2.058366
+conflict_time : 0.461134
+conflict_total_size : 4045.000000
+conflicts : 357.000000
+total_time : 3.091175
+total_variable_pick : 0.205516
+Stats: bcp_terms : 70.000000
+bcp_time : 0.020099
+total_time : 0.043633
+total_variable_pick : 0.008534
+Stats: bcp_terms : 363.000000
+bcp_time : 0.032902
+conflict_time : 0.006351
+conflict_total_size : 52.000000
+conflicts : 5.000000
+total_time : 0.059565
+total_variable_pick : 0.007168
+Stats: bcp_terms : 15245.000000
+bcp_time : 1.129946
+conflict_time : 0.236709
+conflict_total_size : 2508.000000
+conflicts : 205.000000
+total_time : 1.659440
+total_variable_pick : 0.105072
+Stats: bcp_terms : 22993.000000
+bcp_time : 1.525549
+conflict_time : 0.374929
+conflict_total_size : 3028.000000
+conflicts : 278.000000
+total_time : 2.307108
+total_variable_pick : 0.145241
+Stats: bcp_terms : 46523.000000
+bcp_time : 3.824034
+conflict_time : 0.673497
+conflict_total_size : 7286.000000
+conflicts : 587.000000
+total_time : 5.661232
+total_variable_pick : 0.376969
+Stats: bcp_terms : 3037.000000
+bcp_time : 0.243124
+conflict_time : 0.051337
+conflict_total_size : 632.000000
+conflicts : 51.000000
+total_time : 0.370711
+total_variable_pick : 0.030748
+Stats: bcp_terms : 9046.000000
+bcp_time : 0.660803
+conflict_time : 0.152199
+conflict_total_size : 1393.000000
+conflicts : 119.000000
+total_time : 0.989217
+total_variable_pick : 0.067579
+Stats: bcp_terms : 8805.000000
+bcp_time : 0.610486
+conflict_time : 0.138575
+conflict_total_size : 1244.000000
+conflicts : 114.000000
+total_time : 0.909850
+total_variable_pick : 0.062779
+Stats: bcp_terms : 814.000000
+bcp_tim 0.677828
+Stats: bcp_terms : 65658.000000
+bcp_time : 4.860958
+conflict_time : 0.763193
+conflict_total_size : 10069.000000
+conflicts : 791.000000
+total_time : 7.262295
+total_variable_pick : 0.488749
+Stats: bcp_terms : 2051.000000
+bcp_time : 0.132573
+conflict_time : 0.023385
+conflict_total_size : 280.000000
+conflicts : 25.000000
+total_time : 0.192651
+total_variable_pick : 0.016563
+Stats: bcp_terms : 22144.000000
+bcp_time : 1.573905
+conflict_time : 0.269190
+conflict_total_size : 3128.000000
+conflicts : 280.000000
+total_time : 2.276974
+total_variable_pick : 0.166391
+Stats: bcp_terms : 35203.000000
+bcp_time : 2.495694
+conflict_time : 0.442701
+conflict_total_size : 5335.000000
+conflicts : 415.000000
+total_time : 3.657051
+total_variable_pick : 0.258180
+Stats: bcp_terms : 30209.000000
+bcp_time : 2.192845
+conflict_time : 0.375566
+conflict_total_size : 4449.000000
+conflicts : 358.000000
+total_time : 3.159684
+total_variable_pick : 0.215698
+Stats: bcp_terms : 72426.000000
+bcp_time : 5.771211
+conflict_time : 0.925138
+conflict_total_size : 10142.000000
+conflicts : 851.000000
+total_time : 8.508598
+total_variable_pick : 0.529366
+Stats: bcp_terms : 1987.000000
+bcp_time : 0.126233
+conflict_time : 0.025704
+conflict_total_size : 370.000000
+conflicts : 29.000000
+total_time : 0.188515
+total_variable_pick : 0.016110
+Stats: bcp_terms : 54365.000000
+bcp_time : 4.214073
+conflict_time : 0.652706
+conflict_total_size : 8517.000000
+conflicts : 648.000000
+total_time : 6.294328
+total_variable_pick : 0.468459
+Stats: bcp_terms : 1724.000000
+bcp_time : 0.106987
+conflict_time : 0.017829
+conflict_total_size : 209.000000
+conflicts : 20.000000
+total_time : 0.149561
+total_variable_pick : 0.011395
+Stats: bcp_terms : 2317.000000
+bcp_time : 0.164776
+conflict_time : 0.024497
+conflict_total_size : 322.000000
+conflicts : 30.000000
+total_time : 0.237551
+total_variable_pick : 0.022846
+Stats: bcp_terms : 15745.000000
+bcp_time : 1.136982
+conflict_time : 0.199381
+conflict_total_size : 2571.000000
+conflicts : 201.000000
+total_time : 1.661288
+total_variable_pick : 0.128242
+Stats: bcp_terms : 3359.000000
+bcp_time : 0.229034
+conflict_time : 0.034248
+conflict_total_size : 455.000000
+conflicts : 43.000000
+total_time : 0.339318
+total_variable_pick : 0.035155
+Stats: bcp_terms : 15538.000000
+bcp_time : 1.084737
+conflict_time : 0.192450
+conflict_total_size : 2453.000000
+conflicts : 199.000000
+total_time : 1.556011
+total_variable_pick : 0.109093
+Stats: bcp_terms : 9629.000000
+bcp_time : 0.651277
+conflict_time : 0.107758
+conflict_total_size : 1459.000000
+conflicts : 121.000000
+total_time : 0.934377
+total_variable_pick : 0.073095
+Stats: bcp_terms : 5355.000000
+bcp_time : 0.358766
+conflict_time : 0.064631
+conflict_total_size : 904.000000
+conflicts : 69.000000
+total_time : 0.514710
+total_variable_pick : 0.037964
+Stats: bcp_terms : 51025.000000
+bcp_time : 4.085509
+conflict_time : 0.637856
+conflict_total_size : 7940.000000
+conflicts : 619.000000
+total_time : 5.885570
+total_variable_pick : 0.373901
+Stats: bcp_terms : 3782.000000
+bcp_time : 0.246938
+conflict_time : 0.049922
+conflict_total_size : 603.000000
+conflicts : 47.000000
+total_time : 0.354959
+total_variable_pick : 0.024387
+Stats: bcp_terms : 5426.000000
+bcp_time : 0.380674
+conflict_time : 0.066677
+conflict_total_size : 953.000000
+conflicts : 75.000000
+total_time : 0.534985
+total_variable_pick : 0.036406
+Stats: bcp_terms : 23166.000000
+bcp_time : 1.665404
+conflict_time : 0.289615
+conflict_total_size : 3492.000000
+conflicts : 277.000000
+total_time : 2.425389
+total_variable_pick : 0.176381
+Stats: bcp_terms : 4810.000000
+bcp_time : 0.337025
+conflict_time : 0.061074
+conflict_total_size : 748.000000
+conflicts : 65.000000
+total_time : 0.486648
+total_variable_pick : 0.038718
+Stats: bcp_terms : 689.000000
+bcp_time : 0.057396
+conflict_time : 0.008274
+conflict_total_size : 75.000000
+conflicts : 9.000000
+total_time : 0.087772
+total_variable_pick : 0.010999
+Stats: bcp_terms : 5655.000000
+bcp_time : 0.385855
+conflict_time : 0.071106
+conflict_total_size : 989.000000
+conflicts : 77.000000
+total_time : 0.567561
+total_variable_pick : 0.046326
+Stats: e : 0.064848
+conflict_time : 0.013378
+conflict_total_size : 112.000000
+conflicts : 11.000000
+total_time : 0.105710
+total_variable_pick : 0.010228
+Stats: bcp_terms : 45971.000000
+bcp_time : 3.490616
+conflict_time : 0.644642
+conflict_total_size : 6614.000000
+conflicts : 557.000000
+total_time : 5.204360
+total_variable_pick : 0.363250
+Stats: bcp_terms : 14752.000000
+bcp_time : 1.053645
+conflict_time : 0.221695
+conflict_total_size : 2392.000000
+conflicts : 189.000000
+total_time : 1.544792
+total_variable_pick : 0.098327
+Stats: bcp_terms : 44619.000000
+bcp_time : 3.327098
+conflict_time : 0.605597
+conflict_total_size : 6380.000000
+conflicts : 542.000000
+total_time : 4.913425
+total_variable_pick : 0.318345
+Stats: bcp_terms : 93633.000000
+bcp_time : 7.779535
+conflict_time : 1.454331
+conflict_total_size : 13349.000000
+conflicts : 1127.000000
+total_time : 12.075545
+total_variable_pick : 0.761345
+Stats: bcp_terms : 28276.000000
+bcp_time : 1.997580
+conflict_time : 0.390888
+conflict_total_size : 4077.000000
+conflicts : 347.000000
+total_time : 2.926371
+total_variable_pick : 0.191263
+Stats: bcp_terms : 2033.000000
+bcp_time : 0.149831
+conflict_time : 0.042144
+conflict_total_size : 267.000000
+conflicts : 31.000000
+total_time : 0.240315
+total_variable_pick : 0.019494
+Stats: bcp_terms : 17681.000000
+bcp_time : 1.128821
+conflict_time : 0.239526
+conflict_total_size : 2295.000000
+conflicts : 219.000000
+total_time : 1.663223
+total_variable_pick : 0.108380
+Stats: bcp_terms : 940.000000
+bcp_time : 0.066471
+conflict_time : 0.016685
+conflict_total_size : 207.000000
+conflicts : 13.000000
+total_time : 0.108570
+total_variable_pick : 0.009065
+Stats: bcp_terms : 67366.000000
+bcp_time : 5.394115
+conflict_time : 0.919854
+conflict_total_size : 9804.000000
+conflicts : 835.000000
+total_time : 8.047704
+total_variable_pick : 0.523181
+Stats: bcp_terms : 2934.000000
+bcp_time : 0.226551
+conflict_time : 0.057608
+conflict_total_size : 743.000000
+conflicts : 49.000000
+total_time : 0.348384
+total_variable_pick : 0.024774
+Stats: bcp_terms : 264.000000
+bcp_time : 0.034560
+conflict_time : 0.003761
+conflict_total_size : 33.000000
+conflicts : 4.000000
+total_time : 0.062326
+total_variable_pick : 0.009479
+Stats: bcp_terms : 20508.000000
+bcp_time : 1.449099
+conflict_time : 0.302138
+conflict_total_size : 3272.000000
+conflicts : 268.000000
+total_time : 2.154873
+total_variable_pick : 0.150782
+Stats: bcp_terms : 43958.000000
+bcp_time : 3.157097
+conflict_time : 0.580133
+conflict_total_size : 6020.000000
+conflicts : 532.000000
+total_time : 4.693513
+total_variable_pick : 0.321876
+Stats: bcp_terms : 74250.000000
+bcp_time : 5.563182
+conflict_time : 0.981137
+conflict_total_size : 9871.000000
+conflicts : 869.000000
+total_time : 8.299822
+total_variable_pick : 0.525586
+Stats: bcp_terms : 87046.000000
+bcp_time : 7.425291
+conflict_time : 1.229614
+conflict_total_size : 13029.000000
+conflicts : 1096.000000
+total_time : 11.180110
+total_variable_pick : 0.719436
+Stats: bcp_terms : 69496.000000
+bcp_time : 5.180845
+conflict_time : 0.936727
+conflict_total_size : 9447.000000
+conflicts : 837.000000
+total_time : 7.734957
+total_variable_pick : 0.475849
+Stats: bcp_terms : 1657.000000
+bcp_time : 0.123517
+conflict_time : 0.032673
+conflict_total_size : 266.000000
+conflicts : 23.000000
+total_time : 0.197650
+total_variable_pick : 0.017148
+Stats: bcp_terms : 980.000000
+bcp_time : 0.079457
+conflict_time : 0.014329
+conflict_total_size : 102.000000
+conflicts : 13.000000
+total_time : 0.118737
+total_variable_pick : 0.009693
+Stats: bcp_terms : 7275.000000
+bcp_time : 0.479187
+conflict_time : 0.111976
+conflict_total_size : 1118.000000
+conflicts : 97.000000
+total_time : 0.720121
+total_variable_pick : 0.049458
+Stats: bcp_terms : 41255.000000
+bcp_time : 3.245130
+conflict_time : 0.587446
+conflict_total_size : 6069.000000
+conflicts : 530.000000
+total_time : 4.823587
+total_variable_pick : 0.329708
+Stats: bcp_terms : 787.000000
+bcp_time : 0.094484
+conflict_time : 0.015246
+conflict_total_size : 136.000000
+conflicts : 13.000000
+total_time : 0.159142
+total_variable_pick : 0.021235
+Stats: bcp_terms : 8446.000000
+bcp_time : 0.546086
+conflict_time : 0.120347
+conflict_total_size : 1219.000000
+conflicts : 103.000000
+total_time : 0.805691
+total_variable_pick : 0.053011
+Stats: bcp_terms : 85391.000000
+bcp_time : 7.178502
+conflict_time : 1.385880
+conflict_total_size : 12362.000000
+conflicts : 1036.000000
+total_time : 10.963040
+total_variable_pick : 0.691192
+Stats: bcp_terms : 69033.000000
+bcp_time : 4.974098
+conflict_time : 0.934799
+conflict_total_size : 9126.000000
+conflicts : 800.000000
+total_time : 7.429048
+total_variable_pick : 0.472924
+Stats: bcp_terms : 111795.000000
+bcp_time : 8.786585
+conflict_time : 1.505026
+conflict_total_size : 15840.000000
+conflicts : 1339.000000
+total_time : 13.145277
+total_variable_pick : 0.787312
+Stats: bcp_terms : 452.000000
+bcp_time : 0.055347
+conflict_time : 0.012176
+conflict_total_size : 136.000000
+conflicts : 8.000000
+total_time : 0.093647
+total_variable_pick : 0.009660
+Stats: bcp_terms : 678.000000
+bcp_time : 0.061226
+conflict_time : 0.013925
+conflict_total_size : 172.000000
+conflicts : 11.000000
+total_time : 0.106356
+total_variable_pick : 0.011815
+Stats: bcp_terms : 196.000000
+bcp_time : 0.035733
+conflict_time : 0.002287
+conflict_total_size : 16.000000
+conflicts : 2.000000
+total_time : 0.068943
+total_variable_pick : 0.012848
+Stats: bcp_terms : 1444.000000
+bcp_time : 0.108185
+conflict_time : 0.023187
+conflict_total_size : 239.000000
+conflicts : 20.000000
+total_time : 0.166195
+total_variable_pick : 0.013850
+Stats: bcp_terms : 13501.000000
+bcp_time : 0.937832
+conflict_time : 0.205037
+conflict_total_size : 1963.000000
+conflicts : 170.000000
+total_time : 1.395538
+total_variable_pick : 0.095681
+Stats: bcp_terms : 122.000000
+bcp_time : 0.024662
+conflict_time : 0.001785
+conflict_total_size : 18.000000
+conflicts : 1.000000
+total_time : 0.051140
+total_variable_pick : 0.009312
+Stats: bcp_terms : 1092.000000
+bcp_time : 0.092129
+conflict_time : 0.018996
+conflict_total_size : 178.000000
+conflicts : 15.000000
+total_time : 0.148487
+total_variable_pick : 0.015771
+Stats: bcp_terms : 1522.000000
+bcp_time : 0.106606
+conflict_time : 0.028563
+conflict_total_size : 264.000000
+conflicts : 22.000000
+total_time : 0.170402
+total_variable_pick : 0.013742
+Stats: bcp_terms : 69622.000000
+bcp_time : 5.488009
+conflict_time : 0.931061
+conflict_total_size : 9888.000000
+conflicts : 846.000000
+total_time : 8.193982
+total_variable_pick : 0.508456
+Stats: bcp_terms : 20278.000000
+bcp_time : 1.341608
+conflict_time : 0.295409
+conflict_total_size : 2479.000000
+conflicts : 244.000000
+total_time : 1.988372
+total_variable_pick : 0.128573
+Stats: bcp_terms : 32850.000000
+bcp_time : 2.093391
+conflict_time : 0.431558
+conflict_total_size : 4230.000000
+conflicts : 385.000000
+total_time : 3.095097
+total_variable_pick : 0.202586
+Stats: bcp_terms : 38730.000000
+bcp_time : 2.779899
+conflict_time : 0.527758
+conflict_total_size : 5125.000000
+conflicts : 465.000000
+total_time : 4.044666
+total_variable_pick : 0.251136
+Stats: bcp_terms : 861.000000
+bcp_time : 0.075188
+conflict_time : 0.015281
+conflict_total_size : 144.000000
+conflicts : 12.000000
+total_time : 0.122582
+total_variable_pick : 0.012307
+Stats: bcp_terms : 2416.000000
+bcp_time : 0.162872
+conflict_time : 0.043877
+conflict_total_size : 351.000000
+conflicts : 31.000000
+total_time : 0.256977
+total_variable_pick : 0.019795
+Stats: bcp_terms : 10742.000000
+bcp_time : 0.767685
+conflict_time : 0.188692
+conflict_total_size : 1779.000000
+conflicts : 139.000000
+total_time : 1.167349
+total_variable_pick : 0.081349
+Stats: bcp_terms : 1483.000000
+bcp_time : 0.107812
+conflict_time : 0.029015
+conflict_total_size : 277.000000
+conflicts : 21.000000
+total_time : 0.177751
+total_variable_pick : 0.016193
+Stats: bcp_terms : 7677.000000
+bcp_time : 0.508048
+conflict_time : 0.111783
+conflict_total_size : 1219.000000
+conflicts : 97.000000
+total_time : 0.757125
+total_variable_pick : 0.053426
+Stats: bcp_terms : 47609.000000
+bcp_time : 3.214149
+conflict_time : 0.631189
+conflict_total_size : 6083.000000
+conflicts : 547.000000
+total_time : 4.744355
+total_variable_pick : 0.293127
+Stats: bcp_terms : 69539.000000
+bcp_time : 5.510279
+conflict_time : 1.087530
+conflict_total_size : 10259.000000
+conflicts : 869.000000
+total_time : 8.512520
+total_variable_pick : 0.563845
+Stats: bcp_terms : 6514.000000
+bcp_time : 0.463732
+conflict_time : 0.100753
+conflict_total_size : 1127.000000
+conflicts : 85.000000
+total_time : 0.678192
+total_variable_pick : 0.043653
+Stats: bcp_terms : 36536.000000
+bcp_time : 2.552040
+conflict_time : 0.498477
+conflict_total_size : 5037.000000
+conflicts : 440.000000
+total_time : 3.779811
+total_variable_pick : 0.256125
+Stats: bcp_terms : 423.000000
+bcp_time : 0.042630
+conflict_time : 0.007287
+conflict_total_size : 67.000000
+conflicts : 6.000000
+total_time : 0.077519
+total_variable_pick : 0.010216
+Stats: bcp_terms : 59213.000000
+bcp_time : 4.686587
+conflict_time : 0.817476
+conflict_total_size : 9647.000000
+conflicts : 730.000000
+total_time : 7.043332
+total_variable_pick : 0.457883
+Stats: bcp_terms : 51163.000000
+bcp_time : 3.633476
+conflict_time : 0.808814
+conflict_total_size : 6593.000000
+conflicts : 617.000000
+total_time : 5.490588
+total_variable_pick : 0.337378
+Stats: bcp_terms : 1938.000000
+bcp_time : 0.139471
+conflict_time : 0.034902
+conflict_total_size : 245.000000
+conflicts : 24.000000
+total_time : 0.219581
+total_variable_pick : 0.018579
+Stats: bcp_terms : 94563.000000
+bcp_time : 7.581395
+conflict_time : 1.258659
+conflict_total_size : 13619.000000
+conflicts : 1134.000000
+total_time : 11.430274
+total_variable_pick : 0.718805
+Stats: bcp_terms : 871.000000
+bcp_time : 0.066733
+conflict_time : 0.017753
+conflict_total_size : 151.000000
+conflicts : 13.000000
+total_time : 0.114991
+total_variable_pick : 0.011424
+Stats: bcp_terms : 11643.000000
+bcp_time : 0.836931
+conflict_time : 0.184065
+conflict_total_size : 1780.000000
+conflicts : 150.000000
+total_time : 1.243183
+total_variable_pick : 0.080350
+Stats: bcp_terms : 31501.000000
+bcp_time : 2.162111
+conflict_time : 0.424966
+conflict_total_size : 4104.000000
+conflicts : 380.000000
+total_time : 3.152909
+total_variable_pick : 0.201299
+Stats: bcp_terms : 4300.000000
+bcp_time : 0.373372
+conflict_time : 0.083712
+conflict_total_size : 1073.000000
+conflicts : 74.000000
+total_time : 0.567016
+total_variable_pick : 0.041407
+Stats: bcp_terms : 1544.000000
+bcp_time : 0.125133
+conflict_time : 0.025728
+conflict_total_size : 234.000000
+conflicts : 24.000000
+total_time : 0.196656
+total_variable_pick : 0.019512
+Stats: bcp_terms : 13535.000000
+bcp_time : 0.957642
+conflict_time : 0.204336
+conflict_total_size : 2112.000000
+conflicts : 173.000000
+total_time : 1.398462
+total_variable_pick : 0.089267
+Stats: bcp_terms : 50421.000000
+bcp_time : 3.392829
+conflict_time : 0.672411
+conflict_total_size : 7036.000000
+conflicts : 590.000000
+total_time : 5.102447
+total_variable_pick : 0.324668
+Stats: bcp_terms : 1617.000000
+bcp_time : 0.135688
+conflict_time : 0.032599
+conflict_total_size : 282.000000
+conflicts : 26.000000
+total_time : 0.218565
+total_variable_pick : 0.020905
+Stats: bcp_terms : 32939.000000
+bcp_time : 2.411263
+conflict_time : 0.464837
+conflict_total_size : 5042.000000
+conflicts : 413.000000
+total_time : 3.563363
+total_variable_pick : 0.237850
+Stats: bcp_terms : 6184.000000
+bcp_time : 0.468638
+conflict_time : 0.108219
+conflict_total_size : 1204.000000
+conflicts : 87.000000
+total_time : 0.687570
+total_variable_pick : 0.040289
+Stats: bcp_terms : 83673.000000
+bcp_time : 7.126429
+conflict_time : 1.123056
+conflict_total_size : 12135.000000
+conflicts : 1028.000000
+total_time : 10.757206
+total_variable_pick : 0.706912
+Stats: bcp_terms : 68163.000000
+bcp_time : 4.811979
+conflict_time : 0.884333
+conflict_total_size : 8680.000000
+conflicts : 786.000000
+total_time : 7.124936
+total_variable_pick : 0.438741
+Stats: bcp_terms : 171643.000000
+bcp_time : 14.129721
+conflict_time : 2.214796
+conflict_total_size : 23786.000000
+conflicts : 2009.000000
+total_time : 21.700862
+total_variable_pick : 1.391503
+Stats: bcp_terms : 3417.000000
+bcp_time : 0.237110
+conflict_time : 0.059382
+conflict_total_size : 556.000000
+conflicts : 48.000000
+total_time : 0.358128
+total_variable_pick : 0.023370
+Stats: bcp_terms : 941.000000
+bcp_time : 0.070357
+conflict_time : 0.017871
+conflict_total_size : 155.000000
+conflicts : 13.000000
+total_time : 0.116839
+total_variable_pick : 0.010711
+Stats: bcp_terms : 167435.000000
+bcp_time : 16.612012
+conflict_time : 2.597599
+conflict_total_size : 26590.000000
+conflicts : 1980.000000
+total_time : 26.798336
+total_variable_pick : 1.730631
+Stats: bcp_terms : 8957.000000
+bcp_time : 0.674176
+conflict_time : 0.145999
+conflict_total_size : 1525.000000
+conflicts : 127.000000
+total_time : 1.002530
+total_variable_pick : 0.068787
+Stats: bcp_terms : 248.000000
+bcp_time : 0.027159
+conflict_time : 0.003592
+conflict_total_size : 32.000000
+conflicts : 3.000000
+total_time : 0.054155
+total_variable_pick : 0.008510
+Stats: bcp_terms : 4377.000000
+bcp_time : 0.303499
+conflict_time : 0.072752
+conflict_total_size : 696.000000
+conflicts : 59.000000
+total_time : 0.460182
+total_variable_pick : 0.033811
+Stats: bcp_terms : 10193.000000
+bcp_time : 0.750624
+conflict_time : 0.187073
+conflict_total_size : 1507.000000
+conflicts : 137.000000
+total_time : 1.136441
+total_variable_pick : 0.078212
+Stats: bcp_terms : 92166.000000
+bcp_time : 8.322886
+conflict_time : 1.342435
+conflict_total_size : 14340.000000
+conflicts : 1134.000000
+total_time : 12.665763
+total_variable_pick : 0.794668
+Stats: bcp_terms : 71810.000000
+bcp_time : 5.081982
+conflict_time : 1.099253
+conflict_total_size : 9036.000000
+conflicts : 834.000000
+total_time : 7.629870
+total_variable_pick : 0.463736
+Stats: bcp_terms : 8742.000000
+bcp_time : 0.605596
+conflict_time : 0.130952
+conflict_total_size : 1162.000000
+conflicts : 111.000000
+total_time : 0.890079
+total_variable_pick : 0.061060
+Stats: bcp_terms : 6046.000000
+bcp_time : 0.457525
+conflict_time : 0.110922
+conflict_total_size : 957.000000
+conflicts : 82.000000
+total_time : 0.693573
+total_variable_pick : 0.051059
+Stats: bcp_terms : 494.000000
+bcp_time : 0.040393
+conflict_time : 0.008388
+conflict_total_size : 121.000000
+conflicts : 7.000000
+total_time : 0.073449
+total_variable_pick : 0.009069
+Stats: bcp_terms : 4039.000000
+bcp_time : 0.276050
+conflict_time : 0.066544
+conflict_total_size : 615.000000
+conflicts : 54.000000
+total_time : 0.414725
+total_variable_pick : 0.029603
+Stats: bcp_terms : 6122.000000
+bcp_time : 0.434714
+conflict_time : 0.122009
+conflict_total_size : 1154.000000
+conflicts : 84.000000
+total_time : 0.672485
+total_variable_pick : 0.043701
+Stats: bcp_terms : 1012.000000
+bcp_time : 0.091574
+conflict_time : 0.020792
+conflict_total_size : 202.000000
+conflicts : 16.000000
+total_time : 0.149837
+total_variable_pick : 0.015175
+Stats: bcp_terms : 59924.000000
+bcp_time : 4.034804
+conflict_time : 0.780654
+conflict_total_size : 6897.000000
+conflicts : 684.000000
+total_time : 5.933826
+total_variable_pick : 0.364988
+Stats: bcp_terms : 5332.000000
+bcp_time : 0.363773
+conflict_time : 0.085549
+conflict_total_size : 924.000000
+conflicts : 72.000000
+total_time : 0.546493
+total_variable_pick : 0.036206
+Stats: bcp_terms : 74940.000000
+bcp_time : 5.572926
+conflict_time : 0.978206
+conflict_total_size : 10819.000000
+conflicts : 895.000000
+total_time : 8.431853
+total_variable_pick : 0.549986
+Stats: bcp_terms : 21687.000000
+bcp_time : 1.726041
+conflict_time : 0.342050
+conflict_total_size : 3299.000000
+conflicts : 286.000000
+total_time : 2.537743
+total_variable_pick : 0.172579
+Stats: bcp_terms : 4465.000000
+bcp_time : 0.334242
+conflict_time : 0.082293
+conflict_total_size : 799.000000
+conflicts : 62.000000
+total_time : 0.508209
+total_variable_pick : 0.035925
+Stats: bcp_terms : 7241.000000
+bcp_time : 0.549640
+conflict_time : 0.126296
+conflict_total_size : 1459.000000
+conflicts : 103.000000
+total_time : 0.826094
+total_variable_pick : 0.056446
+Stats: bcp_terms : 67808.000000
+bcp_time : 5.838972
+conflict_time : 1.039274
+conflict_total_size : 9704.000000
+conflicts : 826.000000
+total_time : 8.739755
+total_variable_pick : 0.556336
+Stats: bcp_terms : 617.000000
+bcp_time : 0.066690
+conflict_time : 0.013662
+conflict_total_size : 127.000000
+conflicts : 10.000000
+total_time : 0.111541
+total_variable_pick : 0.011267
+Stats: bcp_terms : 725.000000
+bcp_time : 0.066224
+conflict_time : 0.012359
+conflict_total_size : 115.000000
+conflicts : 11.000000
+total_time : 0.117076
+total_variable_pick : 0.015250
+Stats: bcp_terms : 40457.000000
+bcp_time : 2.853212
+conflict_time : 0.582756
+conflict_total_size : 5459.000000
+conflicts : 490.000000
+total_time : 4.241359
+total_variable_pick : 0.279172
+Stats: bcp_terms : 107101.000000
+bcp_time : 9.291635
+conflict_time : 1.477516
+conflict_total_size : 15550.000000
+conflicts : 1311.000000
+total_time : 14.235307
+total_variable_pick : 0.917935
+Stats: bcp_terms : 901.000000
+bcp_time : 0.064008
+conflict_time : 0.014860
+conflict_total_size : 148.000000
+conflicts : 12.000000
+total_time : 0.107509
+total_variable_pick : 0.010871
+Stats: bcp_terms : 26904.000000
+bcp_time : 1.864750
+conflict_time : 0.397596
+conflict_total_size : 3671.000000
+conflicts : 335.000000
+total_time : 2.760004
+total_variable_pick : 0.178593
+Stats: bcp_terms : 73.000000
+bcp_time : 0.016696
+total_time : 0.034951
+total_variable_pick : 0.006586
+Stats: bcp_terms : 57395.000000
+bcp_time : 4.119409
+conflict_time : 0.903183
+conflict_total_size : 7523.000000
+conflicts : 691.000000
+total_time : 6.211703
+total_variable_pick : 0.372430
+Stats: bcp_terms : 1337.000000
+bcp_time : 0.097977
+conflict_time : 0.024877
+conflict_total_size : 170.000000
+conflicts : 17.000000
+total_time : 0.155744
+total_variable_pick : 0.013563
+Stats: bcp_terms : 70933.000000
+bcp_time : 5.041673
+conflict_time : 1.146944
+conflict_total_size : 9749.000000
+conflicts : 857.000000
+total_time : 7.653023
+total_variable_pick : 0.465751
+Stats: bcp_terms : 29950.000000
+bcp_time : 2.055085
+conflict_time : 0.424265
+conflict_total_size : 3733.000000
+conflicts : 356.000000
+total_time : 3.025313
+total_variable_pick : 0.202728
+Stats: bcp_terms : 319.000000
+bcp_time : 0.032476
+conflict_time : 0.003961
+conflict_total_size : 30.000000
+conflicts : 3.000000
+total_time : 0.060728
+total_variable_pick : 0.009168
+Stats: bcp_terms : 58762.000000
+bcp_time : 4.492887
+conflict_time : 0.805634
+conflict_total_size : 8711.000000
+conflicts : 717.000000
+total_time : 6.745958
+total_variable_pick : 0.431011
+Stats: bcp_terms : 2459.000000
+bcp_time : 0.179961
+conflict_time : 0.048537
+conflict_total_size : 470.000000
+conflicts : 35.000000
+total_time : 0.278527
+total_variable_pick : 0.018647
+Stats: bcp_terms : 8563.000000
+bcp_time : 0.593136
+conflict_time : 0.135342
+conflict_total_size : 1355.000000
+conflicts : 112.000000
+total_time : 0.885845
+total_variable_pick : 0.061136
+Stats: bcp_terms : 31592.000000
+bcp_time : 2.324914
+conflict_time : 0.476994
+conflict_total_size : 4613.000000
+conflicts : 386.000000
+total_time : 3.460793
+total_variable_pick : 0.235336
+Stats: bcp_terms : 51282.000000
+bcp_time : 3.901093
+conflict_time : 0.722282
+conflict_total_size : 7685.000000
+conflicts : 649.000000
+total_time : 5.903441
+total_variable_pick : 0.425476
+Stats: bcp_terms : 32954.000000
+bcp_time : 2.153626
+conflict_time : 0.446427
+conflict_total_size : 4438.000000
+conflicts : 399.000000
+total_time : 3.190993
+total_variable_pick : 0.203694
+Stats: bcp_terms : 4929.000000
+bcp_time : 0.342286
+conflict_time : 0.083332
+conflict_total_size : 1021.000000
+conflicts : 75.000000
+total_time : 0.524771
+total_variable_pick : 0.037733
+Stats: bcp_terms : 83.000000
+bcp_time : 0.025500
+conflict_time : 0.001325
+conflict_total_size : 9.000000
+conflicts : 2.000000
+total_time : 0.055606
+total_variable_pick : 0.011673
+Stats: bcp_terms : 51845.000000
+bcp_time : 3.757323
+conflict_time : 0.817724
+conflict_total_size : 7217.000000
+conflicts : 634.000000
+total_time : 5.731751
+total_variable_pick : 0.368167
+Stats: bcp_terms : 3864.000000
+bcp_time : 0.280844
+conflict_time : 0.069859
+conflict_total_size : 608.000000
+conflicts : 50.000000
+total_time : 0.416400
+total_variable_pick : 0.025112
+Stats: bcp_terms : 221.000000
+bcp_time : 0.030783
+conflict_time : 0.001119
+conflict_total_size : 14.000000
+conflicts : 2.000000
+total_time : 0.059152
+total_variable_pick : 0.010493
+Stats: bcp_terms : 73195.000000
+bcp_time : 5.583539
+conflict_time : 1.029557
+conflict_total_size : 9454.000000
+conflicts : 831.000000
+total_time : 8.311598
+total_variable_pick : 0.515900
+Stats: bcp_terms : 59245.000000
+bcp_time : 4.271485
+conflict_time : 0.781424
+conflict_total_size : 8434.000000
+conflicts : 714.000000
+total_time : 6.410235
+total_variable_pick : 0.409447
+Stats: bcp_terms : 35465.000000
+bcp_time : 2.479491
+conflict_time : 0.481383
+conflict_total_size : 4774.000000
+conflicts : 423.000000
+total_time : 3.647305
+total_variable_pick : 0.238419
+Stats: bcp_terms : 3772.000000
+bcp_time : 0.241345
+conflict_time : 0.061311
+conflict_total_size : 635.000000
+conflicts : 51.000000
+total_time : 0.376062
+total_variable_pick : 0.029569
+Stats: bcp_terms : 2784.000000
+bcp_time : 0.199262
+conflict_time : 0.047866
+conflict_total_size : 426.000000
+conflicts : 39.000000
+total_time : 0.305145
+total_variable_pick : 0.021069
+Stats: bcp_terms : 57752.000000
+bcp_time : 4.126310
+conflict_time : 0.776319
+conflict_total_size : 7628.000000
+conflicts : 693.000000
+total_time : 6.154657
+total_variable_pick : 0.408926
+Stats: bcp_terms : 324.000000
+bcp_time : 0.037325
+conflict_time : 0.006843
+conflict_total_size : 63.000000
+conflicts : 6.000000
+total_time : 0.068825
+total_variable_pick : 0.009214
+Stats: bcp_terms : 121.000000
+bcp_time : 0.021395
+conflict_time : 0.000916
+conflict_total_size : 12.000000
+conflicts : 2.000000
+total_time : 0.043228
+total_variable_pick : 0.008028
+Stats: bcp_terms : 4022.000000
+bcp_time : 0.262384
+conflict_time : 0.061059
+conflict_total_size : 514.000000
+conflicts : 49.000000
+total_time : 0.388136
+total_variable_pick : 0.027832
+Stats: bcp_terms : 162.000000
+bcp_time : 0.022806
+conflict_time : 0.001343
+conflict_total_size : 14.000000
+conflicts : 1.000000
+total_time : 0.044247
+total_variable_pick : 0.007168
+Stats: bcp_terms : 52921.000000
+bcp_time : 3.894486
+conflict_time : 0.731122
+conflict_total_size : 7370.000000
+conflicts : 648.000000
+total_time : 5.792707
+total_variable_pick : 0.361095
+Stats: bcp_terms : 536.000000
+bcp_time : 0.062373
+conflict_time : 0.012901
+conflict_total_size : 115.000000
+conflicts : 11.000000
+total_time : 0.111617
+total_variable_pick : 0.014310
+Stats: bcp_terms : 77123.000000
+bcp_time : 5.499391
+conflict_time : 1.204798
+conflict_total_size : 9753.000000
+conflicts : 889.000000
+total_time : 8.350057
+total_variable_pick : 0.496746
+Stats: bcp_terms : 52840.000000
+bcp_time : 3.722815
+conflict_time : 0.684425
+conflict_total_size : 6885.000000
+conflicts : 613.000000
+total_time : 5.473839
+total_variable_pick : 0.340930
+Stats: bcp_terms : 208.000000
+bcp_time : 0.027561
+conflict_time : 0.001851
+conflict_total_size : 11.000000
+conflicts : 2.000000
+total_time : 0.050952
+total_variable_pick : 0.007971
+Stats: bcp_terms : 14803.000000
+bcp_time : 1.057683
+conflict_time : 0.245878
+conflict_total_size : 2027.000000
+conflicts : 185.000000
+total_time : 1.571130
+total_variable_pick : 0.098377
+Stats: bcp_terms : 84717.000000
+bcp_time : 6.042458
+conflict_time : 1.223127
+conflict_total_size : 10701.000000
+conflicts : 973.000000
+total_time : 9.248770
+total_variable_pick : 0.563721
+Stats: bcp_terms : 1949.000000
+bcp_time : 0.141871
+conflict_time : 0.032474
+conflict_total_size : 318.000000
+conflicts : 28.000000
+total_time : 0.217039
+total_variable_pick : 0.017167
+Stats: bcp_terms : 92001.000000
+bcp_time : 7.230782
+conflict_time : 1.267491
+conflict_total_size : 13540.000000
+conflicts : 1137.000000
+total_time : 10.880740
+total_variable_pick : 0.690160
+Stats: bcp_terms : 82463.000000
+bcp_time : 6.275026
+conflict_time : 1.048717
+conflict_total_size : 11341.000000
+conflicts : 963.000000
+total_time : 9.323289
+total_variable_pick : 0.585490
+Stats: bcp_terms : 5129.000000
+bcp_time : 0.349744
+conflict_time : 0.083171
+conflict_total_size : 843.000000
+conflicts : 67.000000
+total_time : 0.521630
+total_variable_pick : 0.034887
+Stats: bcp_terms : 76.000000
+bcp_time : 0.019453
+total_time : 0.041978
+total_variable_pick : 0.007929
+Stats: bcp_terms : 3694.000000
+bcp_time : 0.266219
+conflict_time : 0.067247
+conflict_total_size : 611.000000
+conflicts : 55.000000
+total_time : 0.408422
+total_variable_pick : 0.030471
+Stats: bcp_terms : 5093.000000
+bcp_time : 0.386605
+conflict_time : 0.086320
+conflict_total_size : 872.000000
+conflicts : 72.000000
+total_time : 0.571802
+total_variable_pick : 0.039208
+Stats: bcp_terms : 568.000000
+bcp_time : 0.043601
+conflict_time : 0.008545
+conflict_total_size : 89.000000
+conflicts : 7.000000
+total_time : 0.073459
+total_variable_pick : 0.008030
+Stats: bcp_terms : 63376.000000
+bcp_time : 4.578922
+conflict_time : 0.826528
+conflict_total_size : 8077.000000
+conflicts : 751.000000
+total_time : 6.756120
+total_variable_pick : 0.431331
+Stats: bcp_terms : 35261.000000
+bcp_time : 2.510878
+conflict_time : 0.492540
+conflict_total_size : 4833.000000
+conflicts : 435.000000
+total_time : 3.654352
+total_variable_pick : 0.220442
+Stats: bcp_terms : 31816.000000
+bcp_time : 2.122718
+conflict_time : 0.440215
+conflict_total_size : 4314.000000
+conflicts : 375.000000
+total_time : 3.156930
+total_variable_pick : 0.209280
+Stats: bcp_terms : 3434.000000
+bcp_time : 0.261604
+conflict_time : 0.064456
+conflict_total_size : 728.000000
+conflicts : 53.000000
+total_time : 0.398614
+total_variable_pick : 0.028608
+Stats: bcp_terms : 367.000000
+bcp_time : 0.040422
+conflict_time : 0.006525
+conflict_total_size : 71.000000
+conflicts : 6.000000
+total_time : 0.075382
+total_variable_pick : 0.010695
+Stats: bcp_terms : 2689.000000
+bcp_time : 0.193459
+conflict_time : 0.047149
+conflict_total_size : 527.000000
+conflicts : 37.000000
+total_time : 0.296276
+total_variable_pick : 0.022163
+Stats: bcp_terms : 69344.000000
+bcp_time : 4.990721
+conflict_time : 0.913648
+conflict_total_size : 9463.000000
+conflicts : 835.000000
+total_time : 7.362999
+total_variable_pick : 0.444786
+Stats: bcp_terms : 25786.000000
+bcp_time : 1.861611
+conflict_time : 0.373491
+conflict_total_size : 3592.000000
+conflicts : 326.000000
+total_time : 2.750616
+total_variable_pick : 0.181179
+Stats: bcp_terms : 76907.000000
+bcp_time : 5.869704
+conflict_time : 1.023290
+conflict_total_size : 9489.000000
+conflicts : 907.000000
+total_time : 8.657913
+total_variable_pick : 0.524485
+Stats: bcp_terms : 4664.000000
+bcp_time : 0.380395
+conflict_time : 0.086905
+conflict_total_size : 833.000000
+conflicts : 70.000000
+total_time : 0.562353
+total_variable_pick : 0.035551
+Stats: bcp_terms : 99858.000000
+bcp_time : 8.613392
+conflict_time : 1.448140
+conflict_total_size : 14765.000000
+conflicts : 1241.000000
+total_time : 12.934620
+total_variable_pick : 0.800675
+Stats: bcp_terms : 28544.000000
+bcp_time : 2.204157
+conflict_time : 0.433281
+conflict_total_size : 4498.000000
+conflicts : 363.000000
+total_time : 3.273206
+total_variable_pick : 0.224772
+Stats: bcp_terms : 238.000000
+bcp_time : 0.027256
+conflict_time : 0.002179
+conflict_total_size : 14.000000
+conflicts : 3.000000
+total_time : 0.050028
+total_variable_pick : 0.007329
+Stats: bcp_terms : 61418.000000
+bcp_time : 4.236344
+conflict_time : 0.811773
+conflict_total_size : 7520.000000
+conflicts : 714.000000
+total_time : 6.239261
+total_variable_pick : 0.399319
+Stats: bcp_terms : 201.000000
+bcp_time : 0.027752
+conflict_time : 0.002623
+conflict_total_size : 24.000000
+conflicts : 2.000000
+total_time : 0.054272
+total_variable_pick : 0.008746
+Stats: bcp_terms : 3818.000000
+bcp_time : 0.293661
+conflict_time : 0.070027
+conflict_total_size : 760.000000
+conflicts : 59.000000
+total_time : 0.451081
+total_variable_pick : 0.035168
+Stats: bcp_terms : 76721.000000
+bcp_time : 6.688069
+conflict_time : 1.423257
+conflict_total_size : 12259.000000
+conflicts : 975.000000
+total_time : 10.200642
+total_variable_pick : 0.617471
+Stats: bcp_terms : 2821.000000
+bcp_time : 0.202103
+conflict_time : 0.061423
+conflict_total_size : 414.000000
+conflicts : 35.000000
+total_time : 0.311203
+total_variable_pick : 0.019273
+Stats: bcp_terms : 126.000000
+bcp_time : 0.023208
+conflict_time : 0.000997
+conflict_total_size : 9.000000
+conflicts : 1.000000
+total_time : 0.045599
+total_variable_pick : 0.007973
+Stats: bcp_terms : 66699.000000
+bcp_time : 5.272124
+conflict_time : 0.950064
+conflict_total_size : 9781.000000
+conflicts : 795.000000
+total_time : 7.957771
+total_variable_pick : 0.493574
+Stats: bcp_terms : 54660.000000
+bcp_time : 4.472275
+conflict_time : 0.801682
+conflict_total_size : 8334.000000
+conflicts : 686.000000
+total_time : 6.715987
+total_variable_pick : 0.443982
+Stats: bcp_terms : 378.000000
+bcp_time : 0.042202
+conflict_time : 0.007705
+conflict_total_size : 54.000000
+conflicts : 6.000000
+total_time : 0.081217
+total_variable_pick : 0.012198
+Stats: bcp_terms : 8187.000000
+bcp_time : 0.546639
+conflict_time : 0.119069
+conflict_total_size : 1149.000000
+conflicts : 97.000000
+total_time : 0.796927
+total_variable_pick : 0.051259
+Stats: bcp_terms : 61475.000000
+bcp_time : 5.285648
+conflict_time : 0.907866
+conflict_total_size : 9540.000000
+conflicts : 773.000000
+total_time : 7.907037
+total_variable_pick : 0.530251
+Stats: bcp_terms : 56874.000000
+bcp_time : 4.705854
+conflict_time : 0.871350
+conflict_total_size : 9054.000000
+conflicts : 707.000000
+total_time : 7.054658
+total_variable_pick : 0.443112
+Stats: bcp_terms : 1221.000000
+bcp_time : 0.094074
+conflict_time : 0.021861
+conflict_total_size : 182.000000
+conflicts : 16.000000
+total_time : 0.155887
+total_variable_pick : 0.015613
+Stats: bcp_terms : 4666.000000
+bcp_time : 0.273795
+conflict_time : 0.075048
+conflict_total_size : 864.000000
+conflicts : 57.000000
+total_time : 0.422421
+total_variable_pick : 0.027770
+Stats: bcp_terms : 76517.000000
+bcp_time : 5.788866
+conflict_time : 1.027363
+conflict_total_size : 10355.000000
+conflicts : 911.000000
+total_time : 8.569537
+total_variable_pick : 0.543561
+Stats: bcp_terms : 57735.000000
+bcp_time : 3.751485
+conflict_time : 0.809279
+conflict_total_size : 7364.000000
+conflicts : 675.000000
+total_time : 5.502820
+total_variable_pick : 0.333152
+Stats: bcp_terms : 81151.000000
+bcp_time : 6.635229
+conflict_time : 1.360783
+conflict_total_size : 12200.000000
+conflicts : 1019.000000
+total_time : 10.142807
+total_variable_pick : 0.607564
+Stats: bcp_terms : 22060.000000
+bcp_time : 1.544158
+conflict_time : 0.323537
+conflict_total_size : 3206.000000
+conflicts : 276.000000
+total_time : 2.278184
+total_variable_pick : 0.145726
+Stats: bcp_terms : 61785.000000
+bcp_time : 4.485889
+conflict_time : 0.835581
+conflict_total_size : 8062.000000
+conflicts : 740.000000
+total_time : 6.650316
+total_variable_pick : 0.425782
+Stats: bcp_terms : 2596.000000
+bcp_time : 0.171717
+conflict_time : 0.036896
+conflict_total_size : 373.000000
+conflicts : 33.000000
+total_time : 0.253141
+total_variable_pick : 0.017769
+Stats: bcp_terms : 3207.000000
+bcp_time : 0.201308
+conflict_time : 0.049093
+conflict_total_size : 462.000000
+conflicts : 42.000000
+total_time : 0.302255
+total_variable_pick : 0.018697
+Stats: bcp_terms : 65016.000000
+bcp_time : 4.894339
+conflict_time : 0.886703
+conflict_total_size : 8831.000000
+conflicts : 784.000000
+total_time : 7.228192
+total_variable_pick : 0.455313
+Stats: bcp_terms : 1443.000000
+bcp_time : 0.114312
+conflict_time : 0.023611
+conflict_total_size : 184.000000
+conflicts : 20.000000
+total_time : 0.177944
+total_variable_pick : 0.015909
+Stats: bcp_terms : 4544.000000
+bcp_time : 0.318762
+conflict_time : 0.071324
+conflict_total_size : 775.000000
+conflicts : 65.000000
+total_time : 0.477948
+total_variable_pick : 0.035385
+Stats: bcp_terms : 86567.000000
+bcp_time : 6.511475
+conflict_time : 1.164681
+conflict_total_size : 11735.000000
+conflicts : 1027.000000
+total_time : 9.579403
+total_variable_pick : 0.578608
+Stats: bcp_terms : 9310.000000
+bcp_time : 0.669178
+conflict_time : 0.156850
+conflict_total_size : 1398.000000
+conflicts : 122.000000
+total_time : 1.004411
+total_variable_pick : 0.065359
+Stats: bcp_terms : 2738.000000
+bcp_time : 0.180278
+conflict_time : 0.048882
+conflict_total_size : 501.000000
+conflicts : 37.000000
+total_time : 0.283036
+total_variable_pick : 0.021258
+Stats: bcp_terms : 30374.000000
+bcp_time : 2.113347
+conflict_time : 0.435917
+conflict_total_size : 4300.000000
+conflicts : 369.000000
+total_time : 3.134256
+total_variable_pick : 0.208444
+Stats: bcp_terms : 15825.000000
+bcp_time : 0.985345
+conflict_time : 0.227245
+conflict_total_size : 1828.000000
+conflicts : 184.000000
+total_time : 1.436685
+total_variable_pick : 0.085343
+Stats: bcp_terms : 697.000000
+bcp_time : 0.053944
+conflict_time : 0.011940
+conflict_total_size : 84.000000
+conflicts : 8.000000
+total_time : 0.086628
+total_variable_pick : 0.007577
+Stats: bcp_terms : 15115.000000
+bcp_time : 1.047960
+conflict_time : 0.233229
+conflict_total_size : 2011.000000
+conflicts : 188.000000
+total_time : 1.542994
+total_variable_pick : 0.098176
+Stats: bcp_terms : 97277.000000
+bcp_time : 8.024979
+conflict_time : 1.293908
+conflict_total_size : 13891.000000
+conflicts : 1176.000000
+total_time : 12.121599
+total_variable_pick : 0.798258
+Stats: bcp_terms : 31636.000000
+bcp_time : 2.277491
+conflict_time : 0.440200
+conflict_total_size : 4626.000000
+conflicts : 419.000000
+total_time : 3.348482
+total_variable_pick : 0.216027
+Stats: bcp_terms : 3887.000000
+bcp_time : 0.281428
+conflict_time : 0.066970
+conflict_total_size : 797.000000
+conflicts : 56.000000
+total_time : 0.427398
+total_variable_pick : 0.029688
+Stats: bcp_terms : 4029.000000
+bcp_time : 0.273977
+conflict_time : 0.074898
+conflict_total_size : 685.000000
+conflicts : 56.000000
+total_time : 0.414589
+total_variable_pick : 0.024953
+Stats: bcp_terms : 15376.000000
+bcp_time : 1.094917
+conflict_time : 0.240752
+conflict_total_size : 2588.000000
+conflicts : 213.000000
+total_time : 1.645203
+total_variable_pick : 0.113324
+Stats: bcp_terms : 11803.000000
+bcp_time : 0.777160
+conflict_time : 0.173331
+conflict_total_size : 1438.000000
+conflicts : 144.000000
+total_time : 1.133156
+total_variable_pick : 0.067682
+Stats: bcp_terms : 5338.000000
+bcp_time : 0.352168
+conflict_time : 0.083955
+conflict_total_size : 698.000000
+conflicts : 68.000000
+total_time : 0.514301
+total_variable_pick : 0.032488
+Stats: bcp_terms : 68.000000
+bcp_time : 0.020559
+total_time : 0.042552
+total_variable_pick : 0.008087
+Stats: bcp_terms : 1546.000000
+bcp_time : 0.120276
+conflict_time : 0.027269
+conflict_total_size : 250.000000
+conflicts : 20.000000
+total_time : 0.187231
+total_variable_pick : 0.015630
+Stats: bcp_terms : 68389.000000
+bcp_time : 4.852831
+conflict_time : 0.902112
+conflict_total_size : 9730.000000
+conflicts : 828.000000
+total_time : 7.143194
+total_variable_pick : 0.422595
+Stats: bcp_terms : 4599.000000
+bcp_time : 0.333891
+conflict_time : 0.082175
+conflict_total_size : 698.000000
+conflicts : 63.000000
+total_time : 0.507638
+total_variable_pick : 0.036188
+Stats: bcp_terms : 4062.000000
+bcp_time : 0.319950
+conflict_time : 0.076603
+conflict_total_size : 801.000000
+conflicts : 63.000000
+total_time : 0.490501
+total_variable_pick : 0.037229
+Stats: bcp_terms : 3175.000000
+bcp_time : 0.201944
+conflict_time : 0.054543
+conflict_total_size : 477.000000
+conflicts : 40.000000
+total_time : 0.306980
+total_variable_pick : 0.019978
+Stats: bcp_terms : 3163.000000
+bcp_time : 0.227445
+conflict_time : 0.055704
+conflict_total_size : 521.000000
+conflicts : 47.000000
+total_time : 0.344629
+total_variable_pick : 0.025634
+Stats: bcp_terms : 428.000000
+bcp_time : 0.042199
+conflict_time : 0.007987
+conflict_total_size : 74.000000
+conflicts : 6.000000
+total_time : 0.076700
+total_variable_pick : 0.009979
+Stats: bcp_terms : 80446.000000
+bcp_time : 6.128103
+conflict_time : 1.041506
+conflict_total_size : 11354.000000
+conflicts : 995.000000
+total_time : 9.081174
+total_variable_pick : 0.556649
+Stats: bcp_terms : 745.000000
+bcp_time : 0.054119
+conflict_time : 0.013901
+conflict_total_size : 121.000000
+conflicts : 9.000000
+total_time : 0.092981
+total_variable_pick : 0.009043
+Stats: bcp_terms : 1646.000000
+bcp_time : 0.104868
+conflict_time : 0.026772
+conflict_total_size : 235.000000
+conflicts : 21.000000
+total_time : 0.168415
+total_variable_pick : 0.014441
+Stats: bcp_terms : 2491.000000
+bcp_time : 0.167914
+conflict_time : 0.042399
+conflict_total_size : 410.000000
+conflicts : 36.000000
+total_time : 0.264048
+total_variable_pick : 0.022007
+Stats: bcp_terms : 3966.000000
+bcp_time : 0.292843
+conflict_time : 0.075093
+conflict_total_size : 705.000000
+conflicts : 59.000000
+total_time : 0.442886
+total_variable_pick : 0.028344
+Stats: bcp_terms : 168.000000
+bcp_time : 0.019318
+conflict_time : 0.001895
+conflict_total_size : 10.000000
+conflicts : 1.000000
+total_time : 0.038555
+total_variable_pick : 0.005716
+Stats: bcp_terms : 9822.000000
+bcp_time : 0.631516
+conflict_time : 0.153490
+conflict_total_size : 1370.000000
+conflicts : 123.000000
+total_time : 0.947998
+total_variable_pick : 0.063075
+Stats: bcp_terms : 3990.000000
+bcp_time : 0.263231
+conflict_time : 0.061998
+conflict_total_size : 613.000000
+conflicts : 53.000000
+total_time : 0.392984
+total_variable_pick : 0.026660
+Stats: bcp_terms : 2165.000000
+bcp_time : 0.151397
+conflict_time : 0.037352
+conflict_total_size : 376.000000
+conflicts : 31.000000
+total_time : 0.235561
+total_variable_pick : 0.018724
+Stats: bcp_terms : 67736.000000
+bcp_time : 4.603020
+conflict_time : 0.886434
+conflict_total_size : 8754.000000
+conflicts : 800.000000
+total_time : 6.754009
+total_variable_pick : 0.417490
+Stats: bcp_terms : 1079.000000
+bcp_time : 0.080272
+conflict_time : 0.019755
+conflict_total_size : 183.000000
+conflicts : 14.000000
+total_time : 0.130316
+total_variable_pick : 0.011419
+Stats: bcp_terms : 36048.000000
+bcp_time : 2.581501
+conflict_time : 0.488950
+conflict_total_size : 5154.000000
+conflicts : 447.000000
+total_time : 3.770247
+total_variable_pick : 0.241079
+Stats: bcp_terms : 660.000000
+bcp_time : 0.053782
+conflict_time : 0.009416
+conflict_total_size : 92.000000
+conflicts : 8.000000
+total_time : 0.091251
+total_variable_pick : 0.010766
+Stats: bcp_terms : 67935.000000
+bcp_time : 4.876175
+conflict_time : 0.871333
+conflict_total_size : 9286.000000
+conflicts : 815.000000
+total_time : 7.201865
+total_variable_pick : 0.451445
+Stats: bcp_terms : 67.000000
+bcp_time : 0.017877
+total_time : 0.038210
+total_variable_pick : 0.007535
+Stats: bcp_terms : 74.000000
+bcp_time : 0.020472
+total_time : 0.042372
+total_variable_pick : 0.007815
+Stats: bcp_terms : 616.000000
+bcp_time : 0.049524
+conflict_time : 0.008071
+conflict_total_size : 75.000000
+conflicts : 7.000000
+total_time : 0.083180
+total_variable_pick : 0.009542
+Stats: bcp_terms : 117.000000
+bcp_time : 0.019925
+conflict_time : 0.001396
+conflict_total_size : 15.000000
+conflicts : 1.000000
+total_time : 0.042141
+total_variable_pick : 0.007920
+Stats: bcp_terms : 6596.000000
+bcp_time : 0.432119
+conflict_time : 0.092552
+conflict_total_size : 791.000000
+conflicts : 84.000000
+total_time : 0.633649
+total_variable_pick : 0.044621
+Stats: bcp_terms : 66.000000
+bcp_time : 0.019451
+total_time : 0.042550
+total_variable_pick : 0.008581
+Stats: bcp_terms : 5454.000000
+bcp_time : 0.377307
+conflict_time : 0.096874
+conflict_total_size : 955.000000
+conflicts : 78.000000
+total_time : 0.572899
+total_variable_pick : 0.038237
+Stats: bcp_terms : 193.000000
+bcp_time : 0.026642
+conflict_time : 0.002478
+conflict_total_size : 21.000000
+conflicts : 2.000000
+total_time : 0.052471
+total_variable_pick : 0.008937
+Stats: bcp_terms : 1114.000000
+bcp_time : 0.085260
+conflict_time : 0.019100
+conflict_total_size : 138.000000
+conflicts : 13.000000
+total_time : 0.136107
+total_variable_pick : 0.012546
+Stats: bcp_terms : 48910.000000
+bcp_time : 3.307489
+conflict_time : 0.640807
+conflict_total_size : 6579.000000
+conflicts : 590.000000
+total_time : 4.844643
+total_variable_pick : 0.307302
+Stats: bcp_terms : 3219.000000
+bcp_time : 0.218855
+conflict_time : 0.052069
+conflict_total_size : 492.000000
+conflicts : 45.000000
+total_time : 0.334487
+total_variable_pick : 0.027186
+Stats: bcp_terms : 142.000000
+bcp_time : 0.024466
+conflict_time : 0.001551
+conflict_total_size : 16.000000
+conflicts : 3.000000
+total_time : 0.049642
+total_variable_pick : 0.009103
+Stats: bcp_terms : 136.000000
+bcp_time : 0.025274
+conflict_time : 0.001291
+conflict_total_size : 12.000000
+conflicts : 2.000000
+total_time : 0.049985
+total_variable_pick : 0.008526
+Stats: bcp_terms : 101.000000
+bcp_time : 0.027620
+conflict_time : 0.001728
+conflict_total_size : 12.000000
+conflicts : 2.000000
+total_time : 0.057119
+total_variable_pick : 0.010629
+Stats: bcp_terms : 3657.000000
+bcp_time : 0.242192
+conflict_time : 0.057590
+conflict_total_size : 682.000000
+conflicts : 50.000000
+total_time : 0.362421
+total_variable_pick : 0.023321
+Stats: bcp_terms : 1180.000000
+bcp_time : 0.091984
+conflict_time : 0.020379
+conflict_total_size : 154.000000
+conflicts : 17.000000
+total_time : 0.147088
+total_variable_pick : 0.014531
+Stats: bcp_terms : 1970.000000
+bcp_time : 0.128049
+conflict_time : 0.033339
+conflict_total_size : 307.000000
+conflicts : 25.000000
+total_time : 0.202486
+total_variable_pick : 0.016408
+Stats: bcp_terms : 21910.000000
+bcp_time : 1.539242
+conflict_time : 0.300574
+conflict_total_size : 3067.000000
+conflicts : 277.000000
+total_time : 2.229404
+total_variable_pick : 0.144114
+Stats: bcp_terms : 450.000000
+bcp_time : 0.052356
+conflict_time : 0.011032
+conflict_total_size : 87.000000
+conflicts : 9.000000
+total_time : 0.095091
+total_variable_pick : 0.012296
+Stats: bcp_terms : 18173.000000
+bcp_time : 1.199550
+conflict_time : 0.247834
+conflict_total_size : 2432.000000
+conflicts : 225.000000
+total_time : 1.757087
+total_variable_pick : 0.110236
+Stats: bcp_terms : 596.000000
+bcp_time : 0.049062
+conflict_time : 0.009184
+conflict_total_size : 78.000000
+conflicts : 8.000000
+total_time : 0.081920
+total_variable_pick : 0.009021
+Stats: bcp_terms : 442.000000
+bcp_time : 0.035847
+conflict_time : 0.006067
+conflict_total_size : 60.000000
+conflicts : 5.000000
+total_time : 0.064947
+total_variable_pick : 0.008499
+Stats: bcp_terms : 55259.000000
+bcp_time : 4.318976
+conflict_time : 0.744570
+conflict_total_size : 8545.000000
+conflicts : 683.000000
+total_time : 6.470017
+total_variable_pick : 0.448974
+Stats: bcp_terms : 5019.000000
+bcp_time : 0.316733
+conflict_time : 0.075520
+conflict_total_size : 739.000000
+conflicts : 66.000000
+total_time : 0.477263
+total_variable_pick : 0.033167
+Stats: bcp_terms : 18323.000000
+bcp_time : 1.283783
+conflict_time : 0.262488
+conflict_total_size : 2932.000000
+conflicts : 241.000000
+total_time : 1.912306
+total_variable_pick : 0.135650
+Stats: bcp_terms : 10303.000000
+bcp_time : 0.654472
+conflict_time : 0.157017
+conflict_total_size : 1422.000000
+conflicts : 117.000000
+total_time : 0.975905
+total_variable_pick : 0.066379
+Stats: bcp_terms : 39097.000000
+bcp_time : 2.774460
+conflict_time : 0.528932
+conflict_total_size : 4956.000000
+conflicts : 460.000000
+total_time : 4.057362
+total_variable_pick : 0.257392
+Stats: bcp_terms : 63180.000000
+bcp_time : 4.738467
+conflict_time : 0.909257
+conflict_total_size : 9396.000000
+conflicts : 775.000000
+total_time : 7.140654
+total_variable_pick : 0.467546
+Stats: bcp_terms : 203.000000
+bcp_time : 0.024489
+conflict_time : 0.003109
+conflict_total_size : 24.000000
+conflicts : 3.000000
+total_time : 0.047366
+total_variable_pick : 0.006648
+Stats: bcp_terms : 1147.000000
+bcp_time : 0.097350
+conflict_time : 0.019647
+conflict_total_size : 149.000000
+conflicts : 16.000000
+total_time : 0.160243
+total_variable_pick : 0.017420
+Stats: bcp_terms : 242.000000
+bcp_time : 0.030183
+conflict_time : 0.003251
+conflict_total_size : 26.000000
+conflicts : 4.000000
+total_time : 0.055671
+total_variable_pick : 0.007913
+Stats: bcp_terms : 32296.000000
+bcp_time : 2.380800
+conflict_time : 0.475673
+conflict_total_size : 4272.000000
+conflicts : 384.000000
+total_time : 3.517795
+total_variable_pick : 0.236399
+Stats: bcp_terms : 75.000000
+bcp_time : 0.017341
+total_time : 0.034172
+total_variable_pick : 0.005899
+Stats: bcp_terms : 1133.000000
+bcp_time : 0.101153
+conflict_time : 0.023200
+conflict_total_size : 164.000000
+conflicts : 15.000000
+total_time : 0.163725
+total_variable_pick : 0.015519
+Stats: bcp_terms : 13475.000000
+bcp_time : 0.941939
+conflict_time : 0.248409
+conflict_total_size : 2275.000000
+conflicts : 172.000000
+total_time : 1.447065
+total_variable_pick : 0.093928
+Stats: bcp_terms : 31535.000000
+bcp_time : 2.252876
+conflict_time : 0.461187
+conflict_total_size : 4295.000000
+conflicts : 399.000000
+total_time : 3.306080
+total_variable_pick : 0.205033
+Stats: bcp_terms : 95979.000000
+bcp_time : 7.773489
+conflict_time : 1.364418
+conflict_total_size : 13957.000000
+conflicts : 1172.000000
+total_time : 11.574991
+total_variable_pick : 0.703695
+Stats: bcp_terms : 68.000000
+bcp_time : 0.020536
+total_time : 0.046416
+total_variable_pick : 0.009931
+Stats: bcp_terms : 22658.000000
+bcp_time : 1.675999
+conflict_time : 0.328907
+conflict_total_size : 3219.000000
+conflicts : 292.000000
+total_time : 2.468234
+total_variable_pick : 0.168544
+Stats: bcp_terms : 38560.000000
+bcp_time : 2.734998
+conflict_time : 0.527165
+conflict_total_size : 5348.000000
+conflicts : 468.000000
+total_time : 4.086789
+total_variable_pick : 0.287392
+Stats: bcp_terms : 738.000000
+bcp_time : 0.080060
+conflict_time : 0.012687
+conflict_total_size : 108.000000
+conflicts : 12.000000
+total_time : 0.136561
+total_variable_pick : 0.018587
+Stats: bcp_terms : 843.000000
+bcp_time : 0.064133
+conflict_time : 0.015340
+conflict_total_size : 132.000000
+conflicts : 11.000000
+total_time : 0.102579
+total_variable_pick : 0.008669
+Stats: bcp_terms : 8294.000000
+bcp_time : 0.611585
+conflict_time : 0.136585
+conflict_total_size : 1737.000000
+conflicts : 118.000000
+total_time : 0.910653
+total_variable_pick : 0.059648
+Stats: bcp_terms : 4593.000000
+bcp_time : 0.310771
+conflict_time : 0.079293
+conflict_total_size : 737.000000
+conflicts : 62.000000
+total_time : 0.474533
+total_variable_pick : 0.032928
+Stats: bcp_terms : 25057.000000
+bcp_time : 1.888821
+conflict_time : 0.388761
+conflict_total_size : 3829.000000
+conflicts : 319.000000
+total_time : 2.786039
+total_variable_pick : 0.178092
+Stats: bcp_terms : 481.000000
+bcp_time : 0.042306
+conflict_time : 0.007859
+conflict_total_size : 59.000000
+conflicts : 6.000000
+total_time : 0.072652
+total_variable_pick : 0.008663
+Stats: bcp_terms : 154157.000000
+bcp_time : 13.621124
+conflict_time : 2.183913
+conflict_total_size : 22679.000000
+conflicts : 1827.000000
+total_time : 20.954226
+total_variable_pick : 1.278121
+Stats: bcp_terms : 76.000000
+bcp_time : 0.015923
+total_time : 0.035072
+total_variable_pick : 0.006774
+Stats: bcp_terms : 14428.000000
+bcp_time : 1.066023
+conflict_time : 0.216042
+conflict_total_size : 2132.000000
+conflicts : 187.000000
+total_time : 1.571146
+total_variable_pick : 0.114388
+Stats: bcp_terms : 2367.000000
+bcp_time : 0.173355
+conflict_time : 0.041138
+conflict_total_size : 315.000000
+conflicts : 31.000000
+total_time : 0.263830
+total_variable_pick : 0.019736
+Stats: bcp_terms : 31814.000000
+bcp_time : 2.230356
+conflict_time : 0.489307
+conflict_total_size : 4190.000000
+conflicts : 388.000000
+total_time : 3.316272
+total_variable_pick : 0.217823
+Stats: bcp_terms : 6310.000000
+bcp_time : 0.454510
+conflict_time : 0.103326
+conflict_total_size : 883.000000
+conflicts : 82.000000
+total_time : 0.681273
+total_variable_pick : 0.046358
+Stats: bcp_terms : 1621.000000
+bcp_time : 0.130485
+conflict_time : 0.030215
+conflict_total_size : 320.000000
+conflicts : 23.000000
+total_time : 0.203375
+total_variable_pick : 0.017269
+Stats: bcp_terms : 626.000000
+bcp_time : 0.053120
+conflict_time : 0.012739
+conflict_total_size : 111.000000
+conflicts : 8.000000
+total_time : 0.090808
+total_variable_pick : 0.008558
+Stats: bcp_terms : 1618.000000
+bcp_time : 0.131106
+conflict_time : 0.035054
+conflict_total_size : 289.000000
+conflicts : 23.000000
+total_time : 0.209402
+total_variable_pick : 0.017116
+Stats: bcp_terms : 67891.000000
+bcp_time : 5.241066
+conflict_time : 1.130692
+conflict_total_size : 9635.000000
+conflicts : 828.000000
+total_time : 8.028431
+total_variable_pick : 0.495463
+Stats: bcp_terms : 52560.000000
+bcp_time : 4.126941
+conflict_time : 0.918601
+conflict_total_size : 7555.000000
+conflicts : 641.000000
+total_time : 6.259129
+total_variable_pick : 0.381328
+Stats: bcp_terms : 5823.000000
+bcp_time : 0.370877
+conflict_time : 0.094573
+conflict_total_size : 943.000000
+conflicts : 74.000000
+total_time : 0.559487
+total_variable_pick : 0.035850
+Stats: bcp_terms : 61202.000000
+bcp_time : 4.452486
+conflict_time : 0.825789
+conflict_total_size : 7629.000000
+conflicts : 714.000000
+total_time : 6.546216
+total_variable_pick : 0.397239
+Stats: bcp_terms : 1175.000000
+bcp_time : 0.096276
+conflict_time : 0.021368
+conflict_total_size : 207.000000
+conflicts : 20.000000
+total_time : 0.153044
+total_variable_pick : 0.014208
+Stats: bcp_terms : 1783.000000
+bcp_time : 0.133208
+conflict_time : 0.037268
+conflict_total_size : 348.000000
+conflicts : 24.000000
+total_time : 0.208979
+total_variable_pick : 0.015166
+Stats: bcp_terms : 1236.000000
+bcp_time : 0.100830
+conflict_time : 0.021338
+conflict_total_size : 195.000000bcp_terms : 33807.000000
+bcp_time : 2.594788
+conflict_time : 0.422312
+conflict_total_size : 5732.000000
+conflicts : 429.000000
+total_time : 3.732357
+total_variable_pick : 0.250322
+Stats: bcp_terms : 22447.000000
+bcp_time : 1.731807
+conflict_time : 0.300807
+conflict_total_size : 3785.000000
+conflicts : 302.000000
+total_time : 2.495272
+total_variable_pick : 0.168948
+Stats: bcp_terms : 21538.000000
+bcp_time : 1.441984
+conflict_time : 0.245954
+conflict_total_size : 3380.000000
+conflicts : 265.000000
+total_time : 2.078143
+total_variable_pick : 0.148591
+Stats: bcp_terms : 81635.000000
+bcp_time : 6.923451
+conflict_time : 1.059811
+conflict_total_size : 14668.000000
+conflicts : 1025.000000
+total_time : 10.619976
+total_variable_pick : 0.709397
+Stats: bcp_terms : 4779.000000
+bcp_time : 0.371687
+conflict_time : 0.062067
+conflict_total_size : 847.000000
+conflicts : 69.000000
+total_time : 0.532578
+total_variable_pick : 0.042220
+Stats: bcp_terms : 39440.000000
+bcp_time : 2.940661
+conflict_time : 0.497574
+conflict_total_size : 6938.000000
+conflicts : 474.000000
+total_time : 4.338842
+total_variable_pick : 0.296031
+Stats: bcp_terms : 935.000000
+bcp_time : 0.071937
+conflict_time : 0.010049
+conflict_total_size : 157.000000
+conflicts : 14.000000
+total_time : 0.113834
+total_variable_pick : 0.014613
+Stats: bcp_terms : 2890.000000
+bcp_time : 0.167629
+conflict_time : 0.030030
+conflict_total_size : 394.000000
+conflicts : 34.000000
+total_time : 0.233778
+total_variable_pick : 0.016699
+Stats: bcp_terms : 10296.000000
+bcp_time : 0.634007
+conflict_time : 0.107204
+conflict_total_size : 1183.000000
+conflicts : 120.000000
+total_time : 0.903376
+total_variable_pick : 0.066331
+Stats: bcp_terms : 738.000000
+bcp_time : 0.069639
+conflict_time : 0.008112
+conflict_total_size : 90.000000
+conflicts : 11.000000
+total_time : 0.108293
+total_variable_pick : 0.014312
+Stats: bcp_terms : 3052.000000
+bcp_time : 0.203073
+conflict_time : 0.033712
+conflict_total_size : 488.000000
+conflicts : 42.000000
+total_time : 0.289237
+total_variable_pick : 0.022762
+Stats: bcp_terms : 23407.000000
+bcp_time : 1.564380
+conflict_time : 0.270267
+conflict_total_size : 3559.000000
+conflicts : 279.000000
+total_time : 2.310246
+total_variable_pick : 0.185837
+Stats: bcp_terms : 14587.000000
+bcp_time : 1.242284
+conflict_time : 0.204968
+conflict_total_size : 2960.000000
+conflicts : 193.000000
+total_time : 1.827479
+total_variable_pick : 0.152701
+Stats: bcp_terms : 50863.000000
+bcp_time : 3.660169
+conflict_time : 0.628546
+conflict_total_size : 7004.000000
+conflicts : 585.000000
+total_time : 5.318377
+total_variable_pick : 0.335561
+Stats: bcp_terms : 50028.000000
+bcp_time : 3.888822
+conflict_time : 0.614735
+conflict_total_size : 7598.000000
+conflicts : 627.000000
+total_time : 5.712805
+total_variable_pick : 0.395822
+Stats: bcp_terms : 3981.000000
+bcp_time : 0.255290
+conflict_time : 0.043274
+conflict_total_size : 601.000000
+conflicts : 50.000000
+total_time : 0.369315
+total_variable_pick : 0.031214
+Stats: bcp_terms : 2152.000000
+bcp_time : 0.140742
+conflict_time : 0.021738
+conflict_total_size : 346.000000
+conflicts : 30.000000
+total_time : 0.211901
+total_variable_pick : 0.023693
+Stats: bcp_terms : 11368.000000
+bcp_time : 0.812481
+conflict_time : 0.130442
+conflict_total_size : 1786.000000
+conflicts : 141.000000
+total_time : 1.179770
+total_variable_pick : 0.097857
+Stats: bcp_terms : 37048.000000
+bcp_time : 2.851322
+conflict_time : 0.457892
+conflict_total_size : 6473.000000
+conflicts : 462.000000
+total_time : 4.148159
+total_variable_pick : 0.285490
+Stats: bcp_terms : 6469.000000
+bcp_time : 0.374997
+conflict_time : 0.071730
+conflict_total_size : 872.000000
+conflicts : 79.000000
+total_time : 0.545926
+total_variable_pick : 0.039312
+Stats: bcp_terms : 52503.000000
+bcp_time : 3.987744
+conflict_time : 0.646741
+conflict_total_size : 8769.000000
+conflicts : 651.000000
+total_time : 5.896651
+total_variable_pick : 0.397727
+Stats: bcp_terms : 2453.000000
+bcp_time : 0.155068
+conflict_time : 0.025790
+conflict_total_size : 422.000000
+conflicts : 32.000000
+total_time : 0.220070
+total_variable_pick : 0.017813
+Stats: bcp_terms
+conflicts : 17.000000
+total_time : 0.162288
+total_variable_pick : 0.015738
+Stats: bcp_terms : 10940.000000
+bcp_time : 0.784544
+conflict_time : 0.170375
+conflict_total_size : 1706.000000
+conflicts : 143.000000
+total_time : 1.182274
+total_variable_pick : 0.088119
+Stats: bcp_terms : 81332.000000
+bcp_time : 6.413959
+conflict_time : 1.089595
+conflict_total_size : 10168.000000
+conflicts : 922.000000
+total_time : 9.584555
+total_variable_pick : 0.608571
+Stats: bcp_terms : 3610.000000
+bcp_time : 0.261179
+conflict_time : 0.065622
+conflict_total_size : 543.000000
+conflicts : 48.000000
+total_time : 0.394892
+total_variable_pick : 0.027234
+Stats: bcp_terms : 49271.000000
+bcp_time : 4.070068
+conflict_time : 0.753263
+conflict_total_size : 7393.000000
+conflicts : 620.000000
+total_time : 6.008812
+total_variable_pick : 0.356536
+Stats: bcp_terms : 5969.000000
+bcp_time : 0.451917
+conflict_time : 0.104381
+conflict_total_size : 1013.000000
+conflicts : 83.000000
+total_time : 0.673397
+total_variable_pick : 0.045251
+Stats: bcp_terms : 42128.000000
+bcp_time : 3.376799
+conflict_time : 0.636725
+conflict_total_size : 6287.000000
+conflicts : 543.000000
+total_time : 5.075843
+total_variable_pick : 0.360544
+Stats: bcp_terms : 191.000000
+bcp_time : 0.031779
+conflict_time : 0.001898
+conflict_total_size : 10.000000
+conflicts : 2.000000
+total_time : 0.056970
+total_variable_pick : 0.008774
+Stats: bcp_terms : 7071.000000
+bcp_time : 0.499477
+conflict_time : 0.122715
+conflict_total_size : 1116.000000
+conflicts : 96.000000
+total_time : 0.762805
+total_variable_pick : 0.054507
+Stats: bcp_terms : 8092.000000
+bcp_time : 0.608958
+conflict_time : 0.140455
+conflict_total_size : 1330.000000
+conflicts : 114.000000
+total_time : 0.914637
+total_variable_pick : 0.061117
+Stats: bcp_terms : 65.000000
+bcp_time : 0.019722
+total_time : 0.043253
+total_variable_pick : 0.009233
+Stats: bcp_terms : 1223.000000
+bcp_time : 0.086932
+conflict_time : 0.022834
+conflict_total_size : 229.000000
+conflicts : 18.000000
+total_time : 0.148227
+total_variable_pick : 0.014408
+Stats: bcp_terms : 1300.000000
+bcp_time : 0.092137
+conflict_time : 0.023884
+conflict_total_size : 208.000000
+conflicts : 18.000000
+total_time : 0.147790
+total_variable_pick : 0.012080
+Stats: bcp_terms : 21749.000000
+bcp_time : 1.566297
+conflict_time : 0.315700
+conflict_total_size : 2939.000000
+conflicts : 271.000000
+total_time : 2.292899
+total_variable_pick : 0.146578
+Stats: bcp_terms : 587.000000
+bcp_time : 0.052220
+conflict_time : 0.011988
+conflict_total_size : 124.000000
+conflicts : 8.000000
+total_time : 0.092930
+total_variable_pick : 0.010826
+Stats: bcp_terms : 65.000000
+bcp_time : 0.022717
+total_time : 0.046707
+total_variable_pick : 0.009273
+Stats: bcp_terms : 12245.000000
+bcp_time : 0.813687
+conflict_time : 0.172470
+conflict_total_size : 1709.000000
+conflicts : 145.000000
+total_time : 1.212439
+total_variable_pick : 0.086851
+Stats: bcp_terms : 4425.000000
+bcp_time : 0.341211
+conflict_time : 0.078401
+conflict_total_size : 879.000000
+conflicts : 63.000000
+total_time : 0.519088
+total_variable_pick : 0.039170
+Stats: bcp_terms : 1423.000000
+bcp_time : 0.094858
+conflict_time : 0.023963
+conflict_total_size : 193.000000
+conflicts : 17.000000
+total_time : 0.145805
+total_variable_pick : 0.010236
+Stats: bcp_terms : 2335.000000
+bcp_time : 0.187902
+conflict_time : 0.046005
+conflict_total_size : 415.000000
+conflicts : 35.000000
+total_time : 0.291082
+total_variable_pick : 0.023255
+Stats: bcp_terms : 239.000000
+bcp_time : 0.045467
+conflict_time : 0.006401
+conflict_total_size : 64.000000
+conflicts : 6.000000
+total_time : 0.090502
+total_variable_pick : 0.014781
+Stats: bcp_terms : 26914.000000
+bcp_time : 1.985953
+conflict_time : 0.417073
+conflict_total_size : 3769.000000
+conflicts : 328.000000
+total_time : 2.951461
+total_variable_pick : 0.197697
+Stats: bcp_terms : 4817.000000
+bcp_time : 0.360256
+conflict_time : 0.082801
+conflict_total_size : 872.000000
+conflicts : 69.000000
+total_time : 0.548165
+total_variable_pick : 0.044900
+Stats: bcp_terms : 1086.000000
+bcp_time : 0.087082
+conflict_time : 0.019115
+conflict_total_size : 174.000000
+conflicts : 14.000000
+total_time : 0.142643
+total_variable_pick : 0.014426
+Stats: bcp_terms : 39114.000000
+bcp_time : 2.843222
+conflict_time : 0.634781
+conflict_total_size : 5630.000000
+conflicts : 472.000000
+total_time : 4.286128
+total_variable_pick : 0.279244
+Stats: bcp_terms : 28303.000000
+bcp_time : 2.088685
+conflict_time : 0.435701
+conflict_total_size : 3790.000000
+conflicts : 344.000000
+total_time : 3.092151
+total_variable_pick : 0.190635
+Stats: bcp_terms : 635.000000
+bcp_time : 0.055745
+conflict_time : 0.011310
+conflict_total_size : 92.000000
+conflicts : 8.000000
+total_time : 0.092127
+total_variable_pick : 0.009464
+Stats: bcp_terms : 3283.000000
+bcp_time : 0.246241
+conflict_time : 0.057399
+conflict_total_size : 477.000000
+conflicts : 42.000000
+total_time : 0.358527
+total_variable_pick : 0.022409
+Stats: bcp_terms : 1321.000000
+bcp_time : 0.128290
+conflict_time : 0.030525
+conflict_total_size : 256.000000
+conflicts : 24.000000
+total_time : 0.203477
+total_variable_pick : 0.017728
+Stats: bcp_terms : 14114.000000
+bcp_time : 1.029533
+conflict_time : 0.228820
+conflict_total_size : 1844.000000
+conflicts : 167.000000
+total_time : 1.505224
+total_variable_pick : 0.096523
+Stats: bcp_terms : 404.000000
+bcp_time : 0.045147
+conflict_time : 0.006457
+conflict_total_size : 49.000000
+conflicts : 5.000000
+total_time : 0.073652
+total_variable_pick : 0.008221
+Stats: bcp_terms : 84237.000000
+bcp_time : 6.551977
+conflict_time : 1.158977
+conflict_total_size : 11471.000000
+conflicts : 1030.000000
+total_time : 9.734077
+total_variable_pick : 0.600715
+Stats: bcp_terms : 47178.000000
+bcp_time : 3.455319
+conflict_time : 0.691232
+conflict_total_size : 6724.000000
+conflicts : 576.000000
+total_time : 5.096219
+total_variable_pick : 0.320404
+Stats: bcp_terms : 90721.000000
+bcp_time : 6.858703
+conflict_time : 1.187333
+conflict_total_size : 12276.000000
+conflicts : 1072.000000
+total_time : 10.247966
+total_variable_pick : 0.630899
+Stats: bcp_terms : 2575.000000
+bcp_time : 0.201402
+conflict_time : 0.046184
+conflict_total_size : 544.000000
+conflicts : 41.000000
+total_time : 0.310819
+total_variable_pick : 0.024512
+Stats: bcp_terms : 767.000000
+bcp_time : 0.056316
+conflict_time : 0.010993
+conflict_total_size : 103.000000
+conflicts : 9.000000
+total_time : 0.100124
+total_variable_pick : 0.013126
+Stats: bcp_terms : 10162.000000
+bcp_time : 0.715560
+conflict_time : 0.157340
+conflict_total_size : 1583.000000
+conflicts : 133.000000
+total_time : 1.066355
+total_variable_pick : 0.076048
+Stats: bcp_terms : 464.000000
+bcp_time : 0.063609
+conflict_time : 0.009418
+conflict_total_size : 84.000000
+conflicts : 8.000000
+total_time : 0.114387
+total_variable_pick : 0.018079
+Stats: bcp_terms : 373.000000
+bcp_time : 0.042864
+conflict_time : 0.004047
+conflict_total_size : 36.000000
+conflicts : 5.000000
+total_time : 0.076275
+total_variable_pick : 0.011961
+Stats: bcp_terms : 350.000000
+bcp_time : 0.037958
+conflict_time : 0.006992
+conflict_total_size : 62.000000
+conflicts : 5.000000
+total_time : 0.072113
+total_variable_pick : 0.009960
+Stats: bcp_terms : 31374.000000
+bcp_time : 2.157535
+conflict_time : 0.416132
+conflict_total_size : 4245.000000
+conflicts : 375.000000
+total_time : 3.136886
+total_variable_pick : 0.201740
+Stats: bcp_terms : 12767.000000
+bcp_time : 0.933955
+conflict_time : 0.204609
+conflict_total_size : 2146.000000
+conflicts : 172.000000
+total_time : 1.371894
+total_variable_pick : 0.082700
+Stats: bcp_terms : 14304.000000
+bcp_time : 0.983698
+conflict_time : 0.219013
+conflict_total_size : 2169.000000
+conflicts : 179.000000
+total_time : 1.463172
+total_variable_pick : 0.095260
+Stats: bcp_terms : 97406.000000
+bcp_time : 7.899720
+conflict_time : 1.282892
+conflict_total_size : 13780.000000
+conflicts : 1150.000000
+total_time : 11.994607
+total_variable_pick : 0.777119
+Stats: bcp_terms : 30552.000000
+bcp_time : 2.412671
+conflict_time : 0.492506
+conflict_total_size : 4823.000000
+conflicts : 391.000000
+total_time : 3.573098
+total_variable_pick : 0.227106
+Stats: bcp_terms : 61716.000000
+bcp_time : 4.825774
+conflict_time : 0.854111
+conflict_total_size : 8847.000000
+conflicts : 771.000000
+total_time : 7.171519
+total_variable_pick : 0.477608
+Stats: bcp_terms : 537.000000
+bcp_time : 0.048595
+conflict_time : 0.010034
+conflict_total_size : 99.000000
+conflicts : 6.000000
+total_time : 0.084640
+total_variable_pick : 0.008856
+Stats: bcp_terms : 3277.000000
+bcp_time : 0.258930
+conflict_time : 0.061245
+conflict_total_size : 621.000000
+conflicts : 51.000000
+total_time : 0.399832
+total_variable_pick : 0.031965
+Stats: bcp_terms : 300.000000
+bcp_time : 0.033390
+conflict_time : 0.003187
+conflict_total_size : 26.000000
+conflicts : 3.000000
+total_time : 0.054555
+total_variable_pick : 0.006611
+Stats: bcp_terms : 23191.000000
+bcp_time : 1.616325
+conflict_time : 0.334980
+conflict_total_size : 2843.000000
+conflicts : 280.000000
+total_time : 2.355201
+total_variable_pick : 0.150672
+Stats: bcp_terms : 16232.000000
+bcp_time : 1.306080
+conflict_time : 0.266373
+conflict_total_size : 2933.000000
+conflicts : 237.000000
+total_time : 1.967947
+total_variable_pick : 0.150876
+Stats: bcp_terms : 14864.000000
+bcp_time : 0.985632
+conflict_time : 0.212539
+conflict_total_size : 1863.000000
+conflicts : 180.000000
+total_time : 1.437388
+total_variable_pick : 0.091739
+Stats: bcp_terms : 96.000000
+bcp_time : 0.020648
+conflict_time : 0.000853
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.042475
+total_variable_pick : 0.007631
+Stats: bcp_terms : 437.000000
+bcp_time : 0.045019
+conflict_time : 0.006883
+conflict_total_size : 44.000000
+conflicts : 6.000000
+total_time : 0.082286
+total_variable_pick : 0.012043
+Stats: bcp_terms : 79790.000000
+bcp_time : 6.463133
+conflict_time : 1.144797
+conflict_total_size : 10817.000000
+conflicts : 937.000000
+total_time : 9.730511
+total_variable_pick : 0.618284
+Stats: bcp_terms : 513.000000
+bcp_time : 0.062860
+conflict_time : 0.011901
+conflict_total_size : 132.000000
+conflicts : 10.000000
+total_time : 0.112571
+total_variable_pick : 0.014189
+Stats: bcp_terms : 36898.000000
+bcp_time : 2.902261
+conflict_time : 0.555515
+conflict_total_size : 5422.000000
+conflicts : 460.000000
+total_time : 4.322973
+total_variable_pick : 0.298822
+Stats: bcp_terms : 7107.000000
+bcp_time : 0.469111
+conflict_time : 0.110632
+conflict_total_size : 1027.000000
+conflicts : 87.000000
+total_time : 0.693521
+total_variable_pick : 0.041923
+Stats: bcp_terms : 21331.000000
+bcp_time : 1.503044
+conflict_time : 0.350030
+conflict_total_size : 2744.000000
+conflicts : 275.000000
+total_time : 2.261132
+total_variable_pick : 0.152848
+Stats: bcp_terms : 58993.000000
+bcp_time : 4.589771
+conflict_time : 0.880363
+conflict_total_size : 8379.000000
+conflicts : 733.000000
+total_time : 6.794320
+total_variable_pick : 0.409100
+Stats: bcp_terms : 928.000000
+bcp_time : 0.082015
+conflict_time : 0.016402
+conflict_total_size : 184.000000
+conflicts : 13.000000
+total_time : 0.133044
+total_variable_pick : 0.013490
+Stats: bcp_terms : 144.000000
+bcp_time : 0.024045
+conflict_time : 0.000803
+conflict_total_size : 9.000000
+conflicts : 1.000000
+total_time : 0.046028
+total_variable_pick : 0.007481
+Stats: bcp_terms : 31670.000000
+bcp_time : 2.344614
+conflict_time : 0.449349
+conflict_total_size : 4869.000000
+conflicts : 412.000000
+total_time : 3.482867
+total_variable_pick : 0.243782
+Stats: bcp_terms : 3260.000000
+bcp_time : 0.219104
+conflict_time : 0.056723
+conflict_total_size : 562.000000
+conflicts : 44.000000
+total_time : 0.330616
+total_variable_pick : 0.020971
+Stats: bcp_terms : 4255.000000
+bcp_time : 0.282572
+conflict_time : 0.063524
+conflict_total_size : 698.000000
+conflicts : 55.000000
+total_time : 0.417796
+total_variable_pick : 0.026640
+Stats: bcp_terms : 69146.000000
+bcp_time : 4.956969
+conflict_time : 0.953683
+conflict_total_size : 9446.000000
+conflicts : 815.000000
+total_time : 7.300522
+total_variable_pick : 0.452024
+Stats: bcp_terms : 72.000000
+bcp_time : 0.017399
+total_time : 0.038386
+total_variable_pick : 0.007464
+Stats: bcp_terms : 80.000000
+bcp_time : 0.015401
+total_time : 0.033099
+total_variable_pick : 0.005571
+Stats: bcp_terms : 329.000000
+bcp_time : 0.029624
+conflict_time : 0.003981
+conflict_total_size : 38.000000
+conflicts : 4.000000
+total_time : 0.051645
+total_variable_pick : 0.006307
+Stats: bcp_terms : 1662.000000
+bcp_time : 0.137857
+conflict_time : 0.032150
+conflict_total_size : 318.000000
+conflicts : 25.000000
+total_time : 0.215013
+total_variable_pick : 0.018030
+Stats: bcp_terms : 6205.000000
+bcp_time : 0.440930
+conflict_time : 0.109406
+conflict_total_size : 880.000000
+conflicts : 77.000000
+total_time : 0.666589
+total_variable_pick : 0.044984
+Stats: bcp_terms : 3976.000000
+bcp_time : 0.300191
+conflict_time : 0.075281
+conflict_total_size : 705.000000
+conflicts : 58.000000
+total_time : 0.455867
+total_variable_pick : 0.031270
+Stats: bcp_terms : 12018.000000
+bcp_time : 0.822646
+conflict_time : 0.180819
+conflict_total_size : 1636.000000
+conflicts : 143.000000
+total_time : 1.214578
+total_variable_pick : 0.078659
+Stats: bcp_terms : 5727.000000
+bcp_time : 0.411215
+conflict_time : 0.113033
+conflict_total_size : 822.000000
+conflicts : 75.000000
+total_time : 0.618502
+total_variable_pick : 0.035230
+Stats: bcp_terms : 2642.000000
+bcp_time : 0.178439
+conflict_time : 0.044370
+conflict_total_size : 426.000000
+conflicts : 34.000000
+total_time : 0.268170
+total_variable_pick : 0.017993
+Stats: bcp_terms : 8781.000000
+bcp_time : 0.696271
+conflict_time : 0.161379
+conflict_total_size : 1341.000000
+conflicts : 123.000000
+total_time : 1.051412
+total_variable_pick : 0.075325
+Stats: bcp_terms : 32478.000000
+bcp_time : 2.345542
+conflict_time : 0.477997
+conflict_total_size : 4105.000000
+conflicts : 392.000000
+total_time : 3.450579
+total_variable_pick : 0.224553
+Stats: bcp_terms : 757.000000
+bcp_time : 0.074293
+conflict_time : 0.013278
+conflict_total_size : 120.000000
+conflicts : 10.000000
+total_time : 0.118598
+total_variable_pick : 0.011733
+Stats: bcp_terms : 14395.000000
+bcp_time : 1.093296
+conflict_time : 0.239219
+conflict_total_size : 2107.000000
+conflicts : 182.000000
+total_time : 1.572982
+total_variable_pick : 0.088024
+Stats: bcp_terms : 133804.000000
+bcp_time : 11.452714
+conflict_time : 1.775202
+conflict_total_size : 19328.000000
+conflicts : 1637.000000
+total_time : 17.593415
+total_variable_pick : 1.188251
+Stats: bcp_terms : 1320.000000
+bcp_time : 0.094787
+conflict_time : 0.031936
+conflict_total_size : 202.000000
+conflicts : 17.000000
+total_time : 0.157589
+total_variable_pick : 0.011752
+Stats: bcp_terms : 156.000000
+bcp_time : 0.030042
+conflict_time : 0.001992
+conflict_total_size : 17.000000
+conflicts : 2.000000
+total_time : 0.059684
+total_variable_pick : 0.010962
+Stats: bcp_terms : 7431.000000
+bcp_time : 0.578483
+conflict_time : 0.135071
+conflict_total_size : 1175.000000
+conflicts : 99.000000
+total_time : 0.872241
+total_variable_pick : 0.060173
+Stats: bcp_terms : 83831.000000
+bcp_time : 6.308667
+conflict_time : 1.154199
+conflict_total_size : 10946.000000
+conflicts : 972.000000
+total_time : 9.478796
+total_variable_pick : 0.599888
+Stats: bcp_terms : 9848.000000
+bcp_time : 0.703159
+conflict_time : 0.172514
+conflict_total_size : 1409.000000
+conflicts : 125.000000
+total_time : 1.051308
+total_variable_pick : 0.069454
+Stats: bcp_terms : 364.000000
+bcp_time : 0.030176
+conflict_time : 0.005568
+conflict_total_size : 46.000000
+conflicts : 4.000000
+total_time : 0.055730
+total_variable_pick : 0.007181
+Stats: bcp_terms : 212.000000
+bcp_time : 0.026793
+conflict_time : 0.003948
+conflict_total_size : 25.000000
+conflicts : 3.000000
+total_time : 0.052900
+total_variable_pick : 0.007723
+Stats: bcp_terms : 381.000000
+bcp_time : 0.038605
+conflict_time : 0.006991
+conflict_total_size : 68.000000
+conflicts : 5.000000
+total_time : 0.069209
+total_variable_pick : 0.008585
+Stats: bcp_terms : 210.000000
+bcp_time : 0.025720
+conflict_time : 0.002324
+conflict_total_size : 14.000000
+conflicts : 2.000000
+total_time : 0.048688
+total_variable_pick : 0.007285
+Stats: bcp_terms : 86262.000000
+bcp_time : 7.065343
+conflict_time : 1.219890
+conflict_total_size : 11412.000000
+conflicts : 1014.000000
+total_time : 10.642931
+total_variable_pick : 0.646415
+Stats: bcp_terms : 4121.000000
+bcp_time : 0.333618
+conflict_time : 0.089248
+conflict_total_size : 648.000000
+conflicts : 60.000000
+total_time : 0.510175
+total_variable_pick : 0.035529
+Stats: bcp_terms : 4751.000000
+bcp_time : 0.333688
+conflict_time : 0.085734
+conflict_total_size : 716.000000
+conflicts : 61.000000
+total_time : 0.499535
+total_variable_pick : 0.030830
+Stats: bcp_terms : 20189.000000
+bcp_time : 1.466936
+conflict_time : 0.307690
+conflict_total_size : 2927.000000
+conflicts : 251.000000
+total_time : 2.174501
+total_variable_pick : 0.147950
+Stats: bcp_terms : 1770.000000
+bcp_time : 0.120810
+conflict_time : 0.028472
+conflict_total_size : 210.000000
+conflicts : 21.000000
+total_time : 0.184952
+total_variable_pick : 0.014292
+Stats: bcp_terms : 4670.000000
+bcp_time : 0.340546
+conflict_time : 0.075265
+conflict_total_size : 810.000000
+conflicts : 62.000000
+total_time : 0.511942
+total_variable_pick : 0.037327
+Stats: bcp_terms : 784.000000
+bcp_time : 0.062808
+conflict_time : 0.012780
+conflict_total_size : 83.000000
+conflicts : 9.000000
+total_time : 0.096880
+total_variable_pick : 0.006348
+Stats: bcp_terms : 1067.000000
+bcp_time : 0.096052
+conflict_time : 0.023789
+conflict_total_size : 203.000000
+conflicts : 16.000000
+total_time : 0.153421
+total_variable_pick : 0.012375
+Stats: bcp_terms : 2810.000000
+bcp_time : 0.178438
+conflict_time : 0.046533
+conflict_total_size : 416.000000
+conflicts : 35.000000
+total_time : 0.275705
+total_variable_pick : 0.020261
+Stats: bcp_terms : 60823.000000
+bcp_time : 4.356657
+conflict_time : 0.893269
+conflict_total_size : 8316.000000
+conflicts : 721.000000
+total_time : 6.406992
+total_variable_pick : 0.370120
+Stats: bcp_terms : 4961.000000
+bcp_time : 0.404935
+conflict_time : 0.092989
+conflict_total_size : 945.000000
+conflicts : 79.000000
+total_time : 0.610514
+total_variable_pick : 0.043340
+Stats: bcp_terms : 41108.000000
+bcp_time : 3.000004
+conflict_time : 0.607615
+conflict_total_size : 5605.000000
+conflicts : 501.000000
+total_time : 4.449171
+total_variable_pick : 0.279422
+Stats: bcp_terms : 36108.000000
+bcp_time : 2.630859
+conflict_time : 0.544499
+conflict_total_size : 4363.000000
+conflicts : 432.000000
+total_time : 3.827872
+total_variable_pick : 0.229559
+Stats: bcp_terms : 493.000000
+bcp_time : 0.054804
+conflict_time : 0.010547
+conflict_total_size : 82.000000
+conflicts : 7.000000
+total_time : 0.091547
+total_variable_pick : 0.010075
+Stats: bcp_terms : 1075.000000
+bcp_time : 0.083441
+conflict_time : 0.015669
+conflict_total_size : 136.000000
+conflicts : 13.000000
+total_time : 0.134810
+total_variable_pick : 0.013895
+Stats: bcp_terms : 9901.000000
+bcp_time : 0.717224
+conflict_time : 0.159248
+conflict_total_size : 1409.000000
+conflicts : 131.000000
+total_time : 1.066830
+total_variable_pick : 0.070997
+Stats: bcp_terms : 3351.000000
+bcp_time : 0.238044
+conflict_time : 0.081710
+conflict_total_size : 573.000000
+conflicts : 44.000000
+total_time : 0.400513
+total_variable_pick : 0.024985
+Stats: bcp_terms : 1836.000000
+bcp_time : 0.144766
+conflict_time : 0.037369
+conflict_total_size : 322.000000
+conflicts : 27.000000
+total_time : 0.233024
+total_variable_pick : 0.020219
+Stats: bcp_terms : 250.000000
+bcp_time : 0.026152
+conflict_time : 0.003404
+conflict_total_size : 28.000000
+conflicts : 3.000000
+total_time : 0.050898
+total_variable_pick : 0.007699
+Stats: bcp_terms : 3459.000000
+bcp_time : 0.254168
+conflict_time : 0.062445
+conflict_total_size : 637.000000
+conflicts : 51.000000
+total_time : 0.388365
+total_variable_pick : 0.028058
+Stats: bcp_terms : 1856.000000
+bcp_time : 0.132938
+conflict_time : 0.035260
+conflict_total_size : 318.000000
+conflicts : 29.000000
+total_time : 0.217182
+total_variable_pick : 0.020957
+Stats: bcp_terms : 43724.000000
+bcp_time : 3.398649
+conflict_time : 0.639857
+conflict_total_size : 6547.000000
+conflicts : 554.000000
+total_time : 5.045656
+total_variable_pick : 0.342141
+Stats: bcp_terms : 48070.000000
+bcp_time : 3.717628
+conflict_time : 0.693036
+conflict_total_size : 7077.000000
+conflicts : 589.000000
+total_time : 5.635846
+total_variable_pick : 0.401430
+Stats: bcp_terms : 80.000000
+bcp_time : 0.017712
+total_time : 0.034866
+total_variable_pick : 0.005979
+Stats: bcp_terms : 2185.000000
+bcp_time : 0.179812
+conflict_time : 0.054750
+conflict_total_size : 536.000000
+conflicts : 34.000000
+total_time : 0.289860
+total_variable_pick : 0.020136
+Stats: bcp_terms : 3796.000000
+bcp_time : 0.273253
+conflict_time : 0.063983
+conflict_total_size : 591.000000
+conflicts : 50.000000
+total_time : 0.410338
+total_variable_pick : 0.029414
+Stats: bcp_terms : 5630.000000
+bcp_time : 0.473393
+conflict_time : 0.108425
+conflict_total_size : 1284.000000
+conflicts : 85.000000
+total_time : 0.711439
+total_variable_pick : 0.049696
+Stats: bcp_terms : 32695.000000
+bcp_time : 2.332280
+conflict_time : 0.507705
+conflict_total_size : 4461.000000
+conflicts : 386.000000
+total_time : 3.473145
+total_variable_pick : 0.227491
+Stats: bcp_terms : 124154.000000
+bcp_time : 10.849770
+conflict_time : 1.973067
+conflict_total_size : 17448.000000
+conflicts : 1480.000000
+total_time : 17.208753
+total_variable_pick : 1.076264
+Stats: bcp_terms : 2635.000000
+bcp_time : 0.184602
+conflict_time : 0.045625
+conflict_total_size : 412.000000
+conflicts : 37.000000
+total_time : 0.290210
+total_variable_pick : 0.025989
+Stats: bcp_terms : 182.000000
+bcp_time : 0.025581
+conflict_time : 0.002128
+conflict_total_size : 24.000000
+conflicts : 2.000000
+total_time : 0.051151
+total_variable_pick : 0.008619
+Stats: bcp_terms : 3354.000000
+bcp_time : 0.237144
+conflict_time : 0.052384
+conflict_total_size : 508.000000
+conflicts : 45.000000
+total_time : 0.360893
+total_variable_pick : 0.027695
+Stats: bcp_terms : 98266.000000
+bcp_time : 9.159990
+conflict_time : 1.422789
+conflict_total_size : 15926.000000
+conflicts : 1211.000000
+total_time : 14.103026
+total_variable_pick : 0.915709
+Stats: bcp_terms : 328.000000
+bcp_time : 0.034443
+conflict_time : 0.006145
+conflict_total_size : 50.000000
+conflicts : 5.000000
+total_time : 0.063680
+total_variable_pick : 0.008858
+Stats: bcp_terms : 299.000000
+bcp_time : 0.038305
+conflict_time : 0.004867
+conflict_total_size : 42.000000
+conflicts : 4.000000
+total_time : 0.072224
+total_variable_pick : 0.011270
+Stats: bcp_terms : 70344.000000
+bcp_time : 5.105338
+conflict_time : 0.924247
+conflict_total_size : 9155.000000
+conflicts : 837.000000
+total_time : 7.559418
+total_variable_pick : 0.482182
+Stats: bcp_terms : 3440.000000
+bcp_time : 0.223181
+conflict_time : 0.063190
+conflict_total_size : 539.000000
+conflicts : 46.000000
+total_time : 0.343652
+total_variable_pick : 0.022573
+Stats: bcp_terms : 5920.000000
+bcp_time : 0.400843
+conflict_time : 0.097265
+conflict_total_size : 1158.000000
+conflicts : 80.000000
+total_time : 0.602194
+total_variable_pick : 0.038240
+Stats: bcp_terms : 77.000000
+bcp_time : 0.017787
+total_time : 0.037942
+total_variable_pick : 0.006925
+Stats: bcp_terms : 4573.000000
+bcp_time : 0.271719
+conflict_time : 0.067444
+conflict_total_size : 632.000000
+conflicts : 55.000000
+total_time : 0.414284
+total_variable_pick : 0.031358
+Stats: bcp_terms : 7253.000000
+bcp_time : 0.488772
+conflict_time : 0.112469
+conflict_total_size : 986.000000
+conflicts : 92.000000
+total_time : 0.731201
+total_variable_pick : 0.048129
+Stats: bcp_terms : 144.000000
+bcp_time : 0.023537
+conflict_time : 0.002288
+conflict_total_size : 23.000000
+conflicts : 2.000000
+total_time : 0.048065
+total_variable_pick : 0.008234
+Stats: bcp_terms : 4521.000000
+bcp_time : 0.300529
+conflict_time : 0.071532
+conflict_total_size : 683.000000
+conflicts : 59.000000
+total_time : 0.449823
+total_variable_pick : 0.029572
+Stats: bcp_terms : 59578.000000
+bcp_time : 4.842711
+conflict_time : 0.897861
+conflict_total_size : 8408.000000
+conflicts : 733.000000
+total_time : 7.215039
+total_variable_pick : 0.466927
+Stats: bcp_terms : 16401.000000
+bcp_time : 1.098366
+conflict_time : 0.243656
+conflict_total_size : 1696.000000
+conflicts : 187.000000
+total_time : 1.601381
+total_variable_pick : 0.102071
+Stats: bcp_terms : 66478.000000
+bcp_time : 4.824894
+conflict_time : 1.068519
+conflict_total_size : 8515.000000
+conflicts : 782.000000
+total_time : 7.370245
+total_variable_pick : 0.463813
+Stats: bcp_terms : 70.000000
+bcp_time : 0.018126
+total_time : 0.040297
+total_variable_pick : 0.007696
+Stats: bcp_terms : 2909.000000
+bcp_time : 0.224221
+conflict_time : 0.051422
+conflict_total_size : 596.000000
+conflicts : 44.000000
+total_time : 0.342576
+total_variable_pick : 0.026898
+Stats: bcp_terms : 101.000000
+bcp_time : 0.025102
+conflict_time : 0.001306
+conflict_total_size : 12.000000
+conflicts : 2.000000
+total_time : 0.051651
+total_variable_pick : 0.009639
+Stats: bcp_terms : 215.000000
+bcp_time : 0.030559
+conflict_time : 0.003590
+conflict_total_size : 39.000000
+conflicts : 3.000000
+total_time : 0.057432
+total_variable_pick : 0.008671
+Stats: bcp_terms : 128716.000000
+bcp_time : 10.605524
+conflict_time : 1.682208
+conflict_total_size : 18797.000000
+conflicts : 1482.000000
+total_time : 16.340940
+total_variable_pick : 1.008541
+Stats: bcp_terms : 39014.000000
+bcp_time : 2.747421
+conflict_time : 0.622404
+conflict_total_size : 5186.000000
+conflicts : 468.000000
+total_time : 4.129728
+total_variable_pick : 0.264334
+Stats: bcp_terms : 2112.000000
+bcp_time : 0.142749
+conflict_time : 0.035779
+conflict_total_size : 331.000000
+conflicts : 30.000000
+total_time : 0.227510
+total_variable_pick : 0.019884
+Stats: bcp_terms : 44136.000000
+bcp_time : 3.490253
+conflict_time : 0.660682
+conflict_total_size : 6814.000000
+conflicts : 563.000000
+total_time : 5.217077
+total_variable_pick : 0.351498
+Stats: bcp_terms : 351.000000
+bcp_time : 0.040301
+conflict_time : 0.005997
+conflict_total_size : 45.000000
+conflicts : 4.000000
+total_time : 0.073305
+total_variable_pick : 0.010782
+Stats: bcp_terms : 1473.000000
+bcp_time : 0.107661
+conflict_time : 0.024169
+conflict_total_size : 274.000000
+conflicts : 22.000000
+total_time : 0.170527
+total_variable_pick : 0.015023
+Stats: bcp_terms : 31274.000000
+bcp_time : 2.208796
+conflict_time : 0.469190
+conflict_total_size : 4370.000000
+conflicts : 377.000000
+total_time : 3.305480
+total_variable_pick : 0.221212
+Stats: bcp_terms : 3489.000000
+bcp_time : 0.255816
+conflict_time : 0.067662
+conflict_total_size : 792.000000
+conflicts : 54.000000
+total_time : 0.395376
+total_variable_pick : 0.027145
+Stats: bcp_terms : 1297.000000
+bcp_time : 0.118652
+conflict_time : 0.025266
+conflict_total_size : 238.000000
+conflicts : 23.000000
+total_time : 0.186544
+total_variable_pick : 0.016424
+Stats: bcp_terms : 5700.000000
+bcp_time : 0.411679
+conflict_time : 0.096478
+conflict_total_size : 980.000000
+conflicts : 80.000000
+total_time : 0.623506
+total_variable_pick : 0.042259
+Stats: bcp_terms : 616.000000
+bcp_time : 0.046334
+conflict_time : 0.010745
+conflict_total_size : 85.000000
+conflicts : 7.000000
+total_time : 0.080782
+total_variable_pick : 0.008476
+Stats: bcp_terms : 39548.000000
+bcp_time : 2.947010
+conflict_time : 0.571349
+conflict_total_size : 5768.000000
+conflicts : 494.000000
+total_time : 4.400084
+total_variable_pick : 0.293302
+Stats: bcp_terms : 451.000000
+bcp_time : 0.037912
+conflict_time : 0.007791
+conflict_total_size : 67.000000
+conflicts : 6.000000
+total_time : 0.073779
+total_variable_pick : 0.007427
+Stats: bcp_terms : 65421.000000
+bcp_time : 5.364285
+conflict_time : 1.058080
+conflict_total_size : 10741.000000
+conflicts : 834.000000
+total_time : 8.213687
+total_variable_pick : 0.519157
+Stats: bcp_terms : 2102.000000
+bcp_time : 0.192394
+conflict_time : 0.059750
+conflict_total_size : 536.000000
+conflicts : 39.000000
+total_time : 0.311901
+total_variable_pick : 0.022849
+Stats: bcp_terms : 5135.000000
+bcp_time : 0.390009
+conflict_time : 0.094591
+conflict_total_size : 796.000000
+conflicts : 70.000000
+total_time : 0.588098
+total_variable_pick : 0.041070
+Stats: bcp_terms : 599.000000
+bcp_time : 0.062418
+conflict_time : 0.008893
+conflict_total_size : 77.000000
+conflicts : 9.000000
+total_time : 0.103230
+total_variable_pick : 0.012608
+Stats: bcp_terms : 34202.000000
+bcp_time : 2.423107
+conflict_time : 0.500200
+conflict_total_size : 4203.000000
+conflicts : 406.000000
+total_time : 3.567395
+total_variable_pick : 0.229193
+Stats: bcp_terms : 70.000000
+bcp_time : 0.019025
+total_time : 0.041171
+total_variable_pick : 0.008093
+Stats: bcp_terms : 1068.000000
+bcp_time : 0.083586
+conflict_time : 0.017620
+conflict_total_size : 170.000000
+conflicts : 15.000000
+total_time : 0.132645
+total_variable_pick : 0.012639
+Stats: bcp_terms : 4203.000000
+bcp_time : 0.315764
+conflict_time : 0.078140
+conflict_total_size : 798.000000
+conflicts : 65.000000
+total_time : 0.480972
+total_variable_pick : 0.033451
+Stats: bcp_terms : 119110.000000
+bcp_time : 9.679962
+conflict_time : 1.953186
+conflict_total_size : 16395.000000
+conflicts : 1401.000000
+total_time : 15.010829
+total_variable_pick : 0.907344
+Stats: bcp_terms : 34621.000000
+bcp_time : 2.699805
+conflict_time : 0.521622
+conflict_total_size : 5111.000000
+conflicts : 431.000000
+total_time : 4.039733
+total_variable_pick : 0.280144
+Stats: bcp_terms : 57200.000000
+bcp_time : 4.166847
+conflict_time : 0.821156
+conflict_total_size : 7342.000000
+conflicts : 667.000000
+total_time : 6.275157
+total_variable_pick : 0.424192
+Stats: bcp_terms : 263.000000
+bcp_time : 0.031823
+conflict_time : 0.004077
+conflict_total_size : 40.000000
+conflicts : 4.000000
+total_time : 0.061415
+total_variable_pick : 0.009887
+Stats: bcp_terms : 6654.000000
+bcp_time : 0.429463
+conflict_time : 0.102979
+conflict_total_size : 1009.000000
+conflicts : 82.000000
+total_time : 0.639981
+total_variable_pick : 0.041459
+Stats: bcp_terms : 4413.000000
+bcp_time : 0.344820
+conflict_time : 0.093365
+conflict_total_size : 904.000000
+conflicts : 72.000000
+total_time : 0.534389
+total_variable_pick : 0.036836
+Stats: bcp_terms : 24573.000000
+bcp_time : 1.652342
+conflict_time : 0.325843
+conflict_total_size : 3017.000000
+conflicts : 294.000000
+total_time : 2.380321
+total_variable_pick : 0.145730
+Stats: bcp_terms : 66467.000000
+bcp_time : 4.822391
+conflict_time : 0.875760
+conflict_total_size : 8188.000000
+conflicts : 767.000000
+total_time : 7.070069
+total_variable_pick : 0.416389
+Stats: bcp_terms : 21808.000000
+bcp_time : 1.545690
+conflict_time : 0.315465
+conflict_total_size : 3237.000000
+conflicts : 283.000000
+total_time : 2.268065
+total_variable_pick : 0.148092
+Stats: bcp_terms : 50314.000000
+bcp_time : 3.638775
+conflict_time : 0.691209
+conflict_total_size : 7372.000000
+conflicts : 620.000000
+total_time : 5.434536
+total_variable_pick : 0.362844
+Stats: bcp_terms : 3547.000000
+bcp_time : 0.234691
+conflict_time : 0.051714
+conflict_total_size : 438.000000
+conflicts : 42.000000
+total_time : 0.338124
+total_variable_pick : 0.021474
+Stats: bcp_terms : 441.000000
+bcp_time : 0.045757
+conflict_time : 0.005251
+conflict_total_size : 44.000000
+conflicts : 6.000000
+total_time : 0.074336
+total_variable_pick : 0.009449
+Stats: bcp_terms : 10229.000000
+bcp_time : 0.716489
+conflict_time : 0.153816
+conflict_total_size : 1292.000000
+conflicts : 130.000000
+total_time : 1.045566
+total_variable_pick : 0.068412
+Stats: bcp_terms : 10212.000000
+bcp_time : 0.722483
+conflict_time : 0.163764
+conflict_total_size : 1563.000000
+conflicts : 134.000000
+total_time : 1.082283
+total_variable_pick : 0.073765
+Stats: bcp_terms : 3665.000000
+bcp_time : 0.274303
+conflict_time : 0.070716
+conflict_total_size : 811.000000
+conflicts : 56.000000
+total_time : 0.424610
+total_variable_pick : 0.030897
+Stats: bcp_terms : 827.000000
+bcp_time : 0.077523
+conflict_time : 0.018479
+conflict_total_size : 148.000000
+conflicts : 13.000000
+total_time : 0.127632
+total_variable_pick : 0.011608
+Stats: bcp_terms : 35765.000000
+bcp_time : 2.503260
+conflict_time : 0.497063
+conflict_total_size : 4927.000000
+conflicts : 434.000000
+total_time : 3.674296
+total_variable_pick : 0.225325
+Stats: bcp_terms : 456.000000
+bcp_time : 0.038918
+conflict_time : 0.005393
+conflict_total_size : 50.000000
+conflicts : 6.000000
+total_time : 0.066729
+total_variable_pick : 0.008207
+Stats: bcp_terms : 7718.000000
+bcp_time : 0.517079
+conflict_time : 0.116951
+conflict_total_size : 1172.000000
+conflicts : 99.000000
+total_time : 0.772236
+total_variable_pick : 0.052860
+Stats: bcp_terms : 4584.000000
+bcp_time : 0.352107
+conflict_time : 0.081846
+conflict_total_size : 732.000000
+conflicts : 65.000000
+total_time : 0.517622
+total_variable_pick : 0.031716
+Stats: bcp_terms : 221.000000
+bcp_time : 0.026077
+conflict_time : 0.001414
+conflict_total_size : 15.000000
+conflicts : 2.000000
+total_time : 0.049482
+total_variable_pick : 0.008229
+Stats: bcp_terms : 109435.000000
+bcp_time : 9.586559
+conflict_time : 1.542657
+conflict_total_siz : 39052.000000
+bcp_time : 3.057170
+conflict_time : 0.497919
+conflict_total_size : 6301.000000
+conflicts : 491.000000
+total_time : 4.477365
+total_variable_pick : 0.303703
+Stats: bcp_terms : 562.000000
+bcp_time : 0.046686
+conflict_time : 0.006419
+conflict_total_size : 97.000000
+conflicts : 7.000000
+total_time : 0.069778
+total_variable_pick : 0.007683
+Stats: bcp_terms : 22114.000000
+bcp_time : 1.846171
+conflict_time : 0.293999
+conflict_total_size : 4364.000000
+conflicts : 307.000000
+total_time : 2.724698
+total_variable_pick : 0.210188
+Stats: bcp_terms : 4884.000000
+bcp_time : 0.352945
+conflict_time : 0.065368
+conflict_total_size : 820.000000
+conflicts : 65.000000
+total_time : 0.513141
+total_variable_pick : 0.041043
+Stats: bcp_terms : 41512.000000
+bcp_time : 3.998583
+conflict_time : 0.618503
+conflict_total_size : 9058.000000
+conflicts : 599.000000
+total_time : 6.097238
+total_variable_pick : 0.489904
+Stats: bcp_terms : 23948.000000
+bcp_time : 1.667969
+conflict_time : 0.275132
+conflict_total_size : 3113.000000
+conflicts : 266.000000
+total_time : 2.424017
+total_variable_pick : 0.190357
+Stats: bcp_terms : 1123.000000
+bcp_time : 0.085245
+conflict_time : 0.012701
+conflict_total_size : 132.000000
+conflicts : 13.000000
+total_time : 0.123756
+total_variable_pick : 0.012283
+Stats: bcp_terms : 3796.000000
+bcp_time : 0.264676
+conflict_time : 0.041275
+conflict_total_size : 452.000000
+conflicts : 45.000000
+total_time : 0.375319
+total_variable_pick : 0.031277
+Stats: bcp_terms : 29086.000000
+bcp_time : 2.231996
+conflict_time : 0.381331
+conflict_total_size : 4279.000000
+conflicts : 348.000000
+total_time : 3.201748
+total_variable_pick : 0.214226
+Stats: bcp_terms : 855.000000
+bcp_time : 0.071555
+conflict_time : 0.008418
+conflict_total_size : 96.000000
+conflicts : 12.000000
+total_time : 0.112380
+total_variable_pick : 0.014963
+Stats: bcp_terms : 921.000000
+bcp_time : 0.063920
+conflict_time : 0.007185
+conflict_total_size : 103.000000
+conflicts : 11.000000
+total_time : 0.096587
+total_variable_pick : 0.011897
+Stats: bcp_terms : 15748.000000
+bcp_time : 1.218143
+conflict_time : 0.206151
+conflict_total_size : 2687.000000
+conflicts : 202.000000
+total_time : 1.727787
+total_variable_pick : 0.114279
+Stats: bcp_terms : 2393.000000
+bcp_time : 0.158300
+conflict_time : 0.027227
+conflict_total_size : 298.000000
+conflicts : 30.000000
+total_time : 0.216940
+total_variable_pick : 0.013998
+Stats: bcp_terms : 6653.000000
+bcp_time : 0.472691
+conflict_time : 0.086695
+conflict_total_size : 1196.000000
+conflicts : 91.000000
+total_time : 0.674402
+total_variable_pick : 0.046420
+Stats: bcp_terms : 4652.000000
+bcp_time : 0.357848
+conflict_time : 0.055707
+conflict_total_size : 812.000000
+conflicts : 65.000000
+total_time : 0.520020
+total_variable_pick : 0.045947
+Stats: bcp_terms : 49632.000000
+bcp_time : 3.910871
+conflict_time : 0.623315
+conflict_total_size : 7914.000000
+conflicts : 613.000000
+total_time : 5.706735
+total_variable_pick : 0.384240
+Stats: bcp_terms : 24487.000000
+bcp_time : 2.006794
+conflict_time : 0.333909
+conflict_total_size : 4264.000000
+conflicts : 305.000000
+total_time : 2.945147
+total_variable_pick : 0.230746
+Stats: bcp_terms : 222.000000
+bcp_time : 0.028353
+conflict_time : 0.001327
+conflict_total_size : 20.000000
+conflicts : 3.000000
+total_time : 0.043929
+total_variable_pick : 0.006563
+Stats: bcp_terms : 11319.000000
+bcp_time : 0.810942
+conflict_time : 0.154164
+conflict_total_size : 2197.000000
+conflicts : 150.000000
+total_time : 1.172138
+total_variable_pick : 0.079483
+Stats: bcp_terms : 12603.000000
+bcp_time : 0.969286
+conflict_time : 0.168076
+conflict_total_size : 2235.000000
+conflicts : 170.000000
+total_time : 1.392146
+total_variable_pick : 0.097923
+Stats: bcp_terms : 4369.000000
+bcp_time : 0.291964
+conflict_time : 0.053467
+conflict_total_size : 647.000000
+conflicts : 56.000000
+total_time : 0.410850
+total_variable_pick : 0.029155
+Stats: bcp_terms : 5136.000000
+bcp_time : 0.321506
+conflict_time : 0.056003
+conflict_total_size : 693.000000
+conflicts : 59.000000
+total_time : 0.464503
+total_variable_pick : 0.038091
+Stats: bcp_terms : 17902.000000
+bcp_time :e : 16492.000000
+conflicts : 1333.000000
+total_time : 14.559882
+total_variable_pick : 0.921349
+Stats: bcp_terms : 291.000000
+bcp_time : 0.037005
+conflict_time : 0.005202
+conflict_total_size : 37.000000
+conflicts : 4.000000
+total_time : 0.069012
+total_variable_pick : 0.010523
+Stats: bcp_terms : 269.000000
+bcp_time : 0.029644
+conflict_time : 0.003629
+conflict_total_size : 34.000000
+conflicts : 4.000000
+total_time : 0.051628
+total_variable_pick : 0.006304
+Stats: bcp_terms : 163.000000
+bcp_time : 0.023091
+conflict_time : 0.001555
+conflict_total_size : 14.000000
+conflicts : 2.000000
+total_time : 0.044423
+total_variable_pick : 0.008108
+Stats: bcp_terms : 480.000000
+bcp_time : 0.046933
+conflict_time : 0.007957
+conflict_total_size : 76.000000
+conflicts : 6.000000
+total_time : 0.081064
+total_variable_pick : 0.010352
+Stats: bcp_terms : 21038.000000
+bcp_time : 1.479144
+conflict_time : 0.299224
+conflict_total_size : 2929.000000
+conflicts : 258.000000
+total_time : 2.169491
+total_variable_pick : 0.145023
+Stats: bcp_terms : 1889.000000
+bcp_time : 0.125596
+conflict_time : 0.035949
+conflict_total_size : 328.000000
+conflicts : 27.000000
+total_time : 0.201170
+total_variable_pick : 0.014509
+Stats: bcp_terms : 185.000000
+bcp_time : 0.024329
+conflict_time : 0.003086
+conflict_total_size : 30.000000
+conflicts : 2.000000
+total_time : 0.048851
+total_variable_pick : 0.007100
+Stats: bcp_terms : 4759.000000
+bcp_time : 0.312549
+conflict_time : 0.073038
+conflict_total_size : 824.000000
+conflicts : 64.000000
+total_time : 0.477826
+total_variable_pick : 0.037262
+Stats: bcp_terms : 40328.000000
+bcp_time : 3.024455
+conflict_time : 0.590173
+conflict_total_size : 5838.000000
+conflicts : 500.000000
+total_time : 4.448559
+total_variable_pick : 0.272284
+Stats: bcp_terms : 28212.000000
+bcp_time : 1.982182
+conflict_time : 0.393693
+conflict_total_size : 4084.000000
+conflicts : 350.000000
+total_time : 2.930824
+total_variable_pick : 0.195558
+Stats: bcp_terms : 1107.000000
+bcp_time : 0.089122
+conflict_time : 0.022380
+conflict_total_size : 191.000000
+conflicts : 17.000000
+total_time : 0.146245
+total_variable_pick : 0.013232
+Stats: bcp_terms : 21313.000000
+bcp_time : 1.521840
+conflict_time : 0.335464
+conflict_total_size : 3004.000000
+conflicts : 261.000000
+total_time : 2.257852
+total_variable_pick : 0.145253
+Stats: bcp_terms : 2608.000000
+bcp_time : 0.210372
+conflict_time : 0.048598
+conflict_total_size : 451.000000
+conflicts : 40.000000
+total_time : 0.326117
+total_variable_pick : 0.027933
+Stats: bcp_terms : 5360.000000
+bcp_time : 0.389689
+conflict_time : 0.089245
+conflict_total_size : 860.000000
+conflicts : 75.000000
+total_time : 0.587255
+total_variable_pick : 0.041523
+Stats: bcp_terms : 95449.000000
+bcp_time : 7.395953
+conflict_time : 1.263119
+conflict_total_size : 13100.000000
+conflicts : 1136.000000
+total_time : 11.208922
+total_variable_pick : 0.744948
+Stats: bcp_terms : 3199.000000
+bcp_time : 0.238154
+conflict_time : 0.061359
+conflict_total_size : 560.000000
+conflicts : 46.000000
+total_time : 0.360612
+total_variable_pick : 0.023191
+Stats: bcp_terms : 46832.000000
+bcp_time : 3.129175
+conflict_time : 0.610068
+conflict_total_size : 5933.000000
+conflicts : 559.000000
+total_time : 4.592550
+total_variable_pick : 0.292063
+Stats: bcp_terms : 15614.000000
+bcp_time : 1.073965
+conflict_time : 0.232134
+conflict_total_size : 2553.000000
+conflicts : 191.000000
+total_time : 1.609534
+total_variable_pick : 0.112171
+Stats: bcp_terms : 70698.000000
+bcp_time : 5.209704
+conflict_time : 0.940152
+conflict_total_size : 9752.000000
+conflicts : 838.000000
+total_time : 7.718993
+total_variable_pick : 0.484388
+Stats: bcp_terms : 429.000000
+bcp_time : 0.059936
+conflict_time : 0.008342
+conflict_total_size : 79.000000
+conflicts : 8.000000
+total_time : 0.103527
+total_variable_pick : 0.015027
+Stats: bcp_terms : 1802.000000
+bcp_time : 0.121196
+conflict_time : 0.032364
+conflict_total_size : 261.000000
+conflicts : 23.000000
+total_time : 0.195514
+total_variable_pick : 0.017419
+Stats: bcp_terms : 72569.000000
+bcp_time : 5.669076
+conflict_time : 1.153456
+conflict_total_size : 10367.000000
+conflicts : 913.000000
+total_time : 8.658334
+total_variable_pick : 0.538341
+Stats: bcp_terms : 4642.000000
+bcp_time : 0.332341
+conflict_time : 0.073447
+conflict_total_size : 794.000000
+conflicts : 69.000000
+total_time : 0.502208
+total_variable_pick : 0.037570
+Stats: bcp_terms : 46564.000000
+bcp_time : 3.531013
+conflict_time : 0.683539
+conflict_total_size : 6690.000000
+conflicts : 574.000000
+total_time : 5.219297
+total_variable_pick : 0.333693
+Stats: bcp_terms : 24654.000000
+bcp_time : 1.783685
+conflict_time : 0.356534
+conflict_total_size : 3336.000000
+conflicts : 299.000000
+total_time : 2.615775
+total_variable_pick : 0.172147
+Stats: bcp_terms : 906.000000
+bcp_time : 0.078127
+conflict_time : 0.018395
+conflict_total_size : 189.000000
+conflicts : 15.000000
+total_time : 0.127033
+total_variable_pick : 0.011401
+Stats: bcp_terms : 1889.000000
+bcp_time : 0.151820
+conflict_time : 0.034579
+conflict_total_size : 295.000000
+conflicts : 30.000000
+total_time : 0.237231
+total_variable_pick : 0.021895
+Stats: bcp_terms : 99.000000
+bcp_time : 0.022997
+conflict_time : 0.000475
+conflict_total_size : 4.000000
+conflicts : 1.000000
+total_time : 0.047013
+total_variable_pick : 0.008902
+Stats: bcp_terms : 741.000000
+bcp_time : 0.054873
+conflict_time : 0.011362
+conflict_total_size : 130.000000
+conflicts : 9.000000
+total_time : 0.094475
+total_variable_pick : 0.010782
+Stats: bcp_terms : 835.000000
+bcp_time : 0.078886
+conflict_time : 0.018690
+conflict_total_size : 198.000000
+conflicts : 14.000000
+total_time : 0.135823
+total_variable_pick : 0.014996
+Stats: bcp_terms : 94576.000000
+bcp_time : 9.042475
+conflict_time : 1.369021
+conflict_total_size : 15159.000000
+conflicts : 1199.000000
+total_time : 13.745484
+total_variable_pick : 0.893720
+Stats: bcp_terms : 78.000000
+bcp_time : 0.014492
+total_time : 0.031712
+total_variable_pick : 0.005777
+Stats: bcp_terms : 86272.000000
+bcp_time : 6.331526
+conflict_time : 1.172206
+conflict_total_size : 11166.000000
+conflicts : 1016.000000
+total_time : 9.441446
+total_variable_pick : 0.555822
+Stats: bcp_terms : 77.000000
+bcp_time : 0.017419
+total_time : 0.039096
+total_variable_pick : 0.007486
+Stats: bcp_terms : 60868.000000
+bcp_time : 4.979587
+conflict_time : 0.895450
+conflict_total_size : 9349.000000
+conflicts : 764.000000
+total_time : 7.453893
+total_variable_pick : 0.467103
+Stats: bcp_terms : 71.000000
+bcp_time : 0.017130
+total_time : 0.038652
+total_variable_pick : 0.007543
+Stats: bcp_terms : 8126.000000
+bcp_time : 0.630879
+conflict_time : 0.134354
+conflict_total_size : 1523.000000
+conflicts : 116.000000
+total_time : 0.940134
+total_variable_pick : 0.064524
+Stats: bcp_terms : 251.000000
+bcp_time : 0.031663
+conflict_time : 0.003818
+conflict_total_size : 42.000000
+conflicts : 3.000000
+total_time : 0.059703
+total_variable_pick : 0.008834
+Stats: bcp_terms : 23744.000000
+bcp_time : 1.484622
+conflict_time : 0.371993
+conflict_total_size : 3092.000000
+conflicts : 281.000000
+total_time : 2.218537
+total_variable_pick : 0.135205
+Stats: bcp_terms : 397.000000
+bcp_time : 0.045376
+conflict_time : 0.007183
+conflict_total_size : 55.000000
+conflicts : 7.000000
+total_time : 0.077939
+total_variable_pick : 0.008262
+Stats: bcp_terms : 37260.000000
+bcp_time : 2.483191
+conflict_time : 0.525366
+conflict_total_size : 4240.000000
+conflicts : 449.000000
+total_time : 3.607970
+total_variable_pick : 0.219675
+Stats: bcp_terms : 4077.000000
+bcp_time : 0.275873
+conflict_time : 0.065024
+conflict_total_size : 562.000000
+conflicts : 54.000000
+total_time : 0.410442
+total_variable_pick : 0.028508
+Stats: bcp_terms : 4472.000000
+bcp_time : 0.327013
+conflict_time : 0.083176
+conflict_total_size : 851.000000
+conflicts : 63.000000
+total_time : 0.492149
+total_variable_pick : 0.029880
+Stats: bcp_terms : 3317.000000
+bcp_time : 0.241233
+conflict_time : 0.057860
+conflict_total_size : 588.000000
+conflicts : 47.000000
+total_time : 0.366779
+total_variable_pick : 0.026918
+Stats: bcp_terms : 3774.000000
+bcp_time : 0.269710
+conflict_time : 0.064262
+conflict_total_size : 590.000000
+conflicts : 51.000000
+total_time : 0.399901
+total_variable_pick : 0.025060
+Stats: bcp_terms : 6298.000000
+bcp_ti

@@ -2,7 +2,7 @@
 #include "src/tribblesat/cnf/cnf_or_op.h"
 #include <sstream>
 #include <iostream>
-#include "src/tribblesat/common/log.h"
+#include <glog/logging.h>
 
 namespace tribblesat {
 namespace cnf {
@@ -66,7 +66,7 @@ Or And::next_empty(const VariableEnvironment& env) const {
       return term;
     }
   }
-  LOG(LogLevel::ERROR, "Called next_empty and none was found.");
+  LOG(ERROR) << "Called next_empty and none was found.";
   std::vector<Variable> vec;
   return Or(vec);
 }

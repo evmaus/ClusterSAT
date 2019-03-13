@@ -1,7 +1,6 @@
 #include "src/tribblesat/sat/compacting_policy.h"
 
 #include "googletest/include/gtest/gtest.h"
-#include "src/tribblesat/common/log.h"
 
 namespace tribblesat {
 namespace test {

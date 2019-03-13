@@ -115,7 +115,7 @@ SatResult CDCLSatStrategy::DetermineCnfSatWithCancellation(
     if (term.satisfied(*env_stack)) {
       LOG(INFO) << ( "Finished, returning SAT");
       stats.EndSAT();
-      LOG(INFO) << ( stats.to_string());
+      std::cout << ( stats.to_string());
       return SatResult(SatResultType::SAT, env_stack->assignments_by_id());
     } 
     else 

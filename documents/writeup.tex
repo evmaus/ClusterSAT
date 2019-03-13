@@ -1,0 +1,126 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{bibliography.bib}
+
+\title{ClusterSAT and TribbleSAT}
+\author{Everett Maus}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+   This article discusses TribbleSAT, a pluggable SAT solver, and ClusterSAT, an independent clustering layer for SAT Solving
+\end{abstract}
+
+\section{Introduction}
+  SAT Solvers are a key part of the program analysis toolbox.  However, they current research on
+  them has focused largely on single machine SAT solving--even the parallel track in the SAT 
+  Competition 2017 was on a single machine with multiple cores. \footnote{https://baldur.iti.kit.edu/sat-competition-2017/index.php?cat=tracks}
+
+  Historically, a common model for speeding up SAT solving is the approach proposed in ManySAT \cite{Hamadi09manysat:a},
+  where many instances of a SAT Solver are run with slightly different parameters.  However, in general this profolio
+  based approach has only been run on single machines.  The only recent exception to this seems to be HordeSAT \cite{hordesat} (which the author discovered while writing this report), 
+  which is very similar in spirit and implementation to \textit{ClusterSAT}.
+
+  In the meantime, the rise of commodity computing in the cloud has made lower performance, networked
+  computation readily available.  In order to scale SAT solving beyond a single machine, a networked, clustered
+  SAT solving interface is may provide additional opportunities for solving at scale.
+
+  We present two deliverables:  \textit{TribbleSAT}, a pluggable SAT solver, and \textit{ClusterSAT}, an solver-independent clustering layer which provides
+  a way to distribute a SAT problem to a portfolio of SAT solvers.  Although ClusterSAT currently uses only TribbleSAT, adding support
+  for another solver involves simply implementing an interface for a solver node--ClusterSAT is designed to require only a thin layer to add support for additional solvers.
+
+\section{Algorithms}
+
+  \textit{TribbleSAT} implements a fairly standard CDCL (Conflict Driven Clause Learning) algorithm.  However, it is designed with plugability of various
+  solver strategies in mind, so it trades a great deal of efficiency for cleanness of implementation.  At the moment, a user of TribbleSAT can customize
+  the variable selection strategy, the restart strategy, and the policy for compacting the learned terms by specializing an interface.  TribbleSAT implements
+  a naive linear variable selection strategy that can be summarized as "use the next variable" and a VSIDS-based variable selection strategy.  It provides two
+  restart strategies--one where the next restart is a linear number of conflicts (configurable) after, and one where the number of conflicts to restart after grows geometrically.
+  At the moment, only one compacting strategy is offered, but it's configurable:  it opts to discard all but the last 'n' terms over some (configured) size.
+  
+  \textit{ClusterSAT} uses a standard leader/follower architecture.  The 'leader' node is instantiated, knowing about all the 'follower' nodes.  A client
+  can submit SAT problems to the 'leader' node, which then distributes the problem out to every 'follower' node, and periodically polls each follower
+  for its status (in progress, sat, unsat, or unknown).  Once a node reports SAT or UNSAT, the leader node issues a cancellation request to all other follower nodes, and 
+  caches the result in memory for the client to retrieve asynchronously.  (The Leader assigns an incrementally increasing Id to facilitate retrieving results, and returns that to the client.)
+  
+  The Leader and Follower nodes present the same service interface, with slightly different semantics for each operation.  A new SAT solver can be added by implementing
+  this service interface wrapping that SAT Solver.  The service interface consists of four RPC signatures, of which three are crucial to the functioning of ClusterSAT and one is 
+  simply for convenience:
+  
+	\textbf{CheckSatisfiability} on the leader node takes a serialized problem in CNF, and returns an identifier.  On the follower nodes, it takes a serialized problem in CNF and an identifier, and 
+	starts the process of checking Satisfiability.
+	
+	\textbf{GetSatisfiabilityResult} is the same on both the leader and the follower:  it takes an identifier, and returns the status of satisfiability for the SAT problem associated with that identifier.
+	
+	\textbf{CancelSatRequest} marks a problem as "to be cancelled" on both the leader and follower nodes.  The node should then cancel the problem as soon as possible.
+  	
+	\textbf{GetCurrentSatResults} returns the state of every SAT problem the node has knowledge of.  This is purely for convenience to dump the full state of a node, and isn't required.
+	
+  As future work, it makes sense to use separate interfaces for the leader and follower nodes--this was simply for convenience.  Additionally, although it wasn't implemented in this project, implementing
+  clause sharing would require separating the interface.
+
+\section{Summary of Results}
+
+  TribbleSAT is a slow SAT solver compared to state of the art solvers.  We compare the time it takes to solve a various SAT problem with CaDiCal in the table below.  TribbleSAT was run with a VSIDS variable selection
+  scheme, a geometric restart scheme, and a compacting scheme where the last 50 terms are kept, and all terms under 8 literals are kept.  (It was found to generally perform well with these settings.)  CaDiCal was run with
+  its default configuration, with logging enabled.  All timing was done on a 2017 MacBook Pro with a 2.9Ghz Intel Core i7 and 16GB of RAM.  uf100*.cnf are random 3-SAT problems with 100 variables and 430 terms.  uf250*.cnf
+  are random 3-SAT problems with 250 variables and 1065 terms.  From the numbers, it's clear that TribbleSAT does not compete with state of the art solvers.
+ 
+ \begin{center}
+ \begin{tabular}{||c c c||} 
+ \hline
+ Problem & CaDiCal Time (s) & TribbleSat Time (s) \\ [0.5ex] 
+ \hline\hline
+ uf100-01.cnf & 0.01 &  8.307913 \\ 
+ \hline
+ uf100-02.cnf & 0.01 & 0.057775 \\ 
+ \hline
+ uf250-01.cnf & 0.10 &  UNKNOWN after 5 hr \\ 
+ \hline
+ uf250-02.cnf & 11.46 & UNKNOWN after 5 hr \\
+ \hline
+\end{tabular}
+\end{center}
+  
+  TribbleSAT's poor performance is likely caused by a number of factors:  missing a two-watched literals scheme (instead using a linear scan to find terms for BCP), relying heavily on dynamic dispatch for modularity,
+  heavy logging that cannot be disabled, and the fact that TribbleSAT does not rely on a lot of global state (leading to a lot of extra, avoidable parameter passing).
+
+  ClusterSAT with a single follower node performs reasonably well, adding a small overhead on top of TribbleSAT.  The largest slowdown is caused by the server tick that is required, which adds about 200ms to 
+  each run.   That could be removed by having the follower nodes report the status to the leader instead of having the leader node poll the follower nodes each 'server tick'.  ClusterSAT with two nodes (one using linear search for variable selection and one using VSIDS for variable selection) slightly outperformed TribbleSAT across 1000 problems of 100 variable, 430 clause random 3-SAT, although that may be due to CPU caching.  Note that TribbleSAT times were calculated with a process that restarts for each problem, but timed at the algorithmic level.  ClusterSAT times are at the client level--the client repeatedly polled the server for results until results were present--but did not require a program restart each time, so CPU caching would help ClusterSAT times (but would be somewhat offset by the protocol) while TribbleSAT times had no protocol costs or polling time, but required a program restart across each execution, which would mean zero help from the CPU cache.
+  
+  \begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Problem & CSAT (1 Node) (s) & CSAT (2 Nodes) (s) & TribbleSAT (s) \\ [0.5ex] 
+ \hline\hline
+Median 100 Var 3-SAT & 3.14 & 2.81 & 2.88 \\ 
+ \hline
+\end{tabular}
+\end{center}
+  
+  I was unable to test for scaling issues in ClusterSAT, but the largest problems are likely to be related to the single 'leader' node that needs to periodically poll every follower node--which could get expensive and time consuming as follower nodes increases over 50/100.  That also indicates that switching to a model where follower nodes report when they finish to the leader would improve scaling and performance.
+  
+  Given the results that were found in HordeSAT \cite{hordesat}, it seems likely that with extra engineering effort, it would be possible to get ClusterSAT to scale to a large number of solver nodes and improve on the state of the art.  The main engineering challenges remaining are clause sharing and using a more performant SAT solver in the solver/follower nodes.
+  
+  Clause sharing presents an interesting opportunity, too, as most large clusters are heterogeneous.  HordeSAT \cite{hordesat} implements a single tiered sharing strategy across all nodes.  However, it may make sense to implement a tiered sharing strategy, rather than a single sharing strategy--for example, if two solvers are on the same machine, it may make sense to more aggressively share terms.  However, when two solvers are not on the same machine, the network communication may mean that only sharing small terms or sharing terms rarely makes sense.  This is an interesting research area that doesn't seem to have been explored in HordeSAT or any other parallel SAT solvers, and would be fascinating to explore.
+
+\section{Teamwork}
+
+As a solo project, Everett Maus did all of the work.
+
+\section{Course Topics}
+
+I heavily relied on the early material in the course--SAT solving, etc. in working on the project, as well as both textbooks.  The classroom description of CDCL and DPLL was quite helpful in implementing TribbleSAT and understanding .
+
+The only course topic that would have been obviously helpful to cover is parallel SAT solvers, which were only touched on in class--but that's very project specific.  The rest of the course was fascinating, but not the most
+immediately relevant to my class project.
+
+\printbibliography[title={Bibliography}]
+
+\end{document}

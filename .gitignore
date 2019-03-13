@@ -10,5 +10,10 @@ documents/*.pdf
 documents/*.fls
 documents/*.log
 documents/*.synctex.gz
+documents/*.bbl
+documents/*.bcf
+documents/*.blg
+documents/*.run.xml
+documents/*-blx.bib
 
 .DS_Store

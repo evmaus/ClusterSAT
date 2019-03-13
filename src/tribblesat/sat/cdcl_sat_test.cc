@@ -7,7 +7,6 @@
 
 #include "googletest/include/gtest/gtest.h"
 #include "src/tribblesat/parsers/dimacs_parser.h"
-#include "src/tribblesat/common/log.h"
 #include "src/tribblesat/common/utilities.h"
 
 namespace tribblesat {

@@ -1,7 +1,5 @@
 #include "src/tribblesat/variable_environment/vsids_variable_selector.h"
 
-#include "src/tribblesat/common/log.h"
-
 namespace tribblesat {
 
 // Uses bubble sort, as the first sort is 'cheap' and later sorts

@@ -25,7 +25,7 @@ void Stats::StartVariablePick()
 void Stats::EndVariablePick() 
 {
   Timestamp end =  std::chrono::high_resolution_clock::now();
-  counters_["total_variable_pick"] = std::chrono::duration_cast<
+  counters_["total_variable_pick"] += std::chrono::duration_cast<
         std::chrono::duration<double>>(end - cdcl_current_variable_pick_).count();
 }
 
