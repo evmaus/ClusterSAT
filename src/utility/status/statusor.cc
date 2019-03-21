@@ -30,9 +30,9 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#include "src/third_party/status/statusor.h"
+#include "src/utility/status/statusor.h"
 
-#include "src/third_party/status/logging.h"
+#include "src/utility/status/logging.h"
 
 namespace util {
 namespace internal {

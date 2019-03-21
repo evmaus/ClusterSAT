@@ -11,7 +11,7 @@
 #include "gflags/gflags.h"
 
 #include "src/clustersat/protocol/clustersat.grpc.pb.h"
-#include "src/third_party/status/statusor.h"
+#include "src/utility/status/statusor.h"
 
 namespace clustersat {
 

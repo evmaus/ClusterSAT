@@ -38,8 +38,8 @@
 #include <stdio.h>
 #include <vector>
 
-#include "src/third_party/status/logging.h"
-#include "src/third_party/status/status.h"
+#include "src/utility/status/logging.h"
+#include "src/utility/status/status.h"
 
 namespace util {
 namespace internal {

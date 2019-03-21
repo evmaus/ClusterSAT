@@ -18,7 +18,7 @@ cc_library(
   hdrs = ["sat_client.h"],
   deps = [
     "//src/clustersat/protocol:clustersat_proto",
-    "//src/third_party/status:status",
+    "//src/utility/status:status",
     "@com_github_gflags_gflags//:gflags",
     "@com_github_grpc_grpc//:grpc++",
     "@com_google_glog//:glog",

@@ -82,14 +82,14 @@
 //  }
 //
 
-#ifndef SRC_THIRD_PARTY_STATUS_STATUSOR_H_
-#define SRC_THIRD_PARTY_STATUS_STATUSOR_H_
+#ifndef SRC_UTILITY_STATUS_STATUSOR_H_
+#define SRC_UTILITY_STATUS_STATUSOR_H_
 
 #include <new>
 #include <string>
 #include <utility>
 
-#include "src/third_party/status/status.h"
+#include "src/utility/status/status.h"
 
 namespace util {
 
@@ -254,4 +254,4 @@ inline const T& StatusOr<T>::ValueOrDie() const {
 }
 }  // namespace util
 
-#endif // SRC_THIRD_PARTY_STATUS_STATUSOR_H_
+#endif // SRC_UTILITY_STATUS_STATUSOR_H_
