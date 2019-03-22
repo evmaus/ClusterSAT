@@ -67,11 +67,6 @@ See 'documents' for more details on how TribbleSAT and ClusterSAT work.
 Data analysis scripts and test scripts are all in ./scripts, which all should be run
 from the ./scripts directory.
 
-## TODO (Project)
-
-- Timing for TribbleSAT/ClusterSAT on medium size problems
-- Write up the results
-
 ## TODO (Random/Future)
 
 - Handle errors better than crashing in dimacs_parser
@@ -79,6 +74,7 @@ from the ./scripts directory.
 - Mock tests for the solver node, client, leader node, etc.
 - More comments in ClusterSAT
 - Solve one problem at a time on a node.
+- Use a callback model instead of polling on the leader node
 - Implement sharing of learned terms.
 - Implement more variable selection strategies.
 - Implement more restart strategies.
