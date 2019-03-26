@@ -24,15 +24,6 @@ cc_library(
     ],
 )
 
-cc_test(
-    name = "cdcl_trace_test",
-    srcs = [ "cdcl_trace_test.cc" ],
-    deps = [ 
-        "cdcl_trace",
-        "@googletest//:gtest_main",
-    ],
-)
-
 cc_library(
     name = "cdcl_sat",
     srcs = [ "cdcl_sat.cc" ],
@@ -88,15 +79,6 @@ cc_library(
     ]
 )
 
-cc_test(
-    name = "clause_database_test",
-    srcs = [ "clause_database_test.cc" ],
-    deps = [
-        "clause_database",
-        "@googletest//:gtest_main",
-    ]
-)
-
 cc_library(
     name = "compacting_policy",
     srcs = [ "compacting_policy.cc" ],
@@ -122,14 +104,5 @@ cc_library(
     deps = [
         "//src/simplesat/common:stats",
         "@com_google_glog//:glog",
-    ],
-)
-
-cc_test(
-    name = "restart_policy_test",
-    srcs = [ "restart_policy_test.cc" ],
-    deps = [
-        "restart_policy",
-        "@googletest//:gtest_main",
     ],
 )

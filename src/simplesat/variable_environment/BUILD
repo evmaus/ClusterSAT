@@ -94,12 +94,3 @@ cc_library(
     ],
   visibility = [ "//visibility:public" ],
 )
-
-cc_test(
-  name = "vsids_variable_selector_test",
-  srcs = [ "vsids_variable_selector_test.cc" ],
-  deps = [
-    "vsids_variable_selector",
-    "@googletest//:gtest_main",
-  ]
-)
