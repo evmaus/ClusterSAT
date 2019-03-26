@@ -6,7 +6,7 @@
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{bibliography.bib}
 
-\title{ClusterSAT and TribbleSAT}
+\title{ClusterSAT and SimpleSAT}
 \author{Everett Maus}
 
 \begin{document}
@@ -14,7 +14,7 @@
 \maketitle
 
 \begin{abstract}
-   This article discusses TribbleSAT, a pluggable SAT solver, and ClusterSAT, an independent clustering layer for SAT Solving
+   This article discusses SimpleSAT, a pluggable SAT solver, and ClusterSAT, an independent clustering layer for SAT Solving
 \end{abstract}
 
 \section{Introduction}
@@ -31,15 +31,15 @@
   computation readily available.  In order to scale SAT solving beyond a single machine, a networked, clustered
   SAT solving interface is may provide additional opportunities for solving at scale.
 
-  We present two deliverables:  \textit{TribbleSAT}, a pluggable SAT solver, and \textit{ClusterSAT}, an solver-independent clustering layer which provides
-  a way to distribute a SAT problem to a portfolio of SAT solvers.  Although ClusterSAT currently uses only TribbleSAT, adding support
+  We present two deliverables:  \textit{SimpleSAT}, a pluggable SAT solver, and \textit{ClusterSAT}, an solver-independent clustering layer which provides
+  a way to distribute a SAT problem to a portfolio of SAT solvers.  Although ClusterSAT currently uses only SimpleSAT, adding support
   for another solver involves simply implementing an interface for a solver node--ClusterSAT is designed to require only a thin layer to add support for additional solvers.
 
 \section{Algorithms}
 
-  \textit{TribbleSAT} implements a fairly standard CDCL (Conflict Driven Clause Learning) algorithm.  However, it is designed with plugability of various
-  solver strategies in mind, so it trades a great deal of efficiency for cleanness of implementation.  At the moment, a user of TribbleSAT can customize
-  the variable selection strategy, the restart strategy, and the policy for compacting the learned terms by specializing an interface.  TribbleSAT implements
+  \textit{SimpleSAT} implements a fairly standard CDCL (Conflict Driven Clause Learning) algorithm.  However, it is designed with plugability of various
+  solver strategies in mind, so it trades a great deal of efficiency for cleanness of implementation.  At the moment, a user of SimpleSAT can customize
+  the variable selection strategy, the restart strategy, and the policy for compacting the learned terms by specializing an interface.  SimpleSAT implements
   a naive linear variable selection strategy that can be summarized as "use the next variable" and a VSIDS-based variable selection strategy.  It provides two
   restart strategies--one where the next restart is a linear number of conflicts (configurable) after, and one where the number of conflicts to restart after grows geometrically.
   At the moment, only one compacting strategy is offered, but it's configurable:  it opts to discard all but the last 'n' terms over some (configured) size.
@@ -67,10 +67,10 @@
 
 \section{Summary of Results}
 
-  TribbleSAT is a slow SAT solver compared to state of the art solvers.  We compare the time it takes to solve a various SAT problem with CaDiCal in the table below.  TribbleSAT was run with a VSIDS variable selection
+  SimpleSAT is a slow SAT solver compared to state of the art solvers.  We compare the time it takes to solve a various SAT problem with CaDiCal in the table below.  SimpleSAT was run with a VSIDS variable selection
   scheme, a geometric restart scheme, and a compacting scheme where the last 50 terms are kept, and all terms under 8 literals are kept.  (It was found to generally perform well with these settings.)  CaDiCal was run with
   its default configuration, with logging enabled.  All timing was done on a 2017 MacBook Pro with a 2.9Ghz Intel Core i7 and 16GB of RAM.  uf100*.cnf are random 3-SAT problems with 100 variables and 430 terms.  uf250*.cnf
-  are random 3-SAT problems with 250 variables and 1065 terms.  From the numbers, it's clear that TribbleSAT does not compete with state of the art solvers.
+  are random 3-SAT problems with 250 variables and 1065 terms.  From the numbers, it's clear that SimpleSAT does not compete with state of the art solvers.
  
  \begin{center}
  \begin{tabular}{||c c c||} 
@@ -88,16 +88,16 @@
 \end{tabular}
 \end{center}
   
-  TribbleSAT's poor performance is likely caused by a number of factors:  missing a two-watched literals scheme (instead using a linear scan to find terms for BCP), relying heavily on dynamic dispatch for modularity,
-  heavy logging that cannot be disabled, and the fact that TribbleSAT does not rely on a lot of global state (leading to a lot of extra, avoidable parameter passing).
+  SimpleSAT's poor performance is likely caused by a number of factors:  missing a two-watched literals scheme (instead using a linear scan to find terms for BCP), relying heavily on dynamic dispatch for modularity,
+  heavy logging that cannot be disabled, and the fact that SimpleSAT does not rely on a lot of global state (leading to a lot of extra, avoidable parameter passing).
 
-  ClusterSAT with a single follower node performs reasonably well, adding a small overhead on top of TribbleSAT.  The largest slowdown is caused by the server tick that is required, which adds about 200ms to 
-  each run.   That could be removed by having the follower nodes report the status to the leader instead of having the leader node poll the follower nodes each 'server tick'.  ClusterSAT with two nodes (one using linear search for variable selection and one using VSIDS for variable selection) slightly outperformed TribbleSAT across 1000 problems of 100 variable, 430 clause random 3-SAT, although that may be due to CPU caching.  Note that TribbleSAT times were calculated with a process that restarts for each problem, but timed at the algorithmic level.  ClusterSAT times are at the client level--the client repeatedly polled the server for results until results were present--but did not require a program restart each time, so CPU caching would help ClusterSAT times (but would be somewhat offset by the protocol) while TribbleSAT times had no protocol costs or polling time, but required a program restart across each execution, which would mean zero help from the CPU cache.
+  ClusterSAT with a single follower node performs reasonably well, adding a small overhead on top of SimpleSAT.  The largest slowdown is caused by the server tick that is required, which adds about 200ms to 
+  each run.   That could be removed by having the follower nodes report the status to the leader instead of having the leader node poll the follower nodes each 'server tick'.  ClusterSAT with two nodes (one using linear search for variable selection and one using VSIDS for variable selection) slightly outperformed SimpleSAT across 1000 problems of 100 variable, 430 clause random 3-SAT, although that may be due to CPU caching.  Note that SimpleSAT times were calculated with a process that restarts for each problem, but timed at the algorithmic level.  ClusterSAT times are at the client level--the client repeatedly polled the server for results until results were present--but did not require a program restart each time, so CPU caching would help ClusterSAT times (but would be somewhat offset by the protocol) while SimpleSAT times had no protocol costs or polling time, but required a program restart across each execution, which would mean zero help from the CPU cache.
   
   \begin{center}
  \begin{tabular}{||c c c c||} 
  \hline
- Problem & CSAT (1 Node) (s) & CSAT (2 Nodes) (s) & TribbleSAT (s) \\ [0.5ex] 
+ Problem & CSAT (1 Node) (s) & CSAT (2 Nodes) (s) & SimpleSAT (s) \\ [0.5ex] 
  \hline\hline
 Median 100 Var 3-SAT & 3.14 & 2.81 & 2.88 \\ 
  \hline
@@ -116,7 +116,7 @@ As a solo project, Everett Maus did all of the work.
 
 \section{Course Topics}
 
-I heavily relied on the early material in the course--SAT solving, etc. in working on the project, as well as both textbooks.  The classroom description of CDCL and DPLL was quite helpful in implementing TribbleSAT and understanding .
+I heavily relied on the early material in the course--SAT solving, etc. in working on the project, as well as both textbooks.  The classroom description of CDCL and DPLL was quite helpful in implementing SimpleSAT and understanding .
 
 The only course topic that would have been obviously helpful to cover is parallel SAT solvers, which were only touched on in class--but that's very project specific.  The rest of the course was fascinating, but not the most
 immediately relevant to my class project.

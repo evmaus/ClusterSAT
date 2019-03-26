@@ -28,18 +28,18 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
 
 \section{Precise Description}
 
-  I propose two deliverables.  The first is "TribbleSAT", a CDCL-based SAT Solver, 
+  I propose two deliverables.  The first is "SimpleSAT", a CDCL-based SAT Solver, 
   written in C++, designed with pluggability of solving strategies in mind.  I don't anticipate
   this will be higher performance than a Glucose-based solver--instead, it will simply serve to
   prove out the value of the second deliverable.  Because of the focus on pluggability of different
-  strategies, it should be possible to use "TribbleSAT" to quickly prototype new variable
+  strategies, it should be possible to use "SimpleSAT" to quickly prototype new variable
   selection strategies, learned-clause compacting strategies, and similar tweaks on the classical
   algorithm, and test the behavior of those using the second deliverable, "ClusterSAT".
 
   The second deliverable is a distributed SAT Solving layer named "ClusterSAT" which allows distributing
-  TribbleSAT instances across one or more computers, communicating over a standard network protocol.  It will
+  SimpleSAT instances across one or more computers, communicating over a standard network protocol.  It will
   be designed to be largely SAT-solver independent, so that higher performance solvers could be 
-  plugged into it in the future, but initially will only support "TribbleSAT" as the first solver.
+  plugged into it in the future, but initially will only support "SimpleSAT" as the first solver.
   I propose using a standard leader/follower model for distributing this computation, 
   where SAT problems are submitted to a 'coordinator' (leader) node, which then passes them to one or more 
   'solver' (follower) nodes, each of which consists of a single solver instance.  When a single solver node finds
@@ -47,7 +47,7 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
   Time permitting, learned clause sharing will be enabled between follower nodes. In terms of implementation, 
   "ClusterSAT" will use the gRPC framework, and communicate using protocol buffers--this allows each solver node 
   (follower node) to be written in whatever language seems most appropriate for that solver.  The coordinator node 
-  and TribbleSAT solver node implementations will be in C++.
+  and SimpleSAT solver node implementations will be in C++.
 
 \section{Related Literature}
   The most immediately relevant literature is GrADSAT (Chrabakh et al.), which attempted to distribute SAT solving
@@ -60,15 +60,15 @@ SAT Solvers are a key part of the program analysis toolbox.  However, they curre
   multiple machines to achieve better scalability.
 
 \section{Implementation Plan}
-  By February 7th, I intend to have a basic prototype working.  This will consist of a CDCL based SAT solver (TribbleSAT),
+  By February 7th, I intend to have a basic prototype working.  This will consist of a CDCL based SAT solver (SimpleSAT),
   a prototype ClusterSAT fabric, and a way to send a coordinator a SAT problem, have it farm that problem out to multiple 
-  copies of TribbleSAT over the network, and aggregate the results from the solver nodes.
+  copies of SimpleSAT over the network, and aggregate the results from the solver nodes.
 
-  By the end of February, I'll implement clause sharing across TribbleSAT nodes, and implement more 
-  restart/compacting/variable selection/etc. strategies in TribbleSAT.  Time permitting, I'll also look into integrating an alternative 
+  By the end of February, I'll implement clause sharing across SimpleSAT nodes, and implement more 
+  restart/compacting/variable selection/etc. strategies in SimpleSAT.  Time permitting, I'll also look into integrating an alternative 
   solver (without clause sharing), to demonstrate the flexibility of ClusterSAT.
 
-  In the last few weeks of class, I'll be benchmarking ClusterSAT against single threaded TribbleSAT and Glucose on various
+  In the last few weeks of class, I'll be benchmarking ClusterSAT against single threaded SimpleSAT and Glucose on various
   problem set sizes, and, budget permitting, demonstrating it running on a cloud provider.
 
 \end{document}

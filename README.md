@@ -1,19 +1,19 @@
-# TribbleSAT and ClusterSAT
+# SimpleSAT and ClusterSAT
 
-## TribbleSAT
+## SimpleSAT
 
 Experimental SAT solver.
 
 ## ClusterSAT
 
-A framework for distributing SAT Solving across a set of 'solver' nodes.  Uses TribbleSAT, but is designed to be
+A framework for distributing SAT Solving across a set of 'solver' nodes.  Uses SimpleSAT, but is designed to be
 SAT solver independent.
 
 ## Building
 
 Uses [Bazel](https://bazel.build/) to build, which must be installed.  That should be the only dependency.
 
-Building is then "cd src; bazel build //..." to download dependent libraries, and build both TribbleSAT and ClusterSAT.
+Building is then "cd src; bazel build //..." to download dependent libraries, and build both SimpleSAT and ClusterSAT.
 
 ## Testing
 
@@ -22,16 +22,16 @@ EXPECTED to fail, as they haven't all been written yet.  (Yes, the author is app
 
 ## Usage
 
-### Running TribbleSAT
+### Running SimpleSAT
 
-TribbleSAT is a simple SAT solver.  You can run it on a file (see some from the [the site here](https://www.cs.ubc.ca/~hoos/SATLIB/benchm.html) in ./src/tribblesat/parsers/testdata/) pretty easily.
+SimpleSAT is a simple SAT solver.  You can run it on a file (see some from the [the site here](https://www.cs.ubc.ca/~hoos/SATLIB/benchm.html) in ./src/simplesat/parsers/testdata/) pretty easily.
 
-After building, the TribbleSAT executable is at:
-./bazel-bin/src/tribblesat/utilities/cdcl_runner
+After building, the SimpleSAT executable is at:
+./bazel-bin/src/simplesat/utilities/cdcl_runner
 
 And can be run like this:
-./bazel-bin/src/tribblesat/utilities/cdcl_runner --file=$filename
-(This runs it with the default settings.  Alternate settings, which may be slower, require modifying ./src/tribblesat/utilities/cdcl_runner.)
+./bazel-bin/src/simplesat/utilities/cdcl_runner --file=$filename
+(This runs it with the default settings.  Alternate settings, which may be slower, require modifying ./src/simplesat/utilities/cdcl_runner.)
 
 ### Running ClusterSAT
 
@@ -47,22 +47,22 @@ node_addresses is a semicolon delineated list of follower servers that should be
 when the leader is running.
 
 And the follower can be run like this:
-./bazel-bin/src/clustersat/node/tribblesat_server --listening_address=0.0.0.0:50052 --configuration=default
+./bazel-bin/src/clustersat/node/simplesat_server --listening_address=0.0.0.0:50052 --configuration=default
 AND/OR
-./bazel-bin/src/clustersat/node/tribblesat_server --listening_address=0.0.0.0:50053 --configuration=linear
+./bazel-bin/src/clustersat/node/simplesat_server --listening_address=0.0.0.0:50053 --configuration=linear
 
-(Linear sets up a tribblesat_server with a linear variable selection scheme, default
+(Linear sets up a simplesat_server with a linear variable selection scheme, default
 uses VSIDS.)
 
 There is a client that submits a request and then times that can be run like this:
 ./bazel-bin/src/clustersat/client/timing_wrapper --file=$filename --server="localhost:50051"
 NOTE:  Filename should be a file name of a .cnf format file.  Server should be the leader server of a ClusterSAT instance.
 
-See the ./scripts folder for some more example usage of TribbleSAT and ClusterSAT.
+See the ./scripts folder for some more example usage of SimpleSAT and ClusterSAT.
 
 ## Details
 
-See 'documents' for more details on how TribbleSAT and ClusterSAT work.
+See 'documents' for more details on how SimpleSAT and ClusterSAT work.
 
 Data analysis scripts and test scripts are all in ./scripts, which all should be run
 from the ./scripts directory.
