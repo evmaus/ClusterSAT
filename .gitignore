@@ -1,8 +1,4 @@
-bazel-bin
-bazel-genfiles
-bazel-out
-bazel-testlogs
-bazel-tribblesat
+bazel-*
 
 documents/*.aux
 documents/*.fdb_latexmk
