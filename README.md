@@ -2,7 +2,7 @@
 
 ## SimpleSAT
 
-Experimental SAT solver.
+Experimental SAT solver.  Slower than state of the art solvers, but designed with plugability of strategies in mind.s
 
 ## ClusterSAT
 
@@ -17,8 +17,7 @@ Building is then "cd src; bazel build //..." to download dependent libraries, an
 
 ## Testing
 
-Unit tests can be run via "bazel test //...".  Note that there are some unit tests that are
-EXPECTED to fail, as they haven't all been written yet.  (Yes, the author is appropriately ashamed of this.)  The shared characteristic of these tests are that they are the only test in the test suite/test target, and they immediately fail.
+Unit tests can be run via "bazel test //...".
 
 ## Usage
 
