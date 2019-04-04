@@ -2,7 +2,7 @@
 
 ## Status
 
-Not an official Google product/project.
+This is not an officially supported Google Product.
 
 ## SimpleSAT
 
