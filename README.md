@@ -1,5 +1,9 @@
 # SimpleSAT and ClusterSAT
 
+## Status
+
+Not an official Google product/project.
+
 ## SimpleSAT
 
 Experimental SAT solver.  Slower than state of the art solvers, but designed with plugability of strategies in mind.s
